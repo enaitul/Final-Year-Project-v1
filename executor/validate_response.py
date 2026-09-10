@@ -20,6 +20,7 @@ LABELS = {
     "Test Case ID:": "Test_Case_ID",
     "Test Type:": "Test_Type",
     "Test Case Type:": "Test_Type",
+    "Test Description:": "Test_Description",
     "Execution Status:": "Execution_Status",
     "Query Executed:": "Query_Executed",
     "Database Response:": "Database_Response",

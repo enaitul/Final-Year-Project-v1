@@ -296,6 +296,7 @@ def execute_test(connection, row):
     feature_id = str(row["Feature_ID"])
     feature_name = str(row["Feature_Name"])
     test_type = str(row["Test_Type"])
+    test_description = str(row.get("Test_Description", "")).strip()
 
     sql_query = str(row["SQL_Query"]).strip()
     expected_result = str(row["Expected_Result"]).strip()
@@ -306,6 +307,7 @@ def execute_test(connection, row):
         "Feature_ID": feature_id,
         "Feature_Name": feature_name,
         "Test_Type": test_type,
+        "Test_Description": test_description,
         "SQL_Query": sql_query,
         "Expected_Result": expected_result,
         "Expected_Error": expected_error,
@@ -576,6 +578,7 @@ def save_response_notepad(results):
 
         Test case id
         Test type (Positive / Negative / Edge)
+        Test description
         Execution status: pass/fail
         Query executed
         Database response
@@ -601,6 +604,7 @@ def save_response_notepad(results):
             file.write("=" * 70 + "\n")
             file.write(f"Test Case ID: {result['Test_Case_ID']}\n")
             file.write(f"Test Type: {result.get('Test_Type', '')}\n")
+            file.write(f"Test Description: {result.get('Test_Description', '')}\n")
             file.write(f"Execution Status: {result['Status']}\n")
             file.write(f"Query Executed: {result['SQL_Query']}\n")
             file.write(f"Database Response: {database_response}\n")

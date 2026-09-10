@@ -219,6 +219,7 @@
        ======================================================================
        Test Case ID: TC001
        Test Type: Positive
+       Test Description: Create a scratch database for test isolation.
        Execution Status: PASS
        Query Executed: CREATE DATABASE ai_testing_scratch_c1;
        Database Response: Query executed successfully. Rows affected: 1

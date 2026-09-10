@@ -1,0 +1,18 @@
+========================================
+RESPONSE FILE VALIDATION & REGRESSION REPORT
+========================================
+
+Response file checked: D:\project\Final-Year-Project-v1-main\reports\response_1.txt
+Total test cases found: 300
+Valid test cases: 300
+Invalid test cases: 0
+Duplicate test cases: 0
+Missing test cases: 0
+Unexpected test cases: 0
+
+Minute Validation Status: PASS
+
+Overall Run Verdict: PASS
+
+Validation Problems Found:
+No validation problems found.

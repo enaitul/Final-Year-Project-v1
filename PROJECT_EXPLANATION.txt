@@ -1,0 +1,554 @@
+================================================================================
+         AI-POWERED MySQL AUTOMATED TESTING FRAMEWORK
+                   PROJECT EXPLANATION
+================================================================================
+
+
+1. WHAT IS THIS PROJECT?
+================================================================================
+
+   This is an automated testing framework for MySQL databases.
+
+   It takes 300 pre-written SQL test cases from a CSV file, runs each one
+   against a live MySQL database, records what happened (the database's
+   actual response), and then validates whether the results are correct.
+
+   The project works in two phases:
+
+   PHASE 1 (First Run):
+       - Execute all 300 test cases → Save responses → Validate them →
+         If correct, save as the "Standard Baseline" (the golden reference).
+
+   PHASE 2 (Future Runs):
+       - Execute all 300 test cases → Save responses → Compare against
+         the Standard Baseline → Report any regressions or differences.
+
+
+2. FOLDER STRUCTURE
+================================================================================
+
+   Final-Year-Project-v1-main/
+   │
+   ├── ai_testing_test.sql          ← Database setup script (creates tables)
+   ├── README.md                    ← Basic setup instructions
+   ├── PROJECT_EXPLANATION.txt      ← This file
+   │
+   ├── test_cases/
+   │   └── 300testcases.csv         ← All 300 test cases (the input)
+   │
+   ├── executor/
+   │   ├── test_runner.py           ← Main program - executes all tests
+   │   ├── validate_response.py     ← Validation engine (library)
+   │   └── validate_and_convert.py  ← Validation driver (runs validation)
+   │
+   └── reports/                     ← All generated output goes here
+       ├── response_1.txt           ← Response from 1st test run
+       ├── response_2.txt           ← Response from 2nd test run (and so on)
+       ├── standard_test_results.txt        ← The Standard Baseline file
+       ├── response_validation_report.txt   ← Validation & comparison report
+       └── how_response_validation_works.txt← Auto-generated workflow doc
+
+
+3. THE DATABASE
+================================================================================
+
+   Database name:  ai_testing_test
+   Server:         MySQL 8.0 (localhost)
+   User:           ai_tester / AiTester@123
+
+   The database has 4 tables:
+
+   ┌──────────────────┐    ┌──────────────────┐
+   │   departments    │    │    projects       │
+   ├──────────────────┤    ├──────────────────┤
+   │ dept_id (PK)     │    │ project_id (PK)  │
+   │ dept_name (UQ)   │    │ project_name     │
+   │ location         │    │ budget           │
+   └──────┬───────────┘    │ start_date       │
+          │                │ end_date         │
+          │ FK             └──────┬───────────┘
+          │                      │ FK
+   ┌──────┴───────────┐    ┌─────┴────────────┐
+   │   employees      │    │ employee_projects │
+   ├──────────────────┤    ├──────────────────┤
+   │ emp_id (PK)      │◄──►│ emp_id (PK, FK)  │
+   │ emp_name         │    │ project_id(PK,FK)│
+   │ email (UQ)       │    │ role             │
+   │ age              │    │ assigned_date    │
+   │ salary           │    └──────────────────┘
+   │ dept_id (FK)     │
+   │ joining_date     │
+   └──────────────────┘
+
+   The file "ai_testing_test.sql" is a mysqldump export that creates these
+   4 tables. You import it once to set up the database before testing.
+
+   Setup command:
+       mysql -u root -p < ai_testing_test.sql
+
+
+4. THE TEST CASES (300testcases.csv)
+================================================================================
+
+   The CSV file contains 300 test cases covering 100 MySQL features.
+
+   Each row has these columns:
+   ┌────────────────┬─────────────────────────────────────────────────┐
+   │ Column         │ What it contains                                │
+   ├────────────────┼─────────────────────────────────────────────────┤
+   │ Test_Case_ID   │ Unique ID like TC001, TC002 ... TC300           │
+   │ Feature_ID     │ Feature being tested (F001 to F100)             │
+   │ Feature_Name   │ Human-readable name (e.g., "CREATE DATABASE")   │
+   │ Test_Type      │ Positive, Negative, or Edge                     │
+   │ Test_Description│ What this test does in plain English            │
+   │ Preconditions  │ Setup SQL that must run BEFORE the test query   │
+   │ SQL_Query      │ The actual SQL statement to execute             │
+   │ Expected_Result│ What should happen if the query works correctly │
+   │ Expected_Error │ What error is expected (for negative tests)     │
+   │ Risk_Level     │ Low / Medium / Critical                         │
+   └────────────────┴─────────────────────────────────────────────────┘
+
+   Test Type Breakdown:
+       Positive tests : 100  (SQL that SHOULD succeed)
+       Negative tests :  98  (SQL that SHOULD fail with an error)
+       Edge tests     : 102  (Boundary/unusual conditions)
+
+   Features covered (100 features, F001 to F100):
+       F001–F003  : CREATE/DROP/USE DATABASE
+       F004       : SHOW DATABASES
+       F005–F010  : CREATE/ALTER/RENAME/DROP TABLE
+       F011–F020  : INSERT operations (single, multi, NULL, violations)
+       F021–F030  : UPDATE operations (single, multi, WHERE, violations)
+       F031–F040  : DELETE operations (single, multi, WHERE, cascades)
+       F041–F055  : SELECT, WHERE, AND/OR/NOT, DISTINCT, BETWEEN, etc.
+       F056–F060  : Aggregate functions (COUNT, SUM, AVG, MIN/MAX, GROUP BY)
+       F061–F070  : JOINs (INNER, LEFT, RIGHT, CROSS, SELF, multi-table)
+       F071–F080  : Subqueries, EXISTS, UNION, CTEs
+       F081–F086  : Constraints (PRIMARY KEY, FOREIGN KEY, UNIQUE, NOT NULL)
+       F087–F090  : Functions (String, Numeric, Date/Time, JSON)
+       F091–F096  : Transactions (BEGIN, COMMIT, ROLLBACK, SAVEPOINT)
+       F097–F100  : Indexes, Views, Stored Procedures, Triggers
+
+
+5. THE PYTHON FILES — DETAILED EXPLANATION
+================================================================================
+
+
+   ─────────────────────────────────────────────────────────────────────
+   FILE 1: test_runner.py  (The Main Program)
+   ─────────────────────────────────────────────────────────────────────
+
+   This is the main entry point. You run this to execute all 300 tests.
+
+   Command:    python executor/test_runner.py
+
+   WHAT IT DOES (step by step):
+
+       1. Connects to MySQL using the credentials in DB_CONFIG
+       2. Loads all 300 test cases from the CSV file
+       3. For each test case:
+          a. Reads the SQL query and test metadata from the CSV row
+          b. Runs any setup/fixture SQL from the Preconditions column
+          c. Determines what the test expects (success or error)
+          d. Executes the actual SQL query against MySQL
+          e. Captures what MySQL returned (rows, affected count, or error)
+          f. Compares expectation vs reality to decide PASS or FAIL
+          g. Records the result
+       4. Saves all results to a response file (response_1.txt, response_2.txt, etc.)
+       5. Prints a summary (total/passed/failed/pass rate)
+
+   KEY FUNCTIONS:
+
+   ┌──────────────────────────┬──────────────────────────────────────────┐
+   │ Function                 │ What it does                             │
+   ├──────────────────────────┼──────────────────────────────────────────┤
+   │ connect_database()       │ Opens connection to MySQL server         │
+   │ load_test_cases()        │ Reads the 300testcases.csv into memory   │
+   │                          │                                          │
+   │ determine_expected_      │ Reads the CSV row and figures out        │
+   │   status(row)            │ whether the test expects SUCCESS or      │
+   │                          │ ERROR. Uses keywords in Expected_Result  │
+   │                          │ and Test_Type to decide.                 │
+   │                          │                                          │
+   │ extract_setup_sql(text)  │ Extracts the "Setup:" SQL from the      │
+   │                          │ Preconditions column of the CSV.         │
+   │                          │                                          │
+   │ split_setup_statements   │ Splits multiple SQL statements while     │
+   │   (setup_sql)            │ keeping stored procedures intact.        │
+   │                          │                                          │
+   │ run_setup(cursor,        │ Runs the setup/fixture SQL before        │
+   │   connection, row)       │ the actual test query.                   │
+   │                          │                                          │
+   │ format_query_result      │ Formats SELECT results into a readable   │
+   │   (cursor, rows)         │ ASCII table with column names.           │
+   │                          │                                          │
+   │ execute_test(connection, │ THE CORE FUNCTION. Executes one test     │
+   │   row)                   │ case and returns a result dictionary     │
+   │                          │ with status, actual result, errors, etc. │
+   │                          │                                          │
+   │ print_test_result(result)│ Displays one test result on screen.      │
+   │                          │                                          │
+   │ get_next_response_file   │ Finds the next sequential number for     │
+   │   (report_dir)           │ the response file name.                  │
+   │                          │                                          │
+   │ save_response_notepad    │ Writes all results to a response file    │
+   │   (results)              │ in a structured text format.             │
+   │                          │                                          │
+   │ print_summary            │ Prints final pass/fail statistics.       │
+   │   (results_df)           │                                          │
+   │                          │                                          │
+   │ main()                   │ Orchestrates everything above.           │
+   └──────────────────────────┴──────────────────────────────────────────┘
+
+   HOW PASS/FAIL IS DECIDED:
+
+       For POSITIVE tests (SQL that should succeed):
+           - If SQL executes without error → PASS
+           - If SQL throws an error       → FAIL
+
+       For NEGATIVE tests (SQL that should fail):
+           - If SQL throws an error       → PASS  (error was expected!)
+           - If SQL executes successfully  → FAIL  (should have failed!)
+
+       For EDGE tests:
+           - Determined by reading the Expected_Result text in the CSV.
+           - Some edge tests expect success, some expect errors.
+
+   RESPONSE FILE FORMAT (what response_1.txt looks like):
+
+       ======================================================================
+       Test Case ID: TC001
+       Test Type: Positive
+       Execution Status: PASS
+       Query Executed: CREATE DATABASE ai_testing_scratch_c1;
+       Database Response: Query executed successfully. Rows affected: 1
+       Query Execution Time: 0.009369 seconds
+       ======================================================================
+
+
+   ─────────────────────────────────────────────────────────────────────
+   FILE 2: validate_response.py  (The Validation Engine)
+   ─────────────────────────────────────────────────────────────────────
+
+   This is a LIBRARY file — it provides functions but does NOT run on
+   its own. It is imported by validate_and_convert.py.
+
+   WHAT IT DOES:
+
+       It minutely validates every single test case in the response file
+       and can compare responses against the standard baseline.
+
+   KEY FUNCTIONS:
+
+   ┌──────────────────────────────┬────────────────────────────────────────┐
+   │ Function                     │ What it does                           │
+   ├──────────────────────────────┼────────────────────────────────────────┤
+   │ find_latest_response         │ Scans reports/ folder and returns the  │
+   │   (report_directory)         │ response file with the highest number  │
+   │                              │ (e.g., response_3.txt over response_2) │
+   │                              │                                        │
+   │ read_expected_cases          │ Reads the original 300testcases.csv    │
+   │   (csv_file)                 │ to get the full metadata for each test │
+   │                              │                                        │
+   │ parse_response_file          │ Parses the response TXT file and       │
+   │   (response_file)            │ extracts each test case block into a   │
+   │                              │ structured dictionary.                 │
+   │                              │                                        │
+   │ validate_records             │ The main validation logic. Checks:     │
+   │   (records, expected_ids,    │   - All 6 required fields are present  │
+   │    csv_problems,             │   - Test Case ID format is TCxxx       │
+   │    expected_cases_map)       │   - Test Type is Positive/Negative/Edge│
+   │                              │   - Status is PASS or FAIL             │
+   │                              │   - Execution time format is valid     │
+   │                              │   - No duplicate test cases            │
+   │                              │   - Test type matches CSV expectation  │
+   │                              │   - SQL query matches CSV expectation  │
+   │                              │   - All 300 test cases are present     │
+   │                              │   - No unexpected test case IDs        │
+   │                              │                                        │
+   │ compare_with_standard_       │ Compares new response against baseline:│
+   │   baseline(current_records,  │   - Detects REGRESSIONS (PASS → FAIL) │
+   │   standard_file)             │   - Detects status changes             │
+   │                              │   - Detects output differences         │
+   │                              │                                        │
+   │ validate_response            │ Main entry point that ties parsing     │
+   │   (response_file, csv_file)  │ and validation together.              │
+   └──────────────────────────────┴────────────────────────────────────────┘
+
+   THE 6 REQUIRED FIELDS (every test case must have all of these):
+
+       1. Test_Case_ID        (e.g., TC001)
+       2. Test_Type            (Positive / Negative / Edge)
+       3. Execution_Status     (PASS / FAIL)
+       4. Query_Executed       (the SQL that was run)
+       5. Database_Response    (what MySQL actually returned)
+       6. Query_Execution_Time (how long it took, in seconds)
+
+
+   ─────────────────────────────────────────────────────────────────────
+   FILE 3: validate_and_convert.py  (The Validation Driver)
+   ─────────────────────────────────────────────────────────────────────
+
+   This is the second program you run AFTER test_runner.py.
+
+   Command:    python executor/validate_and_convert.py
+
+   WHAT IT DOES:
+
+       1. Finds the latest response file (response_1.txt, response_2.txt, etc.)
+       2. Calls validate_response.py to minutely validate it
+       3. Checks if standard_test_results.txt exists:
+
+          IF NO (First Run):
+              → Creates the Standard Baseline file with:
+                - All test case details
+                - Side-by-side comparison boxes showing Expected Output
+                  next to Actual Database Output
+
+          IF YES (Future Runs):
+              → Compares the new response against the baseline
+              → Reports regressions and discrepancies
+
+       4. Saves a validation report to response_validation_report.txt
+       5. Saves a workflow explanation to how_response_validation_works.txt
+
+   KEY FUNCTIONS:
+
+   ┌──────────────────────────────┬────────────────────────────────────────┐
+   │ Function                     │ What it does                           │
+   ├──────────────────────────────┼────────────────────────────────────────┤
+   │ write_validation_report      │ Writes the validation & regression     │
+   │   (path, response_file,      │ report with all statistics.            │
+   │    summary, comparison)      │                                        │
+   │                              │                                        │
+   │ load_csv_expected_map        │ Loads expected results and feature     │
+   │   (csv_file)                 │ details from the CSV, keyed by test ID.│
+   │                              │                                        │
+   │ build_side_by_side           │ Creates the aligned side-by-side table │
+   │   (expected_text,            │ showing EXPECTED OUTPUT next to        │
+   │    actual_text)              │ DATABASE OUTPUT (ACTUAL).              │
+   │                              │                                        │
+   │ write_standard_results       │ Creates the Standard Baseline file     │
+   │   (records, csv_file)        │ with all test details and comparison   │
+   │                              │ boxes.                                 │
+   │                              │                                        │
+   │ write_explanation(path)      │ Generates the how_response_validation_ │
+   │                              │ works.txt documentation file.          │
+   │                              │                                        │
+   │ main()                       │ Orchestrates the full validation flow. │
+   └──────────────────────────────┴────────────────────────────────────────┘
+
+   STANDARD BASELINE FORMAT (what standard_test_results.txt looks like):
+
+       Test Case ID: TC001
+       Feature: F001 — CREATE DATABASE
+       Test Type: Positive
+       Execution Status: PASS
+       Query Executed: CREATE DATABASE ai_testing_scratch_c1;
+       Database Response: Query executed successfully. Rows affected: 1
+       Query Execution Time: 0.009369 seconds
+
+       OUTPUT COMPARISON:
+       +--------------------------------------------------+---------------------------------------------+
+       | EXPECTED OUTPUT                                  | DATABASE OUTPUT (ACTUAL)                    |
+       +--------------------------------------------------+---------------------------------------------+
+       | Database is created successfully                 | Query executed successfully. Rows affected: 1|
+       +--------------------------------------------------+---------------------------------------------+
+       ======================================================================
+
+   The side-by-side box makes it easy to visually compare what the CSV
+   said SHOULD happen vs what MySQL ACTUALLY returned.
+
+
+6. COMPLETE WORKFLOW — HOW TO USE THE PROJECT
+================================================================================
+
+   STEP 0: ONE-TIME DATABASE SETUP
+   ──────────────────────────────────────────────────
+   Import the database schema into MySQL:
+
+       mysql -u root -p < ai_testing_test.sql
+
+   This creates the "ai_testing_test" database with 4 empty tables.
+
+
+   STEP 1: RUN THE TEST RUNNER
+   ──────────────────────────────────────────────────
+   Execute all 300 test cases:
+
+       python executor/test_runner.py
+
+   This will:
+   ✓ Connect to MySQL
+   ✓ Run all 300 SQL queries one by one
+   ✓ Record every response from the database
+   ✓ Save results to reports/response_1.txt (or response_2.txt, etc.)
+   ✓ Print a pass/fail summary
+
+
+   STEP 2: VALIDATE AND CREATE BASELINE
+   ──────────────────────────────────────────────────
+   Validate the response file:
+
+       python executor/validate_and_convert.py
+
+   FIRST TIME (no standard file exists):
+   ✓ Minutely validates all 300 test cases in the response file
+   ✓ If validation passes, creates standard_test_results.txt
+   ✓ The standard file includes side-by-side Expected vs Actual comparisons
+   ✓ This becomes the "golden reference" for all future runs
+
+   FUTURE TIMES (standard file already exists):
+   ✓ Minutely validates the new response file
+   ✓ Compares every test case against the standard baseline
+   ✓ Reports any regressions (tests that PASSED before but FAIL now)
+   ✓ Reports any output discrepancies (different database responses)
+   ✓ Saves report to response_validation_report.txt
+
+
+7. VISUAL WORKFLOW DIAGRAM
+================================================================================
+
+                        ┌─────────────────────┐
+                        │  300testcases.csv    │
+                        │  (Input: 300 SQL     │
+                        │   test cases)        │
+                        └──────────┬──────────┘
+                                   │
+                                   ▼
+                        ┌─────────────────────┐
+                        │  test_runner.py      │
+                        │  (Executes each SQL  │
+                        │   against MySQL DB)  │
+                        └──────────┬──────────┘
+                                   │
+                                   ▼
+                        ┌─────────────────────┐
+                        │  response_N.txt      │
+                        │  (Raw test results:  │
+                        │   ID, status, query, │
+                        │   DB response, time) │
+                        └──────────┬──────────┘
+                                   │
+                                   ▼
+                   ┌───────────────────────────────┐
+                   │   validate_and_convert.py      │
+                   │   (Uses validate_response.py)  │
+                   │                                │
+                   │   Minute Validation:           │
+                   │   • Field completeness         │
+                   │   • ID format (TCxxx)           │
+                   │   • Type validity              │
+                   │   • Status validity            │
+                   │   • CSV cross-reference        │
+                   │   • 100% coverage check        │
+                   └──────────┬────────────────────┘
+                              │
+                    ┌─────────┴──────────┐
+                    │                    │
+              ┌─────▼─────┐       ┌─────▼──────┐
+              │ FIRST RUN │       │ FUTURE RUN │
+              │           │       │            │
+              │ Standard  │       │ Compare    │
+              │ baseline  │       │ against    │
+              │ does NOT  │       │ baseline   │
+              │ exist     │       │            │
+              └─────┬─────┘       └─────┬──────┘
+                    │                    │
+                    ▼                    ▼
+          ┌──────────────┐    ┌──────────────────┐
+          │ CREATE       │    │ GENERATE         │
+          │ standard_    │    │ validation &     │
+          │ test_results │    │ regression       │
+          │ .txt         │    │ report           │
+          │              │    │                  │
+          │ (With side-  │    │ • Regressions    │
+          │  by-side     │    │ • Discrepancies  │
+          │  Expected vs │    │ • Match rate     │
+          │  Actual)     │    │                  │
+          └──────────────┘    └──────────────────┘
+
+
+8. OUTPUT FILES EXPLAINED
+================================================================================
+
+   FILE: response_N.txt (N = 1, 2, 3, ...)
+   ─────────────────────────────────────────
+   Generated by: test_runner.py
+   Contains: Raw database responses for all 300 test cases.
+   Naming: Sequential numbering makes it easy to identify which is latest.
+   Purpose: This is the raw output of a test execution run.
+
+   FILE: standard_test_results.txt
+   ─────────────────────────────────────────
+   Generated by: validate_and_convert.py (on first run only)
+   Contains: The validated, accepted test results with:
+       - Full test metadata (ID, Feature, Type, Status)
+       - The actual database response
+       - Side-by-side comparison boxes (Expected vs Actual output)
+   Purpose: This is the "golden reference" / baseline. All future test
+            runs are compared against this file.
+
+   FILE: response_validation_report.txt
+   ─────────────────────────────────────────
+   Generated by: validate_and_convert.py
+   Contains: Validation statistics and comparison results:
+       - How many test cases were valid/invalid
+       - Missing or duplicate test cases
+       - Regressions (PASS → FAIL)
+       - Output discrepancies
+       - Overall verdict (PASS/FAIL)
+   Purpose: Quick summary to know if the latest run is correct.
+
+   FILE: how_response_validation_works.txt
+   ─────────────────────────────────────────
+   Generated by: validate_and_convert.py
+   Contains: Auto-generated documentation explaining the validation
+             workflow in a simple format.
+   Purpose: Reference documentation.
+
+
+9. KEY DESIGN DECISIONS
+================================================================================
+
+   1. SEQUENTIAL RESPONSE FILES (response_1, response_2, response_3...)
+      Instead of timestamps, we use simple sequential numbers.
+      This makes it immediately obvious which file is the latest.
+
+   2. TWO-PHASE APPROACH (Baseline then Compare)
+      Phase 1 establishes what "correct" looks like.
+      Phase 2 checks if anything has changed or broken.
+      This is a standard "regression testing" approach.
+
+   3. SIDE-BY-SIDE COMPARISON
+      The standard file shows Expected Output and Database Output in
+      aligned columns, making it very easy to visually verify correctness.
+
+   4. MINUTE VALIDATION
+      Every field of every test case is checked — not just pass/fail.
+      This catches formatting issues, missing data, wrong test types, etc.
+
+   5. SETUP/FIXTURE SQL
+      Each test case can have precondition SQL (like creating a table
+      before testing a DROP TABLE query). The test runner extracts and
+      runs this automatically before the actual test query.
+
+   6. POSITIVE/NEGATIVE/EDGE CLASSIFICATION
+      - Positive: Normal operations that should succeed
+      - Negative: Invalid operations that should fail with a proper error
+      - Edge: Boundary conditions and unusual scenarios
+
+
+10. TECHNOLOGIES USED
+================================================================================
+
+   • Python 3            — Main programming language
+   • MySQL 8.0           — Database being tested
+   • mysql-connector     — Python library to connect to MySQL
+   • pandas              — For reading CSV and creating DataFrames
+   • Standard Library    — csv, re, os, time, datetime, pathlib, argparse
+
+
+================================================================================
+                          END OF EXPLANATION
+================================================================================

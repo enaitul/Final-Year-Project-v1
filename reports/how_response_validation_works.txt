@@ -1,0 +1,52 @@
+========================================
+HOW RESPONSE VALIDATION & BASELINE COMPARISON WORKS
+========================================
+
+1. Sequential Response Files
+   Every test execution automatically generates a sequentially numbered
+   response file in reports/:
+   - First run  -> reports/response_1.txt
+   - Second run -> reports/response_2.txt
+   - Third run  -> reports/response_3.txt, and so forth.
+   This makes it immediately obvious which run is the latest.
+
+2. Minute Validation
+   The validation system meticulously inspects the response file:
+   - Validates Test Case ID formatting (TCxxx)
+   - Confirms Test Type matches positive/negative/edge expectations
+   - Ensures execution status is valid (PASS/FAIL)
+   - Verifies SQL query executed and execution times
+   - Guarantees 100% test coverage against 300testcases.csv (no duplicates, no missing)
+
+3. Phase 1: First Run (Baseline Establishment)
+   On the initial run (when no standard file exists):
+   - The response file is minutely validated.
+   - If correct and passing, it is saved into the standard baseline:
+     reports/standard_test_results.txt
+   - Each test case displays the Expected Output and the Actual Database
+     Output side by side in an aligned comparison box.
+
+4. Phase 2: Future Runs (Regression & Output Comparison)
+   On all future test runs:
+   - The new response file is minutely validated.
+   - It is compared test-by-test against reports/standard_test_results.txt.
+   - It verifies:
+     a) Status consistency: Detects if any test case regressed from PASS to FAIL.
+     b) Output consistency: Compares database response against the standard output.
+   - Any discrepancies or regressions are highlighted in reports/response_validation_report.txt.
+
+5. Workflow Diagram
+
+Run Test Runner
+↓
+Generates response_N.txt (sequential: response_1, response_2...)
+↓
+Validate Response Minutely
+↓
+Is standard_test_results.txt present?
+  ├─ NO (First Run) ──> Store validated results as standard_test_results.txt
+  │                    (With Side-by-Side Expected vs Actual Comparison)
+  │
+  └─ YES (Future Run) ─> Compare response_N.txt against standard_test_results.txt
+                       Detect regressions & discrepancies
+                       Generate Validation & Comparison Report

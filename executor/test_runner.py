@@ -23,7 +23,7 @@ DB_CONFIG = {
     "database": "ai_testing_test"
 }
 
-CSV_FILE = "test_cases/300testcases.csv"
+CSV_FILE = "test_cases/independent_test_cases_4_375_fix.csv"
 REPORT_DIR = "reports"
 
 
@@ -148,16 +148,59 @@ def determine_expected_status(row):
 # ============================================================
 
 def extract_setup_sql(preconditions):
-    """Get only SQL after ``Setup:`` from a CSV precondition cell.
-
-    The CSV mixes setup SQL with beginner-friendly explanatory sentences.
-    This extracts the part after ``Setup:`` and stops before the standard
-    instruction beginning ``Execute this test`` (or before ``Cleanup:``).
     """
-    text = str(preconditions or "")
-    match = re.search(r"\bsetup:\s*(.*?)(?=\s+execute this test\b|\s+cleanup:|$)", text, re.IGNORECASE | re.DOTALL)
-    return match.group(1).strip() if match else ""
+    Extract only executable SQL from the Preconditions field.
 
+    The CSV may contain SQL followed by plain-English instructions.
+    Only the SQL setup portion should be executed.
+    """
+
+    text = str(preconditions or "").strip()
+
+    if not text or text.lower() == "nan":
+        return ""
+
+    # Get text after "Setup:"
+    setup_match = re.search(
+        r"\bsetup:\s*(.*)",
+        text,
+        re.IGNORECASE | re.DOTALL
+    )
+
+    if setup_match:
+        text = setup_match.group(1).strip()
+
+    # Stop before explanatory sections
+    text = re.split(
+        r"\b(?:execute this test|cleanup):",
+        text,
+        maxsplit=1,
+        flags=re.IGNORECASE
+    )[0].strip()
+
+    # Remove plain-English setup instructions.
+    prose_markers = [
+        r"\bexecute\s+this\s+test\s+using\s+the\s+project\s+database\b.*$",
+        r"\btest\s+using\s+the\s+project\s+database\b.*$",
+        r"\buse\s+the\s+shared\s+project\s+database\b.*$",
+        r"\buse\s+the\s+shared\s+database\b.*$",
+        r"\bshared\s+project\s+database\b.*$",
+        r"\breset\s+test\s+fixtures\b.*$",
+        r"\bthis\s+ensures\b.*$",
+        r"\bensures\s+a\s+clean\s+slate\b.*$",
+        r"\bnone\s+required\b.*$",
+        r"\bno\s+setup\s+required\b.*$",
+    ]
+
+    for marker in prose_markers:
+        text = re.sub(
+            marker,
+            "",
+            text,
+            flags=re.IGNORECASE | re.DOTALL
+        )
+
+    return text.strip()
 
 def split_setup_statements(setup_sql):
     """Split fixture SQL while keeping BEGIN ... END routines intact."""
@@ -228,15 +271,34 @@ def run_setup(cursor, connection, row):
 
     for statement in statements:
         cursor.execute(statement)
+
         if cursor.with_rows:
             cursor.fetchall()
+
+        try:
+            while cursor.nextset():
+                if cursor.with_rows:
+                    cursor.fetchall()
+        except mysql.connector.Error:
+            pass
+
+        try:
+            connection.consume_results()
+        except (AttributeError, mysql.connector.Error):
+            pass
+
         if re.match(r"\s*(START\s+TRANSACTION|BEGIN)\b", statement, re.IGNORECASE):
             has_open_transaction = True
 
-    # Standard fixtures need to be committed so an expected-error rollback
-    # does not remove the rows/tables that make the test meaningful.
     if statements and not has_open_transaction:
-        connection.commit()
+        try:
+            connection.commit()
+        except mysql.connector.Error:
+            try:
+                connection.consume_results()
+            except (AttributeError, mysql.connector.Error):
+                pass
+            connection.commit()
 
 
 # ============================================================
@@ -703,7 +765,11 @@ def main():
 
         results.append(test_result)
 
-        print(f"  → {test_result['Status']} | {test_result['Test_Case_ID']} | {test_result['Feature_Name']}")
+    print(
+        f"  → {test_result['Status']} | "
+        f"{test_result['Test_Case_ID']} | "
+        f"{test_result['Feature_Name']}"
+    )
 
     # --------------------------------------------------------
     # Close database connection

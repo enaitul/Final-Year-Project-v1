@@ -1,0 +1,150 @@
+======================================================================
+Test Case ID: TC0001
+Test Type: Positive
+Test Description: Create a new scratch database
+Execution Status: PASS
+Query Executed: CREATE DATABASE ai_testing_scratch_c1;
+Database Response: Query executed successfully. Rows affected: 1
+Query Execution Time: 0.049856 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC0002
+Test Type: Positive
+Test Description: Create a new scratch database
+Execution Status: PASS
+Query Executed: CREATE DATABASE ai_testing_scratch_c1_v1;
+Database Response: Query executed successfully. Rows affected: 1
+Query Execution Time: 0.034286 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC0003
+Test Type: Positive
+Test Description: Create a new scratch database
+Execution Status: PASS
+Query Executed: CREATE DATABASE ai_testing_scratch_c1_v2;
+Database Response: Query executed successfully. Rows affected: 1
+Query Execution Time: 0.040253 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC0004
+Test Type: Positive
+Test Description: Create a new scratch database
+Execution Status: PASS
+Query Executed: CREATE DATABASE ai_testing_scratch_c1_v3;
+Database Response: Query executed successfully. Rows affected: 1
+Query Execution Time: 0.038319 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC0005
+Test Type: Positive
+Test Description: Create a new scratch database
+Execution Status: PASS
+Query Executed: CREATE DATABASE ai_testing_scratch_c1_v4;
+Database Response: Query executed successfully. Rows affected: 1
+Query Execution Time: 0.033312 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC0006
+Test Type: Negative
+Test Description: Attempt to create a database that already exists without IF NOT EXISTS
+Execution Status: PASS
+Query Executed: CREATE DATABASE ai_testing_scratch_c2;
+Database Response: 1007 (HY000): Can't create database 'ai_testing_scratch_c2'; database exists
+Query Execution Time: 0.012002 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC0007
+Test Type: Negative
+Test Description: Attempt to create a database that already exists without IF NOT EXISTS
+Execution Status: PASS
+Query Executed: CREATE DATABASE ai_testing_scratch_c2_v1;
+Database Response: 1007 (HY000): Can't create database 'ai_testing_scratch_c2_v1'; database exists
+Query Execution Time: 0.007580 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC0008
+Test Type: Negative
+Test Description: Attempt to create a database that already exists without IF NOT EXISTS
+Execution Status: PASS
+Query Executed: CREATE DATABASE ai_testing_scratch_c2_v2;
+Database Response: 1007 (HY000): Can't create database 'ai_testing_scratch_c2_v2'; database exists
+Query Execution Time: 0.010012 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC0009
+Test Type: Negative
+Test Description: Attempt to create a database that already exists without IF NOT EXISTS
+Execution Status: PASS
+Query Executed: CREATE DATABASE ai_testing_scratch_c2_v3;
+Database Response: 1007 (HY000): Can't create database 'ai_testing_scratch_c2_v3'; database exists
+Query Execution Time: 0.012800 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC0010
+Test Type: Negative
+Test Description: Attempt to create a database that already exists without IF NOT EXISTS
+Execution Status: PASS
+Query Executed: CREATE DATABASE ai_testing_scratch_c2_v4;
+Database Response: 1007 (HY000): Can't create database 'ai_testing_scratch_c2_v4'; database exists
+Query Execution Time: 0.007841 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC0011
+Test Type: Edge
+Test Description: Create database using IF NOT EXISTS on an existing database
+Execution Status: PASS
+Query Executed: CREATE DATABASE IF NOT EXISTS ai_testing_scratch_c3;
+Database Response: Query executed successfully. Rows affected: 1
+Query Execution Time: 0.015712 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC0012
+Test Type: Edge
+Test Description: Create database using IF NOT EXISTS on an existing database
+Execution Status: PASS
+Query Executed: CREATE DATABASE IF NOT EXISTS ai_testing_scratch_c3_v1;
+Database Response: Query executed successfully. Rows affected: 1
+Query Execution Time: 0.010489 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC0013
+Test Type: Edge
+Test Description: Create database using IF NOT EXISTS on an existing database
+Execution Status: PASS
+Query Executed: CREATE DATABASE IF NOT EXISTS ai_testing_scratch_c3_v2;
+Database Response: Query executed successfully. Rows affected: 1
+Query Execution Time: 0.011929 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC0014
+Test Type: Edge
+Test Description: Create database using IF NOT EXISTS on an existing database
+Execution Status: PASS
+Query Executed: CREATE DATABASE IF NOT EXISTS ai_testing_scratch_c3_v3;
+Database Response: Query executed successfully. Rows affected: 1
+Query Execution Time: 0.014229 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC0015
+Test Type: Edge
+Test Description: Create database using IF NOT EXISTS on an existing database
+Execution Status: PASS
+Query Executed: CREATE DATABASE IF NOT EXISTS ai_testing_scratch_c3_v4;
+Database Response: Query executed successfully. Rows affected: 1
+Query Execution Time: 0.011893 seconds
+======================================================================
+

@@ -1,0 +1,50 @@
+======================================================================
+Test Case ID: TC216
+Test Type: Negative
+Test Description: INSERT NULL values variation 6
+Execution Status: FAIL
+Query Executed: INSERT INTO t_f015_6(id,name) VALUES (10,NULL);
+Database Response: Query executed successfully. Rows affected: 1
+Query Execution Time: 0.260997 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC217
+Test Type: Negative
+Test Description: INSERT NULL values variation 7
+Execution Status: FAIL
+Query Executed: INSERT INTO t_f015_7(id,name) VALUES (10,NULL);
+Database Response: Query executed successfully. Rows affected: 1
+Query Execution Time: 0.159063 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC218
+Test Type: Negative
+Test Description: INSERT NULL values variation 8
+Execution Status: FAIL
+Query Executed: INSERT INTO t_f015_8(id,name) VALUES (10,NULL);
+Database Response: Query executed successfully. Rows affected: 1
+Query Execution Time: 0.179020 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC219
+Test Type: Negative
+Test Description: INSERT NULL values variation 9
+Execution Status: FAIL
+Query Executed: INSERT INTO t_f015_9(id,name) VALUES (10,NULL);
+Database Response: Query executed successfully. Rows affected: 1
+Query Execution Time: 0.166913 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC220
+Test Type: Negative
+Test Description: INSERT NULL values variation 10
+Execution Status: FAIL
+Query Executed: INSERT INTO t_f015_10(id,name) VALUES (10,NULL);
+Database Response: Query executed successfully. Rows affected: 1
+Query Execution Time: 0.193872 seconds
+======================================================================
+

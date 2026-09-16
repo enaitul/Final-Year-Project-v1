@@ -1,0 +1,4345 @@
+======================================================================
+Test Case ID: TC1126
+Test Type: Positive
+Test Description: EXISTS variation 1
+Execution Status: PASS
+Query Executed: SELECT * FROM t_f076_1 x WHERE EXISTS (SELECT 1 FROM t_f076_1 y WHERE y.id=x.id);
+Database Response: Rows returned: 3
++----+-------+--------------+-----+----------+---------+--------------+
+| id | name  | email        | age | salary   | dept_id | joining_date |
++----+-------+--------------+-----+----------+---------+--------------+
+| 1  | Alice | alice@x.test | 25  | 30000.00 | 1       | 2024-01-10   |
+| 2  | Bob   | bob@x.test   | 30  | 45000.00 | 1       | 2023-01-10   |
+| 3  | Cara  | cara@x.test  | 35  | 60000.00 | 2       | 2022-01-10   |
++----+-------+--------------+-----+----------+---------+--------------+
+Query Execution Time: 0.167671 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1127
+Test Type: Positive
+Test Description: EXISTS variation 2
+Execution Status: PASS
+Query Executed: SELECT * FROM t_f076_2 x WHERE EXISTS (SELECT 1 FROM t_f076_2 y WHERE y.id=x.id);
+Database Response: Rows returned: 3
++----+-------+--------------+-----+----------+---------+--------------+
+| id | name  | email        | age | salary   | dept_id | joining_date |
++----+-------+--------------+-----+----------+---------+--------------+
+| 1  | Alice | alice@x.test | 25  | 30000.00 | 1       | 2024-01-10   |
+| 2  | Bob   | bob@x.test   | 30  | 45000.00 | 1       | 2023-01-10   |
+| 3  | Cara  | cara@x.test  | 35  | 60000.00 | 2       | 2022-01-10   |
++----+-------+--------------+-----+----------+---------+--------------+
+Query Execution Time: 0.188621 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1128
+Test Type: Positive
+Test Description: EXISTS variation 3
+Execution Status: PASS
+Query Executed: SELECT * FROM t_f076_3 x WHERE EXISTS (SELECT 1 FROM t_f076_3 y WHERE y.id=x.id);
+Database Response: Rows returned: 3
++----+-------+--------------+-----+----------+---------+--------------+
+| id | name  | email        | age | salary   | dept_id | joining_date |
++----+-------+--------------+-----+----------+---------+--------------+
+| 1  | Alice | alice@x.test | 25  | 30000.00 | 1       | 2024-01-10   |
+| 2  | Bob   | bob@x.test   | 30  | 45000.00 | 1       | 2023-01-10   |
+| 3  | Cara  | cara@x.test  | 35  | 60000.00 | 2       | 2022-01-10   |
++----+-------+--------------+-----+----------+---------+--------------+
+Query Execution Time: 0.162745 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1129
+Test Type: Positive
+Test Description: EXISTS variation 4
+Execution Status: PASS
+Query Executed: SELECT * FROM t_f076_4 x WHERE EXISTS (SELECT 1 FROM t_f076_4 y WHERE y.id=x.id);
+Database Response: Rows returned: 3
++----+-------+--------------+-----+----------+---------+--------------+
+| id | name  | email        | age | salary   | dept_id | joining_date |
++----+-------+--------------+-----+----------+---------+--------------+
+| 1  | Alice | alice@x.test | 25  | 30000.00 | 1       | 2024-01-10   |
+| 2  | Bob   | bob@x.test   | 30  | 45000.00 | 1       | 2023-01-10   |
+| 3  | Cara  | cara@x.test  | 35  | 60000.00 | 2       | 2022-01-10   |
++----+-------+--------------+-----+----------+---------+--------------+
+Query Execution Time: 0.159971 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1130
+Test Type: Positive
+Test Description: EXISTS variation 5
+Execution Status: PASS
+Query Executed: SELECT * FROM t_f076_5 x WHERE EXISTS (SELECT 1 FROM t_f076_5 y WHERE y.id=x.id);
+Database Response: Rows returned: 3
++----+-------+--------------+-----+----------+---------+--------------+
+| id | name  | email        | age | salary   | dept_id | joining_date |
++----+-------+--------------+-----+----------+---------+--------------+
+| 1  | Alice | alice@x.test | 25  | 30000.00 | 1       | 2024-01-10   |
+| 2  | Bob   | bob@x.test   | 30  | 45000.00 | 1       | 2023-01-10   |
+| 3  | Cara  | cara@x.test  | 35  | 60000.00 | 2       | 2022-01-10   |
++----+-------+--------------+-----+----------+---------+--------------+
+Query Execution Time: 0.348002 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1131
+Test Type: Negative
+Test Description: EXISTS variation 6
+Execution Status: PASS
+Query Executed: SELECT * FROM t_f076_6 x WHERE EXISTS (SELECT 1 FROM t_f076_6 y WHERE y.missing_col=x.id);
+Database Response: 1054 (42S22): Unknown column 'y.missing_col' in 'where clause'
+Query Execution Time: 0.296750 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1132
+Test Type: Negative
+Test Description: EXISTS variation 7
+Execution Status: PASS
+Query Executed: SELECT * FROM t_f076_7 x WHERE EXISTS (SELECT 1 FROM t_f076_7 y WHERE y.missing_col=x.id);
+Database Response: 1054 (42S22): Unknown column 'y.missing_col' in 'where clause'
+Query Execution Time: 0.150716 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1133
+Test Type: Negative
+Test Description: EXISTS variation 8
+Execution Status: PASS
+Query Executed: SELECT * FROM t_f076_8 x WHERE EXISTS (SELECT 1 FROM t_f076_8 y WHERE y.missing_col=x.id);
+Database Response: 1054 (42S22): Unknown column 'y.missing_col' in 'where clause'
+Query Execution Time: 0.144786 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1134
+Test Type: Negative
+Test Description: EXISTS variation 9
+Execution Status: PASS
+Query Executed: SELECT * FROM t_f076_9 x WHERE EXISTS (SELECT 1 FROM t_f076_9 y WHERE y.missing_col=x.id);
+Database Response: 1054 (42S22): Unknown column 'y.missing_col' in 'where clause'
+Query Execution Time: 0.257989 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1135
+Test Type: Negative
+Test Description: EXISTS variation 10
+Execution Status: PASS
+Query Executed: SELECT * FROM t_f076_10 x WHERE EXISTS (SELECT 1 FROM t_f076_10 y WHERE y.missing_col=x.id);
+Database Response: 1054 (42S22): Unknown column 'y.missing_col' in 'where clause'
+Query Execution Time: 0.144668 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1136
+Test Type: Edge
+Test Description: EXISTS variation 11
+Execution Status: PASS
+Query Executed: SELECT * FROM t_f076_11 x WHERE EXISTS (SELECT 1 FROM t_f076_11 y WHERE y.id=x.id);
+Database Response: Rows returned: 3
++----+-------+--------------+-----+----------+---------+--------------+
+| id | name  | email        | age | salary   | dept_id | joining_date |
++----+-------+--------------+-----+----------+---------+--------------+
+| 1  | Alice | alice@x.test | 25  | 30000.00 | 1       | 2024-01-10   |
+| 2  | Bob   | bob@x.test   | 30  | 45000.00 | 1       | 2023-01-10   |
+| 3  | Cara  | cara@x.test  | 35  | 60000.00 | 2       | 2022-01-10   |
++----+-------+--------------+-----+----------+---------+--------------+
+Query Execution Time: 0.144717 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1137
+Test Type: Edge
+Test Description: EXISTS variation 12
+Execution Status: PASS
+Query Executed: SELECT * FROM t_f076_12 x WHERE EXISTS (SELECT 1 FROM t_f076_12 y WHERE y.id=x.id);
+Database Response: Rows returned: 3
++----+-------+--------------+-----+----------+---------+--------------+
+| id | name  | email        | age | salary   | dept_id | joining_date |
++----+-------+--------------+-----+----------+---------+--------------+
+| 1  | Alice | alice@x.test | 25  | 30000.00 | 1       | 2024-01-10   |
+| 2  | Bob   | bob@x.test   | 30  | 45000.00 | 1       | 2023-01-10   |
+| 3  | Cara  | cara@x.test  | 35  | 60000.00 | 2       | 2022-01-10   |
++----+-------+--------------+-----+----------+---------+--------------+
+Query Execution Time: 0.143013 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1138
+Test Type: Edge
+Test Description: EXISTS variation 13
+Execution Status: PASS
+Query Executed: SELECT * FROM t_f076_13 x WHERE EXISTS (SELECT 1 FROM t_f076_13 y WHERE y.id=x.id);
+Database Response: Rows returned: 3
++----+-------+--------------+-----+----------+---------+--------------+
+| id | name  | email        | age | salary   | dept_id | joining_date |
++----+-------+--------------+-----+----------+---------+--------------+
+| 1  | Alice | alice@x.test | 25  | 30000.00 | 1       | 2024-01-10   |
+| 2  | Bob   | bob@x.test   | 30  | 45000.00 | 1       | 2023-01-10   |
+| 3  | Cara  | cara@x.test  | 35  | 60000.00 | 2       | 2022-01-10   |
++----+-------+--------------+-----+----------+---------+--------------+
+Query Execution Time: 0.155797 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1139
+Test Type: Edge
+Test Description: EXISTS variation 14
+Execution Status: PASS
+Query Executed: SELECT * FROM t_f076_14 x WHERE EXISTS (SELECT 1 FROM t_f076_14 y WHERE y.id=x.id);
+Database Response: Rows returned: 3
++----+-------+--------------+-----+----------+---------+--------------+
+| id | name  | email        | age | salary   | dept_id | joining_date |
++----+-------+--------------+-----+----------+---------+--------------+
+| 1  | Alice | alice@x.test | 25  | 30000.00 | 1       | 2024-01-10   |
+| 2  | Bob   | bob@x.test   | 30  | 45000.00 | 1       | 2023-01-10   |
+| 3  | Cara  | cara@x.test  | 35  | 60000.00 | 2       | 2022-01-10   |
++----+-------+--------------+-----+----------+---------+--------------+
+Query Execution Time: 0.132170 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1140
+Test Type: Edge
+Test Description: EXISTS variation 15
+Execution Status: PASS
+Query Executed: SELECT * FROM t_f076_15 x WHERE EXISTS (SELECT 1 FROM t_f076_15 y WHERE y.id=x.id);
+Database Response: Rows returned: 3
++----+-------+--------------+-----+----------+---------+--------------+
+| id | name  | email        | age | salary   | dept_id | joining_date |
++----+-------+--------------+-----+----------+---------+--------------+
+| 1  | Alice | alice@x.test | 25  | 30000.00 | 1       | 2024-01-10   |
+| 2  | Bob   | bob@x.test   | 30  | 45000.00 | 1       | 2023-01-10   |
+| 3  | Cara  | cara@x.test  | 35  | 60000.00 | 2       | 2022-01-10   |
++----+-------+--------------+-----+----------+---------+--------------+
+Query Execution Time: 0.251047 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1141
+Test Type: Positive
+Test Description: NOT EXISTS variation 1
+Execution Status: PASS
+Query Executed: SELECT * FROM t_f077_1 x WHERE NOT EXISTS (SELECT 1 FROM t_f077_1 y WHERE y.id=9999);
+Database Response: Rows returned: 3
++----+-------+--------------+-----+----------+---------+--------------+
+| id | name  | email        | age | salary   | dept_id | joining_date |
++----+-------+--------------+-----+----------+---------+--------------+
+| 1  | Alice | alice@x.test | 25  | 30000.00 | 1       | 2024-01-10   |
+| 2  | Bob   | bob@x.test   | 30  | 45000.00 | 1       | 2023-01-10   |
+| 3  | Cara  | cara@x.test  | 35  | 60000.00 | 2       | 2022-01-10   |
++----+-------+--------------+-----+----------+---------+--------------+
+Query Execution Time: 0.205389 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1142
+Test Type: Positive
+Test Description: NOT EXISTS variation 2
+Execution Status: PASS
+Query Executed: SELECT * FROM t_f077_2 x WHERE NOT EXISTS (SELECT 1 FROM t_f077_2 y WHERE y.id=9999);
+Database Response: Rows returned: 3
++----+-------+--------------+-----+----------+---------+--------------+
+| id | name  | email        | age | salary   | dept_id | joining_date |
++----+-------+--------------+-----+----------+---------+--------------+
+| 1  | Alice | alice@x.test | 25  | 30000.00 | 1       | 2024-01-10   |
+| 2  | Bob   | bob@x.test   | 30  | 45000.00 | 1       | 2023-01-10   |
+| 3  | Cara  | cara@x.test  | 35  | 60000.00 | 2       | 2022-01-10   |
++----+-------+--------------+-----+----------+---------+--------------+
+Query Execution Time: 0.166416 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1143
+Test Type: Positive
+Test Description: NOT EXISTS variation 3
+Execution Status: PASS
+Query Executed: SELECT * FROM t_f077_3 x WHERE NOT EXISTS (SELECT 1 FROM t_f077_3 y WHERE y.id=9999);
+Database Response: Rows returned: 3
++----+-------+--------------+-----+----------+---------+--------------+
+| id | name  | email        | age | salary   | dept_id | joining_date |
++----+-------+--------------+-----+----------+---------+--------------+
+| 1  | Alice | alice@x.test | 25  | 30000.00 | 1       | 2024-01-10   |
+| 2  | Bob   | bob@x.test   | 30  | 45000.00 | 1       | 2023-01-10   |
+| 3  | Cara  | cara@x.test  | 35  | 60000.00 | 2       | 2022-01-10   |
++----+-------+--------------+-----+----------+---------+--------------+
+Query Execution Time: 0.229283 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1144
+Test Type: Positive
+Test Description: NOT EXISTS variation 4
+Execution Status: PASS
+Query Executed: SELECT * FROM t_f077_4 x WHERE NOT EXISTS (SELECT 1 FROM t_f077_4 y WHERE y.id=9999);
+Database Response: Rows returned: 3
++----+-------+--------------+-----+----------+---------+--------------+
+| id | name  | email        | age | salary   | dept_id | joining_date |
++----+-------+--------------+-----+----------+---------+--------------+
+| 1  | Alice | alice@x.test | 25  | 30000.00 | 1       | 2024-01-10   |
+| 2  | Bob   | bob@x.test   | 30  | 45000.00 | 1       | 2023-01-10   |
+| 3  | Cara  | cara@x.test  | 35  | 60000.00 | 2       | 2022-01-10   |
++----+-------+--------------+-----+----------+---------+--------------+
+Query Execution Time: 0.162840 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1145
+Test Type: Positive
+Test Description: NOT EXISTS variation 5
+Execution Status: PASS
+Query Executed: SELECT * FROM t_f077_5 x WHERE NOT EXISTS (SELECT 1 FROM t_f077_5 y WHERE y.id=9999);
+Database Response: Rows returned: 3
++----+-------+--------------+-----+----------+---------+--------------+
+| id | name  | email        | age | salary   | dept_id | joining_date |
++----+-------+--------------+-----+----------+---------+--------------+
+| 1  | Alice | alice@x.test | 25  | 30000.00 | 1       | 2024-01-10   |
+| 2  | Bob   | bob@x.test   | 30  | 45000.00 | 1       | 2023-01-10   |
+| 3  | Cara  | cara@x.test  | 35  | 60000.00 | 2       | 2022-01-10   |
++----+-------+--------------+-----+----------+---------+--------------+
+Query Execution Time: 0.250685 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1146
+Test Type: Negative
+Test Description: NOT EXISTS variation 6
+Execution Status: PASS
+Query Executed: SELECT * FROM t_f077_6 x WHERE NOT EXISTS (SELECT 1 FROM missing_t_f077_6 y WHERE y.id=x.id);
+Database Response: 1146 (42S02): Table 'ai_testing_test.missing_t_f077_6' doesn't exist
+Query Execution Time: 0.157369 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1147
+Test Type: Negative
+Test Description: NOT EXISTS variation 7
+Execution Status: PASS
+Query Executed: SELECT * FROM t_f077_7 x WHERE NOT EXISTS (SELECT 1 FROM missing_t_f077_7 y WHERE y.id=x.id);
+Database Response: 1146 (42S02): Table 'ai_testing_test.missing_t_f077_7' doesn't exist
+Query Execution Time: 0.165670 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1148
+Test Type: Negative
+Test Description: NOT EXISTS variation 8
+Execution Status: PASS
+Query Executed: SELECT * FROM t_f077_8 x WHERE NOT EXISTS (SELECT 1 FROM missing_t_f077_8 y WHERE y.id=x.id);
+Database Response: 1146 (42S02): Table 'ai_testing_test.missing_t_f077_8' doesn't exist
+Query Execution Time: 0.129964 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1149
+Test Type: Negative
+Test Description: NOT EXISTS variation 9
+Execution Status: PASS
+Query Executed: SELECT * FROM t_f077_9 x WHERE NOT EXISTS (SELECT 1 FROM missing_t_f077_9 y WHERE y.id=x.id);
+Database Response: 1146 (42S02): Table 'ai_testing_test.missing_t_f077_9' doesn't exist
+Query Execution Time: 0.183388 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1150
+Test Type: Negative
+Test Description: NOT EXISTS variation 10
+Execution Status: PASS
+Query Executed: SELECT * FROM t_f077_10 x WHERE NOT EXISTS (SELECT 1 FROM missing_t_f077_10 y WHERE y.id=x.id);
+Database Response: 1146 (42S02): Table 'ai_testing_test.missing_t_f077_10' doesn't exist
+Query Execution Time: 0.141669 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1151
+Test Type: Edge
+Test Description: NOT EXISTS variation 11
+Execution Status: PASS
+Query Executed: SELECT * FROM t_f077_11 x WHERE NOT EXISTS (SELECT 1 FROM t_f077_11 y WHERE y.id=9999);
+Database Response: Rows returned: 3
++----+-------+--------------+-----+----------+---------+--------------+
+| id | name  | email        | age | salary   | dept_id | joining_date |
++----+-------+--------------+-----+----------+---------+--------------+
+| 1  | Alice | alice@x.test | 25  | 30000.00 | 1       | 2024-01-10   |
+| 2  | Bob   | bob@x.test   | 30  | 45000.00 | 1       | 2023-01-10   |
+| 3  | Cara  | cara@x.test  | 35  | 60000.00 | 2       | 2022-01-10   |
++----+-------+--------------+-----+----------+---------+--------------+
+Query Execution Time: 0.305550 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1152
+Test Type: Edge
+Test Description: NOT EXISTS variation 12
+Execution Status: PASS
+Query Executed: SELECT * FROM t_f077_12 x WHERE NOT EXISTS (SELECT 1 FROM t_f077_12 y WHERE y.id=9999);
+Database Response: Rows returned: 3
++----+-------+--------------+-----+----------+---------+--------------+
+| id | name  | email        | age | salary   | dept_id | joining_date |
++----+-------+--------------+-----+----------+---------+--------------+
+| 1  | Alice | alice@x.test | 25  | 30000.00 | 1       | 2024-01-10   |
+| 2  | Bob   | bob@x.test   | 30  | 45000.00 | 1       | 2023-01-10   |
+| 3  | Cara  | cara@x.test  | 35  | 60000.00 | 2       | 2022-01-10   |
++----+-------+--------------+-----+----------+---------+--------------+
+Query Execution Time: 2.965810 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1153
+Test Type: Edge
+Test Description: NOT EXISTS variation 13
+Execution Status: PASS
+Query Executed: SELECT * FROM t_f077_13 x WHERE NOT EXISTS (SELECT 1 FROM t_f077_13 y WHERE y.id=9999);
+Database Response: Rows returned: 3
++----+-------+--------------+-----+----------+---------+--------------+
+| id | name  | email        | age | salary   | dept_id | joining_date |
++----+-------+--------------+-----+----------+---------+--------------+
+| 1  | Alice | alice@x.test | 25  | 30000.00 | 1       | 2024-01-10   |
+| 2  | Bob   | bob@x.test   | 30  | 45000.00 | 1       | 2023-01-10   |
+| 3  | Cara  | cara@x.test  | 35  | 60000.00 | 2       | 2022-01-10   |
++----+-------+--------------+-----+----------+---------+--------------+
+Query Execution Time: 0.247663 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1154
+Test Type: Edge
+Test Description: NOT EXISTS variation 14
+Execution Status: PASS
+Query Executed: SELECT * FROM t_f077_14 x WHERE NOT EXISTS (SELECT 1 FROM t_f077_14 y WHERE y.id=9999);
+Database Response: Rows returned: 3
++----+-------+--------------+-----+----------+---------+--------------+
+| id | name  | email        | age | salary   | dept_id | joining_date |
++----+-------+--------------+-----+----------+---------+--------------+
+| 1  | Alice | alice@x.test | 25  | 30000.00 | 1       | 2024-01-10   |
+| 2  | Bob   | bob@x.test   | 30  | 45000.00 | 1       | 2023-01-10   |
+| 3  | Cara  | cara@x.test  | 35  | 60000.00 | 2       | 2022-01-10   |
++----+-------+--------------+-----+----------+---------+--------------+
+Query Execution Time: 0.349736 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1155
+Test Type: Edge
+Test Description: NOT EXISTS variation 15
+Execution Status: PASS
+Query Executed: SELECT * FROM t_f077_15 x WHERE NOT EXISTS (SELECT 1 FROM t_f077_15 y WHERE y.id=9999);
+Database Response: Rows returned: 3
++----+-------+--------------+-----+----------+---------+--------------+
+| id | name  | email        | age | salary   | dept_id | joining_date |
++----+-------+--------------+-----+----------+---------+--------------+
+| 1  | Alice | alice@x.test | 25  | 30000.00 | 1       | 2024-01-10   |
+| 2  | Bob   | bob@x.test   | 30  | 45000.00 | 1       | 2023-01-10   |
+| 3  | Cara  | cara@x.test  | 35  | 60000.00 | 2       | 2022-01-10   |
++----+-------+--------------+-----+----------+---------+--------------+
+Query Execution Time: 0.147484 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1156
+Test Type: Positive
+Test Description: UNION variation 1
+Execution Status: PASS
+Query Executed: SELECT name FROM t_f078_1 WHERE id=1 UNION SELECT name FROM t_f078_1 WHERE id=2;
+Database Response: Rows returned: 2
++-------+
+| name  |
++-------+
+| Alice |
+| Bob   |
++-------+
+Query Execution Time: 0.187061 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1157
+Test Type: Positive
+Test Description: UNION variation 2
+Execution Status: PASS
+Query Executed: SELECT name FROM t_f078_2 WHERE id=1 UNION SELECT name FROM t_f078_2 WHERE id=2;
+Database Response: Rows returned: 2
++-------+
+| name  |
++-------+
+| Alice |
+| Bob   |
++-------+
+Query Execution Time: 0.173233 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1158
+Test Type: Positive
+Test Description: UNION variation 3
+Execution Status: PASS
+Query Executed: SELECT name FROM t_f078_3 WHERE id=1 UNION SELECT name FROM t_f078_3 WHERE id=2;
+Database Response: Rows returned: 2
++-------+
+| name  |
++-------+
+| Alice |
+| Bob   |
++-------+
+Query Execution Time: 0.157483 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1159
+Test Type: Positive
+Test Description: UNION variation 4
+Execution Status: PASS
+Query Executed: SELECT name FROM t_f078_4 WHERE id=1 UNION SELECT name FROM t_f078_4 WHERE id=2;
+Database Response: Rows returned: 2
++-------+
+| name  |
++-------+
+| Alice |
+| Bob   |
++-------+
+Query Execution Time: 0.241953 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1160
+Test Type: Positive
+Test Description: UNION variation 5
+Execution Status: PASS
+Query Executed: SELECT name FROM t_f078_5 WHERE id=1 UNION SELECT name FROM t_f078_5 WHERE id=2;
+Database Response: Rows returned: 2
++-------+
+| name  |
++-------+
+| Alice |
+| Bob   |
++-------+
+Query Execution Time: 0.188831 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1161
+Test Type: Negative
+Test Description: UNION variation 6
+Execution Status: PASS
+Query Executed: SELECT name FROM t_f078_6 UNION SELECT id,name FROM t_f078_6;
+Database Response: 1222 (21000): The used SELECT statements have a different number of columns
+Query Execution Time: 0.173764 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1162
+Test Type: Negative
+Test Description: UNION variation 7
+Execution Status: PASS
+Query Executed: SELECT name FROM t_f078_7 UNION SELECT id,name FROM t_f078_7;
+Database Response: 1222 (21000): The used SELECT statements have a different number of columns
+Query Execution Time: 0.143940 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1163
+Test Type: Negative
+Test Description: UNION variation 8
+Execution Status: PASS
+Query Executed: SELECT name FROM t_f078_8 UNION SELECT id,name FROM t_f078_8;
+Database Response: 1222 (21000): The used SELECT statements have a different number of columns
+Query Execution Time: 0.214989 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1164
+Test Type: Negative
+Test Description: UNION variation 9
+Execution Status: PASS
+Query Executed: SELECT name FROM t_f078_9 UNION SELECT id,name FROM t_f078_9;
+Database Response: 1222 (21000): The used SELECT statements have a different number of columns
+Query Execution Time: 0.263025 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1165
+Test Type: Negative
+Test Description: UNION variation 10
+Execution Status: PASS
+Query Executed: SELECT name FROM t_f078_10 UNION SELECT id,name FROM t_f078_10;
+Database Response: 1222 (21000): The used SELECT statements have a different number of columns
+Query Execution Time: 0.146797 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1166
+Test Type: Edge
+Test Description: UNION variation 11
+Execution Status: PASS
+Query Executed: SELECT name FROM t_f078_11 WHERE id=1 UNION SELECT name FROM t_f078_11 WHERE id=2;
+Database Response: Rows returned: 2
++-------+
+| name  |
++-------+
+| Alice |
+| Bob   |
++-------+
+Query Execution Time: 0.161233 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1167
+Test Type: Edge
+Test Description: UNION variation 12
+Execution Status: PASS
+Query Executed: SELECT name FROM t_f078_12 WHERE id=1 UNION SELECT name FROM t_f078_12 WHERE id=2;
+Database Response: Rows returned: 2
++-------+
+| name  |
++-------+
+| Alice |
+| Bob   |
++-------+
+Query Execution Time: 0.188931 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1168
+Test Type: Edge
+Test Description: UNION variation 13
+Execution Status: PASS
+Query Executed: SELECT name FROM t_f078_13 WHERE id=1 UNION SELECT name FROM t_f078_13 WHERE id=2;
+Database Response: Rows returned: 2
++-------+
+| name  |
++-------+
+| Alice |
+| Bob   |
++-------+
+Query Execution Time: 0.161824 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1169
+Test Type: Edge
+Test Description: UNION variation 14
+Execution Status: PASS
+Query Executed: SELECT name FROM t_f078_14 WHERE id=1 UNION SELECT name FROM t_f078_14 WHERE id=2;
+Database Response: Rows returned: 2
++-------+
+| name  |
++-------+
+| Alice |
+| Bob   |
++-------+
+Query Execution Time: 0.153292 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1170
+Test Type: Edge
+Test Description: UNION variation 15
+Execution Status: PASS
+Query Executed: SELECT name FROM t_f078_15 WHERE id=1 UNION SELECT name FROM t_f078_15 WHERE id=2;
+Database Response: Rows returned: 2
++-------+
+| name  |
++-------+
+| Alice |
+| Bob   |
++-------+
+Query Execution Time: 0.308469 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1171
+Test Type: Positive
+Test Description: UNION ALL variation 1
+Execution Status: PASS
+Query Executed: SELECT name FROM t_f079_1 WHERE id=1 UNION ALL SELECT name FROM t_f079_1 WHERE id=1;
+Database Response: Rows returned: 2
++-------+
+| name  |
++-------+
+| Alice |
+| Alice |
++-------+
+Query Execution Time: 0.189901 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1172
+Test Type: Positive
+Test Description: UNION ALL variation 2
+Execution Status: PASS
+Query Executed: SELECT name FROM t_f079_2 WHERE id=1 UNION ALL SELECT name FROM t_f079_2 WHERE id=1;
+Database Response: Rows returned: 2
++-------+
+| name  |
++-------+
+| Alice |
+| Alice |
++-------+
+Query Execution Time: 0.168273 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1173
+Test Type: Positive
+Test Description: UNION ALL variation 3
+Execution Status: PASS
+Query Executed: SELECT name FROM t_f079_3 WHERE id=1 UNION ALL SELECT name FROM t_f079_3 WHERE id=1;
+Database Response: Rows returned: 2
++-------+
+| name  |
++-------+
+| Alice |
+| Alice |
++-------+
+Query Execution Time: 0.186757 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1174
+Test Type: Positive
+Test Description: UNION ALL variation 4
+Execution Status: PASS
+Query Executed: SELECT name FROM t_f079_4 WHERE id=1 UNION ALL SELECT name FROM t_f079_4 WHERE id=1;
+Database Response: Rows returned: 2
++-------+
+| name  |
++-------+
+| Alice |
+| Alice |
++-------+
+Query Execution Time: 0.190563 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1175
+Test Type: Positive
+Test Description: UNION ALL variation 5
+Execution Status: PASS
+Query Executed: SELECT name FROM t_f079_5 WHERE id=1 UNION ALL SELECT name FROM t_f079_5 WHERE id=1;
+Database Response: Rows returned: 2
++-------+
+| name  |
++-------+
+| Alice |
+| Alice |
++-------+
+Query Execution Time: 0.249735 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1176
+Test Type: Negative
+Test Description: UNION ALL variation 6
+Execution Status: PASS
+Query Executed: SELECT name FROM t_f079_6 UNION ALL SELECT id,name FROM t_f079_6;
+Database Response: 1222 (21000): The used SELECT statements have a different number of columns
+Query Execution Time: 0.209535 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1177
+Test Type: Negative
+Test Description: UNION ALL variation 7
+Execution Status: PASS
+Query Executed: SELECT name FROM t_f079_7 UNION ALL SELECT id,name FROM t_f079_7;
+Database Response: 1222 (21000): The used SELECT statements have a different number of columns
+Query Execution Time: 0.159997 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1178
+Test Type: Negative
+Test Description: UNION ALL variation 8
+Execution Status: PASS
+Query Executed: SELECT name FROM t_f079_8 UNION ALL SELECT id,name FROM t_f079_8;
+Database Response: 1222 (21000): The used SELECT statements have a different number of columns
+Query Execution Time: 0.195677 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1179
+Test Type: Negative
+Test Description: UNION ALL variation 9
+Execution Status: PASS
+Query Executed: SELECT name FROM t_f079_9 UNION ALL SELECT id,name FROM t_f079_9;
+Database Response: 1222 (21000): The used SELECT statements have a different number of columns
+Query Execution Time: 0.331691 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1180
+Test Type: Negative
+Test Description: UNION ALL variation 10
+Execution Status: PASS
+Query Executed: SELECT name FROM t_f079_10 UNION ALL SELECT id,name FROM t_f079_10;
+Database Response: 1222 (21000): The used SELECT statements have a different number of columns
+Query Execution Time: 0.171280 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1181
+Test Type: Edge
+Test Description: UNION ALL variation 11
+Execution Status: PASS
+Query Executed: SELECT name FROM t_f079_11 WHERE id=1 UNION ALL SELECT name FROM t_f079_11 WHERE id=1;
+Database Response: Rows returned: 2
++-------+
+| name  |
++-------+
+| Alice |
+| Alice |
++-------+
+Query Execution Time: 0.158677 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1182
+Test Type: Edge
+Test Description: UNION ALL variation 12
+Execution Status: PASS
+Query Executed: SELECT name FROM t_f079_12 WHERE id=1 UNION ALL SELECT name FROM t_f079_12 WHERE id=1;
+Database Response: Rows returned: 2
++-------+
+| name  |
++-------+
+| Alice |
+| Alice |
++-------+
+Query Execution Time: 0.161350 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1183
+Test Type: Edge
+Test Description: UNION ALL variation 13
+Execution Status: PASS
+Query Executed: SELECT name FROM t_f079_13 WHERE id=1 UNION ALL SELECT name FROM t_f079_13 WHERE id=1;
+Database Response: Rows returned: 2
++-------+
+| name  |
++-------+
+| Alice |
+| Alice |
++-------+
+Query Execution Time: 0.192731 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1184
+Test Type: Edge
+Test Description: UNION ALL variation 14
+Execution Status: PASS
+Query Executed: SELECT name FROM t_f079_14 WHERE id=1 UNION ALL SELECT name FROM t_f079_14 WHERE id=1;
+Database Response: Rows returned: 2
++-------+
+| name  |
++-------+
+| Alice |
+| Alice |
++-------+
+Query Execution Time: 0.163767 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1185
+Test Type: Edge
+Test Description: UNION ALL variation 15
+Execution Status: PASS
+Query Executed: SELECT name FROM t_f079_15 WHERE id=1 UNION ALL SELECT name FROM t_f079_15 WHERE id=1;
+Database Response: Rows returned: 2
++-------+
+| name  |
++-------+
+| Alice |
+| Alice |
++-------+
+Query Execution Time: 0.244854 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1186
+Test Type: Positive
+Test Description: Common Table Expressions / WITH variation 1
+Execution Status: PASS
+Query Executed: WITH x AS (SELECT * FROM t_f080_1) SELECT * FROM x;
+Database Response: Rows returned: 3
++----+-------+--------------+-----+----------+---------+--------------+
+| id | name  | email        | age | salary   | dept_id | joining_date |
++----+-------+--------------+-----+----------+---------+--------------+
+| 1  | Alice | alice@x.test | 25  | 30000.00 | 1       | 2024-01-10   |
+| 2  | Bob   | bob@x.test   | 30  | 45000.00 | 1       | 2023-01-10   |
+| 3  | Cara  | cara@x.test  | 35  | 60000.00 | 2       | 2022-01-10   |
++----+-------+--------------+-----+----------+---------+--------------+
+Query Execution Time: 0.157089 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1187
+Test Type: Positive
+Test Description: Common Table Expressions / WITH variation 2
+Execution Status: PASS
+Query Executed: WITH x AS (SELECT * FROM t_f080_2) SELECT * FROM x;
+Database Response: Rows returned: 3
++----+-------+--------------+-----+----------+---------+--------------+
+| id | name  | email        | age | salary   | dept_id | joining_date |
++----+-------+--------------+-----+----------+---------+--------------+
+| 1  | Alice | alice@x.test | 25  | 30000.00 | 1       | 2024-01-10   |
+| 2  | Bob   | bob@x.test   | 30  | 45000.00 | 1       | 2023-01-10   |
+| 3  | Cara  | cara@x.test  | 35  | 60000.00 | 2       | 2022-01-10   |
++----+-------+--------------+-----+----------+---------+--------------+
+Query Execution Time: 0.138139 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1188
+Test Type: Positive
+Test Description: Common Table Expressions / WITH variation 3
+Execution Status: PASS
+Query Executed: WITH x AS (SELECT * FROM t_f080_3) SELECT * FROM x;
+Database Response: Rows returned: 3
++----+-------+--------------+-----+----------+---------+--------------+
+| id | name  | email        | age | salary   | dept_id | joining_date |
++----+-------+--------------+-----+----------+---------+--------------+
+| 1  | Alice | alice@x.test | 25  | 30000.00 | 1       | 2024-01-10   |
+| 2  | Bob   | bob@x.test   | 30  | 45000.00 | 1       | 2023-01-10   |
+| 3  | Cara  | cara@x.test  | 35  | 60000.00 | 2       | 2022-01-10   |
++----+-------+--------------+-----+----------+---------+--------------+
+Query Execution Time: 0.144111 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1189
+Test Type: Positive
+Test Description: Common Table Expressions / WITH variation 4
+Execution Status: PASS
+Query Executed: WITH x AS (SELECT * FROM t_f080_4) SELECT * FROM x;
+Database Response: Rows returned: 3
++----+-------+--------------+-----+----------+---------+--------------+
+| id | name  | email        | age | salary   | dept_id | joining_date |
++----+-------+--------------+-----+----------+---------+--------------+
+| 1  | Alice | alice@x.test | 25  | 30000.00 | 1       | 2024-01-10   |
+| 2  | Bob   | bob@x.test   | 30  | 45000.00 | 1       | 2023-01-10   |
+| 3  | Cara  | cara@x.test  | 35  | 60000.00 | 2       | 2022-01-10   |
++----+-------+--------------+-----+----------+---------+--------------+
+Query Execution Time: 0.181073 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1190
+Test Type: Positive
+Test Description: Common Table Expressions / WITH variation 5
+Execution Status: PASS
+Query Executed: WITH x AS (SELECT * FROM t_f080_5) SELECT * FROM x;
+Database Response: Rows returned: 3
++----+-------+--------------+-----+----------+---------+--------------+
+| id | name  | email        | age | salary   | dept_id | joining_date |
++----+-------+--------------+-----+----------+---------+--------------+
+| 1  | Alice | alice@x.test | 25  | 30000.00 | 1       | 2024-01-10   |
+| 2  | Bob   | bob@x.test   | 30  | 45000.00 | 1       | 2023-01-10   |
+| 3  | Cara  | cara@x.test  | 35  | 60000.00 | 2       | 2022-01-10   |
++----+-------+--------------+-----+----------+---------+--------------+
+Query Execution Time: 0.282430 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1191
+Test Type: Negative
+Test Description: Common Table Expressions / WITH variation 6
+Execution Status: PASS
+Query Executed: WITH x AS (SELECT * FROM t_f080_6) SELECT * FROM missing_cte_6;
+Database Response: 1146 (42S02): Table 'ai_testing_test.missing_cte_6' doesn't exist
+Query Execution Time: 0.219513 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1192
+Test Type: Negative
+Test Description: Common Table Expressions / WITH variation 7
+Execution Status: PASS
+Query Executed: WITH x AS (SELECT * FROM t_f080_7) SELECT * FROM missing_cte_7;
+Database Response: 1146 (42S02): Table 'ai_testing_test.missing_cte_7' doesn't exist
+Query Execution Time: 0.137532 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1193
+Test Type: Negative
+Test Description: Common Table Expressions / WITH variation 8
+Execution Status: PASS
+Query Executed: WITH x AS (SELECT * FROM t_f080_8) SELECT * FROM missing_cte_8;
+Database Response: 1146 (42S02): Table 'ai_testing_test.missing_cte_8' doesn't exist
+Query Execution Time: 0.131824 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1194
+Test Type: Negative
+Test Description: Common Table Expressions / WITH variation 9
+Execution Status: PASS
+Query Executed: WITH x AS (SELECT * FROM t_f080_9) SELECT * FROM missing_cte_9;
+Database Response: 1146 (42S02): Table 'ai_testing_test.missing_cte_9' doesn't exist
+Query Execution Time: 0.130315 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1195
+Test Type: Negative
+Test Description: Common Table Expressions / WITH variation 10
+Execution Status: PASS
+Query Executed: WITH x AS (SELECT * FROM t_f080_10) SELECT * FROM missing_cte_10;
+Database Response: 1146 (42S02): Table 'ai_testing_test.missing_cte_10' doesn't exist
+Query Execution Time: 0.131508 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1196
+Test Type: Edge
+Test Description: Common Table Expressions / WITH variation 11
+Execution Status: PASS
+Query Executed: WITH x AS (SELECT * FROM t_f080_11) SELECT * FROM x;
+Database Response: Rows returned: 3
++----+-------+--------------+-----+----------+---------+--------------+
+| id | name  | email        | age | salary   | dept_id | joining_date |
++----+-------+--------------+-----+----------+---------+--------------+
+| 1  | Alice | alice@x.test | 25  | 30000.00 | 1       | 2024-01-10   |
+| 2  | Bob   | bob@x.test   | 30  | 45000.00 | 1       | 2023-01-10   |
+| 3  | Cara  | cara@x.test  | 35  | 60000.00 | 2       | 2022-01-10   |
++----+-------+--------------+-----+----------+---------+--------------+
+Query Execution Time: 0.208139 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1197
+Test Type: Edge
+Test Description: Common Table Expressions / WITH variation 12
+Execution Status: PASS
+Query Executed: WITH x AS (SELECT * FROM t_f080_12) SELECT * FROM x;
+Database Response: Rows returned: 3
++----+-------+--------------+-----+----------+---------+--------------+
+| id | name  | email        | age | salary   | dept_id | joining_date |
++----+-------+--------------+-----+----------+---------+--------------+
+| 1  | Alice | alice@x.test | 25  | 30000.00 | 1       | 2024-01-10   |
+| 2  | Bob   | bob@x.test   | 30  | 45000.00 | 1       | 2023-01-10   |
+| 3  | Cara  | cara@x.test  | 35  | 60000.00 | 2       | 2022-01-10   |
++----+-------+--------------+-----+----------+---------+--------------+
+Query Execution Time: 0.136656 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1198
+Test Type: Edge
+Test Description: Common Table Expressions / WITH variation 13
+Execution Status: PASS
+Query Executed: WITH x AS (SELECT * FROM t_f080_13) SELECT * FROM x;
+Database Response: Rows returned: 3
++----+-------+--------------+-----+----------+---------+--------------+
+| id | name  | email        | age | salary   | dept_id | joining_date |
++----+-------+--------------+-----+----------+---------+--------------+
+| 1  | Alice | alice@x.test | 25  | 30000.00 | 1       | 2024-01-10   |
+| 2  | Bob   | bob@x.test   | 30  | 45000.00 | 1       | 2023-01-10   |
+| 3  | Cara  | cara@x.test  | 35  | 60000.00 | 2       | 2022-01-10   |
++----+-------+--------------+-----+----------+---------+--------------+
+Query Execution Time: 0.128346 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1199
+Test Type: Edge
+Test Description: Common Table Expressions / WITH variation 14
+Execution Status: PASS
+Query Executed: WITH x AS (SELECT * FROM t_f080_14) SELECT * FROM x;
+Database Response: Rows returned: 3
++----+-------+--------------+-----+----------+---------+--------------+
+| id | name  | email        | age | salary   | dept_id | joining_date |
++----+-------+--------------+-----+----------+---------+--------------+
+| 1  | Alice | alice@x.test | 25  | 30000.00 | 1       | 2024-01-10   |
+| 2  | Bob   | bob@x.test   | 30  | 45000.00 | 1       | 2023-01-10   |
+| 3  | Cara  | cara@x.test  | 35  | 60000.00 | 2       | 2022-01-10   |
++----+-------+--------------+-----+----------+---------+--------------+
+Query Execution Time: 0.130214 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1200
+Test Type: Edge
+Test Description: Common Table Expressions / WITH variation 15
+Execution Status: PASS
+Query Executed: WITH x AS (SELECT * FROM t_f080_15) SELECT * FROM x;
+Database Response: Rows returned: 3
++----+-------+--------------+-----+----------+---------+--------------+
+| id | name  | email        | age | salary   | dept_id | joining_date |
++----+-------+--------------+-----+----------+---------+--------------+
+| 1  | Alice | alice@x.test | 25  | 30000.00 | 1       | 2024-01-10   |
+| 2  | Bob   | bob@x.test   | 30  | 45000.00 | 1       | 2023-01-10   |
+| 3  | Cara  | cara@x.test  | 35  | 60000.00 | 2       | 2022-01-10   |
++----+-------+--------------+-----+----------+---------+--------------+
+Query Execution Time: 0.151212 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1201
+Test Type: Positive
+Test Description: PRIMARY KEY variation 1
+Execution Status: PASS
+Query Executed: INSERT INTO t_f081_1 VALUES (1,'V0');
+Database Response: Query executed successfully. Rows affected: 1
+Query Execution Time: 0.118963 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1202
+Test Type: Positive
+Test Description: PRIMARY KEY variation 2
+Execution Status: PASS
+Query Executed: INSERT INTO t_f081_2 VALUES (2,'V1');
+Database Response: Query executed successfully. Rows affected: 1
+Query Execution Time: 0.107510 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1203
+Test Type: Positive
+Test Description: PRIMARY KEY variation 3
+Execution Status: PASS
+Query Executed: INSERT INTO t_f081_3 VALUES (3,'V2');
+Database Response: Query executed successfully. Rows affected: 1
+Query Execution Time: 0.129412 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1204
+Test Type: Positive
+Test Description: PRIMARY KEY variation 4
+Execution Status: PASS
+Query Executed: INSERT INTO t_f081_4 VALUES (4,'V3');
+Database Response: Query executed successfully. Rows affected: 1
+Query Execution Time: 0.162759 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1205
+Test Type: Positive
+Test Description: PRIMARY KEY variation 5
+Execution Status: PASS
+Query Executed: INSERT INTO t_f081_5 VALUES (5,'V4');
+Database Response: Query executed successfully. Rows affected: 1
+Query Execution Time: 0.113238 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1206
+Test Type: Negative
+Test Description: PRIMARY KEY variation 6
+Execution Status: PASS
+Query Executed: INSERT INTO t_f081_6 VALUES (1,'A'),(1,'B');
+Database Response: 1062 (23000): Duplicate entry '1' for key 't_f081_6.PRIMARY'
+Query Execution Time: 0.117745 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1207
+Test Type: Negative
+Test Description: PRIMARY KEY variation 7
+Execution Status: PASS
+Query Executed: INSERT INTO t_f081_7 VALUES (1,'A'),(1,'B');
+Database Response: 1062 (23000): Duplicate entry '1' for key 't_f081_7.PRIMARY'
+Query Execution Time: 0.089734 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1208
+Test Type: Negative
+Test Description: PRIMARY KEY variation 8
+Execution Status: PASS
+Query Executed: INSERT INTO t_f081_8 VALUES (1,'A'),(1,'B');
+Database Response: 1062 (23000): Duplicate entry '1' for key 't_f081_8.PRIMARY'
+Query Execution Time: 0.173743 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1209
+Test Type: Negative
+Test Description: PRIMARY KEY variation 9
+Execution Status: PASS
+Query Executed: INSERT INTO t_f081_9 VALUES (1,'A'),(1,'B');
+Database Response: 1062 (23000): Duplicate entry '1' for key 't_f081_9.PRIMARY'
+Query Execution Time: 0.107375 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1210
+Test Type: Negative
+Test Description: PRIMARY KEY variation 10
+Execution Status: PASS
+Query Executed: INSERT INTO t_f081_10 VALUES (1,'A'),(1,'B');
+Database Response: 1062 (23000): Duplicate entry '1' for key 't_f081_10.PRIMARY'
+Query Execution Time: 0.093570 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1211
+Test Type: Edge
+Test Description: PRIMARY KEY variation 11
+Execution Status: PASS
+Query Executed: INSERT INTO t_f081_11 VALUES (11,'V10');
+Database Response: Query executed successfully. Rows affected: 1
+Query Execution Time: 0.112521 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1212
+Test Type: Edge
+Test Description: PRIMARY KEY variation 12
+Execution Status: PASS
+Query Executed: INSERT INTO t_f081_12 VALUES (12,'V11');
+Database Response: Query executed successfully. Rows affected: 1
+Query Execution Time: 0.185135 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1213
+Test Type: Edge
+Test Description: PRIMARY KEY variation 13
+Execution Status: PASS
+Query Executed: INSERT INTO t_f081_13 VALUES (13,'V12');
+Database Response: Query executed successfully. Rows affected: 1
+Query Execution Time: 0.106994 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1214
+Test Type: Edge
+Test Description: PRIMARY KEY variation 14
+Execution Status: PASS
+Query Executed: INSERT INTO t_f081_14 VALUES (14,'V13');
+Database Response: Query executed successfully. Rows affected: 1
+Query Execution Time: 0.094720 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1215
+Test Type: Edge
+Test Description: PRIMARY KEY variation 15
+Execution Status: PASS
+Query Executed: INSERT INTO t_f081_15 VALUES (15,'V14');
+Database Response: Query executed successfully. Rows affected: 1
+Query Execution Time: 0.092103 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1216
+Test Type: Positive
+Test Description: Composite PRIMARY KEY variation 1
+Execution Status: PASS
+Query Executed: INSERT INTO t_f082_1 VALUES (1,1,'V0');
+Database Response: Query executed successfully. Rows affected: 1
+Query Execution Time: 0.099011 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1217
+Test Type: Positive
+Test Description: Composite PRIMARY KEY variation 2
+Execution Status: PASS
+Query Executed: INSERT INTO t_f082_2 VALUES (1,2,'V1');
+Database Response: Query executed successfully. Rows affected: 1
+Query Execution Time: 0.129333 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1218
+Test Type: Positive
+Test Description: Composite PRIMARY KEY variation 3
+Execution Status: PASS
+Query Executed: INSERT INTO t_f082_3 VALUES (1,3,'V2');
+Database Response: Query executed successfully. Rows affected: 1
+Query Execution Time: 0.111466 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1219
+Test Type: Positive
+Test Description: Composite PRIMARY KEY variation 4
+Execution Status: PASS
+Query Executed: INSERT INTO t_f082_4 VALUES (1,4,'V3');
+Database Response: Query executed successfully. Rows affected: 1
+Query Execution Time: 0.123807 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1220
+Test Type: Positive
+Test Description: Composite PRIMARY KEY variation 5
+Execution Status: PASS
+Query Executed: INSERT INTO t_f082_5 VALUES (1,5,'V4');
+Database Response: Query executed successfully. Rows affected: 1
+Query Execution Time: 0.117431 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1221
+Test Type: Negative
+Test Description: Composite PRIMARY KEY variation 6
+Execution Status: PASS
+Query Executed: INSERT INTO t_f082_6 VALUES (1,1,'A'),(1,1,'B');
+Database Response: 1062 (23000): Duplicate entry '1-1' for key 't_f082_6.PRIMARY'
+Query Execution Time: 0.159915 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1222
+Test Type: Negative
+Test Description: Composite PRIMARY KEY variation 7
+Execution Status: PASS
+Query Executed: INSERT INTO t_f082_7 VALUES (1,1,'A'),(1,1,'B');
+Database Response: 1062 (23000): Duplicate entry '1-1' for key 't_f082_7.PRIMARY'
+Query Execution Time: 0.087649 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1223
+Test Type: Negative
+Test Description: Composite PRIMARY KEY variation 8
+Execution Status: PASS
+Query Executed: INSERT INTO t_f082_8 VALUES (1,1,'A'),(1,1,'B');
+Database Response: 1062 (23000): Duplicate entry '1-1' for key 't_f082_8.PRIMARY'
+Query Execution Time: 0.097891 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1224
+Test Type: Negative
+Test Description: Composite PRIMARY KEY variation 9
+Execution Status: PASS
+Query Executed: INSERT INTO t_f082_9 VALUES (1,1,'A'),(1,1,'B');
+Database Response: 1062 (23000): Duplicate entry '1-1' for key 't_f082_9.PRIMARY'
+Query Execution Time: 0.102754 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1225
+Test Type: Negative
+Test Description: Composite PRIMARY KEY variation 10
+Execution Status: PASS
+Query Executed: INSERT INTO t_f082_10 VALUES (1,1,'A'),(1,1,'B');
+Database Response: 1062 (23000): Duplicate entry '1-1' for key 't_f082_10.PRIMARY'
+Query Execution Time: 0.097701 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1226
+Test Type: Edge
+Test Description: Composite PRIMARY KEY variation 11
+Execution Status: PASS
+Query Executed: INSERT INTO t_f082_11 VALUES (1,11,'V10');
+Database Response: Query executed successfully. Rows affected: 1
+Query Execution Time: 0.092735 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1227
+Test Type: Edge
+Test Description: Composite PRIMARY KEY variation 12
+Execution Status: PASS
+Query Executed: INSERT INTO t_f082_12 VALUES (1,12,'V11');
+Database Response: Query executed successfully. Rows affected: 1
+Query Execution Time: 0.094224 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1228
+Test Type: Edge
+Test Description: Composite PRIMARY KEY variation 13
+Execution Status: PASS
+Query Executed: INSERT INTO t_f082_13 VALUES (1,13,'V12');
+Database Response: Query executed successfully. Rows affected: 1
+Query Execution Time: 0.082805 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1229
+Test Type: Edge
+Test Description: Composite PRIMARY KEY variation 14
+Execution Status: PASS
+Query Executed: INSERT INTO t_f082_14 VALUES (1,14,'V13');
+Database Response: Query executed successfully. Rows affected: 1
+Query Execution Time: 0.096292 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1230
+Test Type: Edge
+Test Description: Composite PRIMARY KEY variation 15
+Execution Status: PASS
+Query Executed: INSERT INTO t_f082_15 VALUES (1,15,'V14');
+Database Response: Query executed successfully. Rows affected: 1
+Query Execution Time: 0.177290 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1231
+Test Type: Positive
+Test Description: FOREIGN KEY variation 1
+Execution Status: PASS
+Query Executed: INSERT INTO t_f083_1_c VALUES (1,1);
+Database Response: Query executed successfully. Rows affected: 1
+Query Execution Time: 0.203436 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1232
+Test Type: Positive
+Test Description: FOREIGN KEY variation 2
+Execution Status: PASS
+Query Executed: INSERT INTO t_f083_2_c VALUES (1,1);
+Database Response: Query executed successfully. Rows affected: 1
+Query Execution Time: 0.194160 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1233
+Test Type: Positive
+Test Description: FOREIGN KEY variation 3
+Execution Status: PASS
+Query Executed: INSERT INTO t_f083_3_c VALUES (1,1);
+Database Response: Query executed successfully. Rows affected: 1
+Query Execution Time: 0.184450 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1234
+Test Type: Positive
+Test Description: FOREIGN KEY variation 4
+Execution Status: PASS
+Query Executed: INSERT INTO t_f083_4_c VALUES (1,1);
+Database Response: Query executed successfully. Rows affected: 1
+Query Execution Time: 0.182106 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1235
+Test Type: Positive
+Test Description: FOREIGN KEY variation 5
+Execution Status: PASS
+Query Executed: INSERT INTO t_f083_5_c VALUES (1,1);
+Database Response: Query executed successfully. Rows affected: 1
+Query Execution Time: 0.320316 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1236
+Test Type: Negative
+Test Description: FOREIGN KEY variation 6
+Execution Status: PASS
+Query Executed: INSERT INTO t_f083_6_c VALUES (1,9999);
+Database Response: 1452 (23000): Cannot add or update a child row: a foreign key constraint fails (`ai_testing_test`.`t_f083_6_c`, CONSTRAINT `t_f083_6_c_ibfk_1` FOREIGN KEY (`pid`) REFERENCES `t_f083_6_p` (`id`))
+Query Execution Time: 0.287463 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1237
+Test Type: Negative
+Test Description: FOREIGN KEY variation 7
+Execution Status: PASS
+Query Executed: INSERT INTO t_f083_7_c VALUES (1,9999);
+Database Response: 1452 (23000): Cannot add or update a child row: a foreign key constraint fails (`ai_testing_test`.`t_f083_7_c`, CONSTRAINT `t_f083_7_c_ibfk_1` FOREIGN KEY (`pid`) REFERENCES `t_f083_7_p` (`id`))
+Query Execution Time: 0.243408 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1238
+Test Type: Negative
+Test Description: FOREIGN KEY variation 8
+Execution Status: PASS
+Query Executed: INSERT INTO t_f083_8_c VALUES (1,9999);
+Database Response: 1452 (23000): Cannot add or update a child row: a foreign key constraint fails (`ai_testing_test`.`t_f083_8_c`, CONSTRAINT `t_f083_8_c_ibfk_1` FOREIGN KEY (`pid`) REFERENCES `t_f083_8_p` (`id`))
+Query Execution Time: 0.194629 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1239
+Test Type: Negative
+Test Description: FOREIGN KEY variation 9
+Execution Status: PASS
+Query Executed: INSERT INTO t_f083_9_c VALUES (1,9999);
+Database Response: 1452 (23000): Cannot add or update a child row: a foreign key constraint fails (`ai_testing_test`.`t_f083_9_c`, CONSTRAINT `t_f083_9_c_ibfk_1` FOREIGN KEY (`pid`) REFERENCES `t_f083_9_p` (`id`))
+Query Execution Time: 0.282581 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1240
+Test Type: Negative
+Test Description: FOREIGN KEY variation 10
+Execution Status: PASS
+Query Executed: INSERT INTO t_f083_10_c VALUES (1,9999);
+Database Response: 1452 (23000): Cannot add or update a child row: a foreign key constraint fails (`ai_testing_test`.`t_f083_10_c`, CONSTRAINT `t_f083_10_c_ibfk_1` FOREIGN KEY (`pid`) REFERENCES `t_f083_10_p` (`id`))
+Query Execution Time: 0.192461 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1241
+Test Type: Edge
+Test Description: FOREIGN KEY variation 11
+Execution Status: PASS
+Query Executed: INSERT INTO t_f083_11_c VALUES (1,1);
+Database Response: Query executed successfully. Rows affected: 1
+Query Execution Time: 0.211930 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1242
+Test Type: Edge
+Test Description: FOREIGN KEY variation 12
+Execution Status: PASS
+Query Executed: INSERT INTO t_f083_12_c VALUES (1,1);
+Database Response: Query executed successfully. Rows affected: 1
+Query Execution Time: 0.184381 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1243
+Test Type: Edge
+Test Description: FOREIGN KEY variation 13
+Execution Status: PASS
+Query Executed: INSERT INTO t_f083_13_c VALUES (1,1);
+Database Response: Query executed successfully. Rows affected: 1
+Query Execution Time: 0.175593 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1244
+Test Type: Edge
+Test Description: FOREIGN KEY variation 14
+Execution Status: PASS
+Query Executed: INSERT INTO t_f083_14_c VALUES (1,1);
+Database Response: Query executed successfully. Rows affected: 1
+Query Execution Time: 0.378310 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1245
+Test Type: Edge
+Test Description: FOREIGN KEY variation 15
+Execution Status: PASS
+Query Executed: INSERT INTO t_f083_15_c VALUES (1,1);
+Database Response: Query executed successfully. Rows affected: 1
+Query Execution Time: 0.230823 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1246
+Test Type: Positive
+Test Description: UNIQUE constraint variation 1
+Execution Status: PASS
+Query Executed: INSERT INTO t_f084_1 VALUES (1,'U0');
+Database Response: Query executed successfully. Rows affected: 1
+Query Execution Time: 0.116524 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1247
+Test Type: Positive
+Test Description: UNIQUE constraint variation 2
+Execution Status: PASS
+Query Executed: INSERT INTO t_f084_2 VALUES (2,'U1');
+Database Response: Query executed successfully. Rows affected: 1
+Query Execution Time: 0.116272 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1248
+Test Type: Positive
+Test Description: UNIQUE constraint variation 3
+Execution Status: PASS
+Query Executed: INSERT INTO t_f084_3 VALUES (3,'U2');
+Database Response: Query executed successfully. Rows affected: 1
+Query Execution Time: 0.108718 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1249
+Test Type: Positive
+Test Description: UNIQUE constraint variation 4
+Execution Status: PASS
+Query Executed: INSERT INTO t_f084_4 VALUES (4,'U3');
+Database Response: Query executed successfully. Rows affected: 1
+Query Execution Time: 0.114417 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1250
+Test Type: Positive
+Test Description: UNIQUE constraint variation 5
+Execution Status: PASS
+Query Executed: INSERT INTO t_f084_5 VALUES (5,'U4');
+Database Response: Query executed successfully. Rows affected: 1
+Query Execution Time: 0.200087 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1251
+Test Type: Negative
+Test Description: UNIQUE constraint variation 6
+Execution Status: PASS
+Query Executed: INSERT INTO t_f084_6 VALUES (1,'U'),(2,'U');
+Database Response: 1062 (23000): Duplicate entry 'U' for key 't_f084_6.code'
+Query Execution Time: 0.113499 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1252
+Test Type: Negative
+Test Description: UNIQUE constraint variation 7
+Execution Status: PASS
+Query Executed: INSERT INTO t_f084_7 VALUES (1,'U'),(2,'U');
+Database Response: 1062 (23000): Duplicate entry 'U' for key 't_f084_7.code'
+Query Execution Time: 0.120316 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1253
+Test Type: Negative
+Test Description: UNIQUE constraint variation 8
+Execution Status: PASS
+Query Executed: INSERT INTO t_f084_8 VALUES (1,'U'),(2,'U');
+Database Response: 1062 (23000): Duplicate entry 'U' for key 't_f084_8.code'
+Query Execution Time: 0.114232 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1254
+Test Type: Negative
+Test Description: UNIQUE constraint variation 9
+Execution Status: PASS
+Query Executed: INSERT INTO t_f084_9 VALUES (1,'U'),(2,'U');
+Database Response: 1062 (23000): Duplicate entry 'U' for key 't_f084_9.code'
+Query Execution Time: 0.139136 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1255
+Test Type: Negative
+Test Description: UNIQUE constraint variation 10
+Execution Status: PASS
+Query Executed: INSERT INTO t_f084_10 VALUES (1,'U'),(2,'U');
+Database Response: 1062 (23000): Duplicate entry 'U' for key 't_f084_10.code'
+Query Execution Time: 0.104923 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1256
+Test Type: Edge
+Test Description: UNIQUE constraint variation 11
+Execution Status: PASS
+Query Executed: INSERT INTO t_f084_11 VALUES (11,'U10');
+Database Response: Query executed successfully. Rows affected: 1
+Query Execution Time: 0.115012 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1257
+Test Type: Edge
+Test Description: UNIQUE constraint variation 12
+Execution Status: PASS
+Query Executed: INSERT INTO t_f084_12 VALUES (12,'U11');
+Database Response: Query executed successfully. Rows affected: 1
+Query Execution Time: 0.134089 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1258
+Test Type: Edge
+Test Description: UNIQUE constraint variation 13
+Execution Status: PASS
+Query Executed: INSERT INTO t_f084_13 VALUES (13,'U12');
+Database Response: Query executed successfully. Rows affected: 1
+Query Execution Time: 0.175760 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1259
+Test Type: Edge
+Test Description: UNIQUE constraint variation 14
+Execution Status: PASS
+Query Executed: INSERT INTO t_f084_14 VALUES (14,'U13');
+Database Response: Query executed successfully. Rows affected: 1
+Query Execution Time: 0.122107 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1260
+Test Type: Edge
+Test Description: UNIQUE constraint variation 15
+Execution Status: PASS
+Query Executed: INSERT INTO t_f084_15 VALUES (15,'U14');
+Database Response: Query executed successfully. Rows affected: 1
+Query Execution Time: 0.119738 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1261
+Test Type: Positive
+Test Description: NOT NULL constraint variation 1
+Execution Status: PASS
+Query Executed: INSERT INTO t_f085_1 VALUES (1,'ok');
+Database Response: Query executed successfully. Rows affected: 1
+Query Execution Time: 0.098988 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1262
+Test Type: Positive
+Test Description: NOT NULL constraint variation 2
+Execution Status: PASS
+Query Executed: INSERT INTO t_f085_2 VALUES (2,'ok');
+Database Response: Query executed successfully. Rows affected: 1
+Query Execution Time: 0.088048 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1263
+Test Type: Positive
+Test Description: NOT NULL constraint variation 3
+Execution Status: PASS
+Query Executed: INSERT INTO t_f085_3 VALUES (3,'ok');
+Database Response: Query executed successfully. Rows affected: 1
+Query Execution Time: 0.094821 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1264
+Test Type: Positive
+Test Description: NOT NULL constraint variation 4
+Execution Status: PASS
+Query Executed: INSERT INTO t_f085_4 VALUES (4,'ok');
+Database Response: Query executed successfully. Rows affected: 1
+Query Execution Time: 0.098468 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1265
+Test Type: Positive
+Test Description: NOT NULL constraint variation 5
+Execution Status: PASS
+Query Executed: INSERT INTO t_f085_5 VALUES (5,'ok');
+Database Response: Query executed successfully. Rows affected: 1
+Query Execution Time: 0.092141 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1266
+Test Type: Negative
+Test Description: NOT NULL constraint variation 6
+Execution Status: PASS
+Query Executed: INSERT INTO t_f085_6(id) VALUES (1);
+Database Response: 1364 (HY000): Field 'req' doesn't have a default value
+Query Execution Time: 0.113982 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1267
+Test Type: Negative
+Test Description: NOT NULL constraint variation 7
+Execution Status: PASS
+Query Executed: INSERT INTO t_f085_7(id) VALUES (1);
+Database Response: 1364 (HY000): Field 'req' doesn't have a default value
+Query Execution Time: 0.121103 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1268
+Test Type: Negative
+Test Description: NOT NULL constraint variation 8
+Execution Status: PASS
+Query Executed: INSERT INTO t_f085_8(id) VALUES (1);
+Database Response: 1364 (HY000): Field 'req' doesn't have a default value
+Query Execution Time: 0.084395 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1269
+Test Type: Negative
+Test Description: NOT NULL constraint variation 9
+Execution Status: PASS
+Query Executed: INSERT INTO t_f085_9(id) VALUES (1);
+Database Response: 1364 (HY000): Field 'req' doesn't have a default value
+Query Execution Time: 0.082112 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1270
+Test Type: Negative
+Test Description: NOT NULL constraint variation 10
+Execution Status: PASS
+Query Executed: INSERT INTO t_f085_10(id) VALUES (1);
+Database Response: 1364 (HY000): Field 'req' doesn't have a default value
+Query Execution Time: 0.084619 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1271
+Test Type: Edge
+Test Description: NOT NULL constraint variation 11
+Execution Status: PASS
+Query Executed: INSERT INTO t_f085_11 VALUES (11,'ok');
+Database Response: Query executed successfully. Rows affected: 1
+Query Execution Time: 0.103898 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1272
+Test Type: Edge
+Test Description: NOT NULL constraint variation 12
+Execution Status: PASS
+Query Executed: INSERT INTO t_f085_12 VALUES (12,'ok');
+Database Response: Query executed successfully. Rows affected: 1
+Query Execution Time: 0.097829 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1273
+Test Type: Edge
+Test Description: NOT NULL constraint variation 13
+Execution Status: PASS
+Query Executed: INSERT INTO t_f085_13 VALUES (13,'ok');
+Database Response: Query executed successfully. Rows affected: 1
+Query Execution Time: 0.095877 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1274
+Test Type: Edge
+Test Description: NOT NULL constraint variation 14
+Execution Status: PASS
+Query Executed: INSERT INTO t_f085_14 VALUES (14,'ok');
+Database Response: Query executed successfully. Rows affected: 1
+Query Execution Time: 0.095738 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1275
+Test Type: Edge
+Test Description: NOT NULL constraint variation 15
+Execution Status: PASS
+Query Executed: INSERT INTO t_f085_15 VALUES (15,'ok');
+Database Response: Query executed successfully. Rows affected: 1
+Query Execution Time: 0.104993 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1276
+Test Type: Positive
+Test Description: DEFAULT constraint variation 1
+Execution Status: PASS
+Query Executed: INSERT INTO t_f086_1(id) VALUES (1);
+Database Response: Query executed successfully. Rows affected: 1
+Query Execution Time: 0.103234 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1277
+Test Type: Positive
+Test Description: DEFAULT constraint variation 2
+Execution Status: PASS
+Query Executed: INSERT INTO t_f086_2(id) VALUES (2);
+Database Response: Query executed successfully. Rows affected: 1
+Query Execution Time: 0.177989 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1278
+Test Type: Positive
+Test Description: DEFAULT constraint variation 3
+Execution Status: PASS
+Query Executed: INSERT INTO t_f086_3(id) VALUES (3);
+Database Response: Query executed successfully. Rows affected: 1
+Query Execution Time: 0.086025 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1279
+Test Type: Positive
+Test Description: DEFAULT constraint variation 4
+Execution Status: PASS
+Query Executed: INSERT INTO t_f086_4(id) VALUES (4);
+Database Response: Query executed successfully. Rows affected: 1
+Query Execution Time: 0.091138 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1280
+Test Type: Positive
+Test Description: DEFAULT constraint variation 5
+Execution Status: PASS
+Query Executed: INSERT INTO t_f086_5(id) VALUES (5);
+Database Response: Query executed successfully. Rows affected: 1
+Query Execution Time: 0.088520 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1281
+Test Type: Negative
+Test Description: DEFAULT constraint variation 6
+Execution Status: PASS
+Query Executed: INSERT INTO t_f086_6(id,unknown_col) VALUES (1,'x');
+Database Response: 1054 (42S22): Unknown column 'unknown_col' in 'field list'
+Query Execution Time: 0.077462 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1282
+Test Type: Negative
+Test Description: DEFAULT constraint variation 7
+Execution Status: PASS
+Query Executed: INSERT INTO t_f086_7(id,unknown_col) VALUES (1,'x');
+Database Response: 1054 (42S22): Unknown column 'unknown_col' in 'field list'
+Query Execution Time: 0.092278 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1283
+Test Type: Negative
+Test Description: DEFAULT constraint variation 8
+Execution Status: PASS
+Query Executed: INSERT INTO t_f086_8(id,unknown_col) VALUES (1,'x');
+Database Response: 1054 (42S22): Unknown column 'unknown_col' in 'field list'
+Query Execution Time: 0.072174 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1284
+Test Type: Negative
+Test Description: DEFAULT constraint variation 9
+Execution Status: PASS
+Query Executed: INSERT INTO t_f086_9(id,unknown_col) VALUES (1,'x');
+Database Response: 1054 (42S22): Unknown column 'unknown_col' in 'field list'
+Query Execution Time: 0.089914 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1285
+Test Type: Negative
+Test Description: DEFAULT constraint variation 10
+Execution Status: PASS
+Query Executed: INSERT INTO t_f086_10(id,unknown_col) VALUES (1,'x');
+Database Response: 1054 (42S22): Unknown column 'unknown_col' in 'field list'
+Query Execution Time: 0.070249 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1286
+Test Type: Edge
+Test Description: DEFAULT constraint variation 11
+Execution Status: PASS
+Query Executed: INSERT INTO t_f086_11(id) VALUES (11);
+Database Response: Query executed successfully. Rows affected: 1
+Query Execution Time: 0.079935 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1287
+Test Type: Edge
+Test Description: DEFAULT constraint variation 12
+Execution Status: PASS
+Query Executed: INSERT INTO t_f086_12(id) VALUES (12);
+Database Response: Query executed successfully. Rows affected: 1
+Query Execution Time: 0.110719 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1288
+Test Type: Edge
+Test Description: DEFAULT constraint variation 13
+Execution Status: PASS
+Query Executed: INSERT INTO t_f086_13(id) VALUES (13);
+Database Response: Query executed successfully. Rows affected: 1
+Query Execution Time: 0.154941 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1289
+Test Type: Edge
+Test Description: DEFAULT constraint variation 14
+Execution Status: PASS
+Query Executed: INSERT INTO t_f086_14(id) VALUES (14);
+Database Response: Query executed successfully. Rows affected: 1
+Query Execution Time: 0.082347 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1290
+Test Type: Edge
+Test Description: DEFAULT constraint variation 15
+Execution Status: PASS
+Query Executed: INSERT INTO t_f086_15(id) VALUES (15);
+Database Response: Query executed successfully. Rows affected: 1
+Query Execution Time: 0.083476 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1291
+Test Type: Positive
+Test Description: String functions variation 1
+Execution Status: PASS
+Query Executed: SELECT UPPER(name), LOWER(name), LENGTH(name), CONCAT(name,'_x') FROM t_f087_1;
+Database Response: Rows returned: 3
++-------------+-------------+--------------+-------------------+
+| UPPER(name) | LOWER(name) | LENGTH(name) | CONCAT(name,'_x') |
++-------------+-------------+--------------+-------------------+
+| ALICE       | alice       | 5            | Alice_x           |
+| BOB         | bob         | 3            | Bob_x             |
+| CARA        | cara        | 4            | Cara_x            |
++-------------+-------------+--------------+-------------------+
+Query Execution Time: 0.116578 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1292
+Test Type: Positive
+Test Description: String functions variation 2
+Execution Status: PASS
+Query Executed: SELECT UPPER(name), LOWER(name), LENGTH(name), CONCAT(name,'_x') FROM t_f087_2;
+Database Response: Rows returned: 3
++-------------+-------------+--------------+-------------------+
+| UPPER(name) | LOWER(name) | LENGTH(name) | CONCAT(name,'_x') |
++-------------+-------------+--------------+-------------------+
+| ALICE       | alice       | 5            | Alice_x           |
+| BOB         | bob         | 3            | Bob_x             |
+| CARA        | cara        | 4            | Cara_x            |
++-------------+-------------+--------------+-------------------+
+Query Execution Time: 0.101277 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1293
+Test Type: Positive
+Test Description: String functions variation 3
+Execution Status: PASS
+Query Executed: SELECT UPPER(name), LOWER(name), LENGTH(name), CONCAT(name,'_x') FROM t_f087_3;
+Database Response: Rows returned: 3
++-------------+-------------+--------------+-------------------+
+| UPPER(name) | LOWER(name) | LENGTH(name) | CONCAT(name,'_x') |
++-------------+-------------+--------------+-------------------+
+| ALICE       | alice       | 5            | Alice_x           |
+| BOB         | bob         | 3            | Bob_x             |
+| CARA        | cara        | 4            | Cara_x            |
++-------------+-------------+--------------+-------------------+
+Query Execution Time: 0.118659 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1294
+Test Type: Positive
+Test Description: String functions variation 4
+Execution Status: PASS
+Query Executed: SELECT UPPER(name), LOWER(name), LENGTH(name), CONCAT(name,'_x') FROM t_f087_4;
+Database Response: Rows returned: 3
++-------------+-------------+--------------+-------------------+
+| UPPER(name) | LOWER(name) | LENGTH(name) | CONCAT(name,'_x') |
++-------------+-------------+--------------+-------------------+
+| ALICE       | alice       | 5            | Alice_x           |
+| BOB         | bob         | 3            | Bob_x             |
+| CARA        | cara        | 4            | Cara_x            |
++-------------+-------------+--------------+-------------------+
+Query Execution Time: 0.103336 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1295
+Test Type: Positive
+Test Description: String functions variation 5
+Execution Status: PASS
+Query Executed: SELECT UPPER(name), LOWER(name), LENGTH(name), CONCAT(name,'_x') FROM t_f087_5;
+Database Response: Rows returned: 3
++-------------+-------------+--------------+-------------------+
+| UPPER(name) | LOWER(name) | LENGTH(name) | CONCAT(name,'_x') |
++-------------+-------------+--------------+-------------------+
+| ALICE       | alice       | 5            | Alice_x           |
+| BOB         | bob         | 3            | Bob_x             |
+| CARA        | cara        | 4            | Cara_x            |
++-------------+-------------+--------------+-------------------+
+Query Execution Time: 0.115917 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1296
+Test Type: Negative
+Test Description: String functions variation 6
+Execution Status: PASS
+Query Executed: SELECT NOT_A_FUNCTION(name) FROM t_f087_6;
+Database Response: 1305 (42000): FUNCTION ai_testing_test.NOT_A_FUNCTION does not exist
+Query Execution Time: 0.139817 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1297
+Test Type: Negative
+Test Description: String functions variation 7
+Execution Status: PASS
+Query Executed: SELECT NOT_A_FUNCTION(name) FROM t_f087_7;
+Database Response: 1305 (42000): FUNCTION ai_testing_test.NOT_A_FUNCTION does not exist
+Query Execution Time: 0.110181 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1298
+Test Type: Negative
+Test Description: String functions variation 8
+Execution Status: PASS
+Query Executed: SELECT NOT_A_FUNCTION(name) FROM t_f087_8;
+Database Response: 1305 (42000): FUNCTION ai_testing_test.NOT_A_FUNCTION does not exist
+Query Execution Time: 0.116585 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1299
+Test Type: Negative
+Test Description: String functions variation 9
+Execution Status: PASS
+Query Executed: SELECT NOT_A_FUNCTION(name) FROM t_f087_9;
+Database Response: 1305 (42000): FUNCTION ai_testing_test.NOT_A_FUNCTION does not exist
+Query Execution Time: 0.126111 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1300
+Test Type: Negative
+Test Description: String functions variation 10
+Execution Status: PASS
+Query Executed: SELECT NOT_A_FUNCTION(name) FROM t_f087_10;
+Database Response: 1305 (42000): FUNCTION ai_testing_test.NOT_A_FUNCTION does not exist
+Query Execution Time: 0.106338 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1301
+Test Type: Edge
+Test Description: String functions variation 11
+Execution Status: PASS
+Query Executed: SELECT UPPER(name), LOWER(name), LENGTH(name), CONCAT(name,'_x') FROM t_f087_11;
+Database Response: Rows returned: 3
++-------------+-------------+--------------+-------------------+
+| UPPER(name) | LOWER(name) | LENGTH(name) | CONCAT(name,'_x') |
++-------------+-------------+--------------+-------------------+
+| ALICE       | alice       | 5            | Alice_x           |
+| BOB         | bob         | 3            | Bob_x             |
+| CARA        | cara        | 4            | Cara_x            |
++-------------+-------------+--------------+-------------------+
+Query Execution Time: 0.107776 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1302
+Test Type: Edge
+Test Description: String functions variation 12
+Execution Status: PASS
+Query Executed: SELECT UPPER(name), LOWER(name), LENGTH(name), CONCAT(name,'_x') FROM t_f087_12;
+Database Response: Rows returned: 3
++-------------+-------------+--------------+-------------------+
+| UPPER(name) | LOWER(name) | LENGTH(name) | CONCAT(name,'_x') |
++-------------+-------------+--------------+-------------------+
+| ALICE       | alice       | 5            | Alice_x           |
+| BOB         | bob         | 3            | Bob_x             |
+| CARA        | cara        | 4            | Cara_x            |
++-------------+-------------+--------------+-------------------+
+Query Execution Time: 0.116327 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1303
+Test Type: Edge
+Test Description: String functions variation 13
+Execution Status: PASS
+Query Executed: SELECT UPPER(name), LOWER(name), LENGTH(name), CONCAT(name,'_x') FROM t_f087_13;
+Database Response: Rows returned: 3
++-------------+-------------+--------------+-------------------+
+| UPPER(name) | LOWER(name) | LENGTH(name) | CONCAT(name,'_x') |
++-------------+-------------+--------------+-------------------+
+| ALICE       | alice       | 5            | Alice_x           |
+| BOB         | bob         | 3            | Bob_x             |
+| CARA        | cara        | 4            | Cara_x            |
++-------------+-------------+--------------+-------------------+
+Query Execution Time: 0.112703 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1304
+Test Type: Edge
+Test Description: String functions variation 14
+Execution Status: PASS
+Query Executed: SELECT UPPER(name), LOWER(name), LENGTH(name), CONCAT(name,'_x') FROM t_f087_14;
+Database Response: Rows returned: 3
++-------------+-------------+--------------+-------------------+
+| UPPER(name) | LOWER(name) | LENGTH(name) | CONCAT(name,'_x') |
++-------------+-------------+--------------+-------------------+
+| ALICE       | alice       | 5            | Alice_x           |
+| BOB         | bob         | 3            | Bob_x             |
+| CARA        | cara        | 4            | Cara_x            |
++-------------+-------------+--------------+-------------------+
+Query Execution Time: 0.133620 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1305
+Test Type: Edge
+Test Description: String functions variation 15
+Execution Status: PASS
+Query Executed: SELECT UPPER(name), LOWER(name), LENGTH(name), CONCAT(name,'_x') FROM t_f087_15;
+Database Response: Rows returned: 3
++-------------+-------------+--------------+-------------------+
+| UPPER(name) | LOWER(name) | LENGTH(name) | CONCAT(name,'_x') |
++-------------+-------------+--------------+-------------------+
+| ALICE       | alice       | 5            | Alice_x           |
+| BOB         | bob         | 3            | Bob_x             |
+| CARA        | cara        | 4            | Cara_x            |
++-------------+-------------+--------------+-------------------+
+Query Execution Time: 0.219108 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1306
+Test Type: Positive
+Test Description: Numeric functions variation 1
+Execution Status: PASS
+Query Executed: SELECT ROUND(salary,2), CEIL(salary), FLOOR(salary), MOD(id,2) FROM t_f088_1;
+Database Response: Rows returned: 3
++-----------------+--------------+---------------+-----------+
+| ROUND(salary,2) | CEIL(salary) | FLOOR(salary) | MOD(id,2) |
++-----------------+--------------+---------------+-----------+
+| 30000.00        | 30000        | 30000         | 1         |
+| 45000.00        | 45000        | 45000         | 0         |
+| 60000.00        | 60000        | 60000         | 1         |
++-----------------+--------------+---------------+-----------+
+Query Execution Time: 0.110754 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1307
+Test Type: Positive
+Test Description: Numeric functions variation 2
+Execution Status: PASS
+Query Executed: SELECT ROUND(salary,2), CEIL(salary), FLOOR(salary), MOD(id,2) FROM t_f088_2;
+Database Response: Rows returned: 3
++-----------------+--------------+---------------+-----------+
+| ROUND(salary,2) | CEIL(salary) | FLOOR(salary) | MOD(id,2) |
++-----------------+--------------+---------------+-----------+
+| 30000.00        | 30000        | 30000         | 1         |
+| 45000.00        | 45000        | 45000         | 0         |
+| 60000.00        | 60000        | 60000         | 1         |
++-----------------+--------------+---------------+-----------+
+Query Execution Time: 0.109999 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1308
+Test Type: Positive
+Test Description: Numeric functions variation 3
+Execution Status: PASS
+Query Executed: SELECT ROUND(salary,2), CEIL(salary), FLOOR(salary), MOD(id,2) FROM t_f088_3;
+Database Response: Rows returned: 3
++-----------------+--------------+---------------+-----------+
+| ROUND(salary,2) | CEIL(salary) | FLOOR(salary) | MOD(id,2) |
++-----------------+--------------+---------------+-----------+
+| 30000.00        | 30000        | 30000         | 1         |
+| 45000.00        | 45000        | 45000         | 0         |
+| 60000.00        | 60000        | 60000         | 1         |
++-----------------+--------------+---------------+-----------+
+Query Execution Time: 0.117394 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1309
+Test Type: Positive
+Test Description: Numeric functions variation 4
+Execution Status: PASS
+Query Executed: SELECT ROUND(salary,2), CEIL(salary), FLOOR(salary), MOD(id,2) FROM t_f088_4;
+Database Response: Rows returned: 3
++-----------------+--------------+---------------+-----------+
+| ROUND(salary,2) | CEIL(salary) | FLOOR(salary) | MOD(id,2) |
++-----------------+--------------+---------------+-----------+
+| 30000.00        | 30000        | 30000         | 1         |
+| 45000.00        | 45000        | 45000         | 0         |
+| 60000.00        | 60000        | 60000         | 1         |
++-----------------+--------------+---------------+-----------+
+Query Execution Time: 0.106229 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1310
+Test Type: Positive
+Test Description: Numeric functions variation 5
+Execution Status: PASS
+Query Executed: SELECT ROUND(salary,2), CEIL(salary), FLOOR(salary), MOD(id,2) FROM t_f088_5;
+Database Response: Rows returned: 3
++-----------------+--------------+---------------+-----------+
+| ROUND(salary,2) | CEIL(salary) | FLOOR(salary) | MOD(id,2) |
++-----------------+--------------+---------------+-----------+
+| 30000.00        | 30000        | 30000         | 1         |
+| 45000.00        | 45000        | 45000         | 0         |
+| 60000.00        | 60000        | 60000         | 1         |
++-----------------+--------------+---------------+-----------+
+Query Execution Time: 0.126293 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1311
+Test Type: Negative
+Test Description: Numeric functions variation 6
+Execution Status: PASS
+Query Executed: SELECT ROUND(missing_col,2) FROM t_f088_6;
+Database Response: 1054 (42S22): Unknown column 'missing_col' in 'field list'
+Query Execution Time: 0.121856 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1312
+Test Type: Negative
+Test Description: Numeric functions variation 7
+Execution Status: PASS
+Query Executed: SELECT ROUND(missing_col,2) FROM t_f088_7;
+Database Response: 1054 (42S22): Unknown column 'missing_col' in 'field list'
+Query Execution Time: 0.108314 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1313
+Test Type: Negative
+Test Description: Numeric functions variation 8
+Execution Status: PASS
+Query Executed: SELECT ROUND(missing_col,2) FROM t_f088_8;
+Database Response: 1054 (42S22): Unknown column 'missing_col' in 'field list'
+Query Execution Time: 0.260580 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1314
+Test Type: Negative
+Test Description: Numeric functions variation 9
+Execution Status: PASS
+Query Executed: SELECT ROUND(missing_col,2) FROM t_f088_9;
+Database Response: 1054 (42S22): Unknown column 'missing_col' in 'field list'
+Query Execution Time: 0.190202 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1315
+Test Type: Negative
+Test Description: Numeric functions variation 10
+Execution Status: PASS
+Query Executed: SELECT ROUND(missing_col,2) FROM t_f088_10;
+Database Response: 1054 (42S22): Unknown column 'missing_col' in 'field list'
+Query Execution Time: 0.162207 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1316
+Test Type: Edge
+Test Description: Numeric functions variation 11
+Execution Status: PASS
+Query Executed: SELECT ROUND(salary,2), CEIL(salary), FLOOR(salary), MOD(id,2) FROM t_f088_11;
+Database Response: Rows returned: 3
++-----------------+--------------+---------------+-----------+
+| ROUND(salary,2) | CEIL(salary) | FLOOR(salary) | MOD(id,2) |
++-----------------+--------------+---------------+-----------+
+| 30000.00        | 30000        | 30000         | 1         |
+| 45000.00        | 45000        | 45000         | 0         |
+| 60000.00        | 60000        | 60000         | 1         |
++-----------------+--------------+---------------+-----------+
+Query Execution Time: 0.139248 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1317
+Test Type: Edge
+Test Description: Numeric functions variation 12
+Execution Status: PASS
+Query Executed: SELECT ROUND(salary,2), CEIL(salary), FLOOR(salary), MOD(id,2) FROM t_f088_12;
+Database Response: Rows returned: 3
++-----------------+--------------+---------------+-----------+
+| ROUND(salary,2) | CEIL(salary) | FLOOR(salary) | MOD(id,2) |
++-----------------+--------------+---------------+-----------+
+| 30000.00        | 30000        | 30000         | 1         |
+| 45000.00        | 45000        | 45000         | 0         |
+| 60000.00        | 60000        | 60000         | 1         |
++-----------------+--------------+---------------+-----------+
+Query Execution Time: 0.187202 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1318
+Test Type: Edge
+Test Description: Numeric functions variation 13
+Execution Status: PASS
+Query Executed: SELECT ROUND(salary,2), CEIL(salary), FLOOR(salary), MOD(id,2) FROM t_f088_13;
+Database Response: Rows returned: 3
++-----------------+--------------+---------------+-----------+
+| ROUND(salary,2) | CEIL(salary) | FLOOR(salary) | MOD(id,2) |
++-----------------+--------------+---------------+-----------+
+| 30000.00        | 30000        | 30000         | 1         |
+| 45000.00        | 45000        | 45000         | 0         |
+| 60000.00        | 60000        | 60000         | 1         |
++-----------------+--------------+---------------+-----------+
+Query Execution Time: 0.175286 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1319
+Test Type: Edge
+Test Description: Numeric functions variation 14
+Execution Status: PASS
+Query Executed: SELECT ROUND(salary,2), CEIL(salary), FLOOR(salary), MOD(id,2) FROM t_f088_14;
+Database Response: Rows returned: 3
++-----------------+--------------+---------------+-----------+
+| ROUND(salary,2) | CEIL(salary) | FLOOR(salary) | MOD(id,2) |
++-----------------+--------------+---------------+-----------+
+| 30000.00        | 30000        | 30000         | 1         |
+| 45000.00        | 45000        | 45000         | 0         |
+| 60000.00        | 60000        | 60000         | 1         |
++-----------------+--------------+---------------+-----------+
+Query Execution Time: 0.109637 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1320
+Test Type: Edge
+Test Description: Numeric functions variation 15
+Execution Status: PASS
+Query Executed: SELECT ROUND(salary,2), CEIL(salary), FLOOR(salary), MOD(id,2) FROM t_f088_15;
+Database Response: Rows returned: 3
++-----------------+--------------+---------------+-----------+
+| ROUND(salary,2) | CEIL(salary) | FLOOR(salary) | MOD(id,2) |
++-----------------+--------------+---------------+-----------+
+| 30000.00        | 30000        | 30000         | 1         |
+| 45000.00        | 45000        | 45000         | 0         |
+| 60000.00        | 60000        | 60000         | 1         |
++-----------------+--------------+---------------+-----------+
+Query Execution Time: 0.107201 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1321
+Test Type: Positive
+Test Description: Date & time functions variation 1
+Execution Status: PASS
+Query Executed: SELECT CURRENT_DATE(), DATE_ADD('2024-01-01', INTERVAL 5 DAY), DATEDIFF('2024-01-10','2024-01-01');
+Database Response: Rows returned: 1
++----------------+----------------------------------------+-------------------------------------+
+| CURRENT_DATE() | DATE_ADD('2024-01-01', INTERVAL 5 DAY) | DATEDIFF('2024-01-10','2024-01-01') |
++----------------+----------------------------------------+-------------------------------------+
+| 2026-09-17     | 2024-01-06                             | 9                                   |
++----------------+----------------------------------------+-------------------------------------+
+Query Execution Time: 0.124492 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1322
+Test Type: Positive
+Test Description: Date & time functions variation 2
+Execution Status: PASS
+Query Executed: SELECT CURRENT_DATE(), DATE_ADD('2024-01-01', INTERVAL 5 DAY), DATEDIFF('2024-01-10','2024-01-01');
+Database Response: Rows returned: 1
++----------------+----------------------------------------+-------------------------------------+
+| CURRENT_DATE() | DATE_ADD('2024-01-01', INTERVAL 5 DAY) | DATEDIFF('2024-01-10','2024-01-01') |
++----------------+----------------------------------------+-------------------------------------+
+| 2026-09-17     | 2024-01-06                             | 9                                   |
++----------------+----------------------------------------+-------------------------------------+
+Query Execution Time: 0.121497 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1323
+Test Type: Positive
+Test Description: Date & time functions variation 3
+Execution Status: PASS
+Query Executed: SELECT CURRENT_DATE(), DATE_ADD('2024-01-01', INTERVAL 5 DAY), DATEDIFF('2024-01-10','2024-01-01');
+Database Response: Rows returned: 1
++----------------+----------------------------------------+-------------------------------------+
+| CURRENT_DATE() | DATE_ADD('2024-01-01', INTERVAL 5 DAY) | DATEDIFF('2024-01-10','2024-01-01') |
++----------------+----------------------------------------+-------------------------------------+
+| 2026-09-17     | 2024-01-06                             | 9                                   |
++----------------+----------------------------------------+-------------------------------------+
+Query Execution Time: 0.103915 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1324
+Test Type: Positive
+Test Description: Date & time functions variation 4
+Execution Status: PASS
+Query Executed: SELECT CURRENT_DATE(), DATE_ADD('2024-01-01', INTERVAL 5 DAY), DATEDIFF('2024-01-10','2024-01-01');
+Database Response: Rows returned: 1
++----------------+----------------------------------------+-------------------------------------+
+| CURRENT_DATE() | DATE_ADD('2024-01-01', INTERVAL 5 DAY) | DATEDIFF('2024-01-10','2024-01-01') |
++----------------+----------------------------------------+-------------------------------------+
+| 2026-09-17     | 2024-01-06                             | 9                                   |
++----------------+----------------------------------------+-------------------------------------+
+Query Execution Time: 0.130838 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1325
+Test Type: Positive
+Test Description: Date & time functions variation 5
+Execution Status: PASS
+Query Executed: SELECT CURRENT_DATE(), DATE_ADD('2024-01-01', INTERVAL 5 DAY), DATEDIFF('2024-01-10','2024-01-01');
+Database Response: Rows returned: 1
++----------------+----------------------------------------+-------------------------------------+
+| CURRENT_DATE() | DATE_ADD('2024-01-01', INTERVAL 5 DAY) | DATEDIFF('2024-01-10','2024-01-01') |
++----------------+----------------------------------------+-------------------------------------+
+| 2026-09-17     | 2024-01-06                             | 9                                   |
++----------------+----------------------------------------+-------------------------------------+
+Query Execution Time: 0.097795 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1326
+Test Type: Negative
+Test Description: Date & time functions variation 6
+Execution Status: PASS
+Query Executed: SELECT DATEDIFF('bad-date','2024-01-01');
+Database Response: Rows returned: 1
++-----------------------------------+
+| DATEDIFF('bad-date','2024-01-01') |
++-----------------------------------+
+| NULL                              |
++-----------------------------------+
+Query Execution Time: 0.136960 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1327
+Test Type: Negative
+Test Description: Date & time functions variation 7
+Execution Status: PASS
+Query Executed: SELECT DATEDIFF('bad-date','2024-01-01');
+Database Response: Rows returned: 1
++-----------------------------------+
+| DATEDIFF('bad-date','2024-01-01') |
++-----------------------------------+
+| NULL                              |
++-----------------------------------+
+Query Execution Time: 0.147691 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1328
+Test Type: Negative
+Test Description: Date & time functions variation 8
+Execution Status: PASS
+Query Executed: SELECT DATEDIFF('bad-date','2024-01-01');
+Database Response: Rows returned: 1
++-----------------------------------+
+| DATEDIFF('bad-date','2024-01-01') |
++-----------------------------------+
+| NULL                              |
++-----------------------------------+
+Query Execution Time: 0.101364 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1329
+Test Type: Negative
+Test Description: Date & time functions variation 9
+Execution Status: PASS
+Query Executed: SELECT DATEDIFF('bad-date','2024-01-01');
+Database Response: Rows returned: 1
++-----------------------------------+
+| DATEDIFF('bad-date','2024-01-01') |
++-----------------------------------+
+| NULL                              |
++-----------------------------------+
+Query Execution Time: 0.114634 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1330
+Test Type: Negative
+Test Description: Date & time functions variation 10
+Execution Status: PASS
+Query Executed: SELECT DATEDIFF('bad-date','2024-01-01');
+Database Response: Rows returned: 1
++-----------------------------------+
+| DATEDIFF('bad-date','2024-01-01') |
++-----------------------------------+
+| NULL                              |
++-----------------------------------+
+Query Execution Time: 0.104236 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1331
+Test Type: Edge
+Test Description: Date & time functions variation 11
+Execution Status: PASS
+Query Executed: SELECT CURRENT_DATE(), DATE_ADD('2024-01-01', INTERVAL 5 DAY), DATEDIFF('2024-01-10','2024-01-01');
+Database Response: Rows returned: 1
++----------------+----------------------------------------+-------------------------------------+
+| CURRENT_DATE() | DATE_ADD('2024-01-01', INTERVAL 5 DAY) | DATEDIFF('2024-01-10','2024-01-01') |
++----------------+----------------------------------------+-------------------------------------+
+| 2026-09-17     | 2024-01-06                             | 9                                   |
++----------------+----------------------------------------+-------------------------------------+
+Query Execution Time: 0.098301 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1332
+Test Type: Edge
+Test Description: Date & time functions variation 12
+Execution Status: PASS
+Query Executed: SELECT CURRENT_DATE(), DATE_ADD('2024-01-01', INTERVAL 5 DAY), DATEDIFF('2024-01-10','2024-01-01');
+Database Response: Rows returned: 1
++----------------+----------------------------------------+-------------------------------------+
+| CURRENT_DATE() | DATE_ADD('2024-01-01', INTERVAL 5 DAY) | DATEDIFF('2024-01-10','2024-01-01') |
++----------------+----------------------------------------+-------------------------------------+
+| 2026-09-17     | 2024-01-06                             | 9                                   |
++----------------+----------------------------------------+-------------------------------------+
+Query Execution Time: 0.103982 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1333
+Test Type: Edge
+Test Description: Date & time functions variation 13
+Execution Status: PASS
+Query Executed: SELECT CURRENT_DATE(), DATE_ADD('2024-01-01', INTERVAL 5 DAY), DATEDIFF('2024-01-10','2024-01-01');
+Database Response: Rows returned: 1
++----------------+----------------------------------------+-------------------------------------+
+| CURRENT_DATE() | DATE_ADD('2024-01-01', INTERVAL 5 DAY) | DATEDIFF('2024-01-10','2024-01-01') |
++----------------+----------------------------------------+-------------------------------------+
+| 2026-09-17     | 2024-01-06                             | 9                                   |
++----------------+----------------------------------------+-------------------------------------+
+Query Execution Time: 0.116433 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1334
+Test Type: Edge
+Test Description: Date & time functions variation 14
+Execution Status: PASS
+Query Executed: SELECT CURRENT_DATE(), DATE_ADD('2024-01-01', INTERVAL 5 DAY), DATEDIFF('2024-01-10','2024-01-01');
+Database Response: Rows returned: 1
++----------------+----------------------------------------+-------------------------------------+
+| CURRENT_DATE() | DATE_ADD('2024-01-01', INTERVAL 5 DAY) | DATEDIFF('2024-01-10','2024-01-01') |
++----------------+----------------------------------------+-------------------------------------+
+| 2026-09-17     | 2024-01-06                             | 9                                   |
++----------------+----------------------------------------+-------------------------------------+
+Query Execution Time: 0.107446 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1335
+Test Type: Edge
+Test Description: Date & time functions variation 15
+Execution Status: PASS
+Query Executed: SELECT CURRENT_DATE(), DATE_ADD('2024-01-01', INTERVAL 5 DAY), DATEDIFF('2024-01-10','2024-01-01');
+Database Response: Rows returned: 1
++----------------+----------------------------------------+-------------------------------------+
+| CURRENT_DATE() | DATE_ADD('2024-01-01', INTERVAL 5 DAY) | DATEDIFF('2024-01-10','2024-01-01') |
++----------------+----------------------------------------+-------------------------------------+
+| 2026-09-17     | 2024-01-06                             | 9                                   |
++----------------+----------------------------------------+-------------------------------------+
+Query Execution Time: 0.147002 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1336
+Test Type: Positive
+Test Description: JSON functions variation 1
+Execution Status: PASS
+Query Executed: SELECT JSON_OBJECT('id',1,'name','Alice') AS obj, JSON_EXTRACT('{"a":1}','$.a') AS val;
+Database Response: Rows returned: 1
++----------------------------+-----+
+| obj                        | val |
++----------------------------+-----+
+| {"id": 1, "name": "Alice"} | 1   |
++----------------------------+-----+
+Query Execution Time: 0.040954 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1337
+Test Type: Positive
+Test Description: JSON functions variation 2
+Execution Status: PASS
+Query Executed: SELECT JSON_OBJECT('id',1,'name','Alice') AS obj, JSON_EXTRACT('{"a":1}','$.a') AS val;
+Database Response: Rows returned: 1
++----------------------------+-----+
+| obj                        | val |
++----------------------------+-----+
+| {"id": 1, "name": "Alice"} | 1   |
++----------------------------+-----+
+Query Execution Time: 0.002142 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1338
+Test Type: Positive
+Test Description: JSON functions variation 3
+Execution Status: PASS
+Query Executed: SELECT JSON_OBJECT('id',1,'name','Alice') AS obj, JSON_EXTRACT('{"a":1}','$.a') AS val;
+Database Response: Rows returned: 1
++----------------------------+-----+
+| obj                        | val |
++----------------------------+-----+
+| {"id": 1, "name": "Alice"} | 1   |
++----------------------------+-----+
+Query Execution Time: 0.002947 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1339
+Test Type: Positive
+Test Description: JSON functions variation 4
+Execution Status: PASS
+Query Executed: SELECT JSON_OBJECT('id',1,'name','Alice') AS obj, JSON_EXTRACT('{"a":1}','$.a') AS val;
+Database Response: Rows returned: 1
++----------------------------+-----+
+| obj                        | val |
++----------------------------+-----+
+| {"id": 1, "name": "Alice"} | 1   |
++----------------------------+-----+
+Query Execution Time: 0.001879 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1340
+Test Type: Positive
+Test Description: JSON functions variation 5
+Execution Status: PASS
+Query Executed: SELECT JSON_OBJECT('id',1,'name','Alice') AS obj, JSON_EXTRACT('{"a":1}','$.a') AS val;
+Database Response: Rows returned: 1
++----------------------------+-----+
+| obj                        | val |
++----------------------------+-----+
+| {"id": 1, "name": "Alice"} | 1   |
++----------------------------+-----+
+Query Execution Time: 0.002126 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1341
+Test Type: Negative
+Test Description: JSON functions variation 6
+Execution Status: PASS
+Query Executed: SELECT JSON_EXTRACT('{"a":1}', '$[');
+Database Response: 3143 (42000): Invalid JSON path expression. The error is around character position 2.
+Query Execution Time: 0.004699 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1342
+Test Type: Negative
+Test Description: JSON functions variation 7
+Execution Status: PASS
+Query Executed: SELECT JSON_EXTRACT('{"a":1}', '$[');
+Database Response: 3143 (42000): Invalid JSON path expression. The error is around character position 2.
+Query Execution Time: 0.001658 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1343
+Test Type: Negative
+Test Description: JSON functions variation 8
+Execution Status: PASS
+Query Executed: SELECT JSON_EXTRACT('{"a":1}', '$[');
+Database Response: 3143 (42000): Invalid JSON path expression. The error is around character position 2.
+Query Execution Time: 0.001728 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1344
+Test Type: Negative
+Test Description: JSON functions variation 9
+Execution Status: PASS
+Query Executed: SELECT JSON_EXTRACT('{"a":1}', '$[');
+Database Response: 3143 (42000): Invalid JSON path expression. The error is around character position 2.
+Query Execution Time: 0.001059 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1345
+Test Type: Negative
+Test Description: JSON functions variation 10
+Execution Status: PASS
+Query Executed: SELECT JSON_EXTRACT('{"a":1}', '$[');
+Database Response: 3143 (42000): Invalid JSON path expression. The error is around character position 2.
+Query Execution Time: 0.000925 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1346
+Test Type: Edge
+Test Description: JSON functions variation 11
+Execution Status: PASS
+Query Executed: SELECT JSON_OBJECT('id',1,'name','Alice') AS obj, JSON_EXTRACT('{"a":1}','$.a') AS val;
+Database Response: Rows returned: 1
++----------------------------+-----+
+| obj                        | val |
++----------------------------+-----+
+| {"id": 1, "name": "Alice"} | 1   |
++----------------------------+-----+
+Query Execution Time: 0.001204 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1347
+Test Type: Edge
+Test Description: JSON functions variation 12
+Execution Status: PASS
+Query Executed: SELECT JSON_OBJECT('id',1,'name','Alice') AS obj, JSON_EXTRACT('{"a":1}','$.a') AS val;
+Database Response: Rows returned: 1
++----------------------------+-----+
+| obj                        | val |
++----------------------------+-----+
+| {"id": 1, "name": "Alice"} | 1   |
++----------------------------+-----+
+Query Execution Time: 0.000757 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1348
+Test Type: Edge
+Test Description: JSON functions variation 13
+Execution Status: PASS
+Query Executed: SELECT JSON_OBJECT('id',1,'name','Alice') AS obj, JSON_EXTRACT('{"a":1}','$.a') AS val;
+Database Response: Rows returned: 1
++----------------------------+-----+
+| obj                        | val |
++----------------------------+-----+
+| {"id": 1, "name": "Alice"} | 1   |
++----------------------------+-----+
+Query Execution Time: 0.000683 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1349
+Test Type: Edge
+Test Description: JSON functions variation 14
+Execution Status: PASS
+Query Executed: SELECT JSON_OBJECT('id',1,'name','Alice') AS obj, JSON_EXTRACT('{"a":1}','$.a') AS val;
+Database Response: Rows returned: 1
++----------------------------+-----+
+| obj                        | val |
++----------------------------+-----+
+| {"id": 1, "name": "Alice"} | 1   |
++----------------------------+-----+
+Query Execution Time: 0.000770 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1350
+Test Type: Edge
+Test Description: JSON functions variation 15
+Execution Status: PASS
+Query Executed: SELECT JSON_OBJECT('id',1,'name','Alice') AS obj, JSON_EXTRACT('{"a":1}','$.a') AS val;
+Database Response: Rows returned: 1
++----------------------------+-----+
+| obj                        | val |
++----------------------------+-----+
+| {"id": 1, "name": "Alice"} | 1   |
++----------------------------+-----+
+Query Execution Time: 0.000644 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1351
+Test Type: Positive
+Test Description: START TRANSACTION variation 1
+Execution Status: PASS
+Query Executed: START TRANSACTION;
+Database Response: Query executed successfully. Rows affected: 0
+Query Execution Time: 0.127981 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1352
+Test Type: Positive
+Test Description: START TRANSACTION variation 2
+Execution Status: PASS
+Query Executed: START TRANSACTION;
+Database Response: Query executed successfully. Rows affected: 0
+Query Execution Time: 0.084512 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1353
+Test Type: Positive
+Test Description: START TRANSACTION variation 3
+Execution Status: PASS
+Query Executed: START TRANSACTION;
+Database Response: Query executed successfully. Rows affected: 0
+Query Execution Time: 0.086442 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1354
+Test Type: Positive
+Test Description: START TRANSACTION variation 4
+Execution Status: PASS
+Query Executed: START TRANSACTION;
+Database Response: Query executed successfully. Rows affected: 0
+Query Execution Time: 0.088959 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1355
+Test Type: Positive
+Test Description: START TRANSACTION variation 5
+Execution Status: PASS
+Query Executed: START TRANSACTION;
+Database Response: Query executed successfully. Rows affected: 0
+Query Execution Time: 0.113136 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1356
+Test Type: Negative
+Test Description: START TRANSACTION variation 6
+Execution Status: PASS
+Query Executed: START TRANSACTION BOGUS;
+Database Response: 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'BOGUS' at line 1
+Query Execution Time: 0.100531 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1357
+Test Type: Negative
+Test Description: START TRANSACTION variation 7
+Execution Status: PASS
+Query Executed: START TRANSACTION BOGUS;
+Database Response: 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'BOGUS' at line 1
+Query Execution Time: 0.088212 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1358
+Test Type: Negative
+Test Description: START TRANSACTION variation 8
+Execution Status: PASS
+Query Executed: START TRANSACTION BOGUS;
+Database Response: 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'BOGUS' at line 1
+Query Execution Time: 0.079680 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1359
+Test Type: Negative
+Test Description: START TRANSACTION variation 9
+Execution Status: PASS
+Query Executed: START TRANSACTION BOGUS;
+Database Response: 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'BOGUS' at line 1
+Query Execution Time: 0.093466 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1360
+Test Type: Negative
+Test Description: START TRANSACTION variation 10
+Execution Status: PASS
+Query Executed: START TRANSACTION BOGUS;
+Database Response: 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'BOGUS' at line 1
+Query Execution Time: 0.167780 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1361
+Test Type: Edge
+Test Description: START TRANSACTION variation 11
+Execution Status: PASS
+Query Executed: START TRANSACTION;
+Database Response: Query executed successfully. Rows affected: 0
+Query Execution Time: 0.091661 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1362
+Test Type: Edge
+Test Description: START TRANSACTION variation 12
+Execution Status: PASS
+Query Executed: START TRANSACTION;
+Database Response: Query executed successfully. Rows affected: 0
+Query Execution Time: 0.123631 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1363
+Test Type: Edge
+Test Description: START TRANSACTION variation 13
+Execution Status: PASS
+Query Executed: START TRANSACTION;
+Database Response: Query executed successfully. Rows affected: 0
+Query Execution Time: 0.136381 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1364
+Test Type: Edge
+Test Description: START TRANSACTION variation 14
+Execution Status: PASS
+Query Executed: START TRANSACTION;
+Database Response: Query executed successfully. Rows affected: 0
+Query Execution Time: 0.464313 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1365
+Test Type: Edge
+Test Description: START TRANSACTION variation 15
+Execution Status: PASS
+Query Executed: START TRANSACTION;
+Database Response: Query executed successfully. Rows affected: 0
+Query Execution Time: 0.210780 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1366
+Test Type: Positive
+Test Description: COMMIT variation 1
+Execution Status: PASS
+Query Executed: COMMIT;
+Database Response: Query executed successfully. Rows affected: 0
+Query Execution Time: 0.127300 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1367
+Test Type: Positive
+Test Description: COMMIT variation 2
+Execution Status: PASS
+Query Executed: COMMIT;
+Database Response: Query executed successfully. Rows affected: 0
+Query Execution Time: 0.128054 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1368
+Test Type: Positive
+Test Description: COMMIT variation 3
+Execution Status: PASS
+Query Executed: COMMIT;
+Database Response: Query executed successfully. Rows affected: 0
+Query Execution Time: 0.123551 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1369
+Test Type: Positive
+Test Description: COMMIT variation 4
+Execution Status: PASS
+Query Executed: COMMIT;
+Database Response: Query executed successfully. Rows affected: 0
+Query Execution Time: 0.114610 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1370
+Test Type: Positive
+Test Description: COMMIT variation 5
+Execution Status: PASS
+Query Executed: COMMIT;
+Database Response: Query executed successfully. Rows affected: 0
+Query Execution Time: 0.121844 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1371
+Test Type: Negative
+Test Description: COMMIT variation 6
+Execution Status: PASS
+Query Executed: COMMIT BOGUS;
+Database Response: 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'BOGUS' at line 1
+Query Execution Time: 0.121378 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1372
+Test Type: Negative
+Test Description: COMMIT variation 7
+Execution Status: PASS
+Query Executed: COMMIT BOGUS;
+Database Response: 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'BOGUS' at line 1
+Query Execution Time: 0.149151 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1373
+Test Type: Negative
+Test Description: COMMIT variation 8
+Execution Status: PASS
+Query Executed: COMMIT BOGUS;
+Database Response: 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'BOGUS' at line 1
+Query Execution Time: 0.182641 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1374
+Test Type: Negative
+Test Description: COMMIT variation 9
+Execution Status: PASS
+Query Executed: COMMIT BOGUS;
+Database Response: 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'BOGUS' at line 1
+Query Execution Time: 0.120579 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1375
+Test Type: Negative
+Test Description: COMMIT variation 10
+Execution Status: PASS
+Query Executed: COMMIT BOGUS;
+Database Response: 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'BOGUS' at line 1
+Query Execution Time: 0.140540 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1376
+Test Type: Edge
+Test Description: COMMIT variation 11
+Execution Status: PASS
+Query Executed: COMMIT;
+Database Response: Query executed successfully. Rows affected: 0
+Query Execution Time: 0.155682 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1377
+Test Type: Edge
+Test Description: COMMIT variation 12
+Execution Status: PASS
+Query Executed: COMMIT;
+Database Response: Query executed successfully. Rows affected: 0
+Query Execution Time: 0.139725 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1378
+Test Type: Edge
+Test Description: COMMIT variation 13
+Execution Status: PASS
+Query Executed: COMMIT;
+Database Response: Query executed successfully. Rows affected: 0
+Query Execution Time: 0.108123 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1379
+Test Type: Edge
+Test Description: COMMIT variation 14
+Execution Status: PASS
+Query Executed: COMMIT;
+Database Response: Query executed successfully. Rows affected: 0
+Query Execution Time: 0.216307 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1380
+Test Type: Edge
+Test Description: COMMIT variation 15
+Execution Status: PASS
+Query Executed: COMMIT;
+Database Response: Query executed successfully. Rows affected: 0
+Query Execution Time: 0.118505 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1381
+Test Type: Positive
+Test Description: ROLLBACK variation 1
+Execution Status: PASS
+Query Executed: ROLLBACK;
+Database Response: Query executed successfully. Rows affected: 0
+Query Execution Time: 0.104834 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1382
+Test Type: Positive
+Test Description: ROLLBACK variation 2
+Execution Status: PASS
+Query Executed: ROLLBACK;
+Database Response: Query executed successfully. Rows affected: 0
+Query Execution Time: 0.101741 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1383
+Test Type: Positive
+Test Description: ROLLBACK variation 3
+Execution Status: PASS
+Query Executed: ROLLBACK;
+Database Response: Query executed successfully. Rows affected: 0
+Query Execution Time: 0.114172 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1384
+Test Type: Positive
+Test Description: ROLLBACK variation 4
+Execution Status: PASS
+Query Executed: ROLLBACK;
+Database Response: Query executed successfully. Rows affected: 0
+Query Execution Time: 0.112833 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1385
+Test Type: Positive
+Test Description: ROLLBACK variation 5
+Execution Status: PASS
+Query Executed: ROLLBACK;
+Database Response: Query executed successfully. Rows affected: 0
+Query Execution Time: 0.110172 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1386
+Test Type: Negative
+Test Description: ROLLBACK variation 6
+Execution Status: PASS
+Query Executed: ROLLBACK BOGUS;
+Database Response: 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'BOGUS' at line 1
+Query Execution Time: 0.095532 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1387
+Test Type: Negative
+Test Description: ROLLBACK variation 7
+Execution Status: PASS
+Query Executed: ROLLBACK BOGUS;
+Database Response: 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'BOGUS' at line 1
+Query Execution Time: 0.103659 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1388
+Test Type: Negative
+Test Description: ROLLBACK variation 8
+Execution Status: PASS
+Query Executed: ROLLBACK BOGUS;
+Database Response: 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'BOGUS' at line 1
+Query Execution Time: 0.188556 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1389
+Test Type: Negative
+Test Description: ROLLBACK variation 9
+Execution Status: PASS
+Query Executed: ROLLBACK BOGUS;
+Database Response: 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'BOGUS' at line 1
+Query Execution Time: 0.097649 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1390
+Test Type: Negative
+Test Description: ROLLBACK variation 10
+Execution Status: PASS
+Query Executed: ROLLBACK BOGUS;
+Database Response: 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'BOGUS' at line 1
+Query Execution Time: 0.102646 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1391
+Test Type: Edge
+Test Description: ROLLBACK variation 11
+Execution Status: PASS
+Query Executed: ROLLBACK;
+Database Response: Query executed successfully. Rows affected: 0
+Query Execution Time: 0.104439 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1392
+Test Type: Edge
+Test Description: ROLLBACK variation 12
+Execution Status: PASS
+Query Executed: ROLLBACK;
+Database Response: Query executed successfully. Rows affected: 0
+Query Execution Time: 0.109367 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1393
+Test Type: Edge
+Test Description: ROLLBACK variation 13
+Execution Status: PASS
+Query Executed: ROLLBACK;
+Database Response: Query executed successfully. Rows affected: 0
+Query Execution Time: 0.107766 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1394
+Test Type: Edge
+Test Description: ROLLBACK variation 14
+Execution Status: PASS
+Query Executed: ROLLBACK;
+Database Response: Query executed successfully. Rows affected: 0
+Query Execution Time: 0.099956 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1395
+Test Type: Edge
+Test Description: ROLLBACK variation 15
+Execution Status: PASS
+Query Executed: ROLLBACK;
+Database Response: Query executed successfully. Rows affected: 0
+Query Execution Time: 0.101018 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1396
+Test Type: Positive
+Test Description: SAVEPOINT variation 1
+Execution Status: PASS
+Query Executed: SAVEPOINT sp_1;
+Database Response: Query executed successfully. Rows affected: 0
+Query Execution Time: 0.160884 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1397
+Test Type: Positive
+Test Description: SAVEPOINT variation 2
+Execution Status: PASS
+Query Executed: SAVEPOINT sp_2;
+Database Response: Query executed successfully. Rows affected: 0
+Query Execution Time: 0.178331 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1398
+Test Type: Positive
+Test Description: SAVEPOINT variation 3
+Execution Status: PASS
+Query Executed: SAVEPOINT sp_3;
+Database Response: Query executed successfully. Rows affected: 0
+Query Execution Time: 0.093211 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1399
+Test Type: Positive
+Test Description: SAVEPOINT variation 4
+Execution Status: PASS
+Query Executed: SAVEPOINT sp_4;
+Database Response: Query executed successfully. Rows affected: 0
+Query Execution Time: 0.091025 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1400
+Test Type: Positive
+Test Description: SAVEPOINT variation 5
+Execution Status: PASS
+Query Executed: SAVEPOINT sp_5;
+Database Response: Query executed successfully. Rows affected: 0
+Query Execution Time: 0.087335 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1401
+Test Type: Negative
+Test Description: SAVEPOINT variation 6
+Execution Status: PASS
+Query Executed: SAVEPOINT;
+Database Response: 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+Query Execution Time: 0.084554 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1402
+Test Type: Negative
+Test Description: SAVEPOINT variation 7
+Execution Status: PASS
+Query Executed: SAVEPOINT;
+Database Response: 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+Query Execution Time: 0.098552 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1403
+Test Type: Negative
+Test Description: SAVEPOINT variation 8
+Execution Status: PASS
+Query Executed: SAVEPOINT;
+Database Response: 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+Query Execution Time: 0.091602 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1404
+Test Type: Negative
+Test Description: SAVEPOINT variation 9
+Execution Status: PASS
+Query Executed: SAVEPOINT;
+Database Response: 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+Query Execution Time: 0.116023 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1405
+Test Type: Negative
+Test Description: SAVEPOINT variation 10
+Execution Status: PASS
+Query Executed: SAVEPOINT;
+Database Response: 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+Query Execution Time: 0.127688 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1406
+Test Type: Edge
+Test Description: SAVEPOINT variation 11
+Execution Status: PASS
+Query Executed: SAVEPOINT sp_11;
+Database Response: Query executed successfully. Rows affected: 0
+Query Execution Time: 0.220881 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1407
+Test Type: Edge
+Test Description: SAVEPOINT variation 12
+Execution Status: PASS
+Query Executed: SAVEPOINT sp_12;
+Database Response: Query executed successfully. Rows affected: 0
+Query Execution Time: 0.117766 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1408
+Test Type: Edge
+Test Description: SAVEPOINT variation 13
+Execution Status: PASS
+Query Executed: SAVEPOINT sp_13;
+Database Response: Query executed successfully. Rows affected: 0
+Query Execution Time: 0.161606 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1409
+Test Type: Edge
+Test Description: SAVEPOINT variation 14
+Execution Status: PASS
+Query Executed: SAVEPOINT sp_14;
+Database Response: Query executed successfully. Rows affected: 0
+Query Execution Time: 0.101431 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1410
+Test Type: Edge
+Test Description: SAVEPOINT variation 15
+Execution Status: PASS
+Query Executed: SAVEPOINT sp_15;
+Database Response: Query executed successfully. Rows affected: 0
+Query Execution Time: 0.095104 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1411
+Test Type: Positive
+Test Description: ROLLBACK TO SAVEPOINT variation 1
+Execution Status: PASS
+Query Executed: ROLLBACK TO SAVEPOINT sp_test;
+Database Response: Query executed successfully. Rows affected: 0
+Query Execution Time: 0.114698 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1412
+Test Type: Positive
+Test Description: ROLLBACK TO SAVEPOINT variation 2
+Execution Status: PASS
+Query Executed: ROLLBACK TO SAVEPOINT sp_test;
+Database Response: Query executed successfully. Rows affected: 0
+Query Execution Time: 0.109911 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1413
+Test Type: Positive
+Test Description: ROLLBACK TO SAVEPOINT variation 3
+Execution Status: PASS
+Query Executed: ROLLBACK TO SAVEPOINT sp_test;
+Database Response: Query executed successfully. Rows affected: 0
+Query Execution Time: 0.211065 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1414
+Test Type: Positive
+Test Description: ROLLBACK TO SAVEPOINT variation 4
+Execution Status: PASS
+Query Executed: ROLLBACK TO SAVEPOINT sp_test;
+Database Response: Query executed successfully. Rows affected: 0
+Query Execution Time: 0.144427 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1415
+Test Type: Positive
+Test Description: ROLLBACK TO SAVEPOINT variation 5
+Execution Status: PASS
+Query Executed: ROLLBACK TO SAVEPOINT sp_test;
+Database Response: Query executed successfully. Rows affected: 0
+Query Execution Time: 0.108693 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1416
+Test Type: Negative
+Test Description: ROLLBACK TO SAVEPOINT variation 6
+Execution Status: PASS
+Query Executed: ROLLBACK TO SAVEPOINT missing_sp;
+Database Response: 1305 (42000): SAVEPOINT missing_sp does not exist
+Query Execution Time: 0.107968 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1417
+Test Type: Negative
+Test Description: ROLLBACK TO SAVEPOINT variation 7
+Execution Status: PASS
+Query Executed: ROLLBACK TO SAVEPOINT missing_sp;
+Database Response: 1305 (42000): SAVEPOINT missing_sp does not exist
+Query Execution Time: 0.104225 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1418
+Test Type: Negative
+Test Description: ROLLBACK TO SAVEPOINT variation 8
+Execution Status: PASS
+Query Executed: ROLLBACK TO SAVEPOINT missing_sp;
+Database Response: 1305 (42000): SAVEPOINT missing_sp does not exist
+Query Execution Time: 0.111093 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1419
+Test Type: Negative
+Test Description: ROLLBACK TO SAVEPOINT variation 9
+Execution Status: PASS
+Query Executed: ROLLBACK TO SAVEPOINT missing_sp;
+Database Response: 1305 (42000): SAVEPOINT missing_sp does not exist
+Query Execution Time: 0.113843 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1420
+Test Type: Negative
+Test Description: ROLLBACK TO SAVEPOINT variation 10
+Execution Status: PASS
+Query Executed: ROLLBACK TO SAVEPOINT missing_sp;
+Database Response: 1305 (42000): SAVEPOINT missing_sp does not exist
+Query Execution Time: 0.120427 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1421
+Test Type: Edge
+Test Description: ROLLBACK TO SAVEPOINT variation 11
+Execution Status: PASS
+Query Executed: ROLLBACK TO SAVEPOINT sp_test;
+Database Response: Query executed successfully. Rows affected: 0
+Query Execution Time: 0.232236 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1422
+Test Type: Edge
+Test Description: ROLLBACK TO SAVEPOINT variation 12
+Execution Status: PASS
+Query Executed: ROLLBACK TO SAVEPOINT sp_test;
+Database Response: Query executed successfully. Rows affected: 0
+Query Execution Time: 0.131745 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1423
+Test Type: Edge
+Test Description: ROLLBACK TO SAVEPOINT variation 13
+Execution Status: PASS
+Query Executed: ROLLBACK TO SAVEPOINT sp_test;
+Database Response: Query executed successfully. Rows affected: 0
+Query Execution Time: 0.127092 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1424
+Test Type: Edge
+Test Description: ROLLBACK TO SAVEPOINT variation 14
+Execution Status: PASS
+Query Executed: ROLLBACK TO SAVEPOINT sp_test;
+Database Response: Query executed successfully. Rows affected: 0
+Query Execution Time: 0.128468 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1425
+Test Type: Edge
+Test Description: ROLLBACK TO SAVEPOINT variation 15
+Execution Status: PASS
+Query Executed: ROLLBACK TO SAVEPOINT sp_test;
+Database Response: Query executed successfully. Rows affected: 0
+Query Execution Time: 0.119545 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1426
+Test Type: Positive
+Test Description: Multiple operations in transaction variation 1
+Execution Status: PASS
+Query Executed: COMMIT;
+Database Response: Query executed successfully. Rows affected: 0
+Query Execution Time: 0.100272 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1427
+Test Type: Positive
+Test Description: Multiple operations in transaction variation 2
+Execution Status: PASS
+Query Executed: COMMIT;
+Database Response: Query executed successfully. Rows affected: 0
+Query Execution Time: 0.098699 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1428
+Test Type: Positive
+Test Description: Multiple operations in transaction variation 3
+Execution Status: PASS
+Query Executed: COMMIT;
+Database Response: Query executed successfully. Rows affected: 0
+Query Execution Time: 0.116885 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1429
+Test Type: Positive
+Test Description: Multiple operations in transaction variation 4
+Execution Status: PASS
+Query Executed: COMMIT;
+Database Response: Query executed successfully. Rows affected: 0
+Query Execution Time: 0.198048 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1430
+Test Type: Positive
+Test Description: Multiple operations in transaction variation 5
+Execution Status: PASS
+Query Executed: COMMIT;
+Database Response: Query executed successfully. Rows affected: 0
+Query Execution Time: 0.116245 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1431
+Test Type: Negative
+Test Description: Multiple operations in transaction variation 6
+Execution Status: PASS
+Query Executed: COMMIT BOGUS;
+Database Response: 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'BOGUS' at line 1
+Query Execution Time: 0.111437 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1432
+Test Type: Negative
+Test Description: Multiple operations in transaction variation 7
+Execution Status: PASS
+Query Executed: COMMIT BOGUS;
+Database Response: 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'BOGUS' at line 1
+Query Execution Time: 0.119753 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1433
+Test Type: Negative
+Test Description: Multiple operations in transaction variation 8
+Execution Status: PASS
+Query Executed: COMMIT BOGUS;
+Database Response: 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'BOGUS' at line 1
+Query Execution Time: 0.109600 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1434
+Test Type: Negative
+Test Description: Multiple operations in transaction variation 9
+Execution Status: PASS
+Query Executed: COMMIT BOGUS;
+Database Response: 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'BOGUS' at line 1
+Query Execution Time: 0.115343 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1435
+Test Type: Negative
+Test Description: Multiple operations in transaction variation 10
+Execution Status: PASS
+Query Executed: COMMIT BOGUS;
+Database Response: 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'BOGUS' at line 1
+Query Execution Time: 0.119181 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1436
+Test Type: Edge
+Test Description: Multiple operations in transaction variation 11
+Execution Status: PASS
+Query Executed: ROLLBACK;
+Database Response: Query executed successfully. Rows affected: 0
+Query Execution Time: 0.102049 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1437
+Test Type: Edge
+Test Description: Multiple operations in transaction variation 12
+Execution Status: PASS
+Query Executed: ROLLBACK;
+Database Response: Query executed successfully. Rows affected: 0
+Query Execution Time: 0.180043 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1438
+Test Type: Edge
+Test Description: Multiple operations in transaction variation 13
+Execution Status: PASS
+Query Executed: ROLLBACK;
+Database Response: Query executed successfully. Rows affected: 0
+Query Execution Time: 0.116008 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1439
+Test Type: Edge
+Test Description: Multiple operations in transaction variation 14
+Execution Status: PASS
+Query Executed: ROLLBACK;
+Database Response: Query executed successfully. Rows affected: 0
+Query Execution Time: 0.107181 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1440
+Test Type: Edge
+Test Description: Multiple operations in transaction variation 15
+Execution Status: PASS
+Query Executed: ROLLBACK;
+Database Response: Query executed successfully. Rows affected: 0
+Query Execution Time: 0.094200 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1441
+Test Type: Positive
+Test Description: CREATE INDEX / index usage variation 1
+Execution Status: PASS
+Query Executed: CREATE INDEX idx_f097_1 ON t_f097_1(lookup_val);
+Database Response: Query executed successfully. Rows affected: 0
+Query Execution Time: 0.175080 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1442
+Test Type: Positive
+Test Description: CREATE INDEX / index usage variation 2
+Execution Status: PASS
+Query Executed: CREATE INDEX idx_f097_2 ON t_f097_2(lookup_val);
+Database Response: Query executed successfully. Rows affected: 0
+Query Execution Time: 0.149599 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1443
+Test Type: Positive
+Test Description: CREATE INDEX / index usage variation 3
+Execution Status: PASS
+Query Executed: CREATE INDEX idx_f097_3 ON t_f097_3(lookup_val);
+Database Response: Query executed successfully. Rows affected: 0
+Query Execution Time: 0.142394 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1444
+Test Type: Positive
+Test Description: CREATE INDEX / index usage variation 4
+Execution Status: PASS
+Query Executed: CREATE INDEX idx_f097_4 ON t_f097_4(lookup_val);
+Database Response: Query executed successfully. Rows affected: 0
+Query Execution Time: 0.267885 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1445
+Test Type: Positive
+Test Description: CREATE INDEX / index usage variation 5
+Execution Status: PASS
+Query Executed: CREATE INDEX idx_f097_5 ON t_f097_5(lookup_val);
+Database Response: Query executed successfully. Rows affected: 0
+Query Execution Time: 0.186555 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1446
+Test Type: Negative
+Test Description: CREATE INDEX / index usage variation 6
+Execution Status: PASS
+Query Executed: CREATE INDEX idx_f097_6 ON t_f097_6(lookup_val);
+Database Response: 1061 (42000): Duplicate key name 'idx_f097_6'
+Query Execution Time: 0.149802 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1447
+Test Type: Negative
+Test Description: CREATE INDEX / index usage variation 7
+Execution Status: PASS
+Query Executed: CREATE INDEX idx_f097_7 ON t_f097_7(lookup_val);
+Database Response: 1061 (42000): Duplicate key name 'idx_f097_7'
+Query Execution Time: 0.149050 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1448
+Test Type: Negative
+Test Description: CREATE INDEX / index usage variation 8
+Execution Status: PASS
+Query Executed: CREATE INDEX idx_f097_8 ON t_f097_8(lookup_val);
+Database Response: 1061 (42000): Duplicate key name 'idx_f097_8'
+Query Execution Time: 0.137040 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1449
+Test Type: Negative
+Test Description: CREATE INDEX / index usage variation 9
+Execution Status: PASS
+Query Executed: CREATE INDEX idx_f097_9 ON t_f097_9(lookup_val);
+Database Response: 1061 (42000): Duplicate key name 'idx_f097_9'
+Query Execution Time: 0.147097 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1450
+Test Type: Negative
+Test Description: CREATE INDEX / index usage variation 10
+Execution Status: PASS
+Query Executed: CREATE INDEX idx_f097_10 ON t_f097_10(lookup_val);
+Database Response: 1061 (42000): Duplicate key name 'idx_f097_10'
+Query Execution Time: 0.240766 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1451
+Test Type: Edge
+Test Description: CREATE INDEX / index usage variation 11
+Execution Status: PASS
+Query Executed: CREATE INDEX idx_f097_11 ON t_f097_11(lookup_val);
+Database Response: Query executed successfully. Rows affected: 0
+Query Execution Time: 0.201171 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1452
+Test Type: Edge
+Test Description: CREATE INDEX / index usage variation 12
+Execution Status: PASS
+Query Executed: CREATE INDEX idx_f097_12 ON t_f097_12(lookup_val);
+Database Response: Query executed successfully. Rows affected: 0
+Query Execution Time: 0.141794 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1453
+Test Type: Edge
+Test Description: CREATE INDEX / index usage variation 13
+Execution Status: PASS
+Query Executed: CREATE INDEX idx_f097_13 ON t_f097_13(lookup_val);
+Database Response: Query executed successfully. Rows affected: 0
+Query Execution Time: 0.141717 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1454
+Test Type: Edge
+Test Description: CREATE INDEX / index usage variation 14
+Execution Status: PASS
+Query Executed: CREATE INDEX idx_f097_14 ON t_f097_14(lookup_val);
+Database Response: Query executed successfully. Rows affected: 0
+Query Execution Time: 0.127998 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1455
+Test Type: Edge
+Test Description: CREATE INDEX / index usage variation 15
+Execution Status: PASS
+Query Executed: CREATE INDEX idx_f097_15 ON t_f097_15(lookup_val);
+Database Response: Query executed successfully. Rows affected: 0
+Query Execution Time: 0.147985 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1456
+Test Type: Positive
+Test Description: Views variation 1
+Execution Status: PASS
+Query Executed: CREATE VIEW t_f098_1_view AS SELECT 1 AS id, 'ok' AS status;
+Database Response: Query executed successfully. Rows affected: 0
+Query Execution Time: 0.078572 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1457
+Test Type: Positive
+Test Description: Views variation 2
+Execution Status: PASS
+Query Executed: CREATE VIEW t_f098_2_view AS SELECT 1 AS id, 'ok' AS status;
+Database Response: Query executed successfully. Rows affected: 0
+Query Execution Time: 0.063660 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1458
+Test Type: Positive
+Test Description: Views variation 3
+Execution Status: PASS
+Query Executed: CREATE VIEW t_f098_3_view AS SELECT 1 AS id, 'ok' AS status;
+Database Response: Query executed successfully. Rows affected: 0
+Query Execution Time: 0.044056 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1459
+Test Type: Positive
+Test Description: Views variation 4
+Execution Status: PASS
+Query Executed: CREATE VIEW t_f098_4_view AS SELECT 1 AS id, 'ok' AS status;
+Database Response: Query executed successfully. Rows affected: 0
+Query Execution Time: 0.031166 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1460
+Test Type: Positive
+Test Description: Views variation 5
+Execution Status: PASS
+Query Executed: CREATE VIEW t_f098_5_view AS SELECT 1 AS id, 'ok' AS status;
+Database Response: Query executed successfully. Rows affected: 0
+Query Execution Time: 0.028561 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1461
+Test Type: Negative
+Test Description: Views variation 6
+Execution Status: PASS
+Query Executed: SELECT * FROM t_f098_6_view;
+Database Response: 1146 (42S02): Table 'ai_testing_test.t_f098_6_view' doesn't exist
+Query Execution Time: 0.008056 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1462
+Test Type: Negative
+Test Description: Views variation 7
+Execution Status: PASS
+Query Executed: SELECT * FROM t_f098_7_view;
+Database Response: 1146 (42S02): Table 'ai_testing_test.t_f098_7_view' doesn't exist
+Query Execution Time: 0.009572 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1463
+Test Type: Negative
+Test Description: Views variation 8
+Execution Status: PASS
+Query Executed: SELECT * FROM t_f098_8_view;
+Database Response: 1146 (42S02): Table 'ai_testing_test.t_f098_8_view' doesn't exist
+Query Execution Time: 0.005681 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1464
+Test Type: Negative
+Test Description: Views variation 9
+Execution Status: PASS
+Query Executed: SELECT * FROM t_f098_9_view;
+Database Response: 1146 (42S02): Table 'ai_testing_test.t_f098_9_view' doesn't exist
+Query Execution Time: 0.007085 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1465
+Test Type: Negative
+Test Description: Views variation 10
+Execution Status: PASS
+Query Executed: SELECT * FROM t_f098_10_view;
+Database Response: 1146 (42S02): Table 'ai_testing_test.t_f098_10_view' doesn't exist
+Query Execution Time: 0.005970 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1466
+Test Type: Edge
+Test Description: Views variation 11
+Execution Status: PASS
+Query Executed: CREATE VIEW t_f098_11_view AS SELECT 1 AS id, 'ok' AS status;
+Database Response: Query executed successfully. Rows affected: 0
+Query Execution Time: 0.027972 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1467
+Test Type: Edge
+Test Description: Views variation 12
+Execution Status: PASS
+Query Executed: CREATE VIEW t_f098_12_view AS SELECT 1 AS id, 'ok' AS status;
+Database Response: Query executed successfully. Rows affected: 0
+Query Execution Time: 0.033645 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1468
+Test Type: Edge
+Test Description: Views variation 13
+Execution Status: PASS
+Query Executed: CREATE VIEW t_f098_13_view AS SELECT 1 AS id, 'ok' AS status;
+Database Response: Query executed successfully. Rows affected: 0
+Query Execution Time: 0.032326 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1469
+Test Type: Edge
+Test Description: Views variation 14
+Execution Status: PASS
+Query Executed: CREATE VIEW t_f098_14_view AS SELECT 1 AS id, 'ok' AS status;
+Database Response: Query executed successfully. Rows affected: 0
+Query Execution Time: 0.030927 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1470
+Test Type: Edge
+Test Description: Views variation 15
+Execution Status: PASS
+Query Executed: CREATE VIEW t_f098_15_view AS SELECT 1 AS id, 'ok' AS status;
+Database Response: Query executed successfully. Rows affected: 0
+Query Execution Time: 0.028188 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1471
+Test Type: Positive
+Test Description: Stored procedures variation 1
+Execution Status: PASS
+Query Executed: CREATE PROCEDURE sp_f099_1(IN p INT) BEGIN SELECT p AS value; END;
+Database Response: Query executed successfully. Rows affected: 0
+Query Execution Time: 0.059342 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1472
+Test Type: Positive
+Test Description: Stored procedures variation 2
+Execution Status: PASS
+Query Executed: CREATE PROCEDURE sp_f099_2(IN p INT) BEGIN SELECT p AS value; END;
+Database Response: Query executed successfully. Rows affected: 0
+Query Execution Time: 0.027165 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1473
+Test Type: Positive
+Test Description: Stored procedures variation 3
+Execution Status: PASS
+Query Executed: CREATE PROCEDURE sp_f099_3(IN p INT) BEGIN SELECT p AS value; END;
+Database Response: Query executed successfully. Rows affected: 0
+Query Execution Time: 0.026137 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1474
+Test Type: Positive
+Test Description: Stored procedures variation 4
+Execution Status: PASS
+Query Executed: CREATE PROCEDURE sp_f099_4(IN p INT) BEGIN SELECT p AS value; END;
+Database Response: Query executed successfully. Rows affected: 0
+Query Execution Time: 0.026851 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1475
+Test Type: Positive
+Test Description: Stored procedures variation 5
+Execution Status: PASS
+Query Executed: CREATE PROCEDURE sp_f099_5(IN p INT) BEGIN SELECT p AS value; END;
+Database Response: Query executed successfully. Rows affected: 0
+Query Execution Time: 0.028278 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1476
+Test Type: Negative
+Test Description: Stored procedures variation 6
+Execution Status: PASS
+Query Executed: CALL sp_f099_6_missing(1);
+Database Response: 1305 (42000): PROCEDURE ai_testing_test.sp_f099_6_missing does not exist
+Query Execution Time: 0.007754 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1477
+Test Type: Negative
+Test Description: Stored procedures variation 7
+Execution Status: PASS
+Query Executed: CALL sp_f099_7_missing(1);
+Database Response: 1305 (42000): PROCEDURE ai_testing_test.sp_f099_7_missing does not exist
+Query Execution Time: 0.006870 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1478
+Test Type: Negative
+Test Description: Stored procedures variation 8
+Execution Status: PASS
+Query Executed: CALL sp_f099_8_missing(1);
+Database Response: 1305 (42000): PROCEDURE ai_testing_test.sp_f099_8_missing does not exist
+Query Execution Time: 0.006419 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1479
+Test Type: Negative
+Test Description: Stored procedures variation 9
+Execution Status: PASS
+Query Executed: CALL sp_f099_9_missing(1);
+Database Response: 1305 (42000): PROCEDURE ai_testing_test.sp_f099_9_missing does not exist
+Query Execution Time: 0.005809 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1480
+Test Type: Negative
+Test Description: Stored procedures variation 10
+Execution Status: PASS
+Query Executed: CALL sp_f099_10_missing(1);
+Database Response: 1305 (42000): PROCEDURE ai_testing_test.sp_f099_10_missing does not exist
+Query Execution Time: 0.005081 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1481
+Test Type: Edge
+Test Description: Stored procedures variation 11
+Execution Status: PASS
+Query Executed: CREATE PROCEDURE sp_f099_11(IN p INT) BEGIN SELECT p AS value; END;
+Database Response: Query executed successfully. Rows affected: 0
+Query Execution Time: 0.025404 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1482
+Test Type: Edge
+Test Description: Stored procedures variation 12
+Execution Status: PASS
+Query Executed: CREATE PROCEDURE sp_f099_12(IN p INT) BEGIN SELECT p AS value; END;
+Database Response: Query executed successfully. Rows affected: 0
+Query Execution Time: 0.025796 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1483
+Test Type: Edge
+Test Description: Stored procedures variation 13
+Execution Status: PASS
+Query Executed: CREATE PROCEDURE sp_f099_13(IN p INT) BEGIN SELECT p AS value; END;
+Database Response: Query executed successfully. Rows affected: 0
+Query Execution Time: 0.028857 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1484
+Test Type: Edge
+Test Description: Stored procedures variation 14
+Execution Status: PASS
+Query Executed: CREATE PROCEDURE sp_f099_14(IN p INT) BEGIN SELECT p AS value; END;
+Database Response: Query executed successfully. Rows affected: 0
+Query Execution Time: 0.026525 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1485
+Test Type: Edge
+Test Description: Stored procedures variation 15
+Execution Status: PASS
+Query Executed: CREATE PROCEDURE sp_f099_15(IN p INT) BEGIN SELECT p AS value; END;
+Database Response: Query executed successfully. Rows affected: 0
+Query Execution Time: 0.025793 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1486
+Test Type: Positive
+Test Description: Triggers variation 1
+Execution Status: PASS
+Query Executed: CREATE TRIGGER trg_f100_1 AFTER INSERT ON t_f100_1_src FOR EACH ROW INSERT INTO t_f100_1_audit VALUES (NEW.id,'INSERT');
+Database Response: Query executed successfully. Rows affected: 0
+Query Execution Time: 0.185745 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1487
+Test Type: Positive
+Test Description: Triggers variation 2
+Execution Status: PASS
+Query Executed: CREATE TRIGGER trg_f100_2 AFTER INSERT ON t_f100_2_src FOR EACH ROW INSERT INTO t_f100_2_audit VALUES (NEW.id,'INSERT');
+Database Response: Query executed successfully. Rows affected: 0
+Query Execution Time: 0.305570 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1488
+Test Type: Positive
+Test Description: Triggers variation 3
+Execution Status: PASS
+Query Executed: CREATE TRIGGER trg_f100_3 AFTER INSERT ON t_f100_3_src FOR EACH ROW INSERT INTO t_f100_3_audit VALUES (NEW.id,'INSERT');
+Database Response: Query executed successfully. Rows affected: 0
+Query Execution Time: 0.185041 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1489
+Test Type: Positive
+Test Description: Triggers variation 4
+Execution Status: PASS
+Query Executed: CREATE TRIGGER trg_f100_4 AFTER INSERT ON t_f100_4_src FOR EACH ROW INSERT INTO t_f100_4_audit VALUES (NEW.id,'INSERT');
+Database Response: Query executed successfully. Rows affected: 0
+Query Execution Time: 0.168144 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1490
+Test Type: Positive
+Test Description: Triggers variation 5
+Execution Status: PASS
+Query Executed: CREATE TRIGGER trg_f100_5 AFTER INSERT ON t_f100_5_src FOR EACH ROW INSERT INTO t_f100_5_audit VALUES (NEW.id,'INSERT');
+Database Response: Query executed successfully. Rows affected: 0
+Query Execution Time: 0.181127 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1491
+Test Type: Negative
+Test Description: Triggers variation 6
+Execution Status: PASS
+Query Executed: CREATE TRIGGER trg_f100_6 AFTER INSERT ON t_f100_6_src FOR EACH ROW INSERT INTO t_f100_6_audit VALUES (NEW.id,'INSERT');
+Database Response: 1359 (HY000): Trigger already exists
+Query Execution Time: 0.204115 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1492
+Test Type: Negative
+Test Description: Triggers variation 7
+Execution Status: PASS
+Query Executed: CREATE TRIGGER trg_f100_7 AFTER INSERT ON t_f100_7_src FOR EACH ROW INSERT INTO t_f100_7_audit VALUES (NEW.id,'INSERT');
+Database Response: 1359 (HY000): Trigger already exists
+Query Execution Time: 0.253375 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1493
+Test Type: Negative
+Test Description: Triggers variation 8
+Execution Status: PASS
+Query Executed: CREATE TRIGGER trg_f100_8 AFTER INSERT ON t_f100_8_src FOR EACH ROW INSERT INTO t_f100_8_audit VALUES (NEW.id,'INSERT');
+Database Response: 1359 (HY000): Trigger already exists
+Query Execution Time: 0.169084 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1494
+Test Type: Negative
+Test Description: Triggers variation 9
+Execution Status: PASS
+Query Executed: CREATE TRIGGER trg_f100_9 AFTER INSERT ON t_f100_9_src FOR EACH ROW INSERT INTO t_f100_9_audit VALUES (NEW.id,'INSERT');
+Database Response: 1359 (HY000): Trigger already exists
+Query Execution Time: 0.171851 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1495
+Test Type: Negative
+Test Description: Triggers variation 10
+Execution Status: PASS
+Query Executed: CREATE TRIGGER trg_f100_10 AFTER INSERT ON t_f100_10_src FOR EACH ROW INSERT INTO t_f100_10_audit VALUES (NEW.id,'INSERT');
+Database Response: 1359 (HY000): Trigger already exists
+Query Execution Time: 0.159715 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1496
+Test Type: Edge
+Test Description: Triggers variation 11
+Execution Status: PASS
+Query Executed: CREATE TRIGGER trg_f100_11 AFTER INSERT ON t_f100_11_src FOR EACH ROW INSERT INTO t_f100_11_audit VALUES (NEW.id,'INSERT');
+Database Response: Query executed successfully. Rows affected: 0
+Query Execution Time: 0.156427 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1497
+Test Type: Edge
+Test Description: Triggers variation 12
+Execution Status: PASS
+Query Executed: CREATE TRIGGER trg_f100_12 AFTER INSERT ON t_f100_12_src FOR EACH ROW INSERT INTO t_f100_12_audit VALUES (NEW.id,'INSERT');
+Database Response: Query executed successfully. Rows affected: 0
+Query Execution Time: 0.236894 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1498
+Test Type: Edge
+Test Description: Triggers variation 13
+Execution Status: PASS
+Query Executed: CREATE TRIGGER trg_f100_13 AFTER INSERT ON t_f100_13_src FOR EACH ROW INSERT INTO t_f100_13_audit VALUES (NEW.id,'INSERT');
+Database Response: Query executed successfully. Rows affected: 0
+Query Execution Time: 0.270705 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1499
+Test Type: Edge
+Test Description: Triggers variation 14
+Execution Status: PASS
+Query Executed: CREATE TRIGGER trg_f100_14 AFTER INSERT ON t_f100_14_src FOR EACH ROW INSERT INTO t_f100_14_audit VALUES (NEW.id,'INSERT');
+Database Response: Query executed successfully. Rows affected: 0
+Query Execution Time: 0.209116 seconds
+======================================================================
+
+======================================================================
+Test Case ID: TC1500
+Test Type: Edge
+Test Description: Triggers variation 15
+Execution Status: PASS
+Query Executed: CREATE TRIGGER trg_f100_15 AFTER INSERT ON t_f100_15_src FOR EACH ROW INSERT INTO t_f100_15_audit VALUES (NEW.id,'INSERT');
+Database Response: Query executed successfully. Rows affected: 0
+Query Execution Time: 0.174012 seconds
+======================================================================
+

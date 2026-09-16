@@ -2,9 +2,9 @@
 RESPONSE FILE VALIDATION & REGRESSION REPORT
 ========================================
 
-Response file checked: D:\project\Final-Year-Project-v1-main\reports\response_1.txt
-Total test cases found: 300
-Valid test cases: 300
+Response file checked: D:\project\Final-Year-Project-v1-main\reports\response_merged.txt
+Total test cases found: 1500
+Valid test cases: 1500
 Invalid test cases: 0
 Duplicate test cases: 0
 Missing test cases: 0

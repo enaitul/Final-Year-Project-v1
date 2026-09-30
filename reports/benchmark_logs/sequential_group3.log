@@ -337,39 +337,44 @@
 [group3] Running TC1084 | F073 | Positive
 [group3] Running TC1085 | F073 | Positive
 [group3] Running TC1086 | F073 | Negative
-Traceback (most recent call last):
-  File "C:\Users\SHN\OneDrive\Desktop\4th year projecttt\updatedOne\Final-Year-Project-v1\executor\test_runner.py", line 249, in <module>
-    raise SystemExit(main())
-                     ~~~~^^
-  File "C:\Users\SHN\OneDrive\Desktop\4th year projecttt\updatedOne\Final-Year-Project-v1\executor\test_runner.py", line 239, in main
-    results = [execute_test(connection, row, prefix) for _, row in cases.iterrows()]
-               ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\SHN\OneDrive\Desktop\4th year projecttt\updatedOne\Final-Year-Project-v1\executor\test_runner.py", line 152, in execute_test
-    run_setup(cursor, connection, row)
-    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\SHN\OneDrive\Desktop\4th year projecttt\updatedOne\Final-Year-Project-v1\executor\test_runner.py", line 120, in run_setup
-    cursor.execute(statement)
-    ~~~~~~~~~~~~~~^^^^^^^^^^^
-  File "D:\Anaconda\Lib\site-packages\mysql\connector\cursor_cext.py", line 353, in execute
-    self._connection.cmd_query(
-    ~~~~~~~~~~~~~~~~~~~~~~~~~~^
-        self._stmt_partition["mappable_stmt"],
-        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-    ...<2 lines>...
-        raw_as_string=self._raw_as_string,
-        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-    )
-    ^
-  File "D:\Anaconda\Lib\site-packages\mysql\connector\opentelemetry\context_propagation.py", line 97, in wrapper
-    return method(cnx, *args, **kwargs)
-  File "D:\Anaconda\Lib\site-packages\mysql\connector\connection_cext.py", line 772, in cmd_query
-    self._cmysql.query(
-    ~~~~~~~~~~~~~~~~~~^
-        query,
-        ^^^^^^
-    ...<3 lines>...
-        query_attrs=self.query_attrs,
-        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-    )
-    ^
-KeyboardInterrupt
+[group3] Running TC1087 | F073 | Negative
+[group3] Running TC1088 | F073 | Negative
+[group3] Running TC1089 | F073 | Negative
+[group3] Running TC1090 | F073 | Negative
+[group3] Running TC1091 | F073 | Edge
+[group3] Running TC1092 | F073 | Edge
+[group3] Running TC1093 | F073 | Edge
+[group3] Running TC1094 | F073 | Edge
+[group3] Running TC1095 | F073 | Edge
+[group3] Running TC1096 | F074 | Positive
+[group3] Running TC1097 | F074 | Positive
+[group3] Running TC1098 | F074 | Positive
+[group3] Running TC1099 | F074 | Positive
+[group3] Running TC1100 | F074 | Positive
+[group3] Running TC1101 | F074 | Negative
+[group3] Running TC1102 | F074 | Negative
+[group3] Running TC1103 | F074 | Negative
+[group3] Running TC1104 | F074 | Negative
+[group3] Running TC1105 | F074 | Negative
+[group3] Running TC1106 | F074 | Edge
+[group3] Running TC1107 | F074 | Edge
+[group3] Running TC1108 | F074 | Edge
+[group3] Running TC1109 | F074 | Edge
+[group3] Running TC1110 | F074 | Edge
+[group3] Running TC1111 | F075 | Positive
+[group3] Running TC1112 | F075 | Positive
+[group3] Running TC1113 | F075 | Positive
+[group3] Running TC1114 | F075 | Positive
+[group3] Running TC1115 | F075 | Positive
+[group3] Running TC1116 | F075 | Negative
+[group3] Running TC1117 | F075 | Negative
+[group3] Running TC1118 | F075 | Negative
+[group3] Running TC1119 | F075 | Negative
+[group3] Running TC1120 | F075 | Negative
+[group3] Running TC1121 | F075 | Edge
+[group3] Running TC1122 | F075 | Edge
+[group3] Running TC1123 | F075 | Edge
+[group3] Running TC1124 | F075 | Edge
+[group3] Running TC1125 | F075 | Edge
+[group3] Summary: 375/375 passed; 0 failed; 100.00% pass rate
+[group3] Response file saved: C:\Users\SHN\OneDrive\Desktop\4th year projecttt\updatedOne\Final-Year-Project-v1\reports\response_group3.txt

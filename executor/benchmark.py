@@ -204,7 +204,7 @@ Speedup    : {e2e_seq / e2e_par:.2f}x
         import matplotlib.pyplot as plt
         fig, ax = plt.subplots(figsize=(5, 4))
         ax.bar(["Sequential", "Parallel"], [seq_m, par_m],
-               yerr=[seq_sd, par_sd], capsize=6, color=["#c0504d", "#4f81bd"])
+            yerr=[seq_sd, par_sd], capsize=6, color=["#c0504d", "#4f81bd"])
         ax.set_ylabel("Execution time (s)")
         ax.set_title(f"Speedup: {speedup:.2f}x")
         fig.tight_layout()

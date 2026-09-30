@@ -5,7 +5,7 @@ Test Description: Create database variation 1
 Execution Status: PASS
 Query Executed: CREATE DATABASE ai_testing_scratch_001;
 Database Response: Query executed successfully. Rows affected: 1
-Query Execution Time: 0.028475 seconds
+Query Execution Time: 0.074387 seconds
 ======================================================================
 
 ======================================================================
@@ -15,7 +15,7 @@ Test Description: Create database variation 2
 Execution Status: PASS
 Query Executed: CREATE DATABASE ai_testing_scratch_002;
 Database Response: Query executed successfully. Rows affected: 1
-Query Execution Time: 0.023105 seconds
+Query Execution Time: 0.043342 seconds
 ======================================================================
 
 ======================================================================
@@ -25,7 +25,7 @@ Test Description: Create database variation 3
 Execution Status: PASS
 Query Executed: CREATE DATABASE ai_testing_scratch_003;
 Database Response: Query executed successfully. Rows affected: 1
-Query Execution Time: 0.023523 seconds
+Query Execution Time: 0.071103 seconds
 ======================================================================
 
 ======================================================================
@@ -35,7 +35,7 @@ Test Description: Create database variation 4
 Execution Status: PASS
 Query Executed: CREATE DATABASE ai_testing_scratch_004;
 Database Response: Query executed successfully. Rows affected: 1
-Query Execution Time: 0.035153 seconds
+Query Execution Time: 0.042929 seconds
 ======================================================================
 
 ======================================================================
@@ -45,7 +45,7 @@ Test Description: Create database variation 5
 Execution Status: PASS
 Query Executed: CREATE DATABASE ai_testing_scratch_005;
 Database Response: Query executed successfully. Rows affected: 1
-Query Execution Time: 0.025507 seconds
+Query Execution Time: 0.041305 seconds
 ======================================================================
 
 ======================================================================
@@ -55,7 +55,7 @@ Test Description: Create database variation 6
 Execution Status: PASS
 Query Executed: CREATE DATABASE ai_testing_scratch_006;
 Database Response: 1007 (HY000): Can't create database 'ai_testing_scratch_006'; database exists
-Query Execution Time: 0.007376 seconds
+Query Execution Time: 0.017135 seconds
 ======================================================================
 
 ======================================================================
@@ -65,7 +65,7 @@ Test Description: Create database variation 7
 Execution Status: PASS
 Query Executed: CREATE DATABASE ai_testing_scratch_007;
 Database Response: 1007 (HY000): Can't create database 'ai_testing_scratch_007'; database exists
-Query Execution Time: 0.005783 seconds
+Query Execution Time: 0.022075 seconds
 ======================================================================
 
 ======================================================================
@@ -75,7 +75,7 @@ Test Description: Create database variation 8
 Execution Status: PASS
 Query Executed: CREATE DATABASE ai_testing_scratch_008;
 Database Response: 1007 (HY000): Can't create database 'ai_testing_scratch_008'; database exists
-Query Execution Time: 0.005894 seconds
+Query Execution Time: 0.024131 seconds
 ======================================================================
 
 ======================================================================
@@ -85,7 +85,7 @@ Test Description: Create database variation 9
 Execution Status: PASS
 Query Executed: CREATE DATABASE ai_testing_scratch_009;
 Database Response: 1007 (HY000): Can't create database 'ai_testing_scratch_009'; database exists
-Query Execution Time: 0.007334 seconds
+Query Execution Time: 0.015542 seconds
 ======================================================================
 
 ======================================================================
@@ -95,7 +95,7 @@ Test Description: Create database variation 10
 Execution Status: PASS
 Query Executed: CREATE DATABASE ai_testing_scratch_010;
 Database Response: 1007 (HY000): Can't create database 'ai_testing_scratch_010'; database exists
-Query Execution Time: 0.004788 seconds
+Query Execution Time: 0.019465 seconds
 ======================================================================
 
 ======================================================================
@@ -105,7 +105,7 @@ Test Description: Create database variation 11
 Execution Status: PASS
 Query Executed: CREATE DATABASE IF NOT EXISTS ai_testing_scratch_011;
 Database Response: Query executed successfully. Rows affected: 1
-Query Execution Time: 0.008408 seconds
+Query Execution Time: 0.024920 seconds
 ======================================================================
 
 ======================================================================
@@ -115,7 +115,7 @@ Test Description: Create database variation 12
 Execution Status: PASS
 Query Executed: CREATE DATABASE IF NOT EXISTS ai_testing_scratch_012;
 Database Response: Query executed successfully. Rows affected: 1
-Query Execution Time: 0.010619 seconds
+Query Execution Time: 0.027812 seconds
 ======================================================================
 
 ======================================================================
@@ -125,7 +125,7 @@ Test Description: Create database variation 13
 Execution Status: PASS
 Query Executed: CREATE DATABASE IF NOT EXISTS ai_testing_scratch_013;
 Database Response: Query executed successfully. Rows affected: 1
-Query Execution Time: 0.008025 seconds
+Query Execution Time: 0.033259 seconds
 ======================================================================
 
 ======================================================================
@@ -135,7 +135,7 @@ Test Description: Create database variation 14
 Execution Status: PASS
 Query Executed: CREATE DATABASE IF NOT EXISTS ai_testing_scratch_014;
 Database Response: Query executed successfully. Rows affected: 1
-Query Execution Time: 0.009965 seconds
+Query Execution Time: 0.032133 seconds
 ======================================================================
 
 ======================================================================
@@ -145,7 +145,7 @@ Test Description: Create database variation 15
 Execution Status: PASS
 Query Executed: CREATE DATABASE IF NOT EXISTS ai_testing_scratch_015;
 Database Response: Query executed successfully. Rows affected: 1
-Query Execution Time: 0.008284 seconds
+Query Execution Time: 0.036011 seconds
 ======================================================================
 
 ======================================================================
@@ -155,7 +155,7 @@ Test Description: Drop database variation 1
 Execution Status: PASS
 Query Executed: DROP DATABASE ai_testing_scratch_drop_001;
 Database Response: Query executed successfully. Rows affected: 0
-Query Execution Time: 0.021291 seconds
+Query Execution Time: 0.056075 seconds
 ======================================================================
 
 ======================================================================
@@ -165,7 +165,7 @@ Test Description: Drop database variation 2
 Execution Status: PASS
 Query Executed: DROP DATABASE ai_testing_scratch_drop_002;
 Database Response: Query executed successfully. Rows affected: 0
-Query Execution Time: 0.025910 seconds
+Query Execution Time: 0.049436 seconds
 ======================================================================
 
 ======================================================================
@@ -175,7 +175,7 @@ Test Description: Drop database variation 3
 Execution Status: PASS
 Query Executed: DROP DATABASE ai_testing_scratch_drop_003;
 Database Response: Query executed successfully. Rows affected: 0
-Query Execution Time: 0.015583 seconds
+Query Execution Time: 0.069090 seconds
 ======================================================================
 
 ======================================================================
@@ -185,7 +185,7 @@ Test Description: Drop database variation 4
 Execution Status: PASS
 Query Executed: DROP DATABASE ai_testing_scratch_drop_004;
 Database Response: Query executed successfully. Rows affected: 0
-Query Execution Time: 0.021141 seconds
+Query Execution Time: 0.048854 seconds
 ======================================================================
 
 ======================================================================
@@ -195,7 +195,7 @@ Test Description: Drop database variation 5
 Execution Status: PASS
 Query Executed: DROP DATABASE ai_testing_scratch_drop_005;
 Database Response: Query executed successfully. Rows affected: 0
-Query Execution Time: 0.027476 seconds
+Query Execution Time: 0.054243 seconds
 ======================================================================
 
 ======================================================================
@@ -205,7 +205,7 @@ Test Description: Drop database variation 6
 Execution Status: PASS
 Query Executed: DROP DATABASE ai_testing_scratch_drop_006;
 Database Response: 1008 (HY000): Can't drop database 'ai_testing_scratch_drop_006'; database doesn't exist
-Query Execution Time: 0.002022 seconds
+Query Execution Time: 0.003840 seconds
 ======================================================================
 
 ======================================================================
@@ -215,7 +215,7 @@ Test Description: Drop database variation 7
 Execution Status: PASS
 Query Executed: DROP DATABASE ai_testing_scratch_drop_007;
 Database Response: 1008 (HY000): Can't drop database 'ai_testing_scratch_drop_007'; database doesn't exist
-Query Execution Time: 0.001520 seconds
+Query Execution Time: 0.003026 seconds
 ======================================================================
 
 ======================================================================
@@ -225,7 +225,7 @@ Test Description: Drop database variation 8
 Execution Status: PASS
 Query Executed: DROP DATABASE ai_testing_scratch_drop_008;
 Database Response: 1008 (HY000): Can't drop database 'ai_testing_scratch_drop_008'; database doesn't exist
-Query Execution Time: 0.001125 seconds
+Query Execution Time: 0.002604 seconds
 ======================================================================
 
 ======================================================================
@@ -235,7 +235,7 @@ Test Description: Drop database variation 9
 Execution Status: PASS
 Query Executed: DROP DATABASE ai_testing_scratch_drop_009;
 Database Response: 1008 (HY000): Can't drop database 'ai_testing_scratch_drop_009'; database doesn't exist
-Query Execution Time: 0.000951 seconds
+Query Execution Time: 0.003038 seconds
 ======================================================================
 
 ======================================================================
@@ -245,7 +245,7 @@ Test Description: Drop database variation 10
 Execution Status: PASS
 Query Executed: DROP DATABASE ai_testing_scratch_drop_010;
 Database Response: 1008 (HY000): Can't drop database 'ai_testing_scratch_drop_010'; database doesn't exist
-Query Execution Time: 0.001067 seconds
+Query Execution Time: 0.003387 seconds
 ======================================================================
 
 ======================================================================
@@ -255,7 +255,7 @@ Test Description: Drop database variation 11
 Execution Status: PASS
 Query Executed: DROP DATABASE ai_testing_scratch_drop_011;
 Database Response: Query executed successfully. Rows affected: 0
-Query Execution Time: 0.020285 seconds
+Query Execution Time: 0.060701 seconds
 ======================================================================
 
 ======================================================================
@@ -265,7 +265,7 @@ Test Description: Drop database variation 12
 Execution Status: PASS
 Query Executed: DROP DATABASE ai_testing_scratch_drop_012;
 Database Response: Query executed successfully. Rows affected: 0
-Query Execution Time: 0.020160 seconds
+Query Execution Time: 0.047776 seconds
 ======================================================================
 
 ======================================================================
@@ -275,7 +275,7 @@ Test Description: Drop database variation 13
 Execution Status: PASS
 Query Executed: DROP DATABASE ai_testing_scratch_drop_013;
 Database Response: Query executed successfully. Rows affected: 0
-Query Execution Time: 0.115025 seconds
+Query Execution Time: 0.063374 seconds
 ======================================================================
 
 ======================================================================
@@ -285,7 +285,7 @@ Test Description: Drop database variation 14
 Execution Status: PASS
 Query Executed: DROP DATABASE ai_testing_scratch_drop_014;
 Database Response: Query executed successfully. Rows affected: 0
-Query Execution Time: 0.055071 seconds
+Query Execution Time: 0.045131 seconds
 ======================================================================
 
 ======================================================================
@@ -295,7 +295,7 @@ Test Description: Drop database variation 15
 Execution Status: PASS
 Query Executed: DROP DATABASE ai_testing_scratch_drop_015;
 Database Response: Query executed successfully. Rows affected: 0
-Query Execution Time: 0.050630 seconds
+Query Execution Time: 0.116176 seconds
 ======================================================================
 
 ======================================================================
@@ -305,7 +305,7 @@ Test Description: Switch database variation 1
 Execution Status: PASS
 Query Executed: USE `ai_testing_test`;
 Database Response: Query executed successfully. Rows affected: 0
-Query Execution Time: 0.002532 seconds
+Query Execution Time: 0.003547 seconds
 ======================================================================
 
 ======================================================================
@@ -315,7 +315,7 @@ Test Description: Switch database variation 2
 Execution Status: PASS
 Query Executed: USE ai_testing_test;
 Database Response: Query executed successfully. Rows affected: 0
-Query Execution Time: 0.001223 seconds
+Query Execution Time: 0.002863 seconds
 ======================================================================
 
 ======================================================================
@@ -325,7 +325,7 @@ Test Description: Switch database variation 3
 Execution Status: PASS
 Query Executed: USE ai_testing_test;
 Database Response: Query executed successfully. Rows affected: 0
-Query Execution Time: 0.000943 seconds
+Query Execution Time: 0.003302 seconds
 ======================================================================
 
 ======================================================================
@@ -335,7 +335,7 @@ Test Description: Switch database variation 4
 Execution Status: PASS
 Query Executed: USE `ai_testing_test`;
 Database Response: Query executed successfully. Rows affected: 0
-Query Execution Time: 0.000743 seconds
+Query Execution Time: 0.003059 seconds
 ======================================================================
 
 ======================================================================
@@ -345,7 +345,7 @@ Test Description: Switch database variation 5
 Execution Status: PASS
 Query Executed: USE ai_testing_test;
 Database Response: Query executed successfully. Rows affected: 0
-Query Execution Time: 0.000768 seconds
+Query Execution Time: 0.002593 seconds
 ======================================================================
 
 ======================================================================
@@ -355,7 +355,7 @@ Test Description: Switch database variation 6
 Execution Status: PASS
 Query Executed: USE database_that_does_not_exist_6;
 Database Response: 1049 (42000): Unknown database 'database_that_does_not_exist_6'
-Query Execution Time: 0.001071 seconds
+Query Execution Time: 0.002560 seconds
 ======================================================================
 
 ======================================================================
@@ -365,7 +365,7 @@ Test Description: Switch database variation 7
 Execution Status: PASS
 Query Executed: USE database_that_does_not_exist_7;
 Database Response: 1049 (42000): Unknown database 'database_that_does_not_exist_7'
-Query Execution Time: 0.001125 seconds
+Query Execution Time: 0.002653 seconds
 ======================================================================
 
 ======================================================================
@@ -375,7 +375,7 @@ Test Description: Switch database variation 8
 Execution Status: PASS
 Query Executed: USE database_that_does_not_exist_8;
 Database Response: 1049 (42000): Unknown database 'database_that_does_not_exist_8'
-Query Execution Time: 0.000963 seconds
+Query Execution Time: 0.002027 seconds
 ======================================================================
 
 ======================================================================
@@ -385,7 +385,7 @@ Test Description: Switch database variation 9
 Execution Status: PASS
 Query Executed: USE database_that_does_not_exist_9;
 Database Response: 1049 (42000): Unknown database 'database_that_does_not_exist_9'
-Query Execution Time: 0.001033 seconds
+Query Execution Time: 0.002424 seconds
 ======================================================================
 
 ======================================================================
@@ -395,7 +395,7 @@ Test Description: Switch database variation 10
 Execution Status: PASS
 Query Executed: USE database_that_does_not_exist_10;
 Database Response: 1049 (42000): Unknown database 'database_that_does_not_exist_10'
-Query Execution Time: 0.000848 seconds
+Query Execution Time: 0.002067 seconds
 ======================================================================
 
 ======================================================================
@@ -405,7 +405,7 @@ Test Description: Switch database variation 11
 Execution Status: PASS
 Query Executed: USE ai_testing_test;
 Database Response: Query executed successfully. Rows affected: 0
-Query Execution Time: 0.000540 seconds
+Query Execution Time: 0.001785 seconds
 ======================================================================
 
 ======================================================================
@@ -415,7 +415,7 @@ Test Description: Switch database variation 12
 Execution Status: PASS
 Query Executed: USE ai_testing_test;
 Database Response: Query executed successfully. Rows affected: 0
-Query Execution Time: 0.000495 seconds
+Query Execution Time: 0.002087 seconds
 ======================================================================
 
 ======================================================================
@@ -425,7 +425,7 @@ Test Description: Switch database variation 13
 Execution Status: PASS
 Query Executed: USE `ai_testing_test`;
 Database Response: Query executed successfully. Rows affected: 0
-Query Execution Time: 0.000498 seconds
+Query Execution Time: 0.001970 seconds
 ======================================================================
 
 ======================================================================
@@ -435,7 +435,7 @@ Test Description: Switch database variation 14
 Execution Status: PASS
 Query Executed: USE ai_testing_test;
 Database Response: Query executed successfully. Rows affected: 0
-Query Execution Time: 0.000468 seconds
+Query Execution Time: 0.001287 seconds
 ======================================================================
 
 ======================================================================
@@ -445,7 +445,7 @@ Test Description: Switch database variation 15
 Execution Status: PASS
 Query Executed: USE ai_testing_test;
 Database Response: Query executed successfully. Rows affected: 0
-Query Execution Time: 0.000479 seconds
+Query Execution Time: 0.001746 seconds
 ======================================================================
 
 ======================================================================
@@ -505,7 +505,7 @@ Database Response: Rows returned: 46
 | schoolnew                |
 | sys                      |
 +--------------------------+
-Query Execution Time: 0.003447 seconds
+Query Execution Time: 0.005486 seconds
 ======================================================================
 
 ======================================================================
@@ -554,7 +554,7 @@ Database Response: Rows returned: 35
 | ai_testing_scratch_c3_v4 |
 | ai_testing_test          |
 +--------------------------+
-Query Execution Time: 0.001396 seconds
+Query Execution Time: 0.004862 seconds
 ======================================================================
 
 ======================================================================
@@ -614,7 +614,7 @@ Database Response: Rows returned: 46
 | schoolnew                |
 | sys                      |
 +--------------------------+
-Query Execution Time: 0.001568 seconds
+Query Execution Time: 0.004691 seconds
 ======================================================================
 
 ======================================================================
@@ -663,7 +663,7 @@ Database Response: Rows returned: 35
 | ai_testing_scratch_c3_v4 |
 | ai_testing_test          |
 +--------------------------+
-Query Execution Time: 0.001097 seconds
+Query Execution Time: 0.003076 seconds
 ======================================================================
 
 ======================================================================
@@ -723,7 +723,7 @@ Database Response: Rows returned: 46
 | schoolnew                |
 | sys                      |
 +--------------------------+
-Query Execution Time: 0.001030 seconds
+Query Execution Time: 0.002817 seconds
 ======================================================================
 
 ======================================================================
@@ -733,7 +733,7 @@ Test Description: List databases variation 6
 Execution Status: PASS
 Query Executed: SHOW DATABASES INVALID_CLAUSE;
 Database Response: 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'INVALID_CLAUSE' at line 1
-Query Execution Time: 0.000587 seconds
+Query Execution Time: 0.001509 seconds
 ======================================================================
 
 ======================================================================
@@ -743,7 +743,7 @@ Test Description: List databases variation 7
 Execution Status: PASS
 Query Executed: SHOW DATABASES INVALID_CLAUSE;
 Database Response: 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'INVALID_CLAUSE' at line 1
-Query Execution Time: 0.000511 seconds
+Query Execution Time: 0.001560 seconds
 ======================================================================
 
 ======================================================================
@@ -753,7 +753,7 @@ Test Description: List databases variation 8
 Execution Status: PASS
 Query Executed: SHOW DATABASES INVALID_CLAUSE;
 Database Response: 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'INVALID_CLAUSE' at line 1
-Query Execution Time: 0.000486 seconds
+Query Execution Time: 0.001904 seconds
 ======================================================================
 
 ======================================================================
@@ -763,7 +763,7 @@ Test Description: List databases variation 9
 Execution Status: PASS
 Query Executed: SHOW DATABASES INVALID_CLAUSE;
 Database Response: 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'INVALID_CLAUSE' at line 1
-Query Execution Time: 0.000491 seconds
+Query Execution Time: 0.001462 seconds
 ======================================================================
 
 ======================================================================
@@ -773,7 +773,7 @@ Test Description: List databases variation 10
 Execution Status: PASS
 Query Executed: SHOW DATABASES INVALID_CLAUSE;
 Database Response: 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'INVALID_CLAUSE' at line 1
-Query Execution Time: 0.000609 seconds
+Query Execution Time: 0.001963 seconds
 ======================================================================
 
 ======================================================================
@@ -833,7 +833,7 @@ Database Response: Rows returned: 46
 | schoolnew                |
 | sys                      |
 +--------------------------+
-Query Execution Time: 0.001396 seconds
+Query Execution Time: 0.003691 seconds
 ======================================================================
 
 ======================================================================
@@ -882,7 +882,7 @@ Database Response: Rows returned: 35
 | ai_testing_scratch_c3_v4 |
 | ai_testing_test          |
 +--------------------------+
-Query Execution Time: 0.001063 seconds
+Query Execution Time: 0.005775 seconds
 ======================================================================
 
 ======================================================================
@@ -942,7 +942,7 @@ Database Response: Rows returned: 46
 | schoolnew                |
 | sys                      |
 +--------------------------+
-Query Execution Time: 0.001026 seconds
+Query Execution Time: 0.004586 seconds
 ======================================================================
 
 ======================================================================
@@ -991,7 +991,7 @@ Database Response: Rows returned: 35
 | ai_testing_scratch_c3_v4 |
 | ai_testing_test          |
 +--------------------------+
-Query Execution Time: 0.001090 seconds
+Query Execution Time: 0.004547 seconds
 ======================================================================
 
 ======================================================================
@@ -1051,7 +1051,7 @@ Database Response: Rows returned: 46
 | schoolnew                |
 | sys                      |
 +--------------------------+
-Query Execution Time: 0.001110 seconds
+Query Execution Time: 0.005233 seconds
 ======================================================================
 
 ======================================================================
@@ -1061,7 +1061,7 @@ Test Description: Create table variation 1
 Execution Status: PASS
 Query Executed: CREATE TABLE t_f005_1 (id INT PRIMARY KEY, name VARCHAR(20));
 Database Response: Query executed successfully. Rows affected: 0
-Query Execution Time: 0.045072 seconds
+Query Execution Time: 0.112423 seconds
 ======================================================================
 
 ======================================================================
@@ -1071,7 +1071,7 @@ Test Description: Create table variation 2
 Execution Status: PASS
 Query Executed: CREATE TABLE t_f005_2 (id INT PRIMARY KEY, name VARCHAR(21));
 Database Response: Query executed successfully. Rows affected: 0
-Query Execution Time: 0.045367 seconds
+Query Execution Time: 0.100412 seconds
 ======================================================================
 
 ======================================================================
@@ -1081,7 +1081,7 @@ Test Description: Create table variation 3
 Execution Status: PASS
 Query Executed: CREATE TABLE t_f005_3 (id INT PRIMARY KEY, name VARCHAR(22));
 Database Response: Query executed successfully. Rows affected: 0
-Query Execution Time: 0.053139 seconds
+Query Execution Time: 0.105561 seconds
 ======================================================================
 
 ======================================================================
@@ -1091,7 +1091,7 @@ Test Description: Create table variation 4
 Execution Status: PASS
 Query Executed: CREATE TABLE t_f005_4 (id INT PRIMARY KEY, name VARCHAR(23));
 Database Response: Query executed successfully. Rows affected: 0
-Query Execution Time: 0.050134 seconds
+Query Execution Time: 0.096036 seconds
 ======================================================================
 
 ======================================================================
@@ -1101,7 +1101,7 @@ Test Description: Create table variation 5
 Execution Status: PASS
 Query Executed: CREATE TABLE t_f005_5 (id INT PRIMARY KEY, name VARCHAR(24));
 Database Response: Query executed successfully. Rows affected: 0
-Query Execution Time: 0.055592 seconds
+Query Execution Time: 0.156843 seconds
 ======================================================================
 
 ======================================================================
@@ -1111,7 +1111,7 @@ Test Description: Create table variation 6
 Execution Status: PASS
 Query Executed: CREATE TABLE t_f005_6 (id INT PRIMARY KEY);
 Database Response: 1050 (42S01): Table 't_f005_6' already exists
-Query Execution Time: 0.049941 seconds
+Query Execution Time: 0.117985 seconds
 ======================================================================
 
 ======================================================================
@@ -1121,7 +1121,7 @@ Test Description: Create table variation 7
 Execution Status: PASS
 Query Executed: CREATE TABLE t_f005_7 (id INT PRIMARY KEY);
 Database Response: 1050 (42S01): Table 't_f005_7' already exists
-Query Execution Time: 0.045855 seconds
+Query Execution Time: 0.303104 seconds
 ======================================================================
 
 ======================================================================
@@ -1131,7 +1131,7 @@ Test Description: Create table variation 8
 Execution Status: PASS
 Query Executed: CREATE TABLE t_f005_8 (id INT PRIMARY KEY);
 Database Response: 1050 (42S01): Table 't_f005_8' already exists
-Query Execution Time: 0.043696 seconds
+Query Execution Time: 0.157852 seconds
 ======================================================================
 
 ======================================================================
@@ -1141,7 +1141,7 @@ Test Description: Create table variation 9
 Execution Status: PASS
 Query Executed: CREATE TABLE t_f005_9 (id INT PRIMARY KEY);
 Database Response: 1050 (42S01): Table 't_f005_9' already exists
-Query Execution Time: 0.064004 seconds
+Query Execution Time: 0.111107 seconds
 ======================================================================
 
 ======================================================================
@@ -1151,7 +1151,7 @@ Test Description: Create table variation 10
 Execution Status: PASS
 Query Executed: CREATE TABLE t_f005_10 (id INT PRIMARY KEY);
 Database Response: 1050 (42S01): Table 't_f005_10' already exists
-Query Execution Time: 0.071524 seconds
+Query Execution Time: 0.114683 seconds
 ======================================================================
 
 ======================================================================
@@ -1161,7 +1161,7 @@ Test Description: Create table variation 11
 Execution Status: PASS
 Query Executed: CREATE TABLE t_f005_11 (id INT PRIMARY KEY, name VARCHAR(30));
 Database Response: Query executed successfully. Rows affected: 0
-Query Execution Time: 0.065034 seconds
+Query Execution Time: 0.116778 seconds
 ======================================================================
 
 ======================================================================
@@ -1171,7 +1171,7 @@ Test Description: Create table variation 12
 Execution Status: PASS
 Query Executed: CREATE TABLE t_f005_12 (id INT PRIMARY KEY, name VARCHAR(31));
 Database Response: Query executed successfully. Rows affected: 0
-Query Execution Time: 0.048562 seconds
+Query Execution Time: 0.099104 seconds
 ======================================================================
 
 ======================================================================
@@ -1181,7 +1181,7 @@ Test Description: Create table variation 13
 Execution Status: PASS
 Query Executed: CREATE TABLE t_f005_13 (id INT PRIMARY KEY, name VARCHAR(32));
 Database Response: Query executed successfully. Rows affected: 0
-Query Execution Time: 0.061201 seconds
+Query Execution Time: 0.155380 seconds
 ======================================================================
 
 ======================================================================
@@ -1191,7 +1191,7 @@ Test Description: Create table variation 14
 Execution Status: PASS
 Query Executed: CREATE TABLE t_f005_14 (id INT PRIMARY KEY, name VARCHAR(33));
 Database Response: Query executed successfully. Rows affected: 0
-Query Execution Time: 0.046464 seconds
+Query Execution Time: 0.167859 seconds
 ======================================================================
 
 ======================================================================
@@ -1201,7 +1201,7 @@ Test Description: Create table variation 15
 Execution Status: PASS
 Query Executed: CREATE TABLE t_f005_15 (id INT PRIMARY KEY, name VARCHAR(34));
 Database Response: Query executed successfully. Rows affected: 0
-Query Execution Time: 0.048378 seconds
+Query Execution Time: 0.120981 seconds
 ======================================================================
 
 ======================================================================
@@ -1211,7 +1211,7 @@ Test Description: Add column variation 1
 Execution Status: PASS
 Query Executed: ALTER TABLE t_f006_1 ADD COLUMN c1 VARCHAR(30);
 Database Response: Query executed successfully. Rows affected: 0
-Query Execution Time: 0.199257 seconds
+Query Execution Time: 0.347815 seconds
 ======================================================================
 
 ======================================================================
@@ -1221,7 +1221,7 @@ Test Description: Add column variation 2
 Execution Status: PASS
 Query Executed: ALTER TABLE t_f006_2 ADD COLUMN c2 VARCHAR(30);
 Database Response: Query executed successfully. Rows affected: 0
-Query Execution Time: 0.125735 seconds
+Query Execution Time: 0.366407 seconds
 ======================================================================
 
 ======================================================================
@@ -1231,7 +1231,7 @@ Test Description: Add column variation 3
 Execution Status: PASS
 Query Executed: ALTER TABLE t_f006_3 ADD COLUMN c3 VARCHAR(30);
 Database Response: Query executed successfully. Rows affected: 0
-Query Execution Time: 0.133130 seconds
+Query Execution Time: 0.459788 seconds
 ======================================================================
 
 ======================================================================
@@ -1241,7 +1241,7 @@ Test Description: Add column variation 4
 Execution Status: PASS
 Query Executed: ALTER TABLE t_f006_4 ADD COLUMN c4 VARCHAR(30);
 Database Response: Query executed successfully. Rows affected: 0
-Query Execution Time: 0.132426 seconds
+Query Execution Time: 0.401001 seconds
 ======================================================================
 
 ======================================================================
@@ -1251,7 +1251,7 @@ Test Description: Add column variation 5
 Execution Status: PASS
 Query Executed: ALTER TABLE t_f006_5 ADD COLUMN c5 VARCHAR(30);
 Database Response: Query executed successfully. Rows affected: 0
-Query Execution Time: 0.133474 seconds
+Query Execution Time: 0.549270 seconds
 ======================================================================
 
 ======================================================================
@@ -1261,7 +1261,7 @@ Test Description: Add column variation 6
 Execution Status: PASS
 Query Executed: ALTER TABLE t_f006_6 ADD COLUMN id INT;
 Database Response: 1060 (42S21): Duplicate column name 'id'
-Query Execution Time: 0.054623 seconds
+Query Execution Time: 0.158149 seconds
 ======================================================================
 
 ======================================================================
@@ -1271,7 +1271,7 @@ Test Description: Add column variation 7
 Execution Status: PASS
 Query Executed: ALTER TABLE t_f006_7 ADD COLUMN id INT;
 Database Response: 1060 (42S21): Duplicate column name 'id'
-Query Execution Time: 0.053819 seconds
+Query Execution Time: 0.174646 seconds
 ======================================================================
 
 ======================================================================
@@ -1281,7 +1281,7 @@ Test Description: Add column variation 8
 Execution Status: PASS
 Query Executed: ALTER TABLE t_f006_8 ADD COLUMN id INT;
 Database Response: 1060 (42S21): Duplicate column name 'id'
-Query Execution Time: 0.053920 seconds
+Query Execution Time: 0.207539 seconds
 ======================================================================
 
 ======================================================================
@@ -1291,7 +1291,7 @@ Test Description: Add column variation 9
 Execution Status: PASS
 Query Executed: ALTER TABLE t_f006_9 ADD COLUMN id INT;
 Database Response: 1060 (42S21): Duplicate column name 'id'
-Query Execution Time: 0.067460 seconds
+Query Execution Time: 0.241724 seconds
 ======================================================================
 
 ======================================================================
@@ -1301,7 +1301,7 @@ Test Description: Add column variation 10
 Execution Status: PASS
 Query Executed: ALTER TABLE t_f006_10 ADD COLUMN id INT;
 Database Response: 1060 (42S21): Duplicate column name 'id'
-Query Execution Time: 0.055572 seconds
+Query Execution Time: 0.218509 seconds
 ======================================================================
 
 ======================================================================
@@ -1311,7 +1311,7 @@ Test Description: Add column variation 11
 Execution Status: PASS
 Query Executed: ALTER TABLE t_f006_11 ADD COLUMN c11 VARCHAR(30);
 Database Response: Query executed successfully. Rows affected: 0
-Query Execution Time: 0.907320 seconds
+Query Execution Time: 0.339249 seconds
 ======================================================================
 
 ======================================================================
@@ -1321,7 +1321,7 @@ Test Description: Add column variation 12
 Execution Status: PASS
 Query Executed: ALTER TABLE t_f006_12 ADD COLUMN c12 VARCHAR(30);
 Database Response: Query executed successfully. Rows affected: 0
-Query Execution Time: 0.135196 seconds
+Query Execution Time: 0.332801 seconds
 ======================================================================
 
 ======================================================================
@@ -1331,7 +1331,7 @@ Test Description: Add column variation 13
 Execution Status: PASS
 Query Executed: ALTER TABLE t_f006_13 ADD COLUMN c13 VARCHAR(30);
 Database Response: Query executed successfully. Rows affected: 0
-Query Execution Time: 0.212215 seconds
+Query Execution Time: 0.479914 seconds
 ======================================================================
 
 ======================================================================
@@ -1341,7 +1341,7 @@ Test Description: Add column variation 14
 Execution Status: PASS
 Query Executed: ALTER TABLE t_f006_14 ADD COLUMN c14 VARCHAR(30);
 Database Response: Query executed successfully. Rows affected: 0
-Query Execution Time: 0.128589 seconds
+Query Execution Time: 0.375837 seconds
 ======================================================================
 
 ======================================================================
@@ -1351,7 +1351,7 @@ Test Description: Add column variation 15
 Execution Status: PASS
 Query Executed: ALTER TABLE t_f006_15 ADD COLUMN c15 VARCHAR(30);
 Database Response: Query executed successfully. Rows affected: 0
-Query Execution Time: 0.224461 seconds
+Query Execution Time: 0.475965 seconds
 ======================================================================
 
 ======================================================================
@@ -1361,7 +1361,7 @@ Test Description: Modify column variation 1
 Execution Status: PASS
 Query Executed: ALTER TABLE t_f007_1 MODIFY COLUMN c VARCHAR(30) NULL;
 Database Response: Query executed successfully. Rows affected: 0
-Query Execution Time: 0.097592 seconds
+Query Execution Time: 0.230926 seconds
 ======================================================================
 
 ======================================================================
@@ -1371,7 +1371,7 @@ Test Description: Modify column variation 2
 Execution Status: PASS
 Query Executed: ALTER TABLE t_f007_2 MODIFY COLUMN c VARCHAR(31) NULL;
 Database Response: Query executed successfully. Rows affected: 0
-Query Execution Time: 0.081125 seconds
+Query Execution Time: 0.214835 seconds
 ======================================================================
 
 ======================================================================
@@ -1381,7 +1381,7 @@ Test Description: Modify column variation 3
 Execution Status: PASS
 Query Executed: ALTER TABLE t_f007_3 MODIFY COLUMN c VARCHAR(32) NULL;
 Database Response: Query executed successfully. Rows affected: 0
-Query Execution Time: 0.077633 seconds
+Query Execution Time: 0.226779 seconds
 ======================================================================
 
 ======================================================================
@@ -1391,7 +1391,7 @@ Test Description: Modify column variation 4
 Execution Status: PASS
 Query Executed: ALTER TABLE t_f007_4 MODIFY COLUMN c VARCHAR(33) NULL;
 Database Response: Query executed successfully. Rows affected: 0
-Query Execution Time: 0.072156 seconds
+Query Execution Time: 0.430734 seconds
 ======================================================================
 
 ======================================================================
@@ -1401,7 +1401,7 @@ Test Description: Modify column variation 5
 Execution Status: PASS
 Query Executed: ALTER TABLE t_f007_5 MODIFY COLUMN c VARCHAR(34) NULL;
 Database Response: Query executed successfully. Rows affected: 0
-Query Execution Time: 0.070605 seconds
+Query Execution Time: 0.240327 seconds
 ======================================================================
 
 ======================================================================
@@ -1411,7 +1411,7 @@ Test Description: Modify column variation 6
 Execution Status: PASS
 Query Executed: ALTER TABLE t_f007_6 MODIFY COLUMN missing_col INT;
 Database Response: 1054 (42S22): Unknown column 'missing_col' in 't_f007_6'
-Query Execution Time: 0.052427 seconds
+Query Execution Time: 0.178168 seconds
 ======================================================================
 
 ======================================================================
@@ -1421,7 +1421,7 @@ Test Description: Modify column variation 7
 Execution Status: PASS
 Query Executed: ALTER TABLE t_f007_7 MODIFY COLUMN missing_col INT;
 Database Response: 1054 (42S22): Unknown column 'missing_col' in 't_f007_7'
-Query Execution Time: 0.123019 seconds
+Query Execution Time: 0.163767 seconds
 ======================================================================
 
 ======================================================================
@@ -1431,7 +1431,7 @@ Test Description: Modify column variation 8
 Execution Status: PASS
 Query Executed: ALTER TABLE t_f007_8 MODIFY COLUMN missing_col INT;
 Database Response: 1054 (42S22): Unknown column 'missing_col' in 't_f007_8'
-Query Execution Time: 0.073074 seconds
+Query Execution Time: 0.164530 seconds
 ======================================================================
 
 ======================================================================
@@ -1441,7 +1441,7 @@ Test Description: Modify column variation 9
 Execution Status: PASS
 Query Executed: ALTER TABLE t_f007_9 MODIFY COLUMN missing_col INT;
 Database Response: 1054 (42S22): Unknown column 'missing_col' in 't_f007_9'
-Query Execution Time: 0.059468 seconds
+Query Execution Time: 0.139057 seconds
 ======================================================================
 
 ======================================================================
@@ -1451,7 +1451,7 @@ Test Description: Modify column variation 10
 Execution Status: PASS
 Query Executed: ALTER TABLE t_f007_10 MODIFY COLUMN missing_col INT;
 Database Response: 1054 (42S22): Unknown column 'missing_col' in 't_f007_10'
-Query Execution Time: 0.072120 seconds
+Query Execution Time: 0.123573 seconds
 ======================================================================
 
 ======================================================================
@@ -1461,7 +1461,7 @@ Test Description: Modify column variation 11
 Execution Status: PASS
 Query Executed: ALTER TABLE t_f007_11 MODIFY COLUMN c VARCHAR(40) NULL;
 Database Response: Query executed successfully. Rows affected: 0
-Query Execution Time: 0.084133 seconds
+Query Execution Time: 0.178464 seconds
 ======================================================================
 
 ======================================================================
@@ -1471,7 +1471,7 @@ Test Description: Modify column variation 12
 Execution Status: PASS
 Query Executed: ALTER TABLE t_f007_12 MODIFY COLUMN c VARCHAR(41) NULL;
 Database Response: Query executed successfully. Rows affected: 0
-Query Execution Time: 0.080108 seconds
+Query Execution Time: 0.192040 seconds
 ======================================================================
 
 ======================================================================
@@ -1481,7 +1481,7 @@ Test Description: Modify column variation 13
 Execution Status: PASS
 Query Executed: ALTER TABLE t_f007_13 MODIFY COLUMN c VARCHAR(42) NULL;
 Database Response: Query executed successfully. Rows affected: 0
-Query Execution Time: 0.075036 seconds
+Query Execution Time: 0.249504 seconds
 ======================================================================
 
 ======================================================================
@@ -1491,7 +1491,7 @@ Test Description: Modify column variation 14
 Execution Status: PASS
 Query Executed: ALTER TABLE t_f007_14 MODIFY COLUMN c VARCHAR(43) NULL;
 Database Response: Query executed successfully. Rows affected: 0
-Query Execution Time: 0.109518 seconds
+Query Execution Time: 0.223042 seconds
 ======================================================================
 
 ======================================================================
@@ -1501,7 +1501,7 @@ Test Description: Modify column variation 15
 Execution Status: PASS
 Query Executed: ALTER TABLE t_f007_15 MODIFY COLUMN c VARCHAR(44) NULL;
 Database Response: Query executed successfully. Rows affected: 0
-Query Execution Time: 0.075560 seconds
+Query Execution Time: 0.209531 seconds
 ======================================================================
 
 ======================================================================
@@ -1511,7 +1511,7 @@ Test Description: Rename column variation 1
 Execution Status: PASS
 Query Executed: ALTER TABLE t_f008_1 CHANGE COLUMN c c1 VARCHAR(30);
 Database Response: Query executed successfully. Rows affected: 0
-Query Execution Time: 0.091768 seconds
+Query Execution Time: 0.185070 seconds
 ======================================================================
 
 ======================================================================
@@ -1521,7 +1521,7 @@ Test Description: Rename column variation 2
 Execution Status: PASS
 Query Executed: ALTER TABLE t_f008_2 CHANGE COLUMN c c2 VARCHAR(30);
 Database Response: Query executed successfully. Rows affected: 0
-Query Execution Time: 0.074015 seconds
+Query Execution Time: 0.155413 seconds
 ======================================================================
 
 ======================================================================
@@ -1531,7 +1531,7 @@ Test Description: Rename column variation 3
 Execution Status: PASS
 Query Executed: ALTER TABLE t_f008_3 CHANGE COLUMN c c3 VARCHAR(30);
 Database Response: Query executed successfully. Rows affected: 0
-Query Execution Time: 0.075484 seconds
+Query Execution Time: 0.164720 seconds
 ======================================================================
 
 ======================================================================
@@ -1541,7 +1541,7 @@ Test Description: Rename column variation 4
 Execution Status: PASS
 Query Executed: ALTER TABLE t_f008_4 CHANGE COLUMN c c4 VARCHAR(30);
 Database Response: Query executed successfully. Rows affected: 0
-Query Execution Time: 0.150489 seconds
+Query Execution Time: 0.262483 seconds
 ======================================================================
 
 ======================================================================
@@ -1551,7 +1551,7 @@ Test Description: Rename column variation 5
 Execution Status: PASS
 Query Executed: ALTER TABLE t_f008_5 CHANGE COLUMN c c5 VARCHAR(30);
 Database Response: Query executed successfully. Rows affected: 0
-Query Execution Time: 0.060545 seconds
+Query Execution Time: 0.247877 seconds
 ======================================================================
 
 ======================================================================
@@ -1561,7 +1561,7 @@ Test Description: Rename column variation 6
 Execution Status: PASS
 Query Executed: ALTER TABLE t_f008_6 CHANGE COLUMN missing_col c2 INT;
 Database Response: 1054 (42S22): Unknown column 'missing_col' in 't_f008_6'
-Query Execution Time: 0.051907 seconds
+Query Execution Time: 0.131788 seconds
 ======================================================================
 
 ======================================================================
@@ -1571,7 +1571,7 @@ Test Description: Rename column variation 7
 Execution Status: PASS
 Query Executed: ALTER TABLE t_f008_7 CHANGE COLUMN missing_col c2 INT;
 Database Response: 1054 (42S22): Unknown column 'missing_col' in 't_f008_7'
-Query Execution Time: 0.051593 seconds
+Query Execution Time: 0.156542 seconds
 ======================================================================
 
 ======================================================================
@@ -1581,7 +1581,7 @@ Test Description: Rename column variation 8
 Execution Status: PASS
 Query Executed: ALTER TABLE t_f008_8 CHANGE COLUMN missing_col c2 INT;
 Database Response: 1054 (42S22): Unknown column 'missing_col' in 't_f008_8'
-Query Execution Time: 0.049400 seconds
+Query Execution Time: 0.145826 seconds
 ======================================================================
 
 ======================================================================
@@ -1591,7 +1591,7 @@ Test Description: Rename column variation 9
 Execution Status: PASS
 Query Executed: ALTER TABLE t_f008_9 CHANGE COLUMN missing_col c2 INT;
 Database Response: 1054 (42S22): Unknown column 'missing_col' in 't_f008_9'
-Query Execution Time: 0.048902 seconds
+Query Execution Time: 0.179188 seconds
 ======================================================================
 
 ======================================================================
@@ -1601,7 +1601,7 @@ Test Description: Rename column variation 10
 Execution Status: PASS
 Query Executed: ALTER TABLE t_f008_10 CHANGE COLUMN missing_col c2 INT;
 Database Response: 1054 (42S22): Unknown column 'missing_col' in 't_f008_10'
-Query Execution Time: 0.056359 seconds
+Query Execution Time: 0.192991 seconds
 ======================================================================
 
 ======================================================================
@@ -1611,7 +1611,7 @@ Test Description: Rename column variation 11
 Execution Status: PASS
 Query Executed: ALTER TABLE t_f008_11 CHANGE COLUMN c c11 VARCHAR(30);
 Database Response: Query executed successfully. Rows affected: 0
-Query Execution Time: 0.075327 seconds
+Query Execution Time: 0.192320 seconds
 ======================================================================
 
 ======================================================================
@@ -1621,7 +1621,7 @@ Test Description: Rename column variation 12
 Execution Status: PASS
 Query Executed: ALTER TABLE t_f008_12 CHANGE COLUMN c c12 VARCHAR(30);
 Database Response: Query executed successfully. Rows affected: 0
-Query Execution Time: 0.070959 seconds
+Query Execution Time: 0.179619 seconds
 ======================================================================
 
 ======================================================================
@@ -1631,7 +1631,7 @@ Test Description: Rename column variation 13
 Execution Status: PASS
 Query Executed: ALTER TABLE t_f008_13 CHANGE COLUMN c c13 VARCHAR(30);
 Database Response: Query executed successfully. Rows affected: 0
-Query Execution Time: 0.083440 seconds
+Query Execution Time: 0.205236 seconds
 ======================================================================
 
 ======================================================================
@@ -1641,7 +1641,7 @@ Test Description: Rename column variation 14
 Execution Status: PASS
 Query Executed: ALTER TABLE t_f008_14 CHANGE COLUMN c c14 VARCHAR(30);
 Database Response: Query executed successfully. Rows affected: 0
-Query Execution Time: 0.070248 seconds
+Query Execution Time: 0.174100 seconds
 ======================================================================
 
 ======================================================================
@@ -1651,7 +1651,7 @@ Test Description: Rename column variation 15
 Execution Status: PASS
 Query Executed: ALTER TABLE t_f008_15 CHANGE COLUMN c c15 VARCHAR(30);
 Database Response: Query executed successfully. Rows affected: 0
-Query Execution Time: 0.073805 seconds
+Query Execution Time: 0.226589 seconds
 ======================================================================
 
 ======================================================================
@@ -1661,7 +1661,7 @@ Test Description: Rename table variation 1
 Execution Status: PASS
 Query Executed: RENAME TABLE t_f009_1 TO t_f009_1_new;
 Database Response: Query executed successfully. Rows affected: 0
-Query Execution Time: 0.089357 seconds
+Query Execution Time: 0.240715 seconds
 ======================================================================
 
 ======================================================================
@@ -1671,7 +1671,7 @@ Test Description: Rename table variation 2
 Execution Status: PASS
 Query Executed: RENAME TABLE t_f009_2 TO t_f009_2_new;
 Database Response: Query executed successfully. Rows affected: 0
-Query Execution Time: 0.116203 seconds
+Query Execution Time: 0.240436 seconds
 ======================================================================
 
 ======================================================================
@@ -1681,7 +1681,7 @@ Test Description: Rename table variation 3
 Execution Status: PASS
 Query Executed: RENAME TABLE t_f009_3 TO t_f009_3_new;
 Database Response: Query executed successfully. Rows affected: 0
-Query Execution Time: 0.099828 seconds
+Query Execution Time: 0.229561 seconds
 ======================================================================
 
 ======================================================================
@@ -1691,7 +1691,7 @@ Test Description: Rename table variation 4
 Execution Status: PASS
 Query Executed: RENAME TABLE t_f009_4 TO t_f009_4_new;
 Database Response: Query executed successfully. Rows affected: 0
-Query Execution Time: 0.090240 seconds
+Query Execution Time: 0.401159 seconds
 ======================================================================
 
 ======================================================================
@@ -1701,7 +1701,7 @@ Test Description: Rename table variation 5
 Execution Status: PASS
 Query Executed: RENAME TABLE t_f009_5 TO t_f009_5_new;
 Database Response: Query executed successfully. Rows affected: 0
-Query Execution Time: 0.084448 seconds
+Query Execution Time: 0.217847 seconds
 ======================================================================
 
 ======================================================================
@@ -1711,7 +1711,7 @@ Test Description: Rename table variation 6
 Execution Status: PASS
 Query Executed: RENAME TABLE t_f009_6_new TO t_f009_6;
 Database Response: 1050 (42S01): Table 't_f009_6' already exists
-Query Execution Time: 0.057195 seconds
+Query Execution Time: 0.149781 seconds
 ======================================================================
 
 ======================================================================
@@ -1721,7 +1721,7 @@ Test Description: Rename table variation 7
 Execution Status: PASS
 Query Executed: RENAME TABLE t_f009_7_new TO t_f009_7;
 Database Response: 1050 (42S01): Table 't_f009_7' already exists
-Query Execution Time: 0.048773 seconds
+Query Execution Time: 0.133430 seconds
 ======================================================================
 
 ======================================================================
@@ -1731,7 +1731,7 @@ Test Description: Rename table variation 8
 Execution Status: PASS
 Query Executed: RENAME TABLE t_f009_8_new TO t_f009_8;
 Database Response: 1050 (42S01): Table 't_f009_8' already exists
-Query Execution Time: 0.056270 seconds
+Query Execution Time: 0.111768 seconds
 ======================================================================
 
 ======================================================================
@@ -1741,7 +1741,7 @@ Test Description: Rename table variation 9
 Execution Status: PASS
 Query Executed: RENAME TABLE t_f009_9_new TO t_f009_9;
 Database Response: 1050 (42S01): Table 't_f009_9' already exists
-Query Execution Time: 0.048820 seconds
+Query Execution Time: 0.183560 seconds
 ======================================================================
 
 ======================================================================
@@ -1751,7 +1751,7 @@ Test Description: Rename table variation 10
 Execution Status: PASS
 Query Executed: RENAME TABLE t_f009_10_new TO t_f009_10;
 Database Response: 1050 (42S01): Table 't_f009_10' already exists
-Query Execution Time: 0.059766 seconds
+Query Execution Time: 0.177585 seconds
 ======================================================================
 
 ======================================================================
@@ -1761,7 +1761,7 @@ Test Description: Rename table variation 11
 Execution Status: PASS
 Query Executed: RENAME TABLE t_f009_11 TO t_f009_11_new;
 Database Response: Query executed successfully. Rows affected: 0
-Query Execution Time: 0.084399 seconds
+Query Execution Time: 0.205799 seconds
 ======================================================================
 
 ======================================================================
@@ -1771,7 +1771,7 @@ Test Description: Rename table variation 12
 Execution Status: PASS
 Query Executed: RENAME TABLE t_f009_12 TO t_f009_12_new;
 Database Response: Query executed successfully. Rows affected: 0
-Query Execution Time: 0.102005 seconds
+Query Execution Time: 0.244879 seconds
 ======================================================================
 
 ======================================================================
@@ -1781,7 +1781,7 @@ Test Description: Rename table variation 13
 Execution Status: PASS
 Query Executed: RENAME TABLE t_f009_13 TO t_f009_13_new;
 Database Response: Query executed successfully. Rows affected: 0
-Query Execution Time: 0.086917 seconds
+Query Execution Time: 0.222637 seconds
 ======================================================================
 
 ======================================================================
@@ -1791,7 +1791,7 @@ Test Description: Rename table variation 14
 Execution Status: PASS
 Query Executed: RENAME TABLE t_f009_14 TO t_f009_14_new;
 Database Response: Query executed successfully. Rows affected: 0
-Query Execution Time: 0.083304 seconds
+Query Execution Time: 0.286974 seconds
 ======================================================================
 
 ======================================================================
@@ -1801,7 +1801,7 @@ Test Description: Rename table variation 15
 Execution Status: PASS
 Query Executed: RENAME TABLE t_f009_15 TO t_f009_15_new;
 Database Response: Query executed successfully. Rows affected: 0
-Query Execution Time: 0.112995 seconds
+Query Execution Time: 0.241865 seconds
 ======================================================================
 
 ======================================================================
@@ -1811,7 +1811,7 @@ Test Description: Drop or truncate variation 1
 Execution Status: PASS
 Query Executed: TRUNCATE TABLE t_f010_1;
 Database Response: Query executed successfully. Rows affected: 0
-Query Execution Time: 0.245492 seconds
+Query Execution Time: 0.280458 seconds
 ======================================================================
 
 ======================================================================
@@ -1821,7 +1821,7 @@ Test Description: Drop or truncate variation 2
 Execution Status: PASS
 Query Executed: DROP TABLE t_f010_2;
 Database Response: Query executed successfully. Rows affected: 0
-Query Execution Time: 0.097599 seconds
+Query Execution Time: 0.230488 seconds
 ======================================================================
 
 ======================================================================
@@ -1831,7 +1831,7 @@ Test Description: Drop or truncate variation 3
 Execution Status: PASS
 Query Executed: TRUNCATE TABLE t_f010_3;
 Database Response: Query executed successfully. Rows affected: 0
-Query Execution Time: 0.378168 seconds
+Query Execution Time: 0.470068 seconds
 ======================================================================
 
 ======================================================================
@@ -1841,7 +1841,7 @@ Test Description: Drop or truncate variation 4
 Execution Status: PASS
 Query Executed: DROP TABLE t_f010_4;
 Database Response: Query executed successfully. Rows affected: 0
-Query Execution Time: 0.103667 seconds
+Query Execution Time: 0.206341 seconds
 ======================================================================
 
 ======================================================================
@@ -1851,7 +1851,7 @@ Test Description: Drop or truncate variation 5
 Execution Status: PASS
 Query Executed: TRUNCATE TABLE t_f010_5;
 Database Response: Query executed successfully. Rows affected: 0
-Query Execution Time: 0.144391 seconds
+Query Execution Time: 0.366769 seconds
 ======================================================================
 
 ======================================================================
@@ -1861,7 +1861,7 @@ Test Description: Drop or truncate variation 6
 Execution Status: PASS
 Query Executed: TRUNCATE TABLE missing_t_f010_6;
 Database Response: 1146 (42S02): Table 'ai_testing_group1.missing_t_f010_6' doesn't exist
-Query Execution Time: 0.169199 seconds
+Query Execution Time: 0.222977 seconds
 ======================================================================
 
 ======================================================================
@@ -1871,7 +1871,7 @@ Test Description: Drop or truncate variation 7
 Execution Status: PASS
 Query Executed: TRUNCATE TABLE missing_t_f010_7;
 Database Response: 1146 (42S02): Table 'ai_testing_group1.missing_t_f010_7' doesn't exist
-Query Execution Time: 0.071827 seconds
+Query Execution Time: 0.145707 seconds
 ======================================================================
 
 ======================================================================
@@ -1881,7 +1881,7 @@ Test Description: Drop or truncate variation 8
 Execution Status: PASS
 Query Executed: TRUNCATE TABLE missing_t_f010_8;
 Database Response: 1146 (42S02): Table 'ai_testing_group1.missing_t_f010_8' doesn't exist
-Query Execution Time: 0.081073 seconds
+Query Execution Time: 0.158172 seconds
 ======================================================================
 
 ======================================================================
@@ -1891,7 +1891,7 @@ Test Description: Drop or truncate variation 9
 Execution Status: PASS
 Query Executed: TRUNCATE TABLE missing_t_f010_9;
 Database Response: 1146 (42S02): Table 'ai_testing_group1.missing_t_f010_9' doesn't exist
-Query Execution Time: 0.076741 seconds
+Query Execution Time: 0.196177 seconds
 ======================================================================
 
 ======================================================================
@@ -1901,7 +1901,7 @@ Test Description: Drop or truncate variation 10
 Execution Status: PASS
 Query Executed: TRUNCATE TABLE missing_t_f010_10;
 Database Response: 1146 (42S02): Table 'ai_testing_group1.missing_t_f010_10' doesn't exist
-Query Execution Time: 0.063876 seconds
+Query Execution Time: 0.196357 seconds
 ======================================================================
 
 ======================================================================
@@ -1911,7 +1911,7 @@ Test Description: Drop or truncate variation 11
 Execution Status: PASS
 Query Executed: TRUNCATE TABLE t_f010_11;
 Database Response: Query executed successfully. Rows affected: 0
-Query Execution Time: 0.142245 seconds
+Query Execution Time: 0.477542 seconds
 ======================================================================
 
 ======================================================================
@@ -1921,7 +1921,7 @@ Test Description: Drop or truncate variation 12
 Execution Status: PASS
 Query Executed: DROP TABLE t_f010_12;
 Database Response: Query executed successfully. Rows affected: 0
-Query Execution Time: 0.096761 seconds
+Query Execution Time: 0.740828 seconds
 ======================================================================
 
 ======================================================================
@@ -1931,7 +1931,7 @@ Test Description: Drop or truncate variation 13
 Execution Status: PASS
 Query Executed: TRUNCATE TABLE t_f010_13;
 Database Response: Query executed successfully. Rows affected: 0
-Query Execution Time: 0.143380 seconds
+Query Execution Time: 0.468487 seconds
 ======================================================================
 
 ======================================================================
@@ -1941,7 +1941,7 @@ Test Description: Drop or truncate variation 14
 Execution Status: PASS
 Query Executed: DROP TABLE t_f010_14;
 Database Response: Query executed successfully. Rows affected: 0
-Query Execution Time: 0.102748 seconds
+Query Execution Time: 0.264155 seconds
 ======================================================================
 
 ======================================================================
@@ -1951,7 +1951,7 @@ Test Description: Drop or truncate variation 15
 Execution Status: PASS
 Query Executed: TRUNCATE TABLE t_f010_15;
 Database Response: Query executed successfully. Rows affected: 0
-Query Execution Time: 0.227346 seconds
+Query Execution Time: 0.578956 seconds
 ======================================================================
 
 ======================================================================
@@ -1961,7 +1961,7 @@ Test Description: INSERT single row variation 1
 Execution Status: PASS
 Query Executed: INSERT INTO t_f011_1(id,name,email,age,salary,dept_id,joining_date) VALUES (10,'User0','uf0110@x.test',28,35000,1,'2025-01-01');
 Database Response: Query executed successfully. Rows affected: 1
-Query Execution Time: 0.093395 seconds
+Query Execution Time: 0.277455 seconds
 ======================================================================
 
 ======================================================================
@@ -1971,7 +1971,7 @@ Test Description: INSERT single row variation 2
 Execution Status: PASS
 Query Executed: INSERT INTO t_f011_2(id,name,email,age,salary,dept_id,joining_date) VALUES (10,'User1','uf0111@x.test',28,35000,1,'2025-01-01');
 Database Response: Query executed successfully. Rows affected: 1
-Query Execution Time: 0.104195 seconds
+Query Execution Time: 0.208618 seconds
 ======================================================================
 
 ======================================================================
@@ -1981,7 +1981,7 @@ Test Description: INSERT single row variation 3
 Execution Status: PASS
 Query Executed: INSERT INTO t_f011_3(id,name,email,age,salary,dept_id,joining_date) VALUES (10,'User2','uf0112@x.test',28,35000,1,'2025-01-01');
 Database Response: Query executed successfully. Rows affected: 1
-Query Execution Time: 0.122800 seconds
+Query Execution Time: 0.374859 seconds
 ======================================================================
 
 ======================================================================
@@ -1991,7 +1991,7 @@ Test Description: INSERT single row variation 4
 Execution Status: PASS
 Query Executed: INSERT INTO t_f011_4(id,name,email,age,salary,dept_id,joining_date) VALUES (10,'User3','uf0113@x.test',28,35000,1,'2025-01-01');
 Database Response: Query executed successfully. Rows affected: 1
-Query Execution Time: 0.086486 seconds
+Query Execution Time: 0.207201 seconds
 ======================================================================
 
 ======================================================================
@@ -2001,7 +2001,7 @@ Test Description: INSERT single row variation 5
 Execution Status: PASS
 Query Executed: INSERT INTO t_f011_5(id,name,email,age,salary,dept_id,joining_date) VALUES (10,'User4','uf0114@x.test',28,35000,1,'2025-01-01');
 Database Response: Query executed successfully. Rows affected: 1
-Query Execution Time: 0.125416 seconds
+Query Execution Time: 0.243610 seconds
 ======================================================================
 
 ======================================================================
@@ -2011,7 +2011,7 @@ Test Description: INSERT single row variation 6
 Execution Status: PASS
 Query Executed: INSERT INTO t_f011_6(id) VALUES (1);
 Database Response: 1062 (23000): Duplicate entry '1' for key 't_f011_6.PRIMARY'
-Query Execution Time: 0.102373 seconds
+Query Execution Time: 0.212809 seconds
 ======================================================================
 
 ======================================================================
@@ -2021,7 +2021,7 @@ Test Description: INSERT single row variation 7
 Execution Status: PASS
 Query Executed: INSERT INTO t_f011_7(id) VALUES (1);
 Database Response: 1062 (23000): Duplicate entry '1' for key 't_f011_7.PRIMARY'
-Query Execution Time: 0.092307 seconds
+Query Execution Time: 0.295504 seconds
 ======================================================================
 
 ======================================================================
@@ -2031,7 +2031,7 @@ Test Description: INSERT single row variation 8
 Execution Status: PASS
 Query Executed: INSERT INTO t_f011_8(id) VALUES (1);
 Database Response: 1062 (23000): Duplicate entry '1' for key 't_f011_8.PRIMARY'
-Query Execution Time: 0.092351 seconds
+Query Execution Time: 0.350877 seconds
 ======================================================================
 
 ======================================================================
@@ -2041,7 +2041,7 @@ Test Description: INSERT single row variation 9
 Execution Status: PASS
 Query Executed: INSERT INTO t_f011_9(id) VALUES (1);
 Database Response: 1062 (23000): Duplicate entry '1' for key 't_f011_9.PRIMARY'
-Query Execution Time: 0.197645 seconds
+Query Execution Time: 0.259947 seconds
 ======================================================================
 
 ======================================================================
@@ -2051,7 +2051,7 @@ Test Description: INSERT single row variation 10
 Execution Status: PASS
 Query Executed: INSERT INTO t_f011_10(id) VALUES (1);
 Database Response: 1062 (23000): Duplicate entry '1' for key 't_f011_10.PRIMARY'
-Query Execution Time: 0.122240 seconds
+Query Execution Time: 0.231971 seconds
 ======================================================================
 
 ======================================================================
@@ -2061,7 +2061,7 @@ Test Description: INSERT single row variation 11
 Execution Status: PASS
 Query Executed: INSERT INTO t_f011_11(id,name,email,age,salary,dept_id,joining_date) VALUES (10,'User10','uf01110@x.test',28,35000,1,'2025-01-01');
 Database Response: Query executed successfully. Rows affected: 1
-Query Execution Time: 0.115156 seconds
+Query Execution Time: 0.250221 seconds
 ======================================================================
 
 ======================================================================
@@ -2071,7 +2071,7 @@ Test Description: INSERT single row variation 12
 Execution Status: PASS
 Query Executed: INSERT INTO t_f011_12(id,name,email,age,salary,dept_id,joining_date) VALUES (10,'User11','uf01111@x.test',28,35000,1,'2025-01-01');
 Database Response: Query executed successfully. Rows affected: 1
-Query Execution Time: 0.108671 seconds
+Query Execution Time: 0.224254 seconds
 ======================================================================
 
 ======================================================================
@@ -2081,7 +2081,7 @@ Test Description: INSERT single row variation 13
 Execution Status: PASS
 Query Executed: INSERT INTO t_f011_13(id,name,email,age,salary,dept_id,joining_date) VALUES (10,'User12','uf01112@x.test',28,35000,1,'2025-01-01');
 Database Response: Query executed successfully. Rows affected: 1
-Query Execution Time: 0.107561 seconds
+Query Execution Time: 0.220428 seconds
 ======================================================================
 
 ======================================================================
@@ -2091,7 +2091,7 @@ Test Description: INSERT single row variation 14
 Execution Status: PASS
 Query Executed: INSERT INTO t_f011_14(id,name,email,age,salary,dept_id,joining_date) VALUES (10,'User13','uf01113@x.test',28,35000,1,'2025-01-01');
 Database Response: Query executed successfully. Rows affected: 1
-Query Execution Time: 0.111432 seconds
+Query Execution Time: 1.010896 seconds
 ======================================================================
 
 ======================================================================
@@ -2101,7 +2101,7 @@ Test Description: INSERT single row variation 15
 Execution Status: PASS
 Query Executed: INSERT INTO t_f011_15(id,name,email,age,salary,dept_id,joining_date) VALUES (10,'User14','uf01114@x.test',28,35000,1,'2025-01-01');
 Database Response: Query executed successfully. Rows affected: 1
-Query Execution Time: 0.134838 seconds
+Query Execution Time: 0.253553 seconds
 ======================================================================
 
 ======================================================================
@@ -2111,7 +2111,7 @@ Test Description: INSERT multiple rows variation 1
 Execution Status: PASS
 Query Executed: INSERT INTO t_f012_1(id,name) VALUES (10,'A0'),(11,'B0'),(12,'C0');
 Database Response: Query executed successfully. Rows affected: 3
-Query Execution Time: 0.759704 seconds
+Query Execution Time: 0.300431 seconds
 ======================================================================
 
 ======================================================================
@@ -2121,7 +2121,7 @@ Test Description: INSERT multiple rows variation 2
 Execution Status: PASS
 Query Executed: INSERT INTO t_f012_2(id,name) VALUES (10,'A1'),(11,'B1'),(12,'C1');
 Database Response: Query executed successfully. Rows affected: 3
-Query Execution Time: 0.150352 seconds
+Query Execution Time: 0.284147 seconds
 ======================================================================
 
 ======================================================================
@@ -2131,7 +2131,7 @@ Test Description: INSERT multiple rows variation 3
 Execution Status: PASS
 Query Executed: INSERT INTO t_f012_3(id,name) VALUES (10,'A2'),(11,'B2'),(12,'C2');
 Database Response: Query executed successfully. Rows affected: 3
-Query Execution Time: 0.120389 seconds
+Query Execution Time: 0.233853 seconds
 ======================================================================
 
 ======================================================================
@@ -2141,7 +2141,7 @@ Test Description: INSERT multiple rows variation 4
 Execution Status: PASS
 Query Executed: INSERT INTO t_f012_4(id,name) VALUES (10,'A3'),(11,'B3'),(12,'C3');
 Database Response: Query executed successfully. Rows affected: 3
-Query Execution Time: 0.110906 seconds
+Query Execution Time: 0.303369 seconds
 ======================================================================
 
 ======================================================================
@@ -2151,7 +2151,7 @@ Test Description: INSERT multiple rows variation 5
 Execution Status: PASS
 Query Executed: INSERT INTO t_f012_5(id,name) VALUES (10,'A4'),(11,'B4'),(12,'C4');
 Database Response: Query executed successfully. Rows affected: 3
-Query Execution Time: 0.209090 seconds
+Query Execution Time: 0.294416 seconds
 ======================================================================
 
 ======================================================================
@@ -2161,7 +2161,7 @@ Test Description: INSERT multiple rows variation 6
 Execution Status: PASS
 Query Executed: INSERT INTO t_f012_6(id,name) VALUES (10,'A'),(10,'B');
 Database Response: 1062 (23000): Duplicate entry '10' for key 't_f012_6.PRIMARY'
-Query Execution Time: 0.131350 seconds
+Query Execution Time: 0.217049 seconds
 ======================================================================
 
 ======================================================================
@@ -2171,7 +2171,7 @@ Test Description: INSERT multiple rows variation 7
 Execution Status: PASS
 Query Executed: INSERT INTO t_f012_7(id,name) VALUES (10,'A'),(10,'B');
 Database Response: 1062 (23000): Duplicate entry '10' for key 't_f012_7.PRIMARY'
-Query Execution Time: 0.107864 seconds
+Query Execution Time: 0.210138 seconds
 ======================================================================
 
 ======================================================================
@@ -2181,7 +2181,7 @@ Test Description: INSERT multiple rows variation 8
 Execution Status: PASS
 Query Executed: INSERT INTO t_f012_8(id,name) VALUES (10,'A'),(10,'B');
 Database Response: 1062 (23000): Duplicate entry '10' for key 't_f012_8.PRIMARY'
-Query Execution Time: 0.090744 seconds
+Query Execution Time: 0.262133 seconds
 ======================================================================
 
 ======================================================================
@@ -2191,7 +2191,7 @@ Test Description: INSERT multiple rows variation 9
 Execution Status: PASS
 Query Executed: INSERT INTO t_f012_9(id,name) VALUES (10,'A'),(10,'B');
 Database Response: 1062 (23000): Duplicate entry '10' for key 't_f012_9.PRIMARY'
-Query Execution Time: 0.112453 seconds
+Query Execution Time: 0.258336 seconds
 ======================================================================
 
 ======================================================================
@@ -2201,7 +2201,7 @@ Test Description: INSERT multiple rows variation 10
 Execution Status: PASS
 Query Executed: INSERT INTO t_f012_10(id,name) VALUES (10,'A'),(10,'B');
 Database Response: 1062 (23000): Duplicate entry '10' for key 't_f012_10.PRIMARY'
-Query Execution Time: 0.096333 seconds
+Query Execution Time: 0.193162 seconds
 ======================================================================
 
 ======================================================================
@@ -2211,7 +2211,7 @@ Test Description: INSERT multiple rows variation 11
 Execution Status: PASS
 Query Executed: INSERT INTO t_f012_11(id,name) VALUES (10,'A10'),(11,'B10'),(12,'C10');
 Database Response: Query executed successfully. Rows affected: 3
-Query Execution Time: 0.119989 seconds
+Query Execution Time: 0.261088 seconds
 ======================================================================
 
 ======================================================================
@@ -2221,7 +2221,7 @@ Test Description: INSERT multiple rows variation 12
 Execution Status: PASS
 Query Executed: INSERT INTO t_f012_12(id,name) VALUES (10,'A11'),(11,'B11'),(12,'C11');
 Database Response: Query executed successfully. Rows affected: 3
-Query Execution Time: 0.109575 seconds
+Query Execution Time: 0.465909 seconds
 ======================================================================
 
 ======================================================================
@@ -2231,7 +2231,7 @@ Test Description: INSERT multiple rows variation 13
 Execution Status: PASS
 Query Executed: INSERT INTO t_f012_13(id,name) VALUES (10,'A12'),(11,'B12'),(12,'C12');
 Database Response: Query executed successfully. Rows affected: 3
-Query Execution Time: 0.232124 seconds
+Query Execution Time: 0.243836 seconds
 ======================================================================
 
 ======================================================================
@@ -2241,7 +2241,7 @@ Test Description: INSERT multiple rows variation 14
 Execution Status: PASS
 Query Executed: INSERT INTO t_f012_14(id,name) VALUES (10,'A13'),(11,'B13'),(12,'C13');
 Database Response: Query executed successfully. Rows affected: 3
-Query Execution Time: 0.129025 seconds
+Query Execution Time: 0.253387 seconds
 ======================================================================
 
 ======================================================================
@@ -2251,7 +2251,7 @@ Test Description: INSERT multiple rows variation 15
 Execution Status: PASS
 Query Executed: INSERT INTO t_f012_15(id,name) VALUES (10,'A14'),(11,'B14'),(12,'C14');
 Database Response: Query executed successfully. Rows affected: 3
-Query Execution Time: 0.191480 seconds
+Query Execution Time: 0.248014 seconds
 ======================================================================
 
 ======================================================================
@@ -2261,7 +2261,7 @@ Test Description: INSERT with selected columns variation 1
 Execution Status: PASS
 Query Executed: INSERT INTO t_f013_1(id,name,email) VALUES (10,'Selected0','sel0@x.test');
 Database Response: Query executed successfully. Rows affected: 1
-Query Execution Time: 0.179675 seconds
+Query Execution Time: 0.290603 seconds
 ======================================================================
 
 ======================================================================
@@ -2271,7 +2271,7 @@ Test Description: INSERT with selected columns variation 2
 Execution Status: PASS
 Query Executed: INSERT INTO t_f013_2(id,name,email) VALUES (10,'Selected1','sel1@x.test');
 Database Response: Query executed successfully. Rows affected: 1
-Query Execution Time: 0.112189 seconds
+Query Execution Time: 0.255884 seconds
 ======================================================================
 
 ======================================================================
@@ -2281,7 +2281,7 @@ Test Description: INSERT with selected columns variation 3
 Execution Status: PASS
 Query Executed: INSERT INTO t_f013_3(id,name,email) VALUES (10,'Selected2','sel2@x.test');
 Database Response: Query executed successfully. Rows affected: 1
-Query Execution Time: 0.096436 seconds
+Query Execution Time: 0.277945 seconds
 ======================================================================
 
 ======================================================================
@@ -2291,7 +2291,7 @@ Test Description: INSERT with selected columns variation 4
 Execution Status: PASS
 Query Executed: INSERT INTO t_f013_4(id,name,email) VALUES (10,'Selected3','sel3@x.test');
 Database Response: Query executed successfully. Rows affected: 1
-Query Execution Time: 0.143353 seconds
+Query Execution Time: 0.249092 seconds
 ======================================================================
 
 ======================================================================
@@ -2301,7 +2301,7 @@ Test Description: INSERT with selected columns variation 5
 Execution Status: PASS
 Query Executed: INSERT INTO t_f013_5(id,name,email) VALUES (10,'Selected4','sel4@x.test');
 Database Response: Query executed successfully. Rows affected: 1
-Query Execution Time: 0.229672 seconds
+Query Execution Time: 0.302531 seconds
 ======================================================================
 
 ======================================================================
@@ -2311,7 +2311,7 @@ Test Description: INSERT with selected columns variation 6
 Execution Status: PASS
 Query Executed: INSERT INTO t_f013_6(unknown_col) VALUES (1);
 Database Response: 1054 (42S22): Unknown column 'unknown_col' in 'field list'
-Query Execution Time: 0.106684 seconds
+Query Execution Time: 0.175087 seconds
 ======================================================================
 
 ======================================================================
@@ -2321,7 +2321,7 @@ Test Description: INSERT with selected columns variation 7
 Execution Status: PASS
 Query Executed: INSERT INTO t_f013_7(unknown_col) VALUES (1);
 Database Response: 1054 (42S22): Unknown column 'unknown_col' in 'field list'
-Query Execution Time: 0.106691 seconds
+Query Execution Time: 0.174380 seconds
 ======================================================================
 
 ======================================================================
@@ -2331,7 +2331,7 @@ Test Description: INSERT with selected columns variation 8
 Execution Status: PASS
 Query Executed: INSERT INTO t_f013_8(unknown_col) VALUES (1);
 Database Response: 1054 (42S22): Unknown column 'unknown_col' in 'field list'
-Query Execution Time: 0.092250 seconds
+Query Execution Time: 0.171152 seconds
 ======================================================================
 
 ======================================================================
@@ -2341,7 +2341,7 @@ Test Description: INSERT with selected columns variation 9
 Execution Status: PASS
 Query Executed: INSERT INTO t_f013_9(unknown_col) VALUES (1);
 Database Response: 1054 (42S22): Unknown column 'unknown_col' in 'field list'
-Query Execution Time: 0.082321 seconds
+Query Execution Time: 0.233234 seconds
 ======================================================================
 
 ======================================================================
@@ -2351,7 +2351,7 @@ Test Description: INSERT with selected columns variation 10
 Execution Status: PASS
 Query Executed: INSERT INTO t_f013_10(unknown_col) VALUES (1);
 Database Response: 1054 (42S22): Unknown column 'unknown_col' in 'field list'
-Query Execution Time: 0.094327 seconds
+Query Execution Time: 0.283019 seconds
 ======================================================================
 
 ======================================================================
@@ -2361,7 +2361,7 @@ Test Description: INSERT with selected columns variation 11
 Execution Status: PASS
 Query Executed: INSERT INTO t_f013_11(id,name,email) VALUES (10,'Selected10','sel10@x.test');
 Database Response: Query executed successfully. Rows affected: 1
-Query Execution Time: 0.103218 seconds
+Query Execution Time: 0.232373 seconds
 ======================================================================
 
 ======================================================================
@@ -2371,7 +2371,7 @@ Test Description: INSERT with selected columns variation 12
 Execution Status: PASS
 Query Executed: INSERT INTO t_f013_12(id,name,email) VALUES (10,'Selected11','sel11@x.test');
 Database Response: Query executed successfully. Rows affected: 1
-Query Execution Time: 0.118127 seconds
+Query Execution Time: 0.223897 seconds
 ======================================================================
 
 ======================================================================
@@ -2381,7 +2381,7 @@ Test Description: INSERT with selected columns variation 13
 Execution Status: PASS
 Query Executed: INSERT INTO t_f013_13(id,name,email) VALUES (10,'Selected12','sel12@x.test');
 Database Response: Query executed successfully. Rows affected: 1
-Query Execution Time: 0.235472 seconds
+Query Execution Time: 0.283566 seconds
 ======================================================================
 
 ======================================================================
@@ -2391,7 +2391,7 @@ Test Description: INSERT with selected columns variation 14
 Execution Status: PASS
 Query Executed: INSERT INTO t_f013_14(id,name,email) VALUES (10,'Selected13','sel13@x.test');
 Database Response: Query executed successfully. Rows affected: 1
-Query Execution Time: 0.143106 seconds
+Query Execution Time: 0.676027 seconds
 ======================================================================
 
 ======================================================================
@@ -2401,7 +2401,7 @@ Test Description: INSERT with selected columns variation 15
 Execution Status: PASS
 Query Executed: INSERT INTO t_f013_15(id,name,email) VALUES (10,'Selected14','sel14@x.test');
 Database Response: Query executed successfully. Rows affected: 1
-Query Execution Time: 0.118924 seconds
+Query Execution Time: 0.282184 seconds
 ======================================================================
 
 ======================================================================
@@ -2411,7 +2411,7 @@ Test Description: INSERT using DEFAULT values variation 1
 Execution Status: PASS
 Query Executed: INSERT INTO t_f014_1(id) VALUES (10);
 Database Response: Query executed successfully. Rows affected: 1
-Query Execution Time: 0.071826 seconds
+Query Execution Time: 0.215269 seconds
 ======================================================================
 
 ======================================================================
@@ -2421,7 +2421,7 @@ Test Description: INSERT using DEFAULT values variation 2
 Execution Status: PASS
 Query Executed: INSERT INTO t_f014_2(id) VALUES (10);
 Database Response: Query executed successfully. Rows affected: 1
-Query Execution Time: 0.091269 seconds
+Query Execution Time: 0.133377 seconds
 ======================================================================
 
 ======================================================================
@@ -2431,7 +2431,7 @@ Test Description: INSERT using DEFAULT values variation 3
 Execution Status: PASS
 Query Executed: INSERT INTO t_f014_3(id) VALUES (10);
 Database Response: Query executed successfully. Rows affected: 1
-Query Execution Time: 0.078474 seconds
+Query Execution Time: 0.131495 seconds
 ======================================================================
 
 ======================================================================
@@ -2441,7 +2441,7 @@ Test Description: INSERT using DEFAULT values variation 4
 Execution Status: PASS
 Query Executed: INSERT INTO t_f014_4(id) VALUES (10);
 Database Response: Query executed successfully. Rows affected: 1
-Query Execution Time: 0.076601 seconds
+Query Execution Time: 0.155889 seconds
 ======================================================================
 
 ======================================================================
@@ -2451,7 +2451,7 @@ Test Description: INSERT using DEFAULT values variation 5
 Execution Status: PASS
 Query Executed: INSERT INTO t_f014_5(id) VALUES (10);
 Database Response: Query executed successfully. Rows affected: 1
-Query Execution Time: 0.778101 seconds
+Query Execution Time: 0.102724 seconds
 ======================================================================
 
 ======================================================================
@@ -2461,7 +2461,7 @@ Test Description: INSERT using DEFAULT values variation 6
 Execution Status: PASS
 Query Executed: INSERT INTO t_f014_6(id,missing_col) VALUES (1,2);
 Database Response: 1054 (42S22): Unknown column 'missing_col' in 'field list'
-Query Execution Time: 0.135622 seconds
+Query Execution Time: 0.134640 seconds
 ======================================================================
 
 ======================================================================
@@ -2471,7 +2471,7 @@ Test Description: INSERT using DEFAULT values variation 7
 Execution Status: PASS
 Query Executed: INSERT INTO t_f014_7(id,missing_col) VALUES (1,2);
 Database Response: 1054 (42S22): Unknown column 'missing_col' in 'field list'
-Query Execution Time: 0.069794 seconds
+Query Execution Time: 0.244929 seconds
 ======================================================================
 
 ======================================================================
@@ -2481,7 +2481,7 @@ Test Description: INSERT using DEFAULT values variation 8
 Execution Status: PASS
 Query Executed: INSERT INTO t_f014_8(id,missing_col) VALUES (1,2);
 Database Response: 1054 (42S22): Unknown column 'missing_col' in 'field list'
-Query Execution Time: 0.065683 seconds
+Query Execution Time: 0.192383 seconds
 ======================================================================
 
 ======================================================================
@@ -2491,7 +2491,7 @@ Test Description: INSERT using DEFAULT values variation 9
 Execution Status: PASS
 Query Executed: INSERT INTO t_f014_9(id,missing_col) VALUES (1,2);
 Database Response: 1054 (42S22): Unknown column 'missing_col' in 'field list'
-Query Execution Time: 0.056523 seconds
+Query Execution Time: 0.107267 seconds
 ======================================================================
 
 ======================================================================
@@ -2501,7 +2501,7 @@ Test Description: INSERT using DEFAULT values variation 10
 Execution Status: PASS
 Query Executed: INSERT INTO t_f014_10(id,missing_col) VALUES (1,2);
 Database Response: 1054 (42S22): Unknown column 'missing_col' in 'field list'
-Query Execution Time: 0.061904 seconds
+Query Execution Time: 0.129166 seconds
 ======================================================================
 
 ======================================================================
@@ -2511,7 +2511,7 @@ Test Description: INSERT using DEFAULT values variation 11
 Execution Status: PASS
 Query Executed: INSERT INTO t_f014_11(id) VALUES (10);
 Database Response: Query executed successfully. Rows affected: 1
-Query Execution Time: 0.133715 seconds
+Query Execution Time: 0.142076 seconds
 ======================================================================
 
 ======================================================================
@@ -2521,7 +2521,7 @@ Test Description: INSERT using DEFAULT values variation 12
 Execution Status: PASS
 Query Executed: INSERT INTO t_f014_12(id) VALUES (10);
 Database Response: Query executed successfully. Rows affected: 1
-Query Execution Time: 0.137180 seconds
+Query Execution Time: 0.135512 seconds
 ======================================================================
 
 ======================================================================
@@ -2531,7 +2531,7 @@ Test Description: INSERT using DEFAULT values variation 13
 Execution Status: PASS
 Query Executed: INSERT INTO t_f014_13(id) VALUES (10);
 Database Response: Query executed successfully. Rows affected: 1
-Query Execution Time: 0.090654 seconds
+Query Execution Time: 0.223848 seconds
 ======================================================================
 
 ======================================================================
@@ -2541,7 +2541,7 @@ Test Description: INSERT using DEFAULT values variation 14
 Execution Status: PASS
 Query Executed: INSERT INTO t_f014_14(id) VALUES (10);
 Database Response: Query executed successfully. Rows affected: 1
-Query Execution Time: 0.063552 seconds
+Query Execution Time: 0.203897 seconds
 ======================================================================
 
 ======================================================================
@@ -2551,7 +2551,7 @@ Test Description: INSERT using DEFAULT values variation 15
 Execution Status: PASS
 Query Executed: INSERT INTO t_f014_15(id) VALUES (10);
 Database Response: Query executed successfully. Rows affected: 1
-Query Execution Time: 0.061818 seconds
+Query Execution Time: 0.179424 seconds
 ======================================================================
 
 ======================================================================
@@ -2561,7 +2561,7 @@ Test Description: INSERT NULL values variation 1
 Execution Status: PASS
 Query Executed: INSERT INTO t_f015_1(id,name,email) VALUES (10,NULL,NULL);
 Database Response: Query executed successfully. Rows affected: 1
-Query Execution Time: 0.089184 seconds
+Query Execution Time: 0.178075 seconds
 ======================================================================
 
 ======================================================================
@@ -2571,7 +2571,7 @@ Test Description: INSERT NULL values variation 2
 Execution Status: PASS
 Query Executed: INSERT INTO t_f015_2(id,name,email) VALUES (10,NULL,NULL);
 Database Response: Query executed successfully. Rows affected: 1
-Query Execution Time: 0.113271 seconds
+Query Execution Time: 0.209200 seconds
 ======================================================================
 
 ======================================================================
@@ -2581,7 +2581,7 @@ Test Description: INSERT NULL values variation 3
 Execution Status: PASS
 Query Executed: INSERT INTO t_f015_3(id,name,email) VALUES (10,NULL,NULL);
 Database Response: Query executed successfully. Rows affected: 1
-Query Execution Time: 0.096963 seconds
+Query Execution Time: 0.260205 seconds
 ======================================================================
 
 ======================================================================
@@ -2591,7 +2591,7 @@ Test Description: INSERT NULL values variation 4
 Execution Status: PASS
 Query Executed: INSERT INTO t_f015_4(id,name,email) VALUES (10,NULL,NULL);
 Database Response: Query executed successfully. Rows affected: 1
-Query Execution Time: 0.100816 seconds
+Query Execution Time: 0.509328 seconds
 ======================================================================
 
 ======================================================================
@@ -2601,7 +2601,7 @@ Test Description: INSERT NULL values variation 5
 Execution Status: PASS
 Query Executed: INSERT INTO t_f015_5(id,name,email) VALUES (10,NULL,NULL);
 Database Response: Query executed successfully. Rows affected: 1
-Query Execution Time: 0.098683 seconds
+Query Execution Time: 0.189936 seconds
 ======================================================================
 
 ======================================================================
@@ -2611,7 +2611,7 @@ Test Description: INSERT NULL values variation 6
 Execution Status: PASS
 Query Executed: INSERT INTO t_f015_6(id,name) VALUES (10,NULL);
 Database Response: 1048 (23000): Column 'name' cannot be null
-Query Execution Time: 0.148451 seconds
+Query Execution Time: 0.262702 seconds
 ======================================================================
 
 ======================================================================
@@ -2621,7 +2621,7 @@ Test Description: INSERT NULL values variation 7
 Execution Status: PASS
 Query Executed: INSERT INTO t_f015_7(id,name) VALUES (10,NULL);
 Database Response: 1048 (23000): Column 'name' cannot be null
-Query Execution Time: 0.150705 seconds
+Query Execution Time: 0.291152 seconds
 ======================================================================
 
 ======================================================================
@@ -2631,7 +2631,7 @@ Test Description: INSERT NULL values variation 8
 Execution Status: PASS
 Query Executed: INSERT INTO t_f015_8(id,name) VALUES (10,NULL);
 Database Response: 1048 (23000): Column 'name' cannot be null
-Query Execution Time: 0.098409 seconds
+Query Execution Time: 0.225963 seconds
 ======================================================================
 
 ======================================================================
@@ -2641,7 +2641,7 @@ Test Description: INSERT NULL values variation 9
 Execution Status: PASS
 Query Executed: INSERT INTO t_f015_9(id,name) VALUES (10,NULL);
 Database Response: 1048 (23000): Column 'name' cannot be null
-Query Execution Time: 0.083380 seconds
+Query Execution Time: 0.189170 seconds
 ======================================================================
 
 ======================================================================
@@ -2651,7 +2651,7 @@ Test Description: INSERT NULL values variation 10
 Execution Status: PASS
 Query Executed: INSERT INTO t_f015_10(id,name) VALUES (10,NULL);
 Database Response: 1048 (23000): Column 'name' cannot be null
-Query Execution Time: 0.085240 seconds
+Query Execution Time: 0.247486 seconds
 ======================================================================
 
 ======================================================================
@@ -2661,7 +2661,7 @@ Test Description: INSERT NULL values variation 11
 Execution Status: PASS
 Query Executed: INSERT INTO t_f015_11(id,name,email) VALUES (10,NULL,NULL);
 Database Response: Query executed successfully. Rows affected: 1
-Query Execution Time: 0.102112 seconds
+Query Execution Time: 0.345127 seconds
 ======================================================================
 
 ======================================================================
@@ -2671,7 +2671,7 @@ Test Description: INSERT NULL values variation 12
 Execution Status: PASS
 Query Executed: INSERT INTO t_f015_12(id,name,email) VALUES (10,NULL,NULL);
 Database Response: Query executed successfully. Rows affected: 1
-Query Execution Time: 0.099014 seconds
+Query Execution Time: 0.229443 seconds
 ======================================================================
 
 ======================================================================
@@ -2681,7 +2681,7 @@ Test Description: INSERT NULL values variation 13
 Execution Status: PASS
 Query Executed: INSERT INTO t_f015_13(id,name,email) VALUES (10,NULL,NULL);
 Database Response: Query executed successfully. Rows affected: 1
-Query Execution Time: 0.135316 seconds
+Query Execution Time: 0.209798 seconds
 ======================================================================
 
 ======================================================================
@@ -2691,7 +2691,7 @@ Test Description: INSERT NULL values variation 14
 Execution Status: PASS
 Query Executed: INSERT INTO t_f015_14(id,name,email) VALUES (10,NULL,NULL);
 Database Response: Query executed successfully. Rows affected: 1
-Query Execution Time: 0.097743 seconds
+Query Execution Time: 0.319930 seconds
 ======================================================================
 
 ======================================================================
@@ -2701,7 +2701,7 @@ Test Description: INSERT NULL values variation 15
 Execution Status: PASS
 Query Executed: INSERT INTO t_f015_15(id,name,email) VALUES (10,NULL,NULL);
 Database Response: Query executed successfully. Rows affected: 1
-Query Execution Time: 0.149516 seconds
+Query Execution Time: 1.118519 seconds
 ======================================================================
 
 ======================================================================
@@ -2711,7 +2711,7 @@ Test Description: INSERT duplicate PRIMARY KEY variation 1
 Execution Status: PASS
 Query Executed: INSERT INTO t_f016_1(id,name,email) VALUES (20,'Unique0','unique0@x.test');
 Database Response: Query executed successfully. Rows affected: 1
-Query Execution Time: 0.202218 seconds
+Query Execution Time: 0.295693 seconds
 ======================================================================
 
 ======================================================================
@@ -2721,7 +2721,7 @@ Test Description: INSERT duplicate PRIMARY KEY variation 2
 Execution Status: PASS
 Query Executed: INSERT INTO t_f016_2(id,name,email) VALUES (20,'Unique1','unique1@x.test');
 Database Response: Query executed successfully. Rows affected: 1
-Query Execution Time: 0.121777 seconds
+Query Execution Time: 0.237096 seconds
 ======================================================================
 
 ======================================================================
@@ -2731,7 +2731,7 @@ Test Description: INSERT duplicate PRIMARY KEY variation 3
 Execution Status: PASS
 Query Executed: INSERT INTO t_f016_3(id,name,email) VALUES (20,'Unique2','unique2@x.test');
 Database Response: Query executed successfully. Rows affected: 1
-Query Execution Time: 0.114845 seconds
+Query Execution Time: 0.184159 seconds
 ======================================================================
 
 ======================================================================
@@ -2741,7 +2741,7 @@ Test Description: INSERT duplicate PRIMARY KEY variation 4
 Execution Status: PASS
 Query Executed: INSERT INTO t_f016_4(id,name,email) VALUES (20,'Unique3','unique3@x.test');
 Database Response: Query executed successfully. Rows affected: 1
-Query Execution Time: 0.092169 seconds
+Query Execution Time: 0.370315 seconds
 ======================================================================
 
 ======================================================================
@@ -2751,7 +2751,7 @@ Test Description: INSERT duplicate PRIMARY KEY variation 5
 Execution Status: PASS
 Query Executed: INSERT INTO t_f016_5(id,name,email) VALUES (20,'Unique4','unique4@x.test');
 Database Response: Query executed successfully. Rows affected: 1
-Query Execution Time: 0.112089 seconds
+Query Execution Time: 0.374318 seconds
 ======================================================================
 
 ======================================================================
@@ -2761,7 +2761,7 @@ Test Description: INSERT duplicate PRIMARY KEY variation 6
 Execution Status: PASS
 Query Executed: INSERT INTO t_f016_6(id,name,email) VALUES (10,'Second','other5@x.test');
 Database Response: 1062 (23000): Duplicate entry '10' for key 't_f016_6.PRIMARY'
-Query Execution Time: 0.111385 seconds
+Query Execution Time: 0.205212 seconds
 ======================================================================
 
 ======================================================================
@@ -2771,7 +2771,7 @@ Test Description: INSERT duplicate PRIMARY KEY variation 7
 Execution Status: PASS
 Query Executed: INSERT INTO t_f016_7(id,name,email) VALUES (10,'Second','other6@x.test');
 Database Response: 1062 (23000): Duplicate entry '10' for key 't_f016_7.PRIMARY'
-Query Execution Time: 0.087617 seconds
+Query Execution Time: 0.202638 seconds
 ======================================================================
 
 ======================================================================
@@ -2781,7 +2781,7 @@ Test Description: INSERT duplicate PRIMARY KEY variation 8
 Execution Status: PASS
 Query Executed: INSERT INTO t_f016_8(id,name,email) VALUES (10,'Second','other7@x.test');
 Database Response: 1062 (23000): Duplicate entry '10' for key 't_f016_8.PRIMARY'
-Query Execution Time: 0.108778 seconds
+Query Execution Time: 0.168451 seconds
 ======================================================================
 
 ======================================================================
@@ -2791,7 +2791,7 @@ Test Description: INSERT duplicate PRIMARY KEY variation 9
 Execution Status: PASS
 Query Executed: INSERT INTO t_f016_9(id,name,email) VALUES (10,'Second','other8@x.test');
 Database Response: 1062 (23000): Duplicate entry '10' for key 't_f016_9.PRIMARY'
-Query Execution Time: 0.193472 seconds
+Query Execution Time: 0.280145 seconds
 ======================================================================
 
 ======================================================================
@@ -2801,7 +2801,7 @@ Test Description: INSERT duplicate PRIMARY KEY variation 10
 Execution Status: PASS
 Query Executed: INSERT INTO t_f016_10(id,name,email) VALUES (10,'Second','other9@x.test');
 Database Response: 1062 (23000): Duplicate entry '10' for key 't_f016_10.PRIMARY'
-Query Execution Time: 0.137474 seconds
+Query Execution Time: 0.247819 seconds
 ======================================================================
 
 ======================================================================
@@ -2811,7 +2811,7 @@ Test Description: INSERT duplicate PRIMARY KEY variation 11
 Execution Status: PASS
 Query Executed: INSERT INTO t_f016_11(id,name,email) VALUES (20,'Unique10','unique10@x.test');
 Database Response: Query executed successfully. Rows affected: 1
-Query Execution Time: 0.117893 seconds
+Query Execution Time: 0.186494 seconds
 ======================================================================
 
 ======================================================================
@@ -2821,7 +2821,7 @@ Test Description: INSERT duplicate PRIMARY KEY variation 12
 Execution Status: PASS
 Query Executed: INSERT INTO t_f016_12(id,name,email) VALUES (20,'Unique11','unique11@x.test');
 Database Response: Query executed successfully. Rows affected: 1
-Query Execution Time: 0.109470 seconds
+Query Execution Time: 0.226504 seconds
 ======================================================================
 
 ======================================================================
@@ -2831,7 +2831,7 @@ Test Description: INSERT duplicate PRIMARY KEY variation 13
 Execution Status: PASS
 Query Executed: INSERT INTO t_f016_13(id,name,email) VALUES (20,'Unique12','unique12@x.test');
 Database Response: Query executed successfully. Rows affected: 1
-Query Execution Time: 0.114440 seconds
+Query Execution Time: 0.262653 seconds
 ======================================================================
 
 ======================================================================
@@ -2841,7 +2841,7 @@ Test Description: INSERT duplicate PRIMARY KEY variation 14
 Execution Status: PASS
 Query Executed: INSERT INTO t_f016_14(id,name,email) VALUES (20,'Unique13','unique13@x.test');
 Database Response: Query executed successfully. Rows affected: 1
-Query Execution Time: 0.112642 seconds
+Query Execution Time: 0.348222 seconds
 ======================================================================
 
 ======================================================================
@@ -2851,7 +2851,7 @@ Test Description: INSERT duplicate PRIMARY KEY variation 15
 Execution Status: PASS
 Query Executed: INSERT INTO t_f016_15(id,name,email) VALUES (20,'Unique14','unique14@x.test');
 Database Response: Query executed successfully. Rows affected: 1
-Query Execution Time: 0.097777 seconds
+Query Execution Time: 0.216372 seconds
 ======================================================================
 
 ======================================================================
@@ -2861,7 +2861,7 @@ Test Description: INSERT duplicate UNIQUE value variation 1
 Execution Status: PASS
 Query Executed: INSERT INTO t_f017_1(id,name,email) VALUES (20,'Unique0','uniquef0170@x.test');
 Database Response: Query executed successfully. Rows affected: 1
-Query Execution Time: 0.106064 seconds
+Query Execution Time: 0.204573 seconds
 ======================================================================
 
 ======================================================================
@@ -2871,7 +2871,7 @@ Test Description: INSERT duplicate UNIQUE value variation 2
 Execution Status: PASS
 Query Executed: INSERT INTO t_f017_2(id,name,email) VALUES (20,'Unique1','uniquef0171@x.test');
 Database Response: Query executed successfully. Rows affected: 1
-Query Execution Time: 0.220465 seconds
+Query Execution Time: 0.276528 seconds
 ======================================================================
 
 ======================================================================
@@ -2881,7 +2881,7 @@ Test Description: INSERT duplicate UNIQUE value variation 3
 Execution Status: PASS
 Query Executed: INSERT INTO t_f017_3(id,name,email) VALUES (20,'Unique2','uniquef0172@x.test');
 Database Response: Query executed successfully. Rows affected: 1
-Query Execution Time: 0.126798 seconds
+Query Execution Time: 0.265209 seconds
 ======================================================================
 
 ======================================================================
@@ -2891,7 +2891,7 @@ Test Description: INSERT duplicate UNIQUE value variation 4
 Execution Status: PASS
 Query Executed: INSERT INTO t_f017_4(id,name,email) VALUES (20,'Unique3','uniquef0173@x.test');
 Database Response: Query executed successfully. Rows affected: 1
-Query Execution Time: 0.114876 seconds
+Query Execution Time: 0.218504 seconds
 ======================================================================
 
 ======================================================================
@@ -2901,7 +2901,7 @@ Test Description: INSERT duplicate UNIQUE value variation 5
 Execution Status: PASS
 Query Executed: INSERT INTO t_f017_5(id,name,email) VALUES (20,'Unique4','uniquef0174@x.test');
 Database Response: Query executed successfully. Rows affected: 1
-Query Execution Time: 0.106769 seconds
+Query Execution Time: 0.255198 seconds
 ======================================================================
 
 ======================================================================
@@ -2911,7 +2911,7 @@ Test Description: INSERT duplicate UNIQUE value variation 6
 Execution Status: PASS
 Query Executed: INSERT INTO t_f017_6(id,name,email) VALUES (11,'Second','samef0175@x.test');
 Database Response: 1062 (23000): Duplicate entry 'samef0175@x.test' for key 't_f017_6.email'
-Query Execution Time: 0.100522 seconds
+Query Execution Time: 0.325076 seconds
 ======================================================================
 
 ======================================================================
@@ -2921,7 +2921,7 @@ Test Description: INSERT duplicate UNIQUE value variation 7
 Execution Status: PASS
 Query Executed: INSERT INTO t_f017_7(id,name,email) VALUES (11,'Second','samef0176@x.test');
 Database Response: 1062 (23000): Duplicate entry 'samef0176@x.test' for key 't_f017_7.email'
-Query Execution Time: 0.120918 seconds
+Query Execution Time: 0.233639 seconds
 ======================================================================
 
 ======================================================================
@@ -2931,7 +2931,7 @@ Test Description: INSERT duplicate UNIQUE value variation 8
 Execution Status: PASS
 Query Executed: INSERT INTO t_f017_8(id,name,email) VALUES (11,'Second','samef0177@x.test');
 Database Response: 1062 (23000): Duplicate entry 'samef0177@x.test' for key 't_f017_8.email'
-Query Execution Time: 0.101836 seconds
+Query Execution Time: 0.153365 seconds
 ======================================================================
 
 ======================================================================
@@ -2941,7 +2941,7 @@ Test Description: INSERT duplicate UNIQUE value variation 9
 Execution Status: PASS
 Query Executed: INSERT INTO t_f017_9(id,name,email) VALUES (11,'Second','samef0178@x.test');
 Database Response: 1062 (23000): Duplicate entry 'samef0178@x.test' for key 't_f017_9.email'
-Query Execution Time: 0.102471 seconds
+Query Execution Time: 0.156886 seconds
 ======================================================================
 
 ======================================================================
@@ -2951,7 +2951,7 @@ Test Description: INSERT duplicate UNIQUE value variation 10
 Execution Status: PASS
 Query Executed: INSERT INTO t_f017_10(id,name,email) VALUES (11,'Second','samef0179@x.test');
 Database Response: 1062 (23000): Duplicate entry 'samef0179@x.test' for key 't_f017_10.email'
-Query Execution Time: 0.197686 seconds
+Query Execution Time: 0.169287 seconds
 ======================================================================
 
 ======================================================================
@@ -2961,7 +2961,7 @@ Test Description: INSERT duplicate UNIQUE value variation 11
 Execution Status: PASS
 Query Executed: INSERT INTO t_f017_11(id,name,email) VALUES (20,'Unique10','uniquef01710@x.test');
 Database Response: Query executed successfully. Rows affected: 1
-Query Execution Time: 0.130480 seconds
+Query Execution Time: 0.230148 seconds
 ======================================================================
 
 ======================================================================
@@ -2971,7 +2971,7 @@ Test Description: INSERT duplicate UNIQUE value variation 12
 Execution Status: PASS
 Query Executed: INSERT INTO t_f017_12(id,name,email) VALUES (20,'Unique11','uniquef01711@x.test');
 Database Response: Query executed successfully. Rows affected: 1
-Query Execution Time: 0.107330 seconds
+Query Execution Time: 0.257021 seconds
 ======================================================================
 
 ======================================================================
@@ -2981,7 +2981,7 @@ Test Description: INSERT duplicate UNIQUE value variation 13
 Execution Status: PASS
 Query Executed: INSERT INTO t_f017_13(id,name,email) VALUES (20,'Unique12','uniquef01712@x.test');
 Database Response: Query executed successfully. Rows affected: 1
-Query Execution Time: 0.111654 seconds
+Query Execution Time: 0.159396 seconds
 ======================================================================
 
 ======================================================================
@@ -2991,7 +2991,7 @@ Test Description: INSERT duplicate UNIQUE value variation 14
 Execution Status: PASS
 Query Executed: INSERT INTO t_f017_14(id,name,email) VALUES (20,'Unique13','uniquef01713@x.test');
 Database Response: Query executed successfully. Rows affected: 1
-Query Execution Time: 0.108689 seconds
+Query Execution Time: 0.176368 seconds
 ======================================================================
 
 ======================================================================
@@ -3001,7 +3001,7 @@ Test Description: INSERT duplicate UNIQUE value variation 15
 Execution Status: PASS
 Query Executed: INSERT INTO t_f017_15(id,name,email) VALUES (20,'Unique14','uniquef01714@x.test');
 Database Response: Query executed successfully. Rows affected: 1
-Query Execution Time: 0.113203 seconds
+Query Execution Time: 0.179941 seconds
 ======================================================================
 
 ======================================================================
@@ -3011,7 +3011,7 @@ Test Description: INSERT invalid data type variation 1
 Execution Status: PASS
 Query Executed: INSERT INTO t_f018_1(id,name) VALUES (10,'TypeTest0');
 Database Response: Query executed successfully. Rows affected: 1
-Query Execution Time: 0.103037 seconds
+Query Execution Time: 0.359471 seconds
 ======================================================================
 
 ======================================================================
@@ -3021,7 +3021,7 @@ Test Description: INSERT invalid data type variation 2
 Execution Status: PASS
 Query Executed: INSERT INTO t_f018_2(id,name) VALUES (10,'TypeTest1');
 Database Response: Query executed successfully. Rows affected: 1
-Query Execution Time: 0.098435 seconds
+Query Execution Time: 0.225034 seconds
 ======================================================================
 
 ======================================================================
@@ -3031,7 +3031,7 @@ Test Description: INSERT invalid data type variation 3
 Execution Status: PASS
 Query Executed: INSERT INTO t_f018_3(id,name) VALUES (10,'TypeTest2');
 Database Response: Query executed successfully. Rows affected: 1
-Query Execution Time: 0.181054 seconds
+Query Execution Time: 0.211097 seconds
 ======================================================================
 
 ======================================================================
@@ -3041,7 +3041,7 @@ Test Description: INSERT invalid data type variation 4
 Execution Status: PASS
 Query Executed: INSERT INTO t_f018_4(id,name) VALUES (10,'TypeTest3');
 Database Response: Query executed successfully. Rows affected: 1
-Query Execution Time: 0.175359 seconds
+Query Execution Time: 0.230651 seconds
 ======================================================================
 
 ======================================================================
@@ -3051,7 +3051,7 @@ Test Description: INSERT invalid data type variation 5
 Execution Status: PASS
 Query Executed: INSERT INTO t_f018_5(id,name) VALUES (10,'TypeTest4');
 Database Response: Query executed successfully. Rows affected: 1
-Query Execution Time: 0.095549 seconds
+Query Execution Time: 0.252497 seconds
 ======================================================================
 
 ======================================================================
@@ -3061,7 +3061,7 @@ Test Description: INSERT invalid data type variation 6
 Execution Status: PASS
 Query Executed: INSERT INTO t_f018_6(id,age) VALUES (10,'not_an_integer');
 Database Response: 1366 (HY000): Incorrect integer value: 'not_an_integer' for column 'age' at row 1
-Query Execution Time: 0.098770 seconds
+Query Execution Time: 0.176437 seconds
 ======================================================================
 
 ======================================================================
@@ -3071,7 +3071,7 @@ Test Description: INSERT invalid data type variation 7
 Execution Status: PASS
 Query Executed: INSERT INTO t_f018_7(id,age) VALUES (10,'not_an_integer');
 Database Response: 1366 (HY000): Incorrect integer value: 'not_an_integer' for column 'age' at row 1
-Query Execution Time: 0.111703 seconds
+Query Execution Time: 0.157301 seconds
 ======================================================================
 
 ======================================================================
@@ -3081,7 +3081,7 @@ Test Description: INSERT invalid data type variation 8
 Execution Status: PASS
 Query Executed: INSERT INTO t_f018_8(id,age) VALUES (10,'not_an_integer');
 Database Response: 1366 (HY000): Incorrect integer value: 'not_an_integer' for column 'age' at row 1
-Query Execution Time: 0.104048 seconds
+Query Execution Time: 0.155053 seconds
 ======================================================================
 
 ======================================================================
@@ -3091,7 +3091,7 @@ Test Description: INSERT invalid data type variation 9
 Execution Status: PASS
 Query Executed: INSERT INTO t_f018_9(id,age) VALUES (10,'not_an_integer');
 Database Response: 1366 (HY000): Incorrect integer value: 'not_an_integer' for column 'age' at row 1
-Query Execution Time: 0.091845 seconds
+Query Execution Time: 0.183125 seconds
 ======================================================================
 
 ======================================================================
@@ -3101,7 +3101,7 @@ Test Description: INSERT invalid data type variation 10
 Execution Status: PASS
 Query Executed: INSERT INTO t_f018_10(id,age) VALUES (10,'not_an_integer');
 Database Response: 1366 (HY000): Incorrect integer value: 'not_an_integer' for column 'age' at row 1
-Query Execution Time: 0.100665 seconds
+Query Execution Time: 0.268840 seconds
 ======================================================================
 
 ======================================================================
@@ -3111,7 +3111,7 @@ Test Description: INSERT invalid data type variation 11
 Execution Status: PASS
 Query Executed: INSERT INTO t_f018_11(id,name) VALUES (10,'TypeTest10');
 Database Response: Query executed successfully. Rows affected: 1
-Query Execution Time: 0.112887 seconds
+Query Execution Time: 0.208392 seconds
 ======================================================================
 
 ======================================================================
@@ -3121,7 +3121,7 @@ Test Description: INSERT invalid data type variation 12
 Execution Status: PASS
 Query Executed: INSERT INTO t_f018_12(id,name) VALUES (10,'TypeTest11');
 Database Response: Query executed successfully. Rows affected: 1
-Query Execution Time: 0.210037 seconds
+Query Execution Time: 0.151842 seconds
 ======================================================================
 
 ======================================================================
@@ -3131,7 +3131,7 @@ Test Description: INSERT invalid data type variation 13
 Execution Status: PASS
 Query Executed: INSERT INTO t_f018_13(id,name) VALUES (10,'TypeTest12');
 Database Response: Query executed successfully. Rows affected: 1
-Query Execution Time: 0.142142 seconds
+Query Execution Time: 0.202955 seconds
 ======================================================================
 
 ======================================================================
@@ -3141,7 +3141,7 @@ Test Description: INSERT invalid data type variation 14
 Execution Status: PASS
 Query Executed: INSERT INTO t_f018_14(id,name) VALUES (10,'TypeTest13');
 Database Response: Query executed successfully. Rows affected: 1
-Query Execution Time: 0.096922 seconds
+Query Execution Time: 0.204667 seconds
 ======================================================================
 
 ======================================================================
@@ -3151,7 +3151,7 @@ Test Description: INSERT invalid data type variation 15
 Execution Status: PASS
 Query Executed: INSERT INTO t_f018_15(id,name) VALUES (10,'TypeTest14');
 Database Response: Query executed successfully. Rows affected: 1
-Query Execution Time: 0.090080 seconds
+Query Execution Time: 0.249887 seconds
 ======================================================================
 
 ======================================================================
@@ -3161,7 +3161,7 @@ Test Description: INSERT missing NOT NULL value variation 1
 Execution Status: PASS
 Query Executed: INSERT INTO t_f019_1(id,name) VALUES (10,'Present0');
 Database Response: Query executed successfully. Rows affected: 1
-Query Execution Time: 0.098069 seconds
+Query Execution Time: 0.216569 seconds
 ======================================================================
 
 ======================================================================
@@ -3171,7 +3171,7 @@ Test Description: INSERT missing NOT NULL value variation 2
 Execution Status: PASS
 Query Executed: INSERT INTO t_f019_2(id,name) VALUES (10,'Present1');
 Database Response: Query executed successfully. Rows affected: 1
-Query Execution Time: 0.111173 seconds
+Query Execution Time: 0.224130 seconds
 ======================================================================
 
 ======================================================================
@@ -3181,7 +3181,7 @@ Test Description: INSERT missing NOT NULL value variation 3
 Execution Status: PASS
 Query Executed: INSERT INTO t_f019_3(id,name) VALUES (10,'Present2');
 Database Response: Query executed successfully. Rows affected: 1
-Query Execution Time: 0.105038 seconds
+Query Execution Time: 0.273715 seconds
 ======================================================================
 
 ======================================================================
@@ -3191,7 +3191,7 @@ Test Description: INSERT missing NOT NULL value variation 4
 Execution Status: PASS
 Query Executed: INSERT INTO t_f019_4(id,name) VALUES (10,'Present3');
 Database Response: Query executed successfully. Rows affected: 1
-Query Execution Time: 0.096770 seconds
+Query Execution Time: 0.255086 seconds
 ======================================================================
 
 ======================================================================
@@ -3201,7 +3201,7 @@ Test Description: INSERT missing NOT NULL value variation 5
 Execution Status: PASS
 Query Executed: INSERT INTO t_f019_5(id,name) VALUES (10,'Present4');
 Database Response: Query executed successfully. Rows affected: 1
-Query Execution Time: 0.169798 seconds
+Query Execution Time: 0.326287 seconds
 ======================================================================
 
 ======================================================================
@@ -3211,7 +3211,7 @@ Test Description: INSERT missing NOT NULL value variation 6
 Execution Status: PASS
 Query Executed: INSERT INTO t_f019_6(id,email) VALUES (10,'missingname5@x.test');
 Database Response: 1364 (HY000): Field 'name' doesn't have a default value
-Query Execution Time: 0.164447 seconds
+Query Execution Time: 0.191025 seconds
 ======================================================================
 
 ======================================================================
@@ -3221,7 +3221,7 @@ Test Description: INSERT missing NOT NULL value variation 7
 Execution Status: PASS
 Query Executed: INSERT INTO t_f019_7(id,email) VALUES (10,'missingname6@x.test');
 Database Response: 1364 (HY000): Field 'name' doesn't have a default value
-Query Execution Time: 0.091770 seconds
+Query Execution Time: 0.180520 seconds
 ======================================================================
 
 ======================================================================
@@ -3231,7 +3231,7 @@ Test Description: INSERT missing NOT NULL value variation 8
 Execution Status: PASS
 Query Executed: INSERT INTO t_f019_8(id,email) VALUES (10,'missingname7@x.test');
 Database Response: 1364 (HY000): Field 'name' doesn't have a default value
-Query Execution Time: 0.089959 seconds
+Query Execution Time: 0.201150 seconds
 ======================================================================
 
 ======================================================================
@@ -3241,7 +3241,7 @@ Test Description: INSERT missing NOT NULL value variation 9
 Execution Status: PASS
 Query Executed: INSERT INTO t_f019_9(id,email) VALUES (10,'missingname8@x.test');
 Database Response: 1364 (HY000): Field 'name' doesn't have a default value
-Query Execution Time: 0.081774 seconds
+Query Execution Time: 0.248323 seconds
 ======================================================================
 
 ======================================================================
@@ -3251,7 +3251,7 @@ Test Description: INSERT missing NOT NULL value variation 10
 Execution Status: PASS
 Query Executed: INSERT INTO t_f019_10(id,email) VALUES (10,'missingname9@x.test');
 Database Response: 1364 (HY000): Field 'name' doesn't have a default value
-Query Execution Time: 0.108646 seconds
+Query Execution Time: 0.237551 seconds
 ======================================================================
 
 ======================================================================
@@ -3261,7 +3261,7 @@ Test Description: INSERT missing NOT NULL value variation 11
 Execution Status: PASS
 Query Executed: INSERT INTO t_f019_11(id,name) VALUES (10,'Present10');
 Database Response: Query executed successfully. Rows affected: 1
-Query Execution Time: 0.118220 seconds
+Query Execution Time: 0.193929 seconds
 ======================================================================
 
 ======================================================================
@@ -3271,7 +3271,7 @@ Test Description: INSERT missing NOT NULL value variation 12
 Execution Status: PASS
 Query Executed: INSERT INTO t_f019_12(id,name) VALUES (10,'Present11');
 Database Response: Query executed successfully. Rows affected: 1
-Query Execution Time: 0.103822 seconds
+Query Execution Time: 0.230404 seconds
 ======================================================================
 
 ======================================================================
@@ -3281,7 +3281,7 @@ Test Description: INSERT missing NOT NULL value variation 13
 Execution Status: PASS
 Query Executed: INSERT INTO t_f019_13(id,name) VALUES (10,'Present12');
 Database Response: Query executed successfully. Rows affected: 1
-Query Execution Time: 0.098832 seconds
+Query Execution Time: 0.296943 seconds
 ======================================================================
 
 ======================================================================
@@ -3291,7 +3291,7 @@ Test Description: INSERT missing NOT NULL value variation 14
 Execution Status: PASS
 Query Executed: INSERT INTO t_f019_14(id,name) VALUES (10,'Present13');
 Database Response: Query executed successfully. Rows affected: 1
-Query Execution Time: 0.165926 seconds
+Query Execution Time: 0.264710 seconds
 ======================================================================
 
 ======================================================================
@@ -3301,7 +3301,7 @@ Test Description: INSERT missing NOT NULL value variation 15
 Execution Status: PASS
 Query Executed: INSERT INTO t_f019_15(id,name) VALUES (10,'Present14');
 Database Response: Query executed successfully. Rows affected: 1
-Query Execution Time: 0.128990 seconds
+Query Execution Time: 0.206281 seconds
 ======================================================================
 
 ======================================================================
@@ -3311,7 +3311,7 @@ Test Description: INSERT violating FOREIGN KEY variation 1
 Execution Status: PASS
 Query Executed: INSERT INTO t_f020_1_child VALUES (10,1);
 Database Response: Query executed successfully. Rows affected: 1
-Query Execution Time: 0.133205 seconds
+Query Execution Time: 0.295181 seconds
 ======================================================================
 
 ======================================================================
@@ -3321,7 +3321,7 @@ Test Description: INSERT violating FOREIGN KEY variation 2
 Execution Status: PASS
 Query Executed: INSERT INTO t_f020_2_child VALUES (10,1);
 Database Response: Query executed successfully. Rows affected: 1
-Query Execution Time: 0.127862 seconds
+Query Execution Time: 0.408722 seconds
 ======================================================================
 
 ======================================================================
@@ -3331,7 +3331,7 @@ Test Description: INSERT violating FOREIGN KEY variation 3
 Execution Status: PASS
 Query Executed: INSERT INTO t_f020_3_child VALUES (10,1);
 Database Response: Query executed successfully. Rows affected: 1
-Query Execution Time: 0.144727 seconds
+Query Execution Time: 0.313481 seconds
 ======================================================================
 
 ======================================================================
@@ -3341,7 +3341,7 @@ Test Description: INSERT violating FOREIGN KEY variation 4
 Execution Status: PASS
 Query Executed: INSERT INTO t_f020_4_child VALUES (10,1);
 Database Response: Query executed successfully. Rows affected: 1
-Query Execution Time: 0.143677 seconds
+Query Execution Time: 0.312810 seconds
 ======================================================================
 
 ======================================================================
@@ -3351,7 +3351,7 @@ Test Description: INSERT violating FOREIGN KEY variation 5
 Execution Status: PASS
 Query Executed: INSERT INTO t_f020_5_child VALUES (10,1);
 Database Response: Query executed successfully. Rows affected: 1
-Query Execution Time: 0.143923 seconds
+Query Execution Time: 0.442463 seconds
 ======================================================================
 
 ======================================================================
@@ -3361,7 +3361,7 @@ Test Description: INSERT violating FOREIGN KEY variation 6
 Execution Status: PASS
 Query Executed: INSERT INTO t_f020_6_child VALUES (10,999999);
 Database Response: 1452 (23000): Cannot add or update a child row: a foreign key constraint fails (`ai_testing_group1`.`t_f020_6_child`, CONSTRAINT `t_f020_6_child_ibfk_1` FOREIGN KEY (`parent_id`) REFERENCES `t_f020_6_parent` (`id`))
-Query Execution Time: 0.274227 seconds
+Query Execution Time: 0.275827 seconds
 ======================================================================
 
 ======================================================================
@@ -3371,7 +3371,7 @@ Test Description: INSERT violating FOREIGN KEY variation 7
 Execution Status: PASS
 Query Executed: INSERT INTO t_f020_7_child VALUES (10,999999);
 Database Response: 1452 (23000): Cannot add or update a child row: a foreign key constraint fails (`ai_testing_group1`.`t_f020_7_child`, CONSTRAINT `t_f020_7_child_ibfk_1` FOREIGN KEY (`parent_id`) REFERENCES `t_f020_7_parent` (`id`))
-Query Execution Time: 0.159805 seconds
+Query Execution Time: 0.367115 seconds
 ======================================================================
 
 ======================================================================
@@ -3381,7 +3381,7 @@ Test Description: INSERT violating FOREIGN KEY variation 8
 Execution Status: PASS
 Query Executed: INSERT INTO t_f020_8_child VALUES (10,999999);
 Database Response: 1452 (23000): Cannot add or update a child row: a foreign key constraint fails (`ai_testing_group1`.`t_f020_8_child`, CONSTRAINT `t_f020_8_child_ibfk_1` FOREIGN KEY (`parent_id`) REFERENCES `t_f020_8_parent` (`id`))
-Query Execution Time: 0.146372 seconds
+Query Execution Time: 0.426429 seconds
 ======================================================================
 
 ======================================================================
@@ -3391,7 +3391,7 @@ Test Description: INSERT violating FOREIGN KEY variation 9
 Execution Status: PASS
 Query Executed: INSERT INTO t_f020_9_child VALUES (10,999999);
 Database Response: 1452 (23000): Cannot add or update a child row: a foreign key constraint fails (`ai_testing_group1`.`t_f020_9_child`, CONSTRAINT `t_f020_9_child_ibfk_1` FOREIGN KEY (`parent_id`) REFERENCES `t_f020_9_parent` (`id`))
-Query Execution Time: 0.130755 seconds
+Query Execution Time: 0.294121 seconds
 ======================================================================
 
 ======================================================================
@@ -3401,7 +3401,7 @@ Test Description: INSERT violating FOREIGN KEY variation 10
 Execution Status: PASS
 Query Executed: INSERT INTO t_f020_10_child VALUES (10,999999);
 Database Response: 1452 (23000): Cannot add or update a child row: a foreign key constraint fails (`ai_testing_group1`.`t_f020_10_child`, CONSTRAINT `t_f020_10_child_ibfk_1` FOREIGN KEY (`parent_id`) REFERENCES `t_f020_10_parent` (`id`))
-Query Execution Time: 0.135725 seconds
+Query Execution Time: 0.446425 seconds
 ======================================================================
 
 ======================================================================
@@ -3411,7 +3411,7 @@ Test Description: INSERT violating FOREIGN KEY variation 11
 Execution Status: PASS
 Query Executed: INSERT INTO t_f020_11_child VALUES (10,1);
 Database Response: Query executed successfully. Rows affected: 1
-Query Execution Time: 0.125778 seconds
+Query Execution Time: 0.352553 seconds
 ======================================================================
 
 ======================================================================
@@ -3421,7 +3421,7 @@ Test Description: INSERT violating FOREIGN KEY variation 12
 Execution Status: PASS
 Query Executed: INSERT INTO t_f020_12_child VALUES (10,1);
 Database Response: Query executed successfully. Rows affected: 1
-Query Execution Time: 0.243578 seconds
+Query Execution Time: 0.285374 seconds
 ======================================================================
 
 ======================================================================
@@ -3431,7 +3431,7 @@ Test Description: INSERT violating FOREIGN KEY variation 13
 Execution Status: PASS
 Query Executed: INSERT INTO t_f020_13_child VALUES (10,1);
 Database Response: Query executed successfully. Rows affected: 1
-Query Execution Time: 0.264061 seconds
+Query Execution Time: 0.522888 seconds
 ======================================================================
 
 ======================================================================
@@ -3441,7 +3441,7 @@ Test Description: INSERT violating FOREIGN KEY variation 14
 Execution Status: PASS
 Query Executed: INSERT INTO t_f020_14_child VALUES (10,1);
 Database Response: Query executed successfully. Rows affected: 1
-Query Execution Time: 0.166673 seconds
+Query Execution Time: 0.372755 seconds
 ======================================================================
 
 ======================================================================
@@ -3451,7 +3451,7 @@ Test Description: INSERT violating FOREIGN KEY variation 15
 Execution Status: PASS
 Query Executed: INSERT INTO t_f020_15_child VALUES (10,1);
 Database Response: Query executed successfully. Rows affected: 1
-Query Execution Time: 0.154432 seconds
+Query Execution Time: 0.375611 seconds
 ======================================================================
 
 ======================================================================
@@ -3461,7 +3461,7 @@ Test Description: UPDATE single row variation 1
 Execution Status: PASS
 Query Executed: UPDATE t_f021_1 SET salary=31000.00 WHERE id=1;
 Database Response: Query executed successfully. Rows affected: 1
-Query Execution Time: 0.094412 seconds
+Query Execution Time: 0.214592 seconds
 ======================================================================
 
 ======================================================================
@@ -3471,7 +3471,7 @@ Test Description: UPDATE single row variation 2
 Execution Status: PASS
 Query Executed: UPDATE t_f021_2 SET salary=31100.00 WHERE id=1;
 Database Response: Query executed successfully. Rows affected: 1
-Query Execution Time: 0.102099 seconds
+Query Execution Time: 0.150342 seconds
 ======================================================================
 
 ======================================================================
@@ -3481,7 +3481,7 @@ Test Description: UPDATE single row variation 3
 Execution Status: PASS
 Query Executed: UPDATE t_f021_3 SET salary=31200.00 WHERE id=1;
 Database Response: Query executed successfully. Rows affected: 1
-Query Execution Time: 0.139002 seconds
+Query Execution Time: 0.172008 seconds
 ======================================================================
 
 ======================================================================
@@ -3491,7 +3491,7 @@ Test Description: UPDATE single row variation 4
 Execution Status: PASS
 Query Executed: UPDATE t_f021_4 SET salary=31300.00 WHERE id=1;
 Database Response: Query executed successfully. Rows affected: 1
-Query Execution Time: 0.202525 seconds
+Query Execution Time: 0.141315 seconds
 ======================================================================
 
 ======================================================================
@@ -3501,7 +3501,7 @@ Test Description: UPDATE single row variation 5
 Execution Status: PASS
 Query Executed: UPDATE t_f021_5 SET salary=31400.00 WHERE id=1;
 Database Response: Query executed successfully. Rows affected: 1
-Query Execution Time: 0.095837 seconds
+Query Execution Time: 0.197310 seconds
 ======================================================================
 
 ======================================================================
@@ -3511,7 +3511,7 @@ Test Description: UPDATE single row variation 6
 Execution Status: PASS
 Query Executed: UPDATE t_f021_6 SET salary = 'bad' WHERE id=1;
 Database Response: 1366 (HY000): Incorrect decimal value: 'bad' for column 'salary' at row 1
-Query Execution Time: 0.103048 seconds
+Query Execution Time: 0.207059 seconds
 ======================================================================
 
 ======================================================================
@@ -3521,7 +3521,7 @@ Test Description: UPDATE single row variation 7
 Execution Status: PASS
 Query Executed: UPDATE t_f021_7 SET salary = 'bad' WHERE id=1;
 Database Response: 1366 (HY000): Incorrect decimal value: 'bad' for column 'salary' at row 1
-Query Execution Time: 0.071833 seconds
+Query Execution Time: 0.196094 seconds
 ======================================================================
 
 ======================================================================
@@ -3531,7 +3531,7 @@ Test Description: UPDATE single row variation 8
 Execution Status: PASS
 Query Executed: UPDATE t_f021_8 SET salary = 'bad' WHERE id=1;
 Database Response: 1366 (HY000): Incorrect decimal value: 'bad' for column 'salary' at row 1
-Query Execution Time: 0.087068 seconds
+Query Execution Time: 0.182081 seconds
 ======================================================================
 
 ======================================================================
@@ -3541,7 +3541,7 @@ Test Description: UPDATE single row variation 9
 Execution Status: PASS
 Query Executed: UPDATE t_f021_9 SET salary = 'bad' WHERE id=1;
 Database Response: 1366 (HY000): Incorrect decimal value: 'bad' for column 'salary' at row 1
-Query Execution Time: 0.100508 seconds
+Query Execution Time: 0.193150 seconds
 ======================================================================
 
 ======================================================================
@@ -3551,7 +3551,7 @@ Test Description: UPDATE single row variation 10
 Execution Status: PASS
 Query Executed: UPDATE t_f021_10 SET salary = 'bad' WHERE id=1;
 Database Response: 1366 (HY000): Incorrect decimal value: 'bad' for column 'salary' at row 1
-Query Execution Time: 0.082474 seconds
+Query Execution Time: 0.236202 seconds
 ======================================================================
 
 ======================================================================
@@ -3561,7 +3561,7 @@ Test Description: UPDATE single row variation 11
 Execution Status: PASS
 Query Executed: UPDATE t_f021_11 SET salary=32000.00 WHERE id=1;
 Database Response: Query executed successfully. Rows affected: 1
-Query Execution Time: 0.095255 seconds
+Query Execution Time: 0.345250 seconds
 ======================================================================
 
 ======================================================================
@@ -3571,7 +3571,7 @@ Test Description: UPDATE single row variation 12
 Execution Status: PASS
 Query Executed: UPDATE t_f021_12 SET salary=32100.00 WHERE id=1;
 Database Response: Query executed successfully. Rows affected: 1
-Query Execution Time: 0.132668 seconds
+Query Execution Time: 0.185644 seconds
 ======================================================================
 
 ======================================================================
@@ -3581,7 +3581,7 @@ Test Description: UPDATE single row variation 13
 Execution Status: PASS
 Query Executed: UPDATE t_f021_13 SET salary=32200.00 WHERE id=1;
 Database Response: Query executed successfully. Rows affected: 1
-Query Execution Time: 0.204625 seconds
+Query Execution Time: 0.145718 seconds
 ======================================================================
 
 ======================================================================
@@ -3591,7 +3591,7 @@ Test Description: UPDATE single row variation 14
 Execution Status: PASS
 Query Executed: UPDATE t_f021_14 SET salary=32300.00 WHERE id=1;
 Database Response: Query executed successfully. Rows affected: 1
-Query Execution Time: 0.102390 seconds
+Query Execution Time: 0.156642 seconds
 ======================================================================
 
 ======================================================================
@@ -3601,7 +3601,7 @@ Test Description: UPDATE single row variation 15
 Execution Status: PASS
 Query Executed: UPDATE t_f021_15 SET salary=32400.00 WHERE id=1;
 Database Response: Query executed successfully. Rows affected: 1
-Query Execution Time: 0.101557 seconds
+Query Execution Time: 0.211789 seconds
 ======================================================================
 
 ======================================================================
@@ -3611,7 +3611,7 @@ Test Description: UPDATE multiple rows variation 1
 Execution Status: PASS
 Query Executed: UPDATE t_f022_1 SET salary=50000 WHERE id IN (1,2);
 Database Response: Query executed successfully. Rows affected: 2
-Query Execution Time: 0.114690 seconds
+Query Execution Time: 0.239457 seconds
 ======================================================================
 
 ======================================================================
@@ -3621,7 +3621,7 @@ Test Description: UPDATE multiple rows variation 2
 Execution Status: PASS
 Query Executed: UPDATE t_f022_2 SET salary=50000 WHERE id IN (1,2);
 Database Response: Query executed successfully. Rows affected: 2
-Query Execution Time: 0.112740 seconds
+Query Execution Time: 0.181764 seconds
 ======================================================================
 
 ======================================================================
@@ -3631,7 +3631,7 @@ Test Description: UPDATE multiple rows variation 3
 Execution Status: PASS
 Query Executed: UPDATE t_f022_3 SET salary=50000 WHERE id IN (1,2);
 Database Response: Query executed successfully. Rows affected: 2
-Query Execution Time: 0.100457 seconds
+Query Execution Time: 0.172059 seconds
 ======================================================================
 
 ======================================================================
@@ -3641,7 +3641,7 @@ Test Description: UPDATE multiple rows variation 4
 Execution Status: PASS
 Query Executed: UPDATE t_f022_4 SET salary=50000 WHERE id IN (1,2);
 Database Response: Query executed successfully. Rows affected: 2
-Query Execution Time: 0.099176 seconds
+Query Execution Time: 0.194325 seconds
 ======================================================================
 
 ======================================================================
@@ -3651,7 +3651,7 @@ Test Description: UPDATE multiple rows variation 5
 Execution Status: PASS
 Query Executed: UPDATE t_f022_5 SET salary=50000 WHERE id IN (1,2);
 Database Response: Query executed successfully. Rows affected: 2
-Query Execution Time: 0.124063 seconds
+Query Execution Time: 0.306413 seconds
 ======================================================================
 
 ======================================================================
@@ -3661,7 +3661,7 @@ Test Description: UPDATE multiple rows variation 6
 Execution Status: PASS
 Query Executed: UPDATE t_f022_6 SET salary='bad' WHERE id IN (1,2);
 Database Response: 1366 (HY000): Incorrect decimal value: 'bad' for column 'salary' at row 1
-Query Execution Time: 0.196357 seconds
+Query Execution Time: 0.239764 seconds
 ======================================================================
 
 ======================================================================
@@ -3671,7 +3671,7 @@ Test Description: UPDATE multiple rows variation 7
 Execution Status: PASS
 Query Executed: UPDATE t_f022_7 SET salary='bad' WHERE id IN (1,2);
 Database Response: 1366 (HY000): Incorrect decimal value: 'bad' for column 'salary' at row 1
-Query Execution Time: 0.099060 seconds
+Query Execution Time: 0.253850 seconds
 ======================================================================
 
 ======================================================================
@@ -3681,7 +3681,7 @@ Test Description: UPDATE multiple rows variation 8
 Execution Status: PASS
 Query Executed: UPDATE t_f022_8 SET salary='bad' WHERE id IN (1,2);
 Database Response: 1366 (HY000): Incorrect decimal value: 'bad' for column 'salary' at row 1
-Query Execution Time: 0.089117 seconds
+Query Execution Time: 0.159263 seconds
 ======================================================================
 
 ======================================================================
@@ -3691,7 +3691,7 @@ Test Description: UPDATE multiple rows variation 9
 Execution Status: PASS
 Query Executed: UPDATE t_f022_9 SET salary='bad' WHERE id IN (1,2);
 Database Response: 1366 (HY000): Incorrect decimal value: 'bad' for column 'salary' at row 1
-Query Execution Time: 0.093354 seconds
+Query Execution Time: 0.180832 seconds
 ======================================================================
 
 ======================================================================
@@ -3701,7 +3701,7 @@ Test Description: UPDATE multiple rows variation 10
 Execution Status: PASS
 Query Executed: UPDATE t_f022_10 SET salary='bad' WHERE id IN (1,2);
 Database Response: 1366 (HY000): Incorrect decimal value: 'bad' for column 'salary' at row 1
-Query Execution Time: 0.079605 seconds
+Query Execution Time: 0.298402 seconds
 ======================================================================
 
 ======================================================================
@@ -3711,7 +3711,7 @@ Test Description: UPDATE multiple rows variation 11
 Execution Status: PASS
 Query Executed: UPDATE t_f022_11 SET salary=50000 WHERE id IN (1,2);
 Database Response: Query executed successfully. Rows affected: 2
-Query Execution Time: 0.105885 seconds
+Query Execution Time: 0.378319 seconds
 ======================================================================
 
 ======================================================================
@@ -3721,7 +3721,7 @@ Test Description: UPDATE multiple rows variation 12
 Execution Status: PASS
 Query Executed: UPDATE t_f022_12 SET salary=50000 WHERE id IN (1,2);
 Database Response: Query executed successfully. Rows affected: 2
-Query Execution Time: 0.098687 seconds
+Query Execution Time: 0.192760 seconds
 ======================================================================
 
 ======================================================================
@@ -3731,7 +3731,7 @@ Test Description: UPDATE multiple rows variation 13
 Execution Status: PASS
 Query Executed: UPDATE t_f022_13 SET salary=50000 WHERE id IN (1,2);
 Database Response: Query executed successfully. Rows affected: 2
-Query Execution Time: 0.112525 seconds
+Query Execution Time: 0.291893 seconds
 ======================================================================
 
 ======================================================================
@@ -3741,7 +3741,7 @@ Test Description: UPDATE multiple rows variation 14
 Execution Status: PASS
 Query Executed: UPDATE t_f022_14 SET salary=50000 WHERE id IN (1,2);
 Database Response: Query executed successfully. Rows affected: 2
-Query Execution Time: 0.116801 seconds
+Query Execution Time: 0.261524 seconds
 ======================================================================
 
 ======================================================================
@@ -3751,7 +3751,7 @@ Test Description: UPDATE multiple rows variation 15
 Execution Status: PASS
 Query Executed: UPDATE t_f022_15 SET salary=50000 WHERE id IN (1,2);
 Database Response: Query executed successfully. Rows affected: 2
-Query Execution Time: 0.230751 seconds
+Query Execution Time: 0.182157 seconds
 ======================================================================
 
 ======================================================================
@@ -3761,7 +3761,7 @@ Test Description: UPDATE using WHERE variation 1
 Execution Status: PASS
 Query Executed: UPDATE t_f023_1 SET salary=42000 WHERE id=2;
 Database Response: Query executed successfully. Rows affected: 1
-Query Execution Time: 0.115839 seconds
+Query Execution Time: 0.206211 seconds
 ======================================================================
 
 ======================================================================
@@ -3771,7 +3771,7 @@ Test Description: UPDATE using WHERE variation 2
 Execution Status: PASS
 Query Executed: UPDATE t_f023_2 SET salary=42000 WHERE id=2;
 Database Response: Query executed successfully. Rows affected: 1
-Query Execution Time: 0.103511 seconds
+Query Execution Time: 0.423456 seconds
 ======================================================================
 
 ======================================================================
@@ -3781,7 +3781,7 @@ Test Description: UPDATE using WHERE variation 3
 Execution Status: PASS
 Query Executed: UPDATE t_f023_3 SET salary=42000 WHERE id=2;
 Database Response: Query executed successfully. Rows affected: 1
-Query Execution Time: 0.096538 seconds
+Query Execution Time: 0.267851 seconds
 ======================================================================
 
 ======================================================================
@@ -3791,7 +3791,7 @@ Test Description: UPDATE using WHERE variation 4
 Execution Status: PASS
 Query Executed: UPDATE t_f023_4 SET salary=42000 WHERE id=2;
 Database Response: Query executed successfully. Rows affected: 1
-Query Execution Time: 0.107625 seconds
+Query Execution Time: 0.220698 seconds
 ======================================================================
 
 ======================================================================
@@ -3801,7 +3801,7 @@ Test Description: UPDATE using WHERE variation 5
 Execution Status: PASS
 Query Executed: UPDATE t_f023_5 SET salary=42000 WHERE id=2;
 Database Response: Query executed successfully. Rows affected: 1
-Query Execution Time: 0.104860 seconds
+Query Execution Time: 0.183732 seconds
 ======================================================================
 
 ======================================================================
@@ -3811,7 +3811,7 @@ Test Description: UPDATE using WHERE variation 6
 Execution Status: PASS
 Query Executed: UPDATE t_f023_6 SET salary=99999 WHERE missing_col=1;
 Database Response: 1054 (42S22): Unknown column 'missing_col' in 'where clause'
-Query Execution Time: 0.100546 seconds
+Query Execution Time: 0.275163 seconds
 ======================================================================
 
 ======================================================================
@@ -3821,7 +3821,7 @@ Test Description: UPDATE using WHERE variation 7
 Execution Status: PASS
 Query Executed: UPDATE t_f023_7 SET salary=99999 WHERE missing_col=1;
 Database Response: 1054 (42S22): Unknown column 'missing_col' in 'where clause'
-Query Execution Time: 0.101914 seconds
+Query Execution Time: 0.241093 seconds
 ======================================================================
 
 ======================================================================
@@ -3831,7 +3831,7 @@ Test Description: UPDATE using WHERE variation 8
 Execution Status: PASS
 Query Executed: UPDATE t_f023_8 SET salary=99999 WHERE missing_col=1;
 Database Response: 1054 (42S22): Unknown column 'missing_col' in 'where clause'
-Query Execution Time: 0.170274 seconds
+Query Execution Time: 0.206687 seconds
 ======================================================================
 
 ======================================================================
@@ -3841,7 +3841,7 @@ Test Description: UPDATE using WHERE variation 9
 Execution Status: PASS
 Query Executed: UPDATE t_f023_9 SET salary=99999 WHERE missing_col=1;
 Database Response: 1054 (42S22): Unknown column 'missing_col' in 'where clause'
-Query Execution Time: 0.137647 seconds
+Query Execution Time: 0.161475 seconds
 ======================================================================
 
 ======================================================================
@@ -3851,7 +3851,7 @@ Test Description: UPDATE using WHERE variation 10
 Execution Status: PASS
 Query Executed: UPDATE t_f023_10 SET salary=99999 WHERE missing_col=1;
 Database Response: 1054 (42S22): Unknown column 'missing_col' in 'where clause'
-Query Execution Time: 0.086375 seconds
+Query Execution Time: 0.176528 seconds
 ======================================================================
 
 ======================================================================
@@ -3861,7 +3861,7 @@ Test Description: UPDATE using WHERE variation 11
 Execution Status: PASS
 Query Executed: UPDATE t_f023_11 SET salary=42000 WHERE id=2;
 Database Response: Query executed successfully. Rows affected: 1
-Query Execution Time: 0.089001 seconds
+Query Execution Time: 0.348111 seconds
 ======================================================================
 
 ======================================================================
@@ -3871,7 +3871,7 @@ Test Description: UPDATE using WHERE variation 12
 Execution Status: PASS
 Query Executed: UPDATE t_f023_12 SET salary=42000 WHERE id=2;
 Database Response: Query executed successfully. Rows affected: 1
-Query Execution Time: 0.094921 seconds
+Query Execution Time: 0.303488 seconds
 ======================================================================
 
 ======================================================================
@@ -3881,7 +3881,7 @@ Test Description: UPDATE using WHERE variation 13
 Execution Status: PASS
 Query Executed: UPDATE t_f023_13 SET salary=42000 WHERE id=2;
 Database Response: Query executed successfully. Rows affected: 1
-Query Execution Time: 0.109980 seconds
+Query Execution Time: 0.226604 seconds
 ======================================================================
 
 ======================================================================
@@ -3891,7 +3891,7 @@ Test Description: UPDATE using WHERE variation 14
 Execution Status: PASS
 Query Executed: UPDATE t_f023_14 SET salary=42000 WHERE id=2;
 Database Response: Query executed successfully. Rows affected: 1
-Query Execution Time: 0.114127 seconds
+Query Execution Time: 0.218046 seconds
 ======================================================================
 
 ======================================================================
@@ -3901,7 +3901,7 @@ Test Description: UPDATE using WHERE variation 15
 Execution Status: PASS
 Query Executed: UPDATE t_f023_15 SET salary=42000 WHERE id=2;
 Database Response: Query executed successfully. Rows affected: 1
-Query Execution Time: 0.088675 seconds
+Query Execution Time: 0.313713 seconds
 ======================================================================
 
 ======================================================================
@@ -3911,7 +3911,7 @@ Test Description: UPDATE without WHERE variation 1
 Execution Status: PASS
 Query Executed: UPDATE t_f024_1 SET salary=40000;
 Database Response: Query executed successfully. Rows affected: 3
-Query Execution Time: 0.091764 seconds
+Query Execution Time: 0.208663 seconds
 ======================================================================
 
 ======================================================================
@@ -3921,7 +3921,7 @@ Test Description: UPDATE without WHERE variation 2
 Execution Status: PASS
 Query Executed: UPDATE t_f024_2 SET salary=40000;
 Database Response: Query executed successfully. Rows affected: 3
-Query Execution Time: 0.105026 seconds
+Query Execution Time: 0.178878 seconds
 ======================================================================
 
 ======================================================================
@@ -3931,7 +3931,7 @@ Test Description: UPDATE without WHERE variation 3
 Execution Status: PASS
 Query Executed: UPDATE t_f024_3 SET salary=40000;
 Database Response: Query executed successfully. Rows affected: 3
-Query Execution Time: 0.201066 seconds
+Query Execution Time: 0.198692 seconds
 ======================================================================
 
 ======================================================================
@@ -3941,7 +3941,7 @@ Test Description: UPDATE without WHERE variation 4
 Execution Status: PASS
 Query Executed: UPDATE t_f024_4 SET salary=40000;
 Database Response: Query executed successfully. Rows affected: 3
-Query Execution Time: 0.109435 seconds
+Query Execution Time: 0.398071 seconds
 ======================================================================
 
 ======================================================================
@@ -3951,7 +3951,7 @@ Test Description: UPDATE without WHERE variation 5
 Execution Status: PASS
 Query Executed: UPDATE t_f024_5 SET salary=40000;
 Database Response: Query executed successfully. Rows affected: 3
-Query Execution Time: 0.095991 seconds
+Query Execution Time: 0.373682 seconds
 ======================================================================
 
 ======================================================================
@@ -3961,7 +3961,7 @@ Test Description: UPDATE without WHERE variation 6
 Execution Status: PASS
 Query Executed: UPDATE t_f024_6 SET missing_col=1;
 Database Response: 1054 (42S22): Unknown column 'missing_col' in 'field list'
-Query Execution Time: 0.102686 seconds
+Query Execution Time: 0.177694 seconds
 ======================================================================
 
 ======================================================================
@@ -3971,7 +3971,7 @@ Test Description: UPDATE without WHERE variation 7
 Execution Status: PASS
 Query Executed: UPDATE t_f024_7 SET missing_col=1;
 Database Response: 1054 (42S22): Unknown column 'missing_col' in 'field list'
-Query Execution Time: 0.108665 seconds
+Query Execution Time: 0.353019 seconds
 ======================================================================
 
 ======================================================================
@@ -3981,7 +3981,7 @@ Test Description: UPDATE without WHERE variation 8
 Execution Status: PASS
 Query Executed: UPDATE t_f024_8 SET missing_col=1;
 Database Response: 1054 (42S22): Unknown column 'missing_col' in 'field list'
-Query Execution Time: 0.089843 seconds
+Query Execution Time: 0.317056 seconds
 ======================================================================
 
 ======================================================================
@@ -3991,7 +3991,7 @@ Test Description: UPDATE without WHERE variation 9
 Execution Status: PASS
 Query Executed: UPDATE t_f024_9 SET missing_col=1;
 Database Response: 1054 (42S22): Unknown column 'missing_col' in 'field list'
-Query Execution Time: 0.094136 seconds
+Query Execution Time: 0.189587 seconds
 ======================================================================
 
 ======================================================================
@@ -4001,7 +4001,7 @@ Test Description: UPDATE without WHERE variation 10
 Execution Status: PASS
 Query Executed: UPDATE t_f024_10 SET missing_col=1;
 Database Response: 1054 (42S22): Unknown column 'missing_col' in 'field list'
-Query Execution Time: 0.089225 seconds
+Query Execution Time: 0.185805 seconds
 ======================================================================
 
 ======================================================================
@@ -4011,7 +4011,7 @@ Test Description: UPDATE without WHERE variation 11
 Execution Status: PASS
 Query Executed: UPDATE t_f024_11 SET salary=40000;
 Database Response: Query executed successfully. Rows affected: 3
-Query Execution Time: 0.141388 seconds
+Query Execution Time: 0.301178 seconds
 ======================================================================
 
 ======================================================================
@@ -4021,7 +4021,7 @@ Test Description: UPDATE without WHERE variation 12
 Execution Status: PASS
 Query Executed: UPDATE t_f024_12 SET salary=40000;
 Database Response: Query executed successfully. Rows affected: 3
-Query Execution Time: 0.183855 seconds
+Query Execution Time: 0.310105 seconds
 ======================================================================
 
 ======================================================================
@@ -4031,7 +4031,7 @@ Test Description: UPDATE without WHERE variation 13
 Execution Status: PASS
 Query Executed: UPDATE t_f024_13 SET salary=40000;
 Database Response: Query executed successfully. Rows affected: 3
-Query Execution Time: 0.101527 seconds
+Query Execution Time: 0.285313 seconds
 ======================================================================
 
 ======================================================================
@@ -4041,7 +4041,7 @@ Test Description: UPDATE without WHERE variation 14
 Execution Status: PASS
 Query Executed: UPDATE t_f024_14 SET salary=40000;
 Database Response: Query executed successfully. Rows affected: 3
-Query Execution Time: 0.100546 seconds
+Query Execution Time: 0.151809 seconds
 ======================================================================
 
 ======================================================================
@@ -4051,7 +4051,7 @@ Test Description: UPDATE without WHERE variation 15
 Execution Status: PASS
 Query Executed: UPDATE t_f024_15 SET salary=40000;
 Database Response: Query executed successfully. Rows affected: 3
-Query Execution Time: 0.095828 seconds
+Query Execution Time: 0.306116 seconds
 ======================================================================
 
 ======================================================================
@@ -4061,7 +4061,7 @@ Test Description: UPDATE multiple columns variation 1
 Execution Status: PASS
 Query Executed: UPDATE t_f025_1 SET salary=40000, age=40 WHERE id=1;
 Database Response: Query executed successfully. Rows affected: 1
-Query Execution Time: 0.087014 seconds
+Query Execution Time: 0.243677 seconds
 ======================================================================
 
 ======================================================================
@@ -4071,7 +4071,7 @@ Test Description: UPDATE multiple columns variation 2
 Execution Status: PASS
 Query Executed: UPDATE t_f025_2 SET salary=40000, age=40 WHERE id=1;
 Database Response: Query executed successfully. Rows affected: 1
-Query Execution Time: 0.087979 seconds
+Query Execution Time: 0.207375 seconds
 ======================================================================
 
 ======================================================================
@@ -4081,7 +4081,7 @@ Test Description: UPDATE multiple columns variation 3
 Execution Status: PASS
 Query Executed: UPDATE t_f025_3 SET salary=40000, age=40 WHERE id=1;
 Database Response: Query executed successfully. Rows affected: 1
-Query Execution Time: 0.087349 seconds
+Query Execution Time: 0.171692 seconds
 ======================================================================
 
 ======================================================================
@@ -4091,7 +4091,7 @@ Test Description: UPDATE multiple columns variation 4
 Execution Status: PASS
 Query Executed: UPDATE t_f025_4 SET salary=40000, age=40 WHERE id=1;
 Database Response: Query executed successfully. Rows affected: 1
-Query Execution Time: 0.105119 seconds
+Query Execution Time: 0.344797 seconds
 ======================================================================
 
 ======================================================================
@@ -4101,7 +4101,7 @@ Test Description: UPDATE multiple columns variation 5
 Execution Status: PASS
 Query Executed: UPDATE t_f025_5 SET salary=40000, age=40 WHERE id=1;
 Database Response: Query executed successfully. Rows affected: 1
-Query Execution Time: 0.142085 seconds
+Query Execution Time: 0.318919 seconds
 ======================================================================
 
 ======================================================================
@@ -4111,7 +4111,7 @@ Test Description: UPDATE multiple columns variation 6
 Execution Status: PASS
 Query Executed: UPDATE t_f025_6 SET salary=40000, missing_col=1 WHERE id=1;
 Database Response: 1054 (42S22): Unknown column 'missing_col' in 'field list'
-Query Execution Time: 0.166273 seconds
+Query Execution Time: 0.182921 seconds
 ======================================================================
 
 ======================================================================
@@ -4121,7 +4121,7 @@ Test Description: UPDATE multiple columns variation 7
 Execution Status: PASS
 Query Executed: UPDATE t_f025_7 SET salary=40000, missing_col=1 WHERE id=1;
 Database Response: 1054 (42S22): Unknown column 'missing_col' in 'field list'
-Query Execution Time: 0.119042 seconds
+Query Execution Time: 0.164755 seconds
 ======================================================================
 
 ======================================================================
@@ -4131,7 +4131,7 @@ Test Description: UPDATE multiple columns variation 8
 Execution Status: PASS
 Query Executed: UPDATE t_f025_8 SET salary=40000, missing_col=1 WHERE id=1;
 Database Response: 1054 (42S22): Unknown column 'missing_col' in 'field list'
-Query Execution Time: 0.089160 seconds
+Query Execution Time: 0.258176 seconds
 ======================================================================
 
 ======================================================================
@@ -4141,7 +4141,7 @@ Test Description: UPDATE multiple columns variation 9
 Execution Status: PASS
 Query Executed: UPDATE t_f025_9 SET salary=40000, missing_col=1 WHERE id=1;
 Database Response: 1054 (42S22): Unknown column 'missing_col' in 'field list'
-Query Execution Time: 0.083229 seconds
+Query Execution Time: 0.237317 seconds
 ======================================================================
 
 ======================================================================
@@ -4151,7 +4151,7 @@ Test Description: UPDATE multiple columns variation 10
 Execution Status: PASS
 Query Executed: UPDATE t_f025_10 SET salary=40000, missing_col=1 WHERE id=1;
 Database Response: 1054 (42S22): Unknown column 'missing_col' in 'field list'
-Query Execution Time: 0.083191 seconds
+Query Execution Time: 0.252473 seconds
 ======================================================================
 
 ======================================================================
@@ -4161,7 +4161,7 @@ Test Description: UPDATE multiple columns variation 11
 Execution Status: PASS
 Query Executed: UPDATE t_f025_11 SET salary=40000, age=40 WHERE id=1;
 Database Response: Query executed successfully. Rows affected: 1
-Query Execution Time: 0.093740 seconds
+Query Execution Time: 0.195121 seconds
 ======================================================================
 
 ======================================================================
@@ -4171,7 +4171,7 @@ Test Description: UPDATE multiple columns variation 12
 Execution Status: PASS
 Query Executed: UPDATE t_f025_12 SET salary=40000, age=40 WHERE id=1;
 Database Response: Query executed successfully. Rows affected: 1
-Query Execution Time: 0.098358 seconds
+Query Execution Time: 0.346647 seconds
 ======================================================================
 
 ======================================================================
@@ -4181,7 +4181,7 @@ Test Description: UPDATE multiple columns variation 13
 Execution Status: PASS
 Query Executed: UPDATE t_f025_13 SET salary=40000, age=40 WHERE id=1;
 Database Response: Query executed successfully. Rows affected: 1
-Query Execution Time: 0.099317 seconds
+Query Execution Time: 0.321342 seconds
 ======================================================================
 
 ======================================================================
@@ -4191,7 +4191,7 @@ Test Description: UPDATE multiple columns variation 14
 Execution Status: PASS
 Query Executed: UPDATE t_f025_14 SET salary=40000, age=40 WHERE id=1;
 Database Response: Query executed successfully. Rows affected: 1
-Query Execution Time: 0.093543 seconds
+Query Execution Time: 0.273189 seconds
 ======================================================================
 
 ======================================================================
@@ -4201,6 +4201,6 @@ Test Description: UPDATE multiple columns variation 15
 Execution Status: PASS
 Query Executed: UPDATE t_f025_15 SET salary=40000, age=40 WHERE id=1;
 Database Response: Query executed successfully. Rows affected: 1
-Query Execution Time: 0.169591 seconds
+Query Execution Time: 0.151654 seconds
 ======================================================================
 

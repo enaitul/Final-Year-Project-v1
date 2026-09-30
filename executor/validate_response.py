@@ -152,6 +152,8 @@ def validate_records(records, expected_ids, csv_problems, expected_cases_map=Non
 
         if record.get("Execution_Status", "").strip().upper() not in {"PASS", "FAIL"}:
             record_problems.append("Invalid execution status (use PASS or FAIL)")
+        elif record.get("Execution_Status", "").strip().upper() == "FAIL":
+            record_problems.append("Test execution failed")
 
         time_value = record.get("Query_Execution_Time", "").strip()
         if time_value and not re.fullmatch(r"(?:\d+(?:\.\d+)?|\.\d+)(?:\s*(?:seconds?|secs?|s))?", time_value, re.IGNORECASE):

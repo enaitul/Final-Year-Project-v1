@@ -2,17 +2,26 @@
 RESPONSE FILE VALIDATION & REGRESSION REPORT
 ========================================
 
-Response file checked: D:\4th year projecttt\updatedOne\Final-Year-Project-v1\reports\response_1.txt
-Total test cases found: 300
-Valid test cases: 300
-Invalid test cases: 0
+Response file checked: C:\Users\SHN\OneDrive\Desktop\4th year projecttt\updatedOne\Final-Year-Project-v1\reports\response_merged.txt
+Total test cases found: 1500
+Valid test cases: 1490
+Invalid test cases: 10
 Duplicate test cases: 0
 Missing test cases: 0
 Unexpected test cases: 0
 
-Minute Validation Status: PASS
+Minute Validation Status: FAIL
 
-Overall Run Verdict: PASS
+Overall Run Verdict: FAIL
 
 Validation Problems Found:
-No validation problems found.
+TC1486 - Test execution failed
+TC1487 - Test execution failed
+TC1488 - Test execution failed
+TC1489 - Test execution failed
+TC1490 - Test execution failed
+TC1496 - Test execution failed
+TC1497 - Test execution failed
+TC1498 - Test execution failed
+TC1499 - Test execution failed
+TC1500 - Test execution failed

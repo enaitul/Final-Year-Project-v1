@@ -1,0 +1,38 @@
+{
+  "remote_hosts": [
+    {
+      "host_id": "HOST_01",
+      "ip_address": "192.168.1.101",
+      "port": 22,
+      "username": "tester",
+      "auth_type": "password",
+      "password_env_var": "REMOTE_SSH_PASSWORD",
+      "target_group": 1,
+      "remote_work_dir": "/opt/testing_framework"
+    },
+    {
+      "host_id": "HOST_02",
+      "ip_address": "192.168.1.102",
+      "port": 22,
+      "username": "tester",
+      "auth_type": "password",
+      "password_env_var": "REMOTE_SSH_PASSWORD",
+      "target_group": 2,
+      "remote_work_dir": "/opt/testing_framework"
+    },
+    {
+      "host_id": "LOCAL_SIMULATED",
+      "ip_address": "127.0.0.1",
+      "port": 22,
+      "username": "localhost",
+      "auth_type": "local",
+      "target_group": 3,
+      "remote_work_dir": "."
+    }
+  ],
+  "global_settings": {
+    "connection_timeout": 10,
+    "log_retrieval_dir": "reports",
+    "auto_merge_after_remote_execution": true
+  }
+}

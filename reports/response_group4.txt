@@ -10,7 +10,7 @@ Database Response: Rows returned: 1
 +--------+------------+--------------------------+------+--------+---------+--------------+
 | 90761  | ExistsTest | existstest90761@test.com | NULL | NULL   | NULL    | NULL         |
 +--------+------------+--------------------------+------+--------+---------+--------------+
-Query Execution Time: 0.040105 seconds
+Query Execution Time: 0.013690 seconds
 ======================================================================
 
 ======================================================================
@@ -25,7 +25,7 @@ Database Response: Rows returned: 1
 +--------+------------+--------------------------+------+--------+---------+--------------+
 | 100761 | ExistsTest | existstest90761@test.com | NULL | NULL   | NULL    | NULL         |
 +--------+------------+--------------------------+------+--------+---------+--------------+
-Query Execution Time: 0.043393 seconds
+Query Execution Time: 0.010487 seconds
 ======================================================================
 
 ======================================================================
@@ -40,7 +40,7 @@ Database Response: Rows returned: 1
 +--------+------------+--------------------------+------+--------+---------+--------------+
 | 110761 | ExistsTest | existstest90761@test.com | NULL | NULL   | NULL    | NULL         |
 +--------+------------+--------------------------+------+--------+---------+--------------+
-Query Execution Time: 0.019044 seconds
+Query Execution Time: 0.007932 seconds
 ======================================================================
 
 ======================================================================
@@ -55,7 +55,7 @@ Database Response: Rows returned: 1
 +--------+------------+--------------------------+------+--------+---------+--------------+
 | 120761 | ExistsTest | existstest90761@test.com | NULL | NULL   | NULL    | NULL         |
 +--------+------------+--------------------------+------+--------+---------+--------------+
-Query Execution Time: 0.025882 seconds
+Query Execution Time: 0.007327 seconds
 ======================================================================
 
 ======================================================================
@@ -70,7 +70,7 @@ Database Response: Rows returned: 1
 +--------+------------+--------------------------+------+--------+---------+--------------+
 | 130761 | ExistsTest | existstest90761@test.com | NULL | NULL   | NULL    | NULL         |
 +--------+------------+--------------------------+------+--------+---------+--------------+
-Query Execution Time: 0.035585 seconds
+Query Execution Time: 0.007261 seconds
 ======================================================================
 
 ======================================================================
@@ -80,7 +80,7 @@ Test Description: Use EXISTS with a subquery referencing an invalid column
 Execution Status: PASS
 Query Executed: SELECT * FROM employees e WHERE EXISTS (SELECT 1 FROM employee_projects ep WHERE ep.status_val = 'active');
 Database Response: 1054 (42S22): Unknown column 'ep.status_val' in 'where clause'
-Query Execution Time: 0.003884 seconds
+Query Execution Time: 0.001282 seconds
 ======================================================================
 
 ======================================================================
@@ -90,7 +90,7 @@ Test Description: Use EXISTS with a subquery referencing an invalid column
 Execution Status: PASS
 Query Executed: SELECT * FROM employees e WHERE EXISTS (SELECT 1 FROM employee_projects ep WHERE ep.status_val = 'active');
 Database Response: 1054 (42S22): Unknown column 'ep.status_val' in 'where clause'
-Query Execution Time: 0.003122 seconds
+Query Execution Time: 0.001210 seconds
 ======================================================================
 
 ======================================================================
@@ -100,7 +100,7 @@ Test Description: Use EXISTS with a subquery referencing an invalid column
 Execution Status: PASS
 Query Executed: SELECT * FROM employees e WHERE EXISTS (SELECT 1 FROM employee_projects ep WHERE ep.status_val = 'active');
 Database Response: 1054 (42S22): Unknown column 'ep.status_val' in 'where clause'
-Query Execution Time: 0.003091 seconds
+Query Execution Time: 0.001234 seconds
 ======================================================================
 
 ======================================================================
@@ -110,7 +110,7 @@ Test Description: Use EXISTS with a subquery referencing an invalid column
 Execution Status: PASS
 Query Executed: SELECT * FROM employees e WHERE EXISTS (SELECT 1 FROM employee_projects ep WHERE ep.status_val = 'active');
 Database Response: 1054 (42S22): Unknown column 'ep.status_val' in 'where clause'
-Query Execution Time: 0.003453 seconds
+Query Execution Time: 0.001303 seconds
 ======================================================================
 
 ======================================================================
@@ -120,7 +120,7 @@ Test Description: Use EXISTS with a subquery referencing an invalid column
 Execution Status: PASS
 Query Executed: SELECT * FROM employees e WHERE EXISTS (SELECT 1 FROM employee_projects ep WHERE ep.status_val = 'active');
 Database Response: 1054 (42S22): Unknown column 'ep.status_val' in 'where clause'
-Query Execution Time: 0.003381 seconds
+Query Execution Time: 0.001184 seconds
 ======================================================================
 
 ======================================================================
@@ -131,7 +131,7 @@ Execution Status: PASS
 Query Executed: SELECT * FROM employees e WHERE EXISTS (SELECT 1 FROM employee_projects ep WHERE ep.emp_id = e.emp_id AND ep.project_id = -999999);
 Database Response: Rows returned: 0
 (No rows returned)
-Query Execution Time: 0.003550 seconds
+Query Execution Time: 0.001583 seconds
 ======================================================================
 
 ======================================================================
@@ -142,7 +142,7 @@ Execution Status: PASS
 Query Executed: SELECT * FROM employees e WHERE EXISTS (SELECT 1 FROM employee_projects ep WHERE ep.emp_id = e.emp_id AND ep.project_id = -999999);
 Database Response: Rows returned: 0
 (No rows returned)
-Query Execution Time: 0.003684 seconds
+Query Execution Time: 0.001612 seconds
 ======================================================================
 
 ======================================================================
@@ -153,7 +153,7 @@ Execution Status: PASS
 Query Executed: SELECT * FROM employees e WHERE EXISTS (SELECT 1 FROM employee_projects ep WHERE ep.emp_id = e.emp_id AND ep.project_id = -999999);
 Database Response: Rows returned: 0
 (No rows returned)
-Query Execution Time: 0.004157 seconds
+Query Execution Time: 0.001515 seconds
 ======================================================================
 
 ======================================================================
@@ -164,7 +164,7 @@ Execution Status: PASS
 Query Executed: SELECT * FROM employees e WHERE EXISTS (SELECT 1 FROM employee_projects ep WHERE ep.emp_id = e.emp_id AND ep.project_id = -999999);
 Database Response: Rows returned: 0
 (No rows returned)
-Query Execution Time: 0.003277 seconds
+Query Execution Time: 0.001321 seconds
 ======================================================================
 
 ======================================================================
@@ -175,7 +175,7 @@ Execution Status: PASS
 Query Executed: SELECT * FROM employees e WHERE EXISTS (SELECT 1 FROM employee_projects ep WHERE ep.emp_id = e.emp_id AND ep.project_id = -999999);
 Database Response: Rows returned: 0
 (No rows returned)
-Query Execution Time: 0.003443 seconds
+Query Execution Time: 0.001421 seconds
 ======================================================================
 
 ======================================================================
@@ -190,7 +190,7 @@ Database Response: Rows returned: 1
 +--------+---------------+-----------------------------+------+--------+---------+--------------+
 | 90771  | NotExistsTest | notexiststest90771@test.com | NULL | NULL   | NULL    | NULL         |
 +--------+---------------+-----------------------------+------+--------+---------+--------------+
-Query Execution Time: 0.022352 seconds
+Query Execution Time: 0.005162 seconds
 ======================================================================
 
 ======================================================================
@@ -205,7 +205,7 @@ Database Response: Rows returned: 1
 +--------+---------------+-----------------------------+------+--------+---------+--------------+
 | 100771 | NotExistsTest | notexiststest90771@test.com | NULL | NULL   | NULL    | NULL         |
 +--------+---------------+-----------------------------+------+--------+---------+--------------+
-Query Execution Time: 0.012995 seconds
+Query Execution Time: 0.005796 seconds
 ======================================================================
 
 ======================================================================
@@ -220,7 +220,7 @@ Database Response: Rows returned: 1
 +--------+---------------+-----------------------------+------+--------+---------+--------------+
 | 110771 | NotExistsTest | notexiststest90771@test.com | NULL | NULL   | NULL    | NULL         |
 +--------+---------------+-----------------------------+------+--------+---------+--------------+
-Query Execution Time: 0.021954 seconds
+Query Execution Time: 0.005108 seconds
 ======================================================================
 
 ======================================================================
@@ -235,7 +235,7 @@ Database Response: Rows returned: 1
 +--------+---------------+-----------------------------+------+--------+---------+--------------+
 | 120771 | NotExistsTest | notexiststest90771@test.com | NULL | NULL   | NULL    | NULL         |
 +--------+---------------+-----------------------------+------+--------+---------+--------------+
-Query Execution Time: 0.017460 seconds
+Query Execution Time: 0.004862 seconds
 ======================================================================
 
 ======================================================================
@@ -250,7 +250,7 @@ Database Response: Rows returned: 1
 +--------+---------------+-----------------------------+------+--------+---------+--------------+
 | 130771 | NotExistsTest | notexiststest90771@test.com | NULL | NULL   | NULL    | NULL         |
 +--------+---------------+-----------------------------+------+--------+---------+--------------+
-Query Execution Time: 0.025938 seconds
+Query Execution Time: 0.008591 seconds
 ======================================================================
 
 ======================================================================
@@ -260,7 +260,7 @@ Test Description: Use NOT EXISTS with a subquery referencing a non-existing tabl
 Execution Status: PASS
 Query Executed: SELECT * FROM employees e WHERE NOT EXISTS (SELECT 1 FROM assignments_old a WHERE a.emp_id = e.emp_id);
 Database Response: 1146 (42S02): Table 'ai_testing_group4.assignments_old' doesn't exist
-Query Execution Time: 0.019694 seconds
+Query Execution Time: 0.004971 seconds
 ======================================================================
 
 ======================================================================
@@ -270,7 +270,7 @@ Test Description: Use NOT EXISTS with a subquery referencing a non-existing tabl
 Execution Status: PASS
 Query Executed: SELECT * FROM employees e WHERE NOT EXISTS (SELECT 1 FROM assignments_old a WHERE a.emp_id = e.emp_id);
 Database Response: 1146 (42S02): Table 'ai_testing_group4.assignments_old' doesn't exist
-Query Execution Time: 0.018204 seconds
+Query Execution Time: 0.004376 seconds
 ======================================================================
 
 ======================================================================
@@ -280,7 +280,7 @@ Test Description: Use NOT EXISTS with a subquery referencing a non-existing tabl
 Execution Status: PASS
 Query Executed: SELECT * FROM employees e WHERE NOT EXISTS (SELECT 1 FROM assignments_old a WHERE a.emp_id = e.emp_id);
 Database Response: 1146 (42S02): Table 'ai_testing_group4.assignments_old' doesn't exist
-Query Execution Time: 0.013218 seconds
+Query Execution Time: 0.003265 seconds
 ======================================================================
 
 ======================================================================
@@ -290,7 +290,7 @@ Test Description: Use NOT EXISTS with a subquery referencing a non-existing tabl
 Execution Status: PASS
 Query Executed: SELECT * FROM employees e WHERE NOT EXISTS (SELECT 1 FROM assignments_old a WHERE a.emp_id = e.emp_id);
 Database Response: 1146 (42S02): Table 'ai_testing_group4.assignments_old' doesn't exist
-Query Execution Time: 0.019528 seconds
+Query Execution Time: 0.004360 seconds
 ======================================================================
 
 ======================================================================
@@ -300,7 +300,7 @@ Test Description: Use NOT EXISTS with a subquery referencing a non-existing tabl
 Execution Status: PASS
 Query Executed: SELECT * FROM employees e WHERE NOT EXISTS (SELECT 1 FROM assignments_old a WHERE a.emp_id = e.emp_id);
 Database Response: 1146 (42S02): Table 'ai_testing_group4.assignments_old' doesn't exist
-Query Execution Time: 0.019323 seconds
+Query Execution Time: 0.003471 seconds
 ======================================================================
 
 ======================================================================
@@ -311,7 +311,7 @@ Execution Status: PASS
 Query Executed: SELECT * FROM employees e WHERE e.emp_id = 90772 AND NOT EXISTS (SELECT 1 FROM employee_projects ep WHERE ep.emp_id = e.emp_id) AND EXISTS (SELECT 1 FROM employee_projects ep2 WHERE ep2.emp_id = e.emp_id);
 Database Response: Rows returned: 0
 (No rows returned)
-Query Execution Time: 0.026766 seconds
+Query Execution Time: 0.006850 seconds
 ======================================================================
 
 ======================================================================
@@ -322,7 +322,7 @@ Execution Status: PASS
 Query Executed: SELECT * FROM employees e WHERE e.emp_id = 100772 AND NOT EXISTS (SELECT 1 FROM employee_projects ep WHERE ep.emp_id = e.emp_id) AND EXISTS (SELECT 1 FROM employee_projects ep2 WHERE ep2.emp_id = e.emp_id);
 Database Response: Rows returned: 0
 (No rows returned)
-Query Execution Time: 0.027357 seconds
+Query Execution Time: 0.006207 seconds
 ======================================================================
 
 ======================================================================
@@ -333,7 +333,7 @@ Execution Status: PASS
 Query Executed: SELECT * FROM employees e WHERE e.emp_id = 110772 AND NOT EXISTS (SELECT 1 FROM employee_projects ep WHERE ep.emp_id = e.emp_id) AND EXISTS (SELECT 1 FROM employee_projects ep2 WHERE ep2.emp_id = e.emp_id);
 Database Response: Rows returned: 0
 (No rows returned)
-Query Execution Time: 0.028155 seconds
+Query Execution Time: 0.005864 seconds
 ======================================================================
 
 ======================================================================
@@ -344,7 +344,7 @@ Execution Status: PASS
 Query Executed: SELECT * FROM employees e WHERE e.emp_id = 120772 AND NOT EXISTS (SELECT 1 FROM employee_projects ep WHERE ep.emp_id = e.emp_id) AND EXISTS (SELECT 1 FROM employee_projects ep2 WHERE ep2.emp_id = e.emp_id);
 Database Response: Rows returned: 0
 (No rows returned)
-Query Execution Time: 0.026459 seconds
+Query Execution Time: 0.007657 seconds
 ======================================================================
 
 ======================================================================
@@ -355,7 +355,7 @@ Execution Status: PASS
 Query Executed: SELECT * FROM employees e WHERE e.emp_id = 130772 AND NOT EXISTS (SELECT 1 FROM employee_projects ep WHERE ep.emp_id = e.emp_id) AND EXISTS (SELECT 1 FROM employee_projects ep2 WHERE ep2.emp_id = e.emp_id);
 Database Response: Rows returned: 0
 (No rows returned)
-Query Execution Time: 0.020438 seconds
+Query Execution Time: 0.006145 seconds
 ======================================================================
 
 ======================================================================
@@ -371,7 +371,7 @@ Database Response: Rows returned: 2
 | UnionEmp1 |
 | UnionEmp2 |
 +-----------+
-Query Execution Time: 0.037946 seconds
+Query Execution Time: 0.007062 seconds
 ======================================================================
 
 ======================================================================
@@ -387,7 +387,7 @@ Database Response: Rows returned: 2
 | UnionEmp1 |
 | UnionEmp2 |
 +-----------+
-Query Execution Time: 0.038127 seconds
+Query Execution Time: 0.006674 seconds
 ======================================================================
 
 ======================================================================
@@ -403,7 +403,7 @@ Database Response: Rows returned: 2
 | UnionEmp1 |
 | UnionEmp2 |
 +-----------+
-Query Execution Time: 0.021283 seconds
+Query Execution Time: 0.006140 seconds
 ======================================================================
 
 ======================================================================
@@ -419,7 +419,7 @@ Database Response: Rows returned: 2
 | UnionEmp1 |
 | UnionEmp2 |
 +-----------+
-Query Execution Time: 0.017565 seconds
+Query Execution Time: 0.006132 seconds
 ======================================================================
 
 ======================================================================
@@ -435,7 +435,7 @@ Database Response: Rows returned: 2
 | UnionEmp1 |
 | UnionEmp2 |
 +-----------+
-Query Execution Time: 0.042551 seconds
+Query Execution Time: 0.005771 seconds
 ======================================================================
 
 ======================================================================
@@ -445,7 +445,7 @@ Test Description: Use UNION on two SELECTs with a differing number of columns
 Execution Status: PASS
 Query Executed: SELECT emp_name FROM employees UNION SELECT emp_name, email FROM employees;
 Database Response: 1222 (21000): The used SELECT statements have a different number of columns
-Query Execution Time: 0.003466 seconds
+Query Execution Time: 0.001225 seconds
 ======================================================================
 
 ======================================================================
@@ -455,7 +455,7 @@ Test Description: Use UNION on two SELECTs with a differing number of columns
 Execution Status: PASS
 Query Executed: SELECT emp_name FROM employees UNION SELECT emp_name, email FROM employees;
 Database Response: 1222 (21000): The used SELECT statements have a different number of columns
-Query Execution Time: 0.003500 seconds
+Query Execution Time: 0.001141 seconds
 ======================================================================
 
 ======================================================================
@@ -465,7 +465,7 @@ Test Description: Use UNION on two SELECTs with a differing number of columns
 Execution Status: PASS
 Query Executed: SELECT emp_name FROM employees UNION SELECT emp_name, email FROM employees;
 Database Response: 1222 (21000): The used SELECT statements have a different number of columns
-Query Execution Time: 0.002713 seconds
+Query Execution Time: 0.001139 seconds
 ======================================================================
 
 ======================================================================
@@ -475,7 +475,7 @@ Test Description: Use UNION on two SELECTs with a differing number of columns
 Execution Status: PASS
 Query Executed: SELECT emp_name FROM employees UNION SELECT emp_name, email FROM employees;
 Database Response: 1222 (21000): The used SELECT statements have a different number of columns
-Query Execution Time: 0.002909 seconds
+Query Execution Time: 0.001049 seconds
 ======================================================================
 
 ======================================================================
@@ -485,7 +485,7 @@ Test Description: Use UNION on two SELECTs with a differing number of columns
 Execution Status: PASS
 Query Executed: SELECT emp_name FROM employees UNION SELECT emp_name, email FROM employees;
 Database Response: 1222 (21000): The used SELECT statements have a different number of columns
-Query Execution Time: 0.002028 seconds
+Query Execution Time: 0.001062 seconds
 ======================================================================
 
 ======================================================================
@@ -500,7 +500,7 @@ Database Response: Rows returned: 1
 +----------+
 | DupUnion |
 +----------+
-Query Execution Time: 0.013473 seconds
+Query Execution Time: 0.005314 seconds
 ======================================================================
 
 ======================================================================
@@ -515,7 +515,7 @@ Database Response: Rows returned: 1
 +----------+
 | DupUnion |
 +----------+
-Query Execution Time: 0.024915 seconds
+Query Execution Time: 0.004930 seconds
 ======================================================================
 
 ======================================================================
@@ -530,7 +530,7 @@ Database Response: Rows returned: 1
 +----------+
 | DupUnion |
 +----------+
-Query Execution Time: 0.022313 seconds
+Query Execution Time: 0.004752 seconds
 ======================================================================
 
 ======================================================================
@@ -545,7 +545,7 @@ Database Response: Rows returned: 1
 +----------+
 | DupUnion |
 +----------+
-Query Execution Time: 0.028730 seconds
+Query Execution Time: 0.007599 seconds
 ======================================================================
 
 ======================================================================
@@ -560,7 +560,7 @@ Database Response: Rows returned: 1
 +----------+
 | DupUnion |
 +----------+
-Query Execution Time: 0.020894 seconds
+Query Execution Time: 0.006215 seconds
 ======================================================================
 
 ======================================================================
@@ -576,7 +576,7 @@ Database Response: Rows returned: 2
 | SameNameU |
 | SameNameU |
 +-----------+
-Query Execution Time: 0.023303 seconds
+Query Execution Time: 0.005732 seconds
 ======================================================================
 
 ======================================================================
@@ -592,7 +592,7 @@ Database Response: Rows returned: 2
 | SameNameU |
 | SameNameU |
 +-----------+
-Query Execution Time: 0.024619 seconds
+Query Execution Time: 0.006628 seconds
 ======================================================================
 
 ======================================================================
@@ -608,7 +608,7 @@ Database Response: Rows returned: 2
 | SameNameU |
 | SameNameU |
 +-----------+
-Query Execution Time: 0.029993 seconds
+Query Execution Time: 0.006908 seconds
 ======================================================================
 
 ======================================================================
@@ -624,7 +624,7 @@ Database Response: Rows returned: 2
 | SameNameU |
 | SameNameU |
 +-----------+
-Query Execution Time: 0.025775 seconds
+Query Execution Time: 0.005950 seconds
 ======================================================================
 
 ======================================================================
@@ -640,7 +640,7 @@ Database Response: Rows returned: 2
 | SameNameU |
 | SameNameU |
 +-----------+
-Query Execution Time: 0.023648 seconds
+Query Execution Time: 0.006049 seconds
 ======================================================================
 
 ======================================================================
@@ -650,7 +650,7 @@ Test Description: Use UNION ALL on two SELECTs with incompatible column counts
 Execution Status: PASS
 Query Executed: SELECT emp_name FROM employees UNION ALL SELECT dept_name, location FROM departments;
 Database Response: 1222 (21000): The used SELECT statements have a different number of columns
-Query Execution Time: 0.002466 seconds
+Query Execution Time: 0.001404 seconds
 ======================================================================
 
 ======================================================================
@@ -660,7 +660,7 @@ Test Description: Use UNION ALL on two SELECTs with incompatible column counts
 Execution Status: PASS
 Query Executed: SELECT emp_name FROM employees UNION ALL SELECT dept_name, location FROM departments;
 Database Response: 1222 (21000): The used SELECT statements have a different number of columns
-Query Execution Time: 0.002494 seconds
+Query Execution Time: 0.001403 seconds
 ======================================================================
 
 ======================================================================
@@ -670,7 +670,7 @@ Test Description: Use UNION ALL on two SELECTs with incompatible column counts
 Execution Status: PASS
 Query Executed: SELECT emp_name FROM employees UNION ALL SELECT dept_name, location FROM departments;
 Database Response: 1222 (21000): The used SELECT statements have a different number of columns
-Query Execution Time: 0.002596 seconds
+Query Execution Time: 0.001168 seconds
 ======================================================================
 
 ======================================================================
@@ -680,7 +680,7 @@ Test Description: Use UNION ALL on two SELECTs with incompatible column counts
 Execution Status: PASS
 Query Executed: SELECT emp_name FROM employees UNION ALL SELECT dept_name, location FROM departments;
 Database Response: 1222 (21000): The used SELECT statements have a different number of columns
-Query Execution Time: 0.001659 seconds
+Query Execution Time: 0.001103 seconds
 ======================================================================
 
 ======================================================================
@@ -690,7 +690,7 @@ Test Description: Use UNION ALL on two SELECTs with incompatible column counts
 Execution Status: PASS
 Query Executed: SELECT emp_name FROM employees UNION ALL SELECT dept_name, location FROM departments;
 Database Response: 1222 (21000): The used SELECT statements have a different number of columns
-Query Execution Time: 0.002120 seconds
+Query Execution Time: 0.001024 seconds
 ======================================================================
 
 ======================================================================
@@ -701,7 +701,7 @@ Execution Status: PASS
 Query Executed: SELECT emp_name FROM employees WHERE emp_id = 90791 UNION ALL SELECT emp_name FROM employees WHERE dept_id = -999999;
 Database Response: Rows returned: 0
 (No rows returned)
-Query Execution Time: 0.002354 seconds
+Query Execution Time: 0.001476 seconds
 ======================================================================
 
 ======================================================================
@@ -712,7 +712,7 @@ Execution Status: PASS
 Query Executed: SELECT emp_name FROM employees WHERE emp_id = 100791 UNION ALL SELECT emp_name FROM employees WHERE dept_id = -999999;
 Database Response: Rows returned: 0
 (No rows returned)
-Query Execution Time: 0.003233 seconds
+Query Execution Time: 0.001697 seconds
 ======================================================================
 
 ======================================================================
@@ -723,7 +723,7 @@ Execution Status: PASS
 Query Executed: SELECT emp_name FROM employees WHERE emp_id = 110791 UNION ALL SELECT emp_name FROM employees WHERE dept_id = -999999;
 Database Response: Rows returned: 0
 (No rows returned)
-Query Execution Time: 0.002222 seconds
+Query Execution Time: 0.001291 seconds
 ======================================================================
 
 ======================================================================
@@ -734,7 +734,7 @@ Execution Status: PASS
 Query Executed: SELECT emp_name FROM employees WHERE emp_id = 120791 UNION ALL SELECT emp_name FROM employees WHERE dept_id = -999999;
 Database Response: Rows returned: 0
 (No rows returned)
-Query Execution Time: 0.001861 seconds
+Query Execution Time: 0.001079 seconds
 ======================================================================
 
 ======================================================================
@@ -749,7 +749,7 @@ Database Response: Rows returned: 1
 +-----------+
 | SameNameU |
 +-----------+
-Query Execution Time: 0.002332 seconds
+Query Execution Time: 0.001182 seconds
 ======================================================================
 
 ======================================================================
@@ -766,7 +766,7 @@ Database Response: Rows returned: 3
 | 90801  | R1       | 30000.00 | 2  | 2   | 2    |
 | 90802  | R2       | 30000.00 | 3  | 2   | 2    |
 +--------+----------+----------+----+-----+------+
-Query Execution Time: 0.038576 seconds
+Query Execution Time: 0.006886 seconds
 ======================================================================
 
 ======================================================================
@@ -783,7 +783,7 @@ Database Response: Rows returned: 3
 | 100801 | R1       | 30000.00 | 2  | 2   | 2    |
 | 100802 | R2       | 30000.00 | 3  | 2   | 2    |
 +--------+----------+----------+----+-----+------+
-Query Execution Time: 0.028375 seconds
+Query Execution Time: 0.008432 seconds
 ======================================================================
 
 ======================================================================
@@ -800,7 +800,7 @@ Database Response: Rows returned: 3
 | 110801 | R1       | 30000.00 | 2  | 2   | 2    |
 | 110802 | R2       | 30000.00 | 3  | 2   | 2    |
 +--------+----------+----------+----+-----+------+
-Query Execution Time: 0.027115 seconds
+Query Execution Time: 0.006468 seconds
 ======================================================================
 
 ======================================================================
@@ -817,7 +817,7 @@ Database Response: Rows returned: 3
 | 120801 | R1       | 30000.00 | 2  | 2   | 2    |
 | 120802 | R2       | 30000.00 | 3  | 2   | 2    |
 +--------+----------+----------+----+-----+------+
-Query Execution Time: 0.051947 seconds
+Query Execution Time: 0.006951 seconds
 ======================================================================
 
 ======================================================================
@@ -834,7 +834,7 @@ Database Response: Rows returned: 3
 | 130801 | R1       | 30000.00 | 2  | 2   | 2    |
 | 130802 | R2       | 30000.00 | 3  | 2   | 2    |
 +--------+----------+----------+----+-----+------+
-Query Execution Time: 0.061152 seconds
+Query Execution Time: 0.007242 seconds
 ======================================================================
 
 ======================================================================
@@ -844,7 +844,7 @@ Test Description: Reference a CTE name in the outer query before/without definin
 Execution Status: PASS
 Query Executed: WITH dept_totals AS (SELECT dept_id, SUM(salary) AS total FROM employees GROUP BY dept_id) SELECT * FROM dept_totalz;
 Database Response: 1146 (42S02): Table 'ai_testing_group4.dept_totalz' doesn't exist
-Query Execution Time: 0.003292 seconds
+Query Execution Time: 0.001723 seconds
 ======================================================================
 
 ======================================================================
@@ -854,7 +854,7 @@ Test Description: Reference a CTE name in the outer query before/without definin
 Execution Status: PASS
 Query Executed: WITH dept_totals AS (SELECT dept_id, SUM(salary) AS total FROM employees GROUP BY dept_id) SELECT * FROM dept_totalz;
 Database Response: 1146 (42S02): Table 'ai_testing_group4.dept_totalz' doesn't exist
-Query Execution Time: 0.003312 seconds
+Query Execution Time: 0.001197 seconds
 ======================================================================
 
 ======================================================================
@@ -864,7 +864,7 @@ Test Description: Reference a CTE name in the outer query before/without definin
 Execution Status: PASS
 Query Executed: WITH dept_totals AS (SELECT dept_id, SUM(salary) AS total FROM employees GROUP BY dept_id) SELECT * FROM dept_totalz;
 Database Response: 1146 (42S02): Table 'ai_testing_group4.dept_totalz' doesn't exist
-Query Execution Time: 0.002428 seconds
+Query Execution Time: 0.001152 seconds
 ======================================================================
 
 ======================================================================
@@ -874,7 +874,7 @@ Test Description: Reference a CTE name in the outer query before/without definin
 Execution Status: PASS
 Query Executed: WITH dept_totals AS (SELECT dept_id, SUM(salary) AS total FROM employees GROUP BY dept_id) SELECT * FROM dept_totalz;
 Database Response: 1146 (42S02): Table 'ai_testing_group4.dept_totalz' doesn't exist
-Query Execution Time: 0.002446 seconds
+Query Execution Time: 0.001199 seconds
 ======================================================================
 
 ======================================================================
@@ -884,7 +884,7 @@ Test Description: Reference a CTE name in the outer query before/without definin
 Execution Status: PASS
 Query Executed: WITH dept_totals AS (SELECT dept_id, SUM(salary) AS total FROM employees GROUP BY dept_id) SELECT * FROM dept_totalz;
 Database Response: 1146 (42S02): Table 'ai_testing_group4.dept_totalz' doesn't exist
-Query Execution Time: 0.002622 seconds
+Query Execution Time: 0.001506 seconds
 ======================================================================
 
 ======================================================================
@@ -903,7 +903,7 @@ Database Response: Rows returned: 5
 | 4 |
 | 5 |
 +---+
-Query Execution Time: 0.002466 seconds
+Query Execution Time: 0.001322 seconds
 ======================================================================
 
 ======================================================================
@@ -922,7 +922,7 @@ Database Response: Rows returned: 5
 | 4 |
 | 5 |
 +---+
-Query Execution Time: 0.002085 seconds
+Query Execution Time: 0.001292 seconds
 ======================================================================
 
 ======================================================================
@@ -941,7 +941,7 @@ Database Response: Rows returned: 5
 | 4 |
 | 5 |
 +---+
-Query Execution Time: 0.001982 seconds
+Query Execution Time: 0.001391 seconds
 ======================================================================
 
 ======================================================================
@@ -960,7 +960,7 @@ Database Response: Rows returned: 5
 | 4 |
 | 5 |
 +---+
-Query Execution Time: 0.002405 seconds
+Query Execution Time: 0.002354 seconds
 ======================================================================
 
 ======================================================================
@@ -979,7 +979,7 @@ Database Response: Rows returned: 5
 | 4 |
 | 5 |
 +---+
-Query Execution Time: 0.002560 seconds
+Query Execution Time: 0.001444 seconds
 ======================================================================
 
 ======================================================================
@@ -989,7 +989,7 @@ Test Description: Create a dedicated table with a single-column PRIMARY KEY and 
 Execution Status: PASS
 Query Executed: INSERT INTO test_f081_pk VALUES (1,'ok');
 Database Response: Query executed successfully. Rows affected: 1
-Query Execution Time: 0.116908 seconds
+Query Execution Time: 0.022244 seconds
 ======================================================================
 
 ======================================================================
@@ -999,7 +999,7 @@ Test Description: Create a dedicated table with a single-column PRIMARY KEY and 
 Execution Status: PASS
 Query Executed: INSERT INTO test_f081_pk_v1 VALUES (1,'ok');
 Database Response: Query executed successfully. Rows affected: 1
-Query Execution Time: 0.132420 seconds
+Query Execution Time: 0.022576 seconds
 ======================================================================
 
 ======================================================================
@@ -1009,7 +1009,7 @@ Test Description: Create a dedicated table with a single-column PRIMARY KEY and 
 Execution Status: PASS
 Query Executed: INSERT INTO test_f081_pk_v2 VALUES (1,'ok');
 Database Response: Query executed successfully. Rows affected: 1
-Query Execution Time: 0.162206 seconds
+Query Execution Time: 0.025474 seconds
 ======================================================================
 
 ======================================================================
@@ -1019,7 +1019,7 @@ Test Description: Create a dedicated table with a single-column PRIMARY KEY and 
 Execution Status: PASS
 Query Executed: INSERT INTO test_f081_pk_v3 VALUES (1,'ok');
 Database Response: Query executed successfully. Rows affected: 1
-Query Execution Time: 0.213682 seconds
+Query Execution Time: 0.031424 seconds
 ======================================================================
 
 ======================================================================
@@ -1029,7 +1029,7 @@ Test Description: Create a dedicated table with a single-column PRIMARY KEY and 
 Execution Status: PASS
 Query Executed: INSERT INTO test_f081_pk_v4 VALUES (1,'ok');
 Database Response: Query executed successfully. Rows affected: 1
-Query Execution Time: 0.183753 seconds
+Query Execution Time: 0.025915 seconds
 ======================================================================
 
 ======================================================================
@@ -1039,7 +1039,7 @@ Test Description: Insert a duplicate value into the PRIMARY KEY column
 Execution Status: PASS
 Query Executed: INSERT INTO test_f081_dup VALUES (1,'dup');
 Database Response: 1062 (23000): Duplicate entry '1' for key 'test_f081_dup.PRIMARY'
-Query Execution Time: 0.182739 seconds
+Query Execution Time: 0.036585 seconds
 ======================================================================
 
 ======================================================================
@@ -1049,7 +1049,7 @@ Test Description: Insert a duplicate value into the PRIMARY KEY column
 Execution Status: PASS
 Query Executed: INSERT INTO test_f081_dup_v1 VALUES (1,'dup');
 Database Response: 1062 (23000): Duplicate entry '1' for key 'test_f081_dup_v1.PRIMARY'
-Query Execution Time: 0.124813 seconds
+Query Execution Time: 0.023839 seconds
 ======================================================================
 
 ======================================================================
@@ -1059,7 +1059,7 @@ Test Description: Insert a duplicate value into the PRIMARY KEY column
 Execution Status: PASS
 Query Executed: INSERT INTO test_f081_dup_v2 VALUES (1,'dup');
 Database Response: 1062 (23000): Duplicate entry '1' for key 'test_f081_dup_v2.PRIMARY'
-Query Execution Time: 0.174740 seconds
+Query Execution Time: 0.030741 seconds
 ======================================================================
 
 ======================================================================
@@ -1069,7 +1069,7 @@ Test Description: Insert a duplicate value into the PRIMARY KEY column
 Execution Status: PASS
 Query Executed: INSERT INTO test_f081_dup_v3 VALUES (1,'dup');
 Database Response: 1062 (23000): Duplicate entry '1' for key 'test_f081_dup_v3.PRIMARY'
-Query Execution Time: 0.161255 seconds
+Query Execution Time: 0.025966 seconds
 ======================================================================
 
 ======================================================================
@@ -1079,7 +1079,7 @@ Test Description: Insert a duplicate value into the PRIMARY KEY column
 Execution Status: PASS
 Query Executed: INSERT INTO test_f081_dup_v4 VALUES (1,'dup');
 Database Response: 1062 (23000): Duplicate entry '1' for key 'test_f081_dup_v4.PRIMARY'
-Query Execution Time: 0.160703 seconds
+Query Execution Time: 0.024535 seconds
 ======================================================================
 
 ======================================================================
@@ -1089,7 +1089,7 @@ Test Description: Insert NULL into a PRIMARY KEY column
 Execution Status: PASS
 Query Executed: INSERT INTO test_f081_null (id, val) VALUES (NULL,'nullpk');
 Database Response: 1048 (23000): Column 'id' cannot be null
-Query Execution Time: 0.149031 seconds
+Query Execution Time: 0.023161 seconds
 ======================================================================
 
 ======================================================================
@@ -1099,7 +1099,7 @@ Test Description: Insert NULL into a PRIMARY KEY column
 Execution Status: PASS
 Query Executed: INSERT INTO test_f081_null_v1 (id, val) VALUES (NULL,'nullpk');
 Database Response: 1048 (23000): Column 'id' cannot be null
-Query Execution Time: 0.184905 seconds
+Query Execution Time: 0.023777 seconds
 ======================================================================
 
 ======================================================================
@@ -1109,7 +1109,7 @@ Test Description: Insert NULL into a PRIMARY KEY column
 Execution Status: PASS
 Query Executed: INSERT INTO test_f081_null_v2 (id, val) VALUES (NULL,'nullpk');
 Database Response: 1048 (23000): Column 'id' cannot be null
-Query Execution Time: 0.129784 seconds
+Query Execution Time: 0.033716 seconds
 ======================================================================
 
 ======================================================================
@@ -1119,7 +1119,7 @@ Test Description: Insert NULL into a PRIMARY KEY column
 Execution Status: PASS
 Query Executed: INSERT INTO test_f081_null_v3 (id, val) VALUES (NULL,'nullpk');
 Database Response: 1048 (23000): Column 'id' cannot be null
-Query Execution Time: 0.132429 seconds
+Query Execution Time: 0.021953 seconds
 ======================================================================
 
 ======================================================================
@@ -1129,7 +1129,7 @@ Test Description: Insert NULL into a PRIMARY KEY column
 Execution Status: PASS
 Query Executed: INSERT INTO test_f081_null_v4 (id, val) VALUES (NULL,'nullpk');
 Database Response: 1048 (23000): Column 'id' cannot be null
-Query Execution Time: 0.184346 seconds
+Query Execution Time: 0.042984 seconds
 ======================================================================
 
 ======================================================================
@@ -1139,7 +1139,7 @@ Test Description: Insert a valid row into employee_projects using its composite 
 Execution Status: PASS
 Query Executed: INSERT INTO employee_projects (emp_id, project_id, role) VALUES (90821, 9082, 'Developer');
 Database Response: Query executed successfully. Rows affected: 1
-Query Execution Time: 0.044007 seconds
+Query Execution Time: 0.006451 seconds
 ======================================================================
 
 ======================================================================
@@ -1149,7 +1149,7 @@ Test Description: Insert a valid row into employee_projects using its composite 
 Execution Status: PASS
 Query Executed: INSERT INTO employee_projects (emp_id, project_id, role) VALUES (100821, 10082, 'Developer');
 Database Response: Query executed successfully. Rows affected: 1
-Query Execution Time: 0.028578 seconds
+Query Execution Time: 0.007528 seconds
 ======================================================================
 
 ======================================================================
@@ -1159,7 +1159,7 @@ Test Description: Insert a valid row into employee_projects using its composite 
 Execution Status: PASS
 Query Executed: INSERT INTO employee_projects (emp_id, project_id, role) VALUES (110821, 11082, 'Developer');
 Database Response: Query executed successfully. Rows affected: 1
-Query Execution Time: 0.049104 seconds
+Query Execution Time: 0.008223 seconds
 ======================================================================
 
 ======================================================================
@@ -1169,7 +1169,7 @@ Test Description: Insert a valid row into employee_projects using its composite 
 Execution Status: PASS
 Query Executed: INSERT INTO employee_projects (emp_id, project_id, role) VALUES (120821, 12082, 'Developer');
 Database Response: Query executed successfully. Rows affected: 1
-Query Execution Time: 0.038338 seconds
+Query Execution Time: 0.007965 seconds
 ======================================================================
 
 ======================================================================
@@ -1179,7 +1179,7 @@ Test Description: Insert a valid row into employee_projects using its composite 
 Execution Status: PASS
 Query Executed: INSERT INTO employee_projects (emp_id, project_id, role) VALUES (130821, 13082, 'Developer');
 Database Response: Query executed successfully. Rows affected: 1
-Query Execution Time: 0.070999 seconds
+Query Execution Time: 0.008474 seconds
 ======================================================================
 
 ======================================================================
@@ -1189,7 +1189,7 @@ Test Description: Insert a row that duplicates an existing composite primary key
 Execution Status: PASS
 Query Executed: INSERT INTO employee_projects (emp_id, project_id, role) VALUES (90822, 9182, 'Tester');
 Database Response: 1062 (23000): Duplicate entry '90822-9182' for key 'employee_projects.PRIMARY'
-Query Execution Time: 0.026458 seconds
+Query Execution Time: 0.005215 seconds
 ======================================================================
 
 ======================================================================
@@ -1199,7 +1199,7 @@ Test Description: Insert a row that duplicates an existing composite primary key
 Execution Status: PASS
 Query Executed: INSERT INTO employee_projects (emp_id, project_id, role) VALUES (100822, 9182, 'Tester');
 Database Response: 1062 (23000): Duplicate entry '100822-9182' for key 'employee_projects.PRIMARY'
-Query Execution Time: 0.018244 seconds
+Query Execution Time: 0.007383 seconds
 ======================================================================
 
 ======================================================================
@@ -1209,7 +1209,7 @@ Test Description: Insert a row that duplicates an existing composite primary key
 Execution Status: PASS
 Query Executed: INSERT INTO employee_projects (emp_id, project_id, role) VALUES (110822, 9182, 'Tester');
 Database Response: 1062 (23000): Duplicate entry '110822-9182' for key 'employee_projects.PRIMARY'
-Query Execution Time: 0.025620 seconds
+Query Execution Time: 0.006263 seconds
 ======================================================================
 
 ======================================================================
@@ -1219,7 +1219,7 @@ Test Description: Insert a row that duplicates an existing composite primary key
 Execution Status: PASS
 Query Executed: INSERT INTO employee_projects (emp_id, project_id, role) VALUES (120822, 9182, 'Tester');
 Database Response: 1062 (23000): Duplicate entry '120822-9182' for key 'employee_projects.PRIMARY'
-Query Execution Time: 0.026644 seconds
+Query Execution Time: 0.006072 seconds
 ======================================================================
 
 ======================================================================
@@ -1229,7 +1229,7 @@ Test Description: Insert a row that duplicates an existing composite primary key
 Execution Status: PASS
 Query Executed: INSERT INTO employee_projects (emp_id, project_id, role) VALUES (130822, 9182, 'Tester');
 Database Response: 1062 (23000): Duplicate entry '130822-9182' for key 'employee_projects.PRIMARY'
-Query Execution Time: 0.015421 seconds
+Query Execution Time: 0.005632 seconds
 ======================================================================
 
 ======================================================================
@@ -1239,7 +1239,7 @@ Test Description: Insert a row reusing one half of the composite key with a diff
 Execution Status: PASS
 Query Executed: INSERT INTO employee_projects (emp_id, project_id, role) VALUES (90823, 9383, 'Reviewer');
 Database Response: Query executed successfully. Rows affected: 1
-Query Execution Time: 0.053097 seconds
+Query Execution Time: 0.008361 seconds
 ======================================================================
 
 ======================================================================
@@ -1249,7 +1249,7 @@ Test Description: Insert a row reusing one half of the composite key with a diff
 Execution Status: PASS
 Query Executed: INSERT INTO employee_projects (emp_id, project_id, role) VALUES (100823, 9383, 'Reviewer');
 Database Response: Query executed successfully. Rows affected: 1
-Query Execution Time: 0.043831 seconds
+Query Execution Time: 0.008054 seconds
 ======================================================================
 
 ======================================================================
@@ -1259,7 +1259,7 @@ Test Description: Insert a row reusing one half of the composite key with a diff
 Execution Status: PASS
 Query Executed: INSERT INTO employee_projects (emp_id, project_id, role) VALUES (110823, 9383, 'Reviewer');
 Database Response: Query executed successfully. Rows affected: 1
-Query Execution Time: 0.047121 seconds
+Query Execution Time: 0.009667 seconds
 ======================================================================
 
 ======================================================================
@@ -1269,7 +1269,7 @@ Test Description: Insert a row reusing one half of the composite key with a diff
 Execution Status: PASS
 Query Executed: INSERT INTO employee_projects (emp_id, project_id, role) VALUES (120823, 9383, 'Reviewer');
 Database Response: Query executed successfully. Rows affected: 1
-Query Execution Time: 0.089552 seconds
+Query Execution Time: 0.008488 seconds
 ======================================================================
 
 ======================================================================
@@ -1279,7 +1279,7 @@ Test Description: Insert a row reusing one half of the composite key with a diff
 Execution Status: PASS
 Query Executed: INSERT INTO employee_projects (emp_id, project_id, role) VALUES (130823, 9383, 'Reviewer');
 Database Response: Query executed successfully. Rows affected: 1
-Query Execution Time: 0.045032 seconds
+Query Execution Time: 0.008131 seconds
 ======================================================================
 
 ======================================================================
@@ -1289,7 +1289,7 @@ Test Description: Create a dedicated child table with a valid FOREIGN KEY refere
 Execution Status: PASS
 Query Executed: INSERT INTO test_f083_child VALUES (1,9083);
 Database Response: Query executed successfully. Rows affected: 1
-Query Execution Time: 0.194651 seconds
+Query Execution Time: 0.051289 seconds
 ======================================================================
 
 ======================================================================
@@ -1299,7 +1299,7 @@ Test Description: Create a dedicated child table with a valid FOREIGN KEY refere
 Execution Status: PASS
 Query Executed: INSERT INTO test_f083_child_v1 VALUES (1,10083);
 Database Response: Query executed successfully. Rows affected: 1
-Query Execution Time: 0.245561 seconds
+Query Execution Time: 0.040983 seconds
 ======================================================================
 
 ======================================================================
@@ -1309,7 +1309,7 @@ Test Description: Create a dedicated child table with a valid FOREIGN KEY refere
 Execution Status: PASS
 Query Executed: INSERT INTO test_f083_child_v2 VALUES (1,11083);
 Database Response: Query executed successfully. Rows affected: 1
-Query Execution Time: 0.189092 seconds
+Query Execution Time: 0.043932 seconds
 ======================================================================
 
 ======================================================================
@@ -1319,7 +1319,7 @@ Test Description: Create a dedicated child table with a valid FOREIGN KEY refere
 Execution Status: PASS
 Query Executed: INSERT INTO test_f083_child_v3 VALUES (1,12083);
 Database Response: Query executed successfully. Rows affected: 1
-Query Execution Time: 0.226946 seconds
+Query Execution Time: 0.040389 seconds
 ======================================================================
 
 ======================================================================
@@ -1329,7 +1329,7 @@ Test Description: Create a dedicated child table with a valid FOREIGN KEY refere
 Execution Status: PASS
 Query Executed: INSERT INTO test_f083_child_v4 VALUES (1,13083);
 Database Response: Query executed successfully. Rows affected: 1
-Query Execution Time: 0.319245 seconds
+Query Execution Time: 0.066124 seconds
 ======================================================================
 
 ======================================================================
@@ -1339,7 +1339,7 @@ Test Description: Attempt to create a FOREIGN KEY referencing a non-existing par
 Execution Status: PASS
 Query Executed: CREATE TABLE test_f083_bad (id INT PRIMARY KEY, ref_id INT, FOREIGN KEY (ref_id) REFERENCES ghost_parent_f083(id));
 Database Response: 1824 (HY000): Failed to open the referenced table 'ghost_parent_f083'
-Query Execution Time: 0.044721 seconds
+Query Execution Time: 0.007034 seconds
 ======================================================================
 
 ======================================================================
@@ -1349,7 +1349,7 @@ Test Description: Attempt to create a FOREIGN KEY referencing a non-existing par
 Execution Status: PASS
 Query Executed: CREATE TABLE test_f083_bad_v1 (id INT PRIMARY KEY, ref_id INT, FOREIGN KEY (ref_id) REFERENCES ghost_parent_f083(id));
 Database Response: 1824 (HY000): Failed to open the referenced table 'ghost_parent_f083'
-Query Execution Time: 0.043118 seconds
+Query Execution Time: 0.007297 seconds
 ======================================================================
 
 ======================================================================
@@ -1359,7 +1359,7 @@ Test Description: Attempt to create a FOREIGN KEY referencing a non-existing par
 Execution Status: PASS
 Query Executed: CREATE TABLE test_f083_bad_v2 (id INT PRIMARY KEY, ref_id INT, FOREIGN KEY (ref_id) REFERENCES ghost_parent_f083(id));
 Database Response: 1824 (HY000): Failed to open the referenced table 'ghost_parent_f083'
-Query Execution Time: 0.036367 seconds
+Query Execution Time: 0.007477 seconds
 ======================================================================
 
 ======================================================================
@@ -1369,7 +1369,7 @@ Test Description: Attempt to create a FOREIGN KEY referencing a non-existing par
 Execution Status: PASS
 Query Executed: CREATE TABLE test_f083_bad_v3 (id INT PRIMARY KEY, ref_id INT, FOREIGN KEY (ref_id) REFERENCES ghost_parent_f083(id));
 Database Response: 1824 (HY000): Failed to open the referenced table 'ghost_parent_f083'
-Query Execution Time: 0.034834 seconds
+Query Execution Time: 0.006778 seconds
 ======================================================================
 
 ======================================================================
@@ -1379,7 +1379,7 @@ Test Description: Attempt to create a FOREIGN KEY referencing a non-existing par
 Execution Status: PASS
 Query Executed: CREATE TABLE test_f083_bad_v4 (id INT PRIMARY KEY, ref_id INT, FOREIGN KEY (ref_id) REFERENCES ghost_parent_f083(id));
 Database Response: 1824 (HY000): Failed to open the referenced table 'ghost_parent_f083'
-Query Execution Time: 0.038842 seconds
+Query Execution Time: 0.005437 seconds
 ======================================================================
 
 ======================================================================
@@ -1389,7 +1389,7 @@ Test Description: Insert into the FK child table using a value that does not exi
 Execution Status: PASS
 Query Executed: INSERT INTO test_f083_child2 VALUES (1,88888888);
 Database Response: 1452 (23000): Cannot add or update a child row: a foreign key constraint fails (`ai_testing_group4`.`test_f083_child2`, CONSTRAINT `test_f083_child2_ibfk_1` FOREIGN KEY (`dept_id`) REFERENCES `departments` (`dept_id`))
-Query Execution Time: 0.257969 seconds
+Query Execution Time: 0.035680 seconds
 ======================================================================
 
 ======================================================================
@@ -1399,7 +1399,7 @@ Test Description: Insert into the FK child table using a value that does not exi
 Execution Status: PASS
 Query Executed: INSERT INTO test_f083_child2_v1 VALUES (1,88888888);
 Database Response: 1452 (23000): Cannot add or update a child row: a foreign key constraint fails (`ai_testing_group4`.`test_f083_child2_v1`, CONSTRAINT `test_f083_child2_v1_ibfk_1` FOREIGN KEY (`dept_id`) REFERENCES `departments` (`dept_id`))
-Query Execution Time: 0.262132 seconds
+Query Execution Time: 0.056676 seconds
 ======================================================================
 
 ======================================================================
@@ -1409,7 +1409,7 @@ Test Description: Insert into the FK child table using a value that does not exi
 Execution Status: PASS
 Query Executed: INSERT INTO test_f083_child2_v2 VALUES (1,88888888);
 Database Response: 1452 (23000): Cannot add or update a child row: a foreign key constraint fails (`ai_testing_group4`.`test_f083_child2_v2`, CONSTRAINT `test_f083_child2_v2_ibfk_1` FOREIGN KEY (`dept_id`) REFERENCES `departments` (`dept_id`))
-Query Execution Time: 0.281553 seconds
+Query Execution Time: 0.056555 seconds
 ======================================================================
 
 ======================================================================
@@ -1419,7 +1419,7 @@ Test Description: Insert into the FK child table using a value that does not exi
 Execution Status: PASS
 Query Executed: INSERT INTO test_f083_child2_v3 VALUES (1,88888888);
 Database Response: 1452 (23000): Cannot add or update a child row: a foreign key constraint fails (`ai_testing_group4`.`test_f083_child2_v3`, CONSTRAINT `test_f083_child2_v3_ibfk_1` FOREIGN KEY (`dept_id`) REFERENCES `departments` (`dept_id`))
-Query Execution Time: 0.193828 seconds
+Query Execution Time: 0.052528 seconds
 ======================================================================
 
 ======================================================================
@@ -1429,7 +1429,7 @@ Test Description: Insert into the FK child table using a value that does not exi
 Execution Status: PASS
 Query Executed: INSERT INTO test_f083_child2_v4 VALUES (1,88888888);
 Database Response: 1452 (23000): Cannot add or update a child row: a foreign key constraint fails (`ai_testing_group4`.`test_f083_child2_v4`, CONSTRAINT `test_f083_child2_v4_ibfk_1` FOREIGN KEY (`dept_id`) REFERENCES `departments` (`dept_id`))
-Query Execution Time: 0.232298 seconds
+Query Execution Time: 0.043230 seconds
 ======================================================================
 
 ======================================================================
@@ -1439,7 +1439,7 @@ Test Description: Create a dedicated table with a UNIQUE constraint and insert a
 Execution Status: PASS
 Query Executed: INSERT INTO test_f084_uniq VALUES (1,'A100');
 Database Response: Query executed successfully. Rows affected: 1
-Query Execution Time: 0.247444 seconds
+Query Execution Time: 0.054061 seconds
 ======================================================================
 
 ======================================================================
@@ -1449,7 +1449,7 @@ Test Description: Create a dedicated table with a UNIQUE constraint and insert a
 Execution Status: PASS
 Query Executed: INSERT INTO test_f084_uniq_v1 VALUES (1,'A100');
 Database Response: Query executed successfully. Rows affected: 1
-Query Execution Time: 0.315570 seconds
+Query Execution Time: 0.052938 seconds
 ======================================================================
 
 ======================================================================
@@ -1459,7 +1459,7 @@ Test Description: Create a dedicated table with a UNIQUE constraint and insert a
 Execution Status: PASS
 Query Executed: INSERT INTO test_f084_uniq_v2 VALUES (1,'A100');
 Database Response: Query executed successfully. Rows affected: 1
-Query Execution Time: 0.225667 seconds
+Query Execution Time: 0.038650 seconds
 ======================================================================
 
 ======================================================================
@@ -1469,7 +1469,7 @@ Test Description: Create a dedicated table with a UNIQUE constraint and insert a
 Execution Status: PASS
 Query Executed: INSERT INTO test_f084_uniq_v3 VALUES (1,'A100');
 Database Response: Query executed successfully. Rows affected: 1
-Query Execution Time: 0.374132 seconds
+Query Execution Time: 0.040352 seconds
 ======================================================================
 
 ======================================================================
@@ -1479,7 +1479,7 @@ Test Description: Create a dedicated table with a UNIQUE constraint and insert a
 Execution Status: PASS
 Query Executed: INSERT INTO test_f084_uniq_v4 VALUES (1,'A100');
 Database Response: Query executed successfully. Rows affected: 1
-Query Execution Time: 0.477512 seconds
+Query Execution Time: 0.038827 seconds
 ======================================================================
 
 ======================================================================
@@ -1489,7 +1489,7 @@ Test Description: Insert a row that duplicates an existing UNIQUE value
 Execution Status: PASS
 Query Executed: INSERT INTO test_f084_dup VALUES (2,'A100');
 Database Response: 1062 (23000): Duplicate entry 'A100' for key 'test_f084_dup.code'
-Query Execution Time: 0.241612 seconds
+Query Execution Time: 0.042695 seconds
 ======================================================================
 
 ======================================================================
@@ -1499,7 +1499,7 @@ Test Description: Insert a row that duplicates an existing UNIQUE value
 Execution Status: PASS
 Query Executed: INSERT INTO test_f084_dup_v1 VALUES (2,'A100');
 Database Response: 1062 (23000): Duplicate entry 'A100' for key 'test_f084_dup_v1.code'
-Query Execution Time: 0.283975 seconds
+Query Execution Time: 0.043566 seconds
 ======================================================================
 
 ======================================================================
@@ -1509,7 +1509,7 @@ Test Description: Insert a row that duplicates an existing UNIQUE value
 Execution Status: PASS
 Query Executed: INSERT INTO test_f084_dup_v2 VALUES (2,'A100');
 Database Response: 1062 (23000): Duplicate entry 'A100' for key 'test_f084_dup_v2.code'
-Query Execution Time: 0.375601 seconds
+Query Execution Time: 0.051262 seconds
 ======================================================================
 
 ======================================================================
@@ -1519,7 +1519,7 @@ Test Description: Insert a row that duplicates an existing UNIQUE value
 Execution Status: PASS
 Query Executed: INSERT INTO test_f084_dup_v3 VALUES (2,'A100');
 Database Response: 1062 (23000): Duplicate entry 'A100' for key 'test_f084_dup_v3.code'
-Query Execution Time: 0.223034 seconds
+Query Execution Time: 0.047377 seconds
 ======================================================================
 
 ======================================================================
@@ -1529,7 +1529,7 @@ Test Description: Insert a row that duplicates an existing UNIQUE value
 Execution Status: PASS
 Query Executed: INSERT INTO test_f084_dup_v4 VALUES (2,'A100');
 Database Response: 1062 (23000): Duplicate entry 'A100' for key 'test_f084_dup_v4.code'
-Query Execution Time: 0.312329 seconds
+Query Execution Time: 0.048982 seconds
 ======================================================================
 
 ======================================================================
@@ -1539,7 +1539,7 @@ Test Description: Insert two separate rows each with NULL in a UNIQUE column (UN
 Execution Status: PASS
 Query Executed: INSERT INTO test_f084_null VALUES (1,NULL),(2,NULL);
 Database Response: Query executed successfully. Rows affected: 2
-Query Execution Time: 0.202784 seconds
+Query Execution Time: 0.033381 seconds
 ======================================================================
 
 ======================================================================
@@ -1549,7 +1549,7 @@ Test Description: Insert two separate rows each with NULL in a UNIQUE column (UN
 Execution Status: PASS
 Query Executed: INSERT INTO test_f084_null_v1 VALUES (1,NULL),(2,NULL);
 Database Response: Query executed successfully. Rows affected: 2
-Query Execution Time: 0.254374 seconds
+Query Execution Time: 0.035604 seconds
 ======================================================================
 
 ======================================================================
@@ -1559,7 +1559,7 @@ Test Description: Insert two separate rows each with NULL in a UNIQUE column (UN
 Execution Status: PASS
 Query Executed: INSERT INTO test_f084_null_v2 VALUES (1,NULL),(2,NULL);
 Database Response: Query executed successfully. Rows affected: 2
-Query Execution Time: 0.167298 seconds
+Query Execution Time: 0.045108 seconds
 ======================================================================
 
 ======================================================================
@@ -1569,7 +1569,7 @@ Test Description: Insert two separate rows each with NULL in a UNIQUE column (UN
 Execution Status: PASS
 Query Executed: INSERT INTO test_f084_null_v3 VALUES (1,NULL),(2,NULL);
 Database Response: Query executed successfully. Rows affected: 2
-Query Execution Time: 0.196453 seconds
+Query Execution Time: 0.030093 seconds
 ======================================================================
 
 ======================================================================
@@ -1579,7 +1579,7 @@ Test Description: Insert two separate rows each with NULL in a UNIQUE column (UN
 Execution Status: PASS
 Query Executed: INSERT INTO test_f084_null_v4 VALUES (1,NULL),(2,NULL);
 Database Response: Query executed successfully. Rows affected: 2
-Query Execution Time: 0.187101 seconds
+Query Execution Time: 0.049627 seconds
 ======================================================================
 
 ======================================================================
@@ -1589,7 +1589,7 @@ Test Description: Insert a row supplying a value for a NOT NULL column
 Execution Status: PASS
 Query Executed: INSERT INTO test_f085_nn VALUES (1,'present');
 Database Response: Query executed successfully. Rows affected: 1
-Query Execution Time: 0.157072 seconds
+Query Execution Time: 0.033393 seconds
 ======================================================================
 
 ======================================================================
@@ -1599,7 +1599,7 @@ Test Description: Insert a row supplying a value for a NOT NULL column
 Execution Status: PASS
 Query Executed: INSERT INTO test_f085_nn_v1 VALUES (1,'present');
 Database Response: Query executed successfully. Rows affected: 1
-Query Execution Time: 0.149561 seconds
+Query Execution Time: 0.020741 seconds
 ======================================================================
 
 ======================================================================
@@ -1609,7 +1609,7 @@ Test Description: Insert a row supplying a value for a NOT NULL column
 Execution Status: PASS
 Query Executed: INSERT INTO test_f085_nn_v2 VALUES (1,'present');
 Database Response: Query executed successfully. Rows affected: 1
-Query Execution Time: 0.208676 seconds
+Query Execution Time: 0.022345 seconds
 ======================================================================
 
 ======================================================================
@@ -1619,7 +1619,7 @@ Test Description: Insert a row supplying a value for a NOT NULL column
 Execution Status: PASS
 Query Executed: INSERT INTO test_f085_nn_v3 VALUES (1,'present');
 Database Response: Query executed successfully. Rows affected: 1
-Query Execution Time: 0.160711 seconds
+Query Execution Time: 0.032272 seconds
 ======================================================================
 
 ======================================================================
@@ -1629,7 +1629,7 @@ Test Description: Insert a row supplying a value for a NOT NULL column
 Execution Status: PASS
 Query Executed: INSERT INTO test_f085_nn_v4 VALUES (1,'present');
 Database Response: Query executed successfully. Rows affected: 1
-Query Execution Time: 0.192641 seconds
+Query Execution Time: 0.020101 seconds
 ======================================================================
 
 ======================================================================
@@ -1639,7 +1639,7 @@ Test Description: Insert NULL directly into a NOT NULL column
 Execution Status: PASS
 Query Executed: INSERT INTO test_f085_null VALUES (1,NULL);
 Database Response: 1048 (23000): Column 'req_field' cannot be null
-Query Execution Time: 0.133911 seconds
+Query Execution Time: 0.028134 seconds
 ======================================================================
 
 ======================================================================
@@ -1649,7 +1649,7 @@ Test Description: Insert NULL directly into a NOT NULL column
 Execution Status: PASS
 Query Executed: INSERT INTO test_f085_null_v1 VALUES (1,NULL);
 Database Response: 1048 (23000): Column 'req_field' cannot be null
-Query Execution Time: 0.110414 seconds
+Query Execution Time: 0.040169 seconds
 ======================================================================
 
 ======================================================================
@@ -1659,7 +1659,7 @@ Test Description: Insert NULL directly into a NOT NULL column
 Execution Status: PASS
 Query Executed: INSERT INTO test_f085_null_v2 VALUES (1,NULL);
 Database Response: 1048 (23000): Column 'req_field' cannot be null
-Query Execution Time: 0.098409 seconds
+Query Execution Time: 0.019731 seconds
 ======================================================================
 
 ======================================================================
@@ -1669,7 +1669,7 @@ Test Description: Insert NULL directly into a NOT NULL column
 Execution Status: PASS
 Query Executed: INSERT INTO test_f085_null_v3 VALUES (1,NULL);
 Database Response: 1048 (23000): Column 'req_field' cannot be null
-Query Execution Time: 0.210194 seconds
+Query Execution Time: 0.021575 seconds
 ======================================================================
 
 ======================================================================
@@ -1679,7 +1679,7 @@ Test Description: Insert NULL directly into a NOT NULL column
 Execution Status: PASS
 Query Executed: INSERT INTO test_f085_null_v4 VALUES (1,NULL);
 Database Response: 1048 (23000): Column 'req_field' cannot be null
-Query Execution Time: 0.202382 seconds
+Query Execution Time: 0.034499 seconds
 ======================================================================
 
 ======================================================================
@@ -1689,7 +1689,7 @@ Test Description: Omit a NOT NULL column entirely from the insert column list wh
 Execution Status: PASS
 Query Executed: INSERT INTO test_f085_omit (id) VALUES (1);
 Database Response: 1364 (HY000): Field 'req_field' doesn't have a default value
-Query Execution Time: 0.141409 seconds
+Query Execution Time: 0.031459 seconds
 ======================================================================
 
 ======================================================================
@@ -1699,7 +1699,7 @@ Test Description: Omit a NOT NULL column entirely from the insert column list wh
 Execution Status: PASS
 Query Executed: INSERT INTO test_f085_omit_v1 (id) VALUES (1);
 Database Response: 1364 (HY000): Field 'req_field' doesn't have a default value
-Query Execution Time: 0.115111 seconds
+Query Execution Time: 0.023302 seconds
 ======================================================================
 
 ======================================================================
@@ -1709,7 +1709,7 @@ Test Description: Omit a NOT NULL column entirely from the insert column list wh
 Execution Status: PASS
 Query Executed: INSERT INTO test_f085_omit_v2 (id) VALUES (1);
 Database Response: 1364 (HY000): Field 'req_field' doesn't have a default value
-Query Execution Time: 0.145894 seconds
+Query Execution Time: 0.027235 seconds
 ======================================================================
 
 ======================================================================
@@ -1719,7 +1719,7 @@ Test Description: Omit a NOT NULL column entirely from the insert column list wh
 Execution Status: PASS
 Query Executed: INSERT INTO test_f085_omit_v3 (id) VALUES (1);
 Database Response: 1364 (HY000): Field 'req_field' doesn't have a default value
-Query Execution Time: 0.117311 seconds
+Query Execution Time: 0.021212 seconds
 ======================================================================
 
 ======================================================================
@@ -1729,7 +1729,7 @@ Test Description: Omit a NOT NULL column entirely from the insert column list wh
 Execution Status: PASS
 Query Executed: INSERT INTO test_f085_omit_v4 (id) VALUES (1);
 Database Response: 1364 (HY000): Field 'req_field' doesn't have a default value
-Query Execution Time: 0.184154 seconds
+Query Execution Time: 0.026101 seconds
 ======================================================================
 
 ======================================================================
@@ -1739,7 +1739,7 @@ Test Description: Insert a row omitting a column that has a DEFAULT value, letti
 Execution Status: PASS
 Query Executed: INSERT INTO test_f086_def (id) VALUES (1);
 Database Response: Query executed successfully. Rows affected: 1
-Query Execution Time: 0.226240 seconds
+Query Execution Time: 0.020595 seconds
 ======================================================================
 
 ======================================================================
@@ -1749,7 +1749,7 @@ Test Description: Insert a row omitting a column that has a DEFAULT value, letti
 Execution Status: PASS
 Query Executed: INSERT INTO test_f086_def_v1 (id) VALUES (1);
 Database Response: Query executed successfully. Rows affected: 1
-Query Execution Time: 0.175764 seconds
+Query Execution Time: 0.024423 seconds
 ======================================================================
 
 ======================================================================
@@ -1759,7 +1759,7 @@ Test Description: Insert a row omitting a column that has a DEFAULT value, letti
 Execution Status: PASS
 Query Executed: INSERT INTO test_f086_def_v2 (id) VALUES (1);
 Database Response: Query executed successfully. Rows affected: 1
-Query Execution Time: 0.139388 seconds
+Query Execution Time: 0.031379 seconds
 ======================================================================
 
 ======================================================================
@@ -1769,7 +1769,7 @@ Test Description: Insert a row omitting a column that has a DEFAULT value, letti
 Execution Status: PASS
 Query Executed: INSERT INTO test_f086_def_v3 (id) VALUES (1);
 Database Response: Query executed successfully. Rows affected: 1
-Query Execution Time: 0.218015 seconds
+Query Execution Time: 0.022707 seconds
 ======================================================================
 
 ======================================================================
@@ -1779,7 +1779,7 @@ Test Description: Insert a row omitting a column that has a DEFAULT value, letti
 Execution Status: PASS
 Query Executed: INSERT INTO test_f086_def_v4 (id) VALUES (1);
 Database Response: Query executed successfully. Rows affected: 1
-Query Execution Time: 0.165421 seconds
+Query Execution Time: 0.024248 seconds
 ======================================================================
 
 ======================================================================
@@ -1789,7 +1789,7 @@ Test Description: Set a table's DEFAULT clause to a value incompatible with the 
 Execution Status: PASS
 Query Executed: CREATE TABLE test_f086_bad (id INT PRIMARY KEY, qty INT DEFAULT 'many');
 Database Response: 1067 (42000): Invalid default value for 'qty'
-Query Execution Time: 0.042549 seconds
+Query Execution Time: 0.003583 seconds
 ======================================================================
 
 ======================================================================
@@ -1799,7 +1799,7 @@ Test Description: Set a table's DEFAULT clause to a value incompatible with the 
 Execution Status: PASS
 Query Executed: CREATE TABLE test_f086_bad_v1 (id INT PRIMARY KEY, qty INT DEFAULT 'many');
 Database Response: 1067 (42000): Invalid default value for 'qty'
-Query Execution Time: 0.035814 seconds
+Query Execution Time: 0.004017 seconds
 ======================================================================
 
 ======================================================================
@@ -1809,7 +1809,7 @@ Test Description: Set a table's DEFAULT clause to a value incompatible with the 
 Execution Status: PASS
 Query Executed: CREATE TABLE test_f086_bad_v2 (id INT PRIMARY KEY, qty INT DEFAULT 'many');
 Database Response: 1067 (42000): Invalid default value for 'qty'
-Query Execution Time: 0.034135 seconds
+Query Execution Time: 0.004345 seconds
 ======================================================================
 
 ======================================================================
@@ -1819,7 +1819,7 @@ Test Description: Set a table's DEFAULT clause to a value incompatible with the 
 Execution Status: PASS
 Query Executed: CREATE TABLE test_f086_bad_v3 (id INT PRIMARY KEY, qty INT DEFAULT 'many');
 Database Response: 1067 (42000): Invalid default value for 'qty'
-Query Execution Time: 0.016502 seconds
+Query Execution Time: 0.004506 seconds
 ======================================================================
 
 ======================================================================
@@ -1829,7 +1829,7 @@ Test Description: Set a table's DEFAULT clause to a value incompatible with the 
 Execution Status: PASS
 Query Executed: CREATE TABLE test_f086_bad_v4 (id INT PRIMARY KEY, qty INT DEFAULT 'many');
 Database Response: 1067 (42000): Invalid default value for 'qty'
-Query Execution Time: 0.037420 seconds
+Query Execution Time: 0.005467 seconds
 ======================================================================
 
 ======================================================================
@@ -1839,7 +1839,7 @@ Test Description: Explicitly override the DEFAULT value on insert instead of rel
 Execution Status: PASS
 Query Executed: INSERT INTO test_f086_override (id, status) VALUES (1,'INACTIVE');
 Database Response: Query executed successfully. Rows affected: 1
-Query Execution Time: 0.175365 seconds
+Query Execution Time: 0.033603 seconds
 ======================================================================
 
 ======================================================================
@@ -1849,7 +1849,7 @@ Test Description: Explicitly override the DEFAULT value on insert instead of rel
 Execution Status: PASS
 Query Executed: INSERT INTO test_f086_override_v1 (id, status) VALUES (1,'INACTIVE');
 Database Response: Query executed successfully. Rows affected: 1
-Query Execution Time: 0.157474 seconds
+Query Execution Time: 0.021776 seconds
 ======================================================================
 
 ======================================================================
@@ -1859,7 +1859,7 @@ Test Description: Explicitly override the DEFAULT value on insert instead of rel
 Execution Status: PASS
 Query Executed: INSERT INTO test_f086_override_v2 (id, status) VALUES (1,'INACTIVE');
 Database Response: Query executed successfully. Rows affected: 1
-Query Execution Time: 0.174816 seconds
+Query Execution Time: 0.022374 seconds
 ======================================================================
 
 ======================================================================
@@ -1869,7 +1869,7 @@ Test Description: Explicitly override the DEFAULT value on insert instead of rel
 Execution Status: PASS
 Query Executed: INSERT INTO test_f086_override_v3 (id, status) VALUES (1,'INACTIVE');
 Database Response: Query executed successfully. Rows affected: 1
-Query Execution Time: 0.172255 seconds
+Query Execution Time: 0.025548 seconds
 ======================================================================
 
 ======================================================================
@@ -1879,7 +1879,7 @@ Test Description: Explicitly override the DEFAULT value on insert instead of rel
 Execution Status: PASS
 Query Executed: INSERT INTO test_f086_override_v4 (id, status) VALUES (1,'INACTIVE');
 Database Response: Query executed successfully. Rows affected: 1
-Query Execution Time: 0.135666 seconds
+Query Execution Time: 0.025927 seconds
 ======================================================================
 
 ======================================================================
@@ -1894,7 +1894,7 @@ Database Response: Rows returned: 1
 +-------------------------------+
 | JANE DOE <jane90871@test.com> |
 +-------------------------------+
-Query Execution Time: 0.036428 seconds
+Query Execution Time: 0.004787 seconds
 ======================================================================
 
 ======================================================================
@@ -1909,7 +1909,7 @@ Database Response: Rows returned: 1
 +-------------------------------+
 | JANE DOE <jane90871@test.com> |
 +-------------------------------+
-Query Execution Time: 0.033687 seconds
+Query Execution Time: 0.005134 seconds
 ======================================================================
 
 ======================================================================
@@ -1924,7 +1924,7 @@ Database Response: Rows returned: 1
 +-------------------------------+
 | JANE DOE <jane90871@test.com> |
 +-------------------------------+
-Query Execution Time: 0.035507 seconds
+Query Execution Time: 0.005113 seconds
 ======================================================================
 
 ======================================================================
@@ -1939,7 +1939,7 @@ Database Response: Rows returned: 1
 +-------------------------------+
 | JANE DOE <jane90871@test.com> |
 +-------------------------------+
-Query Execution Time: 0.042354 seconds
+Query Execution Time: 0.004690 seconds
 ======================================================================
 
 ======================================================================
@@ -1954,7 +1954,7 @@ Database Response: Rows returned: 1
 +-------------------------------+
 | JANE DOE <jane90871@test.com> |
 +-------------------------------+
-Query Execution Time: 0.017170 seconds
+Query Execution Time: 0.004776 seconds
 ======================================================================
 
 ======================================================================
@@ -1964,7 +1964,7 @@ Test Description: Call a string function with an invalid, nonexistent function n
 Execution Status: PASS
 Query Executed: SELECT NOTAREALFUNCTION(emp_name) FROM employees LIMIT 1;
 Database Response: 1305 (42000): FUNCTION ai_testing_group4.NOTAREALFUNCTION does not exist
-Query Execution Time: 0.002918 seconds
+Query Execution Time: 0.001614 seconds
 ======================================================================
 
 ======================================================================
@@ -1974,7 +1974,7 @@ Test Description: Call a string function with an invalid, nonexistent function n
 Execution Status: PASS
 Query Executed: SELECT NOTAREALFUNCTION(emp_name) FROM employees LIMIT 1;
 Database Response: 1305 (42000): FUNCTION ai_testing_group4.NOTAREALFUNCTION does not exist
-Query Execution Time: 0.002585 seconds
+Query Execution Time: 0.001508 seconds
 ======================================================================
 
 ======================================================================
@@ -1984,7 +1984,7 @@ Test Description: Call a string function with an invalid, nonexistent function n
 Execution Status: PASS
 Query Executed: SELECT NOTAREALFUNCTION(emp_name) FROM employees LIMIT 1;
 Database Response: 1305 (42000): FUNCTION ai_testing_group4.NOTAREALFUNCTION does not exist
-Query Execution Time: 0.003155 seconds
+Query Execution Time: 0.001178 seconds
 ======================================================================
 
 ======================================================================
@@ -1994,7 +1994,7 @@ Test Description: Call a string function with an invalid, nonexistent function n
 Execution Status: PASS
 Query Executed: SELECT NOTAREALFUNCTION(emp_name) FROM employees LIMIT 1;
 Database Response: 1305 (42000): FUNCTION ai_testing_group4.NOTAREALFUNCTION does not exist
-Query Execution Time: 0.002949 seconds
+Query Execution Time: 0.001135 seconds
 ======================================================================
 
 ======================================================================
@@ -2004,7 +2004,7 @@ Test Description: Call a string function with an invalid, nonexistent function n
 Execution Status: PASS
 Query Executed: SELECT NOTAREALFUNCTION(emp_name) FROM employees LIMIT 1;
 Database Response: 1305 (42000): FUNCTION ai_testing_group4.NOTAREALFUNCTION does not exist
-Query Execution Time: 0.003438 seconds
+Query Execution Time: 0.001364 seconds
 ======================================================================
 
 ======================================================================
@@ -2019,7 +2019,7 @@ Database Response: Rows returned: 1
 +--------+
 |        |
 +--------+
-Query Execution Time: 0.011727 seconds
+Query Execution Time: 0.004641 seconds
 ======================================================================
 
 ======================================================================
@@ -2034,7 +2034,7 @@ Database Response: Rows returned: 1
 +--------+
 |        |
 +--------+
-Query Execution Time: 0.029118 seconds
+Query Execution Time: 0.006048 seconds
 ======================================================================
 
 ======================================================================
@@ -2049,7 +2049,7 @@ Database Response: Rows returned: 1
 +--------+
 |        |
 +--------+
-Query Execution Time: 0.036535 seconds
+Query Execution Time: 0.005281 seconds
 ======================================================================
 
 ======================================================================
@@ -2064,7 +2064,7 @@ Database Response: Rows returned: 1
 +--------+
 |        |
 +--------+
-Query Execution Time: 0.026148 seconds
+Query Execution Time: 0.004952 seconds
 ======================================================================
 
 ======================================================================
@@ -2079,7 +2079,7 @@ Database Response: Rows returned: 1
 +--------+
 |        |
 +--------+
-Query Execution Time: 0.040097 seconds
+Query Execution Time: 0.005559 seconds
 ======================================================================
 
 ======================================================================
@@ -2094,7 +2094,7 @@ Database Response: Rows returned: 1
 +---------+
 | 30500   |
 +---------+
-Query Execution Time: 0.034261 seconds
+Query Execution Time: 0.005107 seconds
 ======================================================================
 
 ======================================================================
@@ -2109,7 +2109,7 @@ Database Response: Rows returned: 1
 +---------+
 | 30500   |
 +---------+
-Query Execution Time: 0.032396 seconds
+Query Execution Time: 0.004842 seconds
 ======================================================================
 
 ======================================================================
@@ -2124,7 +2124,7 @@ Database Response: Rows returned: 1
 +---------+
 | 30500   |
 +---------+
-Query Execution Time: 0.029670 seconds
+Query Execution Time: 0.004961 seconds
 ======================================================================
 
 ======================================================================
@@ -2139,7 +2139,7 @@ Database Response: Rows returned: 1
 +---------+
 | 30500   |
 +---------+
-Query Execution Time: 0.017784 seconds
+Query Execution Time: 0.005766 seconds
 ======================================================================
 
 ======================================================================
@@ -2154,7 +2154,7 @@ Database Response: Rows returned: 1
 +---------+
 | 30500   |
 +---------+
-Query Execution Time: 0.015561 seconds
+Query Execution Time: 0.004619 seconds
 ======================================================================
 
 ======================================================================
@@ -2164,7 +2164,7 @@ Test Description: Call ROUND on a non-existing column
 Execution Status: PASS
 Query Executed: SELECT ROUND(score_val, 2) FROM employees LIMIT 1;
 Database Response: 1054 (42S22): Unknown column 'score_val' in 'field list'
-Query Execution Time: 0.002503 seconds
+Query Execution Time: 0.001196 seconds
 ======================================================================
 
 ======================================================================
@@ -2174,7 +2174,7 @@ Test Description: Call ROUND on a non-existing column
 Execution Status: PASS
 Query Executed: SELECT ROUND(score_val, 2) FROM employees LIMIT 1;
 Database Response: 1054 (42S22): Unknown column 'score_val' in 'field list'
-Query Execution Time: 0.002218 seconds
+Query Execution Time: 0.001273 seconds
 ======================================================================
 
 ======================================================================
@@ -2184,7 +2184,7 @@ Test Description: Call ROUND on a non-existing column
 Execution Status: PASS
 Query Executed: SELECT ROUND(score_val, 2) FROM employees LIMIT 1;
 Database Response: 1054 (42S22): Unknown column 'score_val' in 'field list'
-Query Execution Time: 0.002441 seconds
+Query Execution Time: 0.001252 seconds
 ======================================================================
 
 ======================================================================
@@ -2194,7 +2194,7 @@ Test Description: Call ROUND on a non-existing column
 Execution Status: PASS
 Query Executed: SELECT ROUND(score_val, 2) FROM employees LIMIT 1;
 Database Response: 1054 (42S22): Unknown column 'score_val' in 'field list'
-Query Execution Time: 0.002248 seconds
+Query Execution Time: 0.001123 seconds
 ======================================================================
 
 ======================================================================
@@ -2204,7 +2204,7 @@ Test Description: Call ROUND on a non-existing column
 Execution Status: PASS
 Query Executed: SELECT ROUND(score_val, 2) FROM employees LIMIT 1;
 Database Response: 1054 (42S22): Unknown column 'score_val' in 'field list'
-Query Execution Time: 0.002251 seconds
+Query Execution Time: 0.001084 seconds
 ======================================================================
 
 ======================================================================
@@ -2219,7 +2219,7 @@ Database Response: Rows returned: 1
 +--------+
 | NULL   |
 +--------+
-Query Execution Time: 0.014262 seconds
+Query Execution Time: 0.004484 seconds
 ======================================================================
 
 ======================================================================
@@ -2234,7 +2234,7 @@ Database Response: Rows returned: 1
 +--------+
 | NULL   |
 +--------+
-Query Execution Time: 0.027945 seconds
+Query Execution Time: 0.004321 seconds
 ======================================================================
 
 ======================================================================
@@ -2249,7 +2249,7 @@ Database Response: Rows returned: 1
 +--------+
 | NULL   |
 +--------+
-Query Execution Time: 0.022027 seconds
+Query Execution Time: 0.004397 seconds
 ======================================================================
 
 ======================================================================
@@ -2264,7 +2264,7 @@ Database Response: Rows returned: 1
 +--------+
 | NULL   |
 +--------+
-Query Execution Time: 0.030426 seconds
+Query Execution Time: 0.004862 seconds
 ======================================================================
 
 ======================================================================
@@ -2279,7 +2279,7 @@ Database Response: Rows returned: 1
 +--------+
 | NULL   |
 +--------+
-Query Execution Time: 0.032001 seconds
+Query Execution Time: 0.005395 seconds
 ======================================================================
 
 ======================================================================
@@ -2294,7 +2294,7 @@ Database Response: Rows returned: 1
 +---------------+
 | 1461          |
 +---------------+
-Query Execution Time: 0.026681 seconds
+Query Execution Time: 0.007044 seconds
 ======================================================================
 
 ======================================================================
@@ -2309,7 +2309,7 @@ Database Response: Rows returned: 1
 +---------------+
 | 1461          |
 +---------------+
-Query Execution Time: 0.014772 seconds
+Query Execution Time: 0.005082 seconds
 ======================================================================
 
 ======================================================================
@@ -2324,7 +2324,7 @@ Database Response: Rows returned: 1
 +---------------+
 | 1461          |
 +---------------+
-Query Execution Time: 0.028611 seconds
+Query Execution Time: 0.005059 seconds
 ======================================================================
 
 ======================================================================
@@ -2339,7 +2339,7 @@ Database Response: Rows returned: 1
 +---------------+
 | 1461          |
 +---------------+
-Query Execution Time: 0.026896 seconds
+Query Execution Time: 0.005452 seconds
 ======================================================================
 
 ======================================================================
@@ -2354,7 +2354,7 @@ Database Response: Rows returned: 1
 +---------------+
 | 1461          |
 +---------------+
-Query Execution Time: 0.025383 seconds
+Query Execution Time: 0.004367 seconds
 ======================================================================
 
 ======================================================================
@@ -2369,7 +2369,7 @@ Database Response: Rows returned: 1
 +--------+
 | NULL   |
 +--------+
-Query Execution Time: 0.002732 seconds
+Query Execution Time: 0.001235 seconds
 ======================================================================
 
 ======================================================================
@@ -2384,7 +2384,7 @@ Database Response: Rows returned: 1
 +--------+
 | NULL   |
 +--------+
-Query Execution Time: 0.002723 seconds
+Query Execution Time: 0.001318 seconds
 ======================================================================
 
 ======================================================================
@@ -2399,7 +2399,7 @@ Database Response: Rows returned: 1
 +--------+
 | NULL   |
 +--------+
-Query Execution Time: 0.002075 seconds
+Query Execution Time: 0.001147 seconds
 ======================================================================
 
 ======================================================================
@@ -2414,7 +2414,7 @@ Database Response: Rows returned: 1
 +--------+
 | NULL   |
 +--------+
-Query Execution Time: 0.001951 seconds
+Query Execution Time: 0.001306 seconds
 ======================================================================
 
 ======================================================================
@@ -2429,7 +2429,7 @@ Database Response: Rows returned: 1
 +--------+
 | NULL   |
 +--------+
-Query Execution Time: 0.002968 seconds
+Query Execution Time: 0.001414 seconds
 ======================================================================
 
 ======================================================================
@@ -2444,7 +2444,7 @@ Database Response: Rows returned: 1
 +------------+
 | 2022-06-15 |
 +------------+
-Query Execution Time: 0.011830 seconds
+Query Execution Time: 0.004929 seconds
 ======================================================================
 
 ======================================================================
@@ -2459,7 +2459,7 @@ Database Response: Rows returned: 1
 +------------+
 | 2022-06-15 |
 +------------+
-Query Execution Time: 0.023857 seconds
+Query Execution Time: 0.006475 seconds
 ======================================================================
 
 ======================================================================
@@ -2474,7 +2474,7 @@ Database Response: Rows returned: 1
 +------------+
 | 2022-06-15 |
 +------------+
-Query Execution Time: 0.026622 seconds
+Query Execution Time: 0.004898 seconds
 ======================================================================
 
 ======================================================================
@@ -2489,7 +2489,7 @@ Database Response: Rows returned: 1
 +------------+
 | 2022-06-15 |
 +------------+
-Query Execution Time: 0.017632 seconds
+Query Execution Time: 0.005088 seconds
 ======================================================================
 
 ======================================================================
@@ -2504,7 +2504,7 @@ Database Response: Rows returned: 1
 +------------+
 | 2022-06-15 |
 +------------+
-Query Execution Time: 0.021961 seconds
+Query Execution Time: 0.005325 seconds
 ======================================================================
 
 ======================================================================
@@ -2519,7 +2519,7 @@ Database Response: Rows returned: 1
 +-----------+
 | "JsonRow" |
 +-----------+
-Query Execution Time: 0.018437 seconds
+Query Execution Time: 0.005248 seconds
 ======================================================================
 
 ======================================================================
@@ -2534,7 +2534,7 @@ Database Response: Rows returned: 1
 +-----------+
 | "JsonRow" |
 +-----------+
-Query Execution Time: 0.023119 seconds
+Query Execution Time: 0.005960 seconds
 ======================================================================
 
 ======================================================================
@@ -2549,7 +2549,7 @@ Database Response: Rows returned: 1
 +-----------+
 | "JsonRow" |
 +-----------+
-Query Execution Time: 0.017820 seconds
+Query Execution Time: 0.005558 seconds
 ======================================================================
 
 ======================================================================
@@ -2564,7 +2564,7 @@ Database Response: Rows returned: 1
 +-----------+
 | "JsonRow" |
 +-----------+
-Query Execution Time: 0.021669 seconds
+Query Execution Time: 0.005796 seconds
 ======================================================================
 
 ======================================================================
@@ -2579,7 +2579,7 @@ Database Response: Rows returned: 1
 +-----------+
 | "JsonRow" |
 +-----------+
-Query Execution Time: 0.023367 seconds
+Query Execution Time: 0.004686 seconds
 ======================================================================
 
 ======================================================================
@@ -2589,7 +2589,7 @@ Test Description: Use JSON_EXTRACT with a malformed JSON path expression
 Execution Status: PASS
 Query Executed: SELECT JSON_EXTRACT('{"a":1}', 'not_a_valid_path') AS result;
 Database Response: 3143 (42000): Invalid JSON path expression. The error is around character position 1.
-Query Execution Time: 0.002606 seconds
+Query Execution Time: 0.001311 seconds
 ======================================================================
 
 ======================================================================
@@ -2599,7 +2599,7 @@ Test Description: Use JSON_EXTRACT with a malformed JSON path expression
 Execution Status: PASS
 Query Executed: SELECT JSON_EXTRACT('{"a":1}', 'not_a_valid_path') AS result;
 Database Response: 3143 (42000): Invalid JSON path expression. The error is around character position 1.
-Query Execution Time: 0.002612 seconds
+Query Execution Time: 0.001135 seconds
 ======================================================================
 
 ======================================================================
@@ -2609,7 +2609,7 @@ Test Description: Use JSON_EXTRACT with a malformed JSON path expression
 Execution Status: PASS
 Query Executed: SELECT JSON_EXTRACT('{"a":1}', 'not_a_valid_path') AS result;
 Database Response: 3143 (42000): Invalid JSON path expression. The error is around character position 1.
-Query Execution Time: 0.001682 seconds
+Query Execution Time: 0.001086 seconds
 ======================================================================
 
 ======================================================================
@@ -2619,7 +2619,7 @@ Test Description: Use JSON_EXTRACT with a malformed JSON path expression
 Execution Status: PASS
 Query Executed: SELECT JSON_EXTRACT('{"a":1}', 'not_a_valid_path') AS result;
 Database Response: 3143 (42000): Invalid JSON path expression. The error is around character position 1.
-Query Execution Time: 0.002010 seconds
+Query Execution Time: 0.001021 seconds
 ======================================================================
 
 ======================================================================
@@ -2629,7 +2629,7 @@ Test Description: Use JSON_EXTRACT with a malformed JSON path expression
 Execution Status: PASS
 Query Executed: SELECT JSON_EXTRACT('{"a":1}', 'not_a_valid_path') AS result;
 Database Response: 3143 (42000): Invalid JSON path expression. The error is around character position 1.
-Query Execution Time: 0.001391 seconds
+Query Execution Time: 0.001154 seconds
 ======================================================================
 
 ======================================================================
@@ -2644,7 +2644,7 @@ Database Response: Rows returned: 1
 +-------+
 | 0     |
 +-------+
-Query Execution Time: 0.001994 seconds
+Query Execution Time: 0.001032 seconds
 ======================================================================
 
 ======================================================================
@@ -2659,7 +2659,7 @@ Database Response: Rows returned: 1
 +-------+
 | 0     |
 +-------+
-Query Execution Time: 0.002840 seconds
+Query Execution Time: 0.001023 seconds
 ======================================================================
 
 ======================================================================
@@ -2674,7 +2674,7 @@ Database Response: Rows returned: 1
 +-------+
 | 0     |
 +-------+
-Query Execution Time: 0.002384 seconds
+Query Execution Time: 0.000943 seconds
 ======================================================================
 
 ======================================================================
@@ -2689,7 +2689,7 @@ Database Response: Rows returned: 1
 +-------+
 | 0     |
 +-------+
-Query Execution Time: 0.002015 seconds
+Query Execution Time: 0.001152 seconds
 ======================================================================
 
 ======================================================================
@@ -2704,7 +2704,7 @@ Database Response: Rows returned: 1
 +-------+
 | 0     |
 +-------+
-Query Execution Time: 0.001770 seconds
+Query Execution Time: 0.001516 seconds
 ======================================================================
 
 ======================================================================
@@ -2714,7 +2714,7 @@ Test Description: Start a transaction, insert a dedicated row, and commit
 Execution Status: PASS
 Query Executed: START TRANSACTION;
 Database Response: Query executed successfully. Rows affected: 0
-Query Execution Time: 0.002940 seconds
+Query Execution Time: 0.001739 seconds
 ======================================================================
 
 ======================================================================
@@ -2724,7 +2724,7 @@ Test Description: Start a transaction, insert a dedicated row, and commit
 Execution Status: PASS
 Query Executed: START TRANSACTION;
 Database Response: Query executed successfully. Rows affected: 0
-Query Execution Time: 0.002294 seconds
+Query Execution Time: 0.001417 seconds
 ======================================================================
 
 ======================================================================
@@ -2734,7 +2734,7 @@ Test Description: Start a transaction, insert a dedicated row, and commit
 Execution Status: PASS
 Query Executed: START TRANSACTION;
 Database Response: Query executed successfully. Rows affected: 0
-Query Execution Time: 0.003137 seconds
+Query Execution Time: 0.001813 seconds
 ======================================================================
 
 ======================================================================
@@ -2744,7 +2744,7 @@ Test Description: Start a transaction, insert a dedicated row, and commit
 Execution Status: PASS
 Query Executed: START TRANSACTION;
 Database Response: Query executed successfully. Rows affected: 0
-Query Execution Time: 0.002653 seconds
+Query Execution Time: 0.001811 seconds
 ======================================================================
 
 ======================================================================
@@ -2754,7 +2754,7 @@ Test Description: Start a transaction, insert a dedicated row, and commit
 Execution Status: PASS
 Query Executed: START TRANSACTION;
 Database Response: Query executed successfully. Rows affected: 0
-Query Execution Time: 0.002077 seconds
+Query Execution Time: 0.001688 seconds
 ======================================================================
 
 ======================================================================
@@ -2764,7 +2764,7 @@ Test Description: Start a transaction on a dedicated non-transactional (MyISAM) 
 Execution Status: PASS
 Query Executed: START TRANSACTION WITH BOGUS_OPTION;
 Database Response: 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'BOGUS_OPTION' at line 1
-Query Execution Time: 0.002168 seconds
+Query Execution Time: 0.001099 seconds
 ======================================================================
 
 ======================================================================
@@ -2774,7 +2774,7 @@ Test Description: Start a transaction on a dedicated non-transactional (MyISAM) 
 Execution Status: PASS
 Query Executed: START TRANSACTION WITH BOGUS_OPTION;
 Database Response: 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'BOGUS_OPTION' at line 1
-Query Execution Time: 0.001609 seconds
+Query Execution Time: 0.001100 seconds
 ======================================================================
 
 ======================================================================
@@ -2784,7 +2784,7 @@ Test Description: Start a transaction on a dedicated non-transactional (MyISAM) 
 Execution Status: PASS
 Query Executed: START TRANSACTION WITH BOGUS_OPTION;
 Database Response: 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'BOGUS_OPTION' at line 1
-Query Execution Time: 0.001513 seconds
+Query Execution Time: 0.001136 seconds
 ======================================================================
 
 ======================================================================
@@ -2794,7 +2794,7 @@ Test Description: Start a transaction on a dedicated non-transactional (MyISAM) 
 Execution Status: PASS
 Query Executed: START TRANSACTION WITH BOGUS_OPTION;
 Database Response: 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'BOGUS_OPTION' at line 1
-Query Execution Time: 0.001240 seconds
+Query Execution Time: 0.001347 seconds
 ======================================================================
 
 ======================================================================
@@ -2804,7 +2804,7 @@ Test Description: Start a transaction on a dedicated non-transactional (MyISAM) 
 Execution Status: PASS
 Query Executed: START TRANSACTION WITH BOGUS_OPTION;
 Database Response: 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'BOGUS_OPTION' at line 1
-Query Execution Time: 0.001711 seconds
+Query Execution Time: 0.001120 seconds
 ======================================================================
 
 ======================================================================
@@ -2814,7 +2814,7 @@ Test Description: Start a transaction and immediately COMMIT with no operations 
 Execution Status: PASS
 Query Executed: START TRANSACTION READ ONLY;
 Database Response: Query executed successfully. Rows affected: 0
-Query Execution Time: 0.001676 seconds
+Query Execution Time: 0.000975 seconds
 ======================================================================
 
 ======================================================================
@@ -2824,7 +2824,7 @@ Test Description: Start a transaction and immediately COMMIT with no operations 
 Execution Status: PASS
 Query Executed: START TRANSACTION READ ONLY;
 Database Response: Query executed successfully. Rows affected: 0
-Query Execution Time: 0.001711 seconds
+Query Execution Time: 0.001053 seconds
 ======================================================================
 
 ======================================================================
@@ -2834,7 +2834,7 @@ Test Description: Start a transaction and immediately COMMIT with no operations 
 Execution Status: PASS
 Query Executed: START TRANSACTION READ ONLY;
 Database Response: Query executed successfully. Rows affected: 0
-Query Execution Time: 0.001408 seconds
+Query Execution Time: 0.000976 seconds
 ======================================================================
 
 ======================================================================
@@ -2844,7 +2844,7 @@ Test Description: Start a transaction and immediately COMMIT with no operations 
 Execution Status: PASS
 Query Executed: START TRANSACTION READ ONLY;
 Database Response: Query executed successfully. Rows affected: 0
-Query Execution Time: 0.001476 seconds
+Query Execution Time: 0.001024 seconds
 ======================================================================
 
 ======================================================================
@@ -2854,7 +2854,7 @@ Test Description: Start a transaction and immediately COMMIT with no operations 
 Execution Status: PASS
 Query Executed: START TRANSACTION READ ONLY;
 Database Response: Query executed successfully. Rows affected: 0
-Query Execution Time: 0.001686 seconds
+Query Execution Time: 0.000939 seconds
 ======================================================================
 
 ======================================================================
@@ -2864,7 +2864,7 @@ Test Description: Commit a transaction containing a valid UPDATE on a dedicated 
 Execution Status: PASS
 Query Executed: COMMIT;
 Database Response: Query executed successfully. Rows affected: 0
-Query Execution Time: 0.019601 seconds
+Query Execution Time: 0.007827 seconds
 ======================================================================
 
 ======================================================================
@@ -2874,7 +2874,7 @@ Test Description: Commit a transaction containing a valid UPDATE on a dedicated 
 Execution Status: PASS
 Query Executed: COMMIT;
 Database Response: Query executed successfully. Rows affected: 0
-Query Execution Time: 0.039818 seconds
+Query Execution Time: 0.007753 seconds
 ======================================================================
 
 ======================================================================
@@ -2884,7 +2884,7 @@ Test Description: Commit a transaction containing a valid UPDATE on a dedicated 
 Execution Status: PASS
 Query Executed: COMMIT;
 Database Response: Query executed successfully. Rows affected: 0
-Query Execution Time: 0.060228 seconds
+Query Execution Time: 0.007508 seconds
 ======================================================================
 
 ======================================================================
@@ -2894,7 +2894,7 @@ Test Description: Commit a transaction containing a valid UPDATE on a dedicated 
 Execution Status: PASS
 Query Executed: COMMIT;
 Database Response: Query executed successfully. Rows affected: 0
-Query Execution Time: 0.060872 seconds
+Query Execution Time: 0.007748 seconds
 ======================================================================
 
 ======================================================================
@@ -2904,7 +2904,7 @@ Test Description: Commit a transaction containing a valid UPDATE on a dedicated 
 Execution Status: PASS
 Query Executed: COMMIT;
 Database Response: Query executed successfully. Rows affected: 0
-Query Execution Time: 0.055427 seconds
+Query Execution Time: 0.006336 seconds
 ======================================================================
 
 ======================================================================
@@ -2914,7 +2914,7 @@ Test Description: Attempt to COMMIT when no transaction was explicitly started (
 Execution Status: PASS
 Query Executed: COMMIT TO SAVEPOINT sp_ghost;
 Database Response: 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'TO SAVEPOINT sp_ghost' at line 1
-Query Execution Time: 0.002347 seconds
+Query Execution Time: 0.001174 seconds
 ======================================================================
 
 ======================================================================
@@ -2924,7 +2924,7 @@ Test Description: Attempt to COMMIT when no transaction was explicitly started (
 Execution Status: PASS
 Query Executed: COMMIT TO SAVEPOINT sp_ghost_v1;
 Database Response: 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'TO SAVEPOINT sp_ghost_v1' at line 1
-Query Execution Time: 0.002499 seconds
+Query Execution Time: 0.001054 seconds
 ======================================================================
 
 ======================================================================
@@ -2934,7 +2934,7 @@ Test Description: Attempt to COMMIT when no transaction was explicitly started (
 Execution Status: PASS
 Query Executed: COMMIT TO SAVEPOINT sp_ghost_v2;
 Database Response: 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'TO SAVEPOINT sp_ghost_v2' at line 1
-Query Execution Time: 0.002133 seconds
+Query Execution Time: 0.001136 seconds
 ======================================================================
 
 ======================================================================
@@ -2944,7 +2944,7 @@ Test Description: Attempt to COMMIT when no transaction was explicitly started (
 Execution Status: PASS
 Query Executed: COMMIT TO SAVEPOINT sp_ghost_v3;
 Database Response: 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'TO SAVEPOINT sp_ghost_v3' at line 1
-Query Execution Time: 0.002610 seconds
+Query Execution Time: 0.001363 seconds
 ======================================================================
 
 ======================================================================
@@ -2954,7 +2954,7 @@ Test Description: Attempt to COMMIT when no transaction was explicitly started (
 Execution Status: PASS
 Query Executed: COMMIT TO SAVEPOINT sp_ghost_v4;
 Database Response: 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'TO SAVEPOINT sp_ghost_v4' at line 1
-Query Execution Time: 0.002616 seconds
+Query Execution Time: 0.001015 seconds
 ======================================================================
 
 ======================================================================
@@ -2964,7 +2964,7 @@ Test Description: Commit after one statement inside the transaction already fail
 Execution Status: PASS
 Query Executed: COMMIT;
 Database Response: Query executed successfully. Rows affected: 0
-Query Execution Time: 0.051765 seconds
+Query Execution Time: 0.007465 seconds
 ======================================================================
 
 ======================================================================
@@ -2974,7 +2974,7 @@ Test Description: Commit after one statement inside the transaction already fail
 Execution Status: PASS
 Query Executed: COMMIT;
 Database Response: Query executed successfully. Rows affected: 0
-Query Execution Time: 0.030199 seconds
+Query Execution Time: 0.006919 seconds
 ======================================================================
 
 ======================================================================
@@ -2984,7 +2984,7 @@ Test Description: Commit after one statement inside the transaction already fail
 Execution Status: PASS
 Query Executed: COMMIT;
 Database Response: Query executed successfully. Rows affected: 0
-Query Execution Time: 0.052258 seconds
+Query Execution Time: 0.007309 seconds
 ======================================================================
 
 ======================================================================
@@ -2994,7 +2994,7 @@ Test Description: Commit after one statement inside the transaction already fail
 Execution Status: PASS
 Query Executed: COMMIT;
 Database Response: Query executed successfully. Rows affected: 0
-Query Execution Time: 0.038520 seconds
+Query Execution Time: 0.007141 seconds
 ======================================================================
 
 ======================================================================
@@ -3004,7 +3004,7 @@ Test Description: Commit after one statement inside the transaction already fail
 Execution Status: PASS
 Query Executed: COMMIT;
 Database Response: Query executed successfully. Rows affected: 0
-Query Execution Time: 0.042019 seconds
+Query Execution Time: 0.006552 seconds
 ======================================================================
 
 ======================================================================
@@ -3014,7 +3014,7 @@ Test Description: Roll back a transaction to undo an INSERT on a dedicated row
 Execution Status: PASS
 Query Executed: ROLLBACK;
 Database Response: Query executed successfully. Rows affected: 0
-Query Execution Time: 0.018188 seconds
+Query Execution Time: 0.004460 seconds
 ======================================================================
 
 ======================================================================
@@ -3024,7 +3024,7 @@ Test Description: Roll back a transaction to undo an INSERT on a dedicated row
 Execution Status: PASS
 Query Executed: ROLLBACK;
 Database Response: Query executed successfully. Rows affected: 0
-Query Execution Time: 0.015317 seconds
+Query Execution Time: 0.003873 seconds
 ======================================================================
 
 ======================================================================
@@ -3034,7 +3034,7 @@ Test Description: Roll back a transaction to undo an INSERT on a dedicated row
 Execution Status: PASS
 Query Executed: ROLLBACK;
 Database Response: Query executed successfully. Rows affected: 0
-Query Execution Time: 0.015998 seconds
+Query Execution Time: 0.012667 seconds
 ======================================================================
 
 ======================================================================
@@ -3044,7 +3044,7 @@ Test Description: Roll back a transaction to undo an INSERT on a dedicated row
 Execution Status: PASS
 Query Executed: ROLLBACK;
 Database Response: Query executed successfully. Rows affected: 0
-Query Execution Time: 0.013320 seconds
+Query Execution Time: 0.003724 seconds
 ======================================================================
 
 ======================================================================
@@ -3054,7 +3054,7 @@ Test Description: Roll back a transaction to undo an INSERT on a dedicated row
 Execution Status: PASS
 Query Executed: ROLLBACK;
 Database Response: Query executed successfully. Rows affected: 0
-Query Execution Time: 0.011073 seconds
+Query Execution Time: 0.003243 seconds
 ======================================================================
 
 ======================================================================
@@ -3064,7 +3064,7 @@ Test Description: Attempt ROLLBACK after a DDL statement inside the transaction 
 Execution Status: PASS
 Query Executed: ROLLBACK BOGUS_CLAUSE;
 Database Response: 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'BOGUS_CLAUSE' at line 1
-Query Execution Time: 0.001777 seconds
+Query Execution Time: 0.001351 seconds
 ======================================================================
 
 ======================================================================
@@ -3074,7 +3074,7 @@ Test Description: Attempt ROLLBACK after a DDL statement inside the transaction 
 Execution Status: PASS
 Query Executed: ROLLBACK BOGUS_CLAUSE;
 Database Response: 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'BOGUS_CLAUSE' at line 1
-Query Execution Time: 0.001167 seconds
+Query Execution Time: 0.001155 seconds
 ======================================================================
 
 ======================================================================
@@ -3084,7 +3084,7 @@ Test Description: Attempt ROLLBACK after a DDL statement inside the transaction 
 Execution Status: PASS
 Query Executed: ROLLBACK BOGUS_CLAUSE;
 Database Response: 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'BOGUS_CLAUSE' at line 1
-Query Execution Time: 0.001559 seconds
+Query Execution Time: 0.001108 seconds
 ======================================================================
 
 ======================================================================
@@ -3094,7 +3094,7 @@ Test Description: Attempt ROLLBACK after a DDL statement inside the transaction 
 Execution Status: PASS
 Query Executed: ROLLBACK BOGUS_CLAUSE;
 Database Response: 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'BOGUS_CLAUSE' at line 1
-Query Execution Time: 0.003012 seconds
+Query Execution Time: 0.001055 seconds
 ======================================================================
 
 ======================================================================
@@ -3104,7 +3104,7 @@ Test Description: Attempt ROLLBACK after a DDL statement inside the transaction 
 Execution Status: PASS
 Query Executed: ROLLBACK BOGUS_CLAUSE;
 Database Response: 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'BOGUS_CLAUSE' at line 1
-Query Execution Time: 0.002576 seconds
+Query Execution Time: 0.001139 seconds
 ======================================================================
 
 ======================================================================
@@ -3114,7 +3114,7 @@ Test Description: Roll back a transaction with zero statements executed inside i
 Execution Status: PASS
 Query Executed: ROLLBACK;
 Database Response: Query executed successfully. Rows affected: 0
-Query Execution Time: 0.207839 seconds
+Query Execution Time: 0.021205 seconds
 ======================================================================
 
 ======================================================================
@@ -3124,7 +3124,7 @@ Test Description: Roll back a transaction with zero statements executed inside i
 Execution Status: PASS
 Query Executed: ROLLBACK;
 Database Response: Query executed successfully. Rows affected: 0
-Query Execution Time: 0.151846 seconds
+Query Execution Time: 0.031547 seconds
 ======================================================================
 
 ======================================================================
@@ -3134,7 +3134,7 @@ Test Description: Roll back a transaction with zero statements executed inside i
 Execution Status: PASS
 Query Executed: ROLLBACK;
 Database Response: Query executed successfully. Rows affected: 0
-Query Execution Time: 0.203604 seconds
+Query Execution Time: 0.025336 seconds
 ======================================================================
 
 ======================================================================
@@ -3144,7 +3144,7 @@ Test Description: Roll back a transaction with zero statements executed inside i
 Execution Status: PASS
 Query Executed: ROLLBACK;
 Database Response: Query executed successfully. Rows affected: 0
-Query Execution Time: 0.194665 seconds
+Query Execution Time: 0.029058 seconds
 ======================================================================
 
 ======================================================================
@@ -3154,7 +3154,7 @@ Test Description: Roll back a transaction with zero statements executed inside i
 Execution Status: PASS
 Query Executed: ROLLBACK;
 Database Response: Query executed successfully. Rows affected: 0
-Query Execution Time: 0.161966 seconds
+Query Execution Time: 0.055973 seconds
 ======================================================================
 
 ======================================================================
@@ -3164,7 +3164,7 @@ Test Description: Create a savepoint within a transaction after inserting a dedi
 Execution Status: PASS
 Query Executed: SAVEPOINT sp_f094;
 Database Response: Query executed successfully. Rows affected: 0
-Query Execution Time: 0.018718 seconds
+Query Execution Time: 0.004110 seconds
 ======================================================================
 
 ======================================================================
@@ -3174,7 +3174,7 @@ Test Description: Create a savepoint within a transaction after inserting a dedi
 Execution Status: PASS
 Query Executed: SAVEPOINT sp_f094_v1;
 Database Response: Query executed successfully. Rows affected: 0
-Query Execution Time: 0.013686 seconds
+Query Execution Time: 0.004354 seconds
 ======================================================================
 
 ======================================================================
@@ -3184,7 +3184,7 @@ Test Description: Create a savepoint within a transaction after inserting a dedi
 Execution Status: PASS
 Query Executed: SAVEPOINT sp_f094_v2;
 Database Response: Query executed successfully. Rows affected: 0
-Query Execution Time: 0.024367 seconds
+Query Execution Time: 0.004197 seconds
 ======================================================================
 
 ======================================================================
@@ -3194,7 +3194,7 @@ Test Description: Create a savepoint within a transaction after inserting a dedi
 Execution Status: PASS
 Query Executed: SAVEPOINT sp_f094_v3;
 Database Response: Query executed successfully. Rows affected: 0
-Query Execution Time: 0.022182 seconds
+Query Execution Time: 0.003872 seconds
 ======================================================================
 
 ======================================================================
@@ -3204,7 +3204,7 @@ Test Description: Create a savepoint within a transaction after inserting a dedi
 Execution Status: PASS
 Query Executed: SAVEPOINT sp_f094_v4;
 Database Response: Query executed successfully. Rows affected: 0
-Query Execution Time: 0.029103 seconds
+Query Execution Time: 0.004241 seconds
 ======================================================================
 
 ======================================================================
@@ -3214,7 +3214,7 @@ Test Description: Reference a savepoint name that was never defined
 Execution Status: PASS
 Query Executed: SAVEPOINT;
 Database Response: 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
-Query Execution Time: 0.001979 seconds
+Query Execution Time: 0.001182 seconds
 ======================================================================
 
 ======================================================================
@@ -3224,7 +3224,7 @@ Test Description: Reference a savepoint name that was never defined
 Execution Status: PASS
 Query Executed: SAVEPOINT;
 Database Response: 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
-Query Execution Time: 0.002252 seconds
+Query Execution Time: 0.001118 seconds
 ======================================================================
 
 ======================================================================
@@ -3234,7 +3234,7 @@ Test Description: Reference a savepoint name that was never defined
 Execution Status: PASS
 Query Executed: SAVEPOINT;
 Database Response: 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
-Query Execution Time: 0.001890 seconds
+Query Execution Time: 0.001114 seconds
 ======================================================================
 
 ======================================================================
@@ -3244,7 +3244,7 @@ Test Description: Reference a savepoint name that was never defined
 Execution Status: PASS
 Query Executed: SAVEPOINT;
 Database Response: 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
-Query Execution Time: 0.002296 seconds
+Query Execution Time: 0.001169 seconds
 ======================================================================
 
 ======================================================================
@@ -3254,7 +3254,7 @@ Test Description: Reference a savepoint name that was never defined
 Execution Status: PASS
 Query Executed: SAVEPOINT;
 Database Response: 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
-Query Execution Time: 0.002224 seconds
+Query Execution Time: 0.001076 seconds
 ======================================================================
 
 ======================================================================
@@ -3264,7 +3264,7 @@ Test Description: Create two savepoints with the identical name, where the secon
 Execution Status: PASS
 Query Executed: SAVEPOINT sp_dup_f094;
 Database Response: Query executed successfully. Rows affected: 0
-Query Execution Time: 0.002157 seconds
+Query Execution Time: 0.001415 seconds
 ======================================================================
 
 ======================================================================
@@ -3274,7 +3274,7 @@ Test Description: Create two savepoints with the identical name, where the secon
 Execution Status: PASS
 Query Executed: SAVEPOINT sp_dup_f094_v1;
 Database Response: Query executed successfully. Rows affected: 0
-Query Execution Time: 0.002463 seconds
+Query Execution Time: 0.001362 seconds
 ======================================================================
 
 ======================================================================
@@ -3284,7 +3284,7 @@ Test Description: Create two savepoints with the identical name, where the secon
 Execution Status: PASS
 Query Executed: SAVEPOINT sp_dup_f094_v2;
 Database Response: Query executed successfully. Rows affected: 0
-Query Execution Time: 0.002310 seconds
+Query Execution Time: 0.001747 seconds
 ======================================================================
 
 ======================================================================
@@ -3294,7 +3294,7 @@ Test Description: Create two savepoints with the identical name, where the secon
 Execution Status: PASS
 Query Executed: SAVEPOINT sp_dup_f094_v3;
 Database Response: Query executed successfully. Rows affected: 0
-Query Execution Time: 0.001930 seconds
+Query Execution Time: 0.001536 seconds
 ======================================================================
 
 ======================================================================
@@ -3304,7 +3304,7 @@ Test Description: Create two savepoints with the identical name, where the secon
 Execution Status: PASS
 Query Executed: SAVEPOINT sp_dup_f094_v4;
 Database Response: Query executed successfully. Rows affected: 0
-Query Execution Time: 0.001862 seconds
+Query Execution Time: 0.001376 seconds
 ======================================================================
 
 ======================================================================
@@ -3314,7 +3314,7 @@ Test Description: Roll back to a savepoint, undoing only statements after it
 Execution Status: PASS
 Query Executed: ROLLBACK TO SAVEPOINT sp_f095;
 Database Response: Query executed successfully. Rows affected: 0
-Query Execution Time: 0.021117 seconds
+Query Execution Time: 0.007654 seconds
 ======================================================================
 
 ======================================================================
@@ -3324,7 +3324,7 @@ Test Description: Roll back to a savepoint, undoing only statements after it
 Execution Status: PASS
 Query Executed: ROLLBACK TO SAVEPOINT sp_f095_v1;
 Database Response: Query executed successfully. Rows affected: 0
-Query Execution Time: 0.022476 seconds
+Query Execution Time: 0.005758 seconds
 ======================================================================
 
 ======================================================================
@@ -3334,7 +3334,7 @@ Test Description: Roll back to a savepoint, undoing only statements after it
 Execution Status: PASS
 Query Executed: ROLLBACK TO SAVEPOINT sp_f095_v2;
 Database Response: Query executed successfully. Rows affected: 0
-Query Execution Time: 0.022238 seconds
+Query Execution Time: 0.005575 seconds
 ======================================================================
 
 ======================================================================
@@ -3344,7 +3344,7 @@ Test Description: Roll back to a savepoint, undoing only statements after it
 Execution Status: PASS
 Query Executed: ROLLBACK TO SAVEPOINT sp_f095_v3;
 Database Response: Query executed successfully. Rows affected: 0
-Query Execution Time: 0.028285 seconds
+Query Execution Time: 0.005732 seconds
 ======================================================================
 
 ======================================================================
@@ -3354,7 +3354,7 @@ Test Description: Roll back to a savepoint, undoing only statements after it
 Execution Status: PASS
 Query Executed: ROLLBACK TO SAVEPOINT sp_f095_v4;
 Database Response: Query executed successfully. Rows affected: 0
-Query Execution Time: 0.024498 seconds
+Query Execution Time: 0.005629 seconds
 ======================================================================
 
 ======================================================================
@@ -3364,7 +3364,7 @@ Test Description: Attempt ROLLBACK TO SAVEPOINT after the enclosing transaction 
 Execution Status: PASS
 Query Executed: ROLLBACK TO SAVEPOINT sp_f095b;
 Database Response: 1305 (42000): SAVEPOINT sp_f095b does not exist
-Query Execution Time: 0.003789 seconds
+Query Execution Time: 0.001792 seconds
 ======================================================================
 
 ======================================================================
@@ -3374,7 +3374,7 @@ Test Description: Attempt ROLLBACK TO SAVEPOINT after the enclosing transaction 
 Execution Status: PASS
 Query Executed: ROLLBACK TO SAVEPOINT sp_f095b_v1;
 Database Response: 1305 (42000): SAVEPOINT sp_f095b_v1 does not exist
-Query Execution Time: 0.003813 seconds
+Query Execution Time: 0.001564 seconds
 ======================================================================
 
 ======================================================================
@@ -3384,7 +3384,7 @@ Test Description: Attempt ROLLBACK TO SAVEPOINT after the enclosing transaction 
 Execution Status: PASS
 Query Executed: ROLLBACK TO SAVEPOINT sp_f095b_v2;
 Database Response: 1305 (42000): SAVEPOINT sp_f095b_v2 does not exist
-Query Execution Time: 0.003698 seconds
+Query Execution Time: 0.001707 seconds
 ======================================================================
 
 ======================================================================
@@ -3394,7 +3394,7 @@ Test Description: Attempt ROLLBACK TO SAVEPOINT after the enclosing transaction 
 Execution Status: PASS
 Query Executed: ROLLBACK TO SAVEPOINT sp_f095b_v3;
 Database Response: 1305 (42000): SAVEPOINT sp_f095b_v3 does not exist
-Query Execution Time: 0.002839 seconds
+Query Execution Time: 0.001743 seconds
 ======================================================================
 
 ======================================================================
@@ -3404,7 +3404,7 @@ Test Description: Attempt ROLLBACK TO SAVEPOINT after the enclosing transaction 
 Execution Status: PASS
 Query Executed: ROLLBACK TO SAVEPOINT sp_f095b_v4;
 Database Response: 1305 (42000): SAVEPOINT sp_f095b_v4 does not exist
-Query Execution Time: 0.003032 seconds
+Query Execution Time: 0.001661 seconds
 ======================================================================
 
 ======================================================================
@@ -3414,7 +3414,7 @@ Test Description: Roll back to a savepoint set immediately at the start of the t
 Execution Status: PASS
 Query Executed: ROLLBACK TO SAVEPOINT sp_f095c;
 Database Response: Query executed successfully. Rows affected: 0
-Query Execution Time: 0.002890 seconds
+Query Execution Time: 0.001357 seconds
 ======================================================================
 
 ======================================================================
@@ -3424,7 +3424,7 @@ Test Description: Roll back to a savepoint set immediately at the start of the t
 Execution Status: PASS
 Query Executed: ROLLBACK TO SAVEPOINT sp_f095c_v1;
 Database Response: Query executed successfully. Rows affected: 0
-Query Execution Time: 0.002514 seconds
+Query Execution Time: 0.001422 seconds
 ======================================================================
 
 ======================================================================
@@ -3434,7 +3434,7 @@ Test Description: Roll back to a savepoint set immediately at the start of the t
 Execution Status: PASS
 Query Executed: ROLLBACK TO SAVEPOINT sp_f095c_v2;
 Database Response: Query executed successfully. Rows affected: 0
-Query Execution Time: 0.002999 seconds
+Query Execution Time: 0.001453 seconds
 ======================================================================
 
 ======================================================================
@@ -3444,7 +3444,7 @@ Test Description: Roll back to a savepoint set immediately at the start of the t
 Execution Status: PASS
 Query Executed: ROLLBACK TO SAVEPOINT sp_f095c_v3;
 Database Response: Query executed successfully. Rows affected: 0
-Query Execution Time: 0.002233 seconds
+Query Execution Time: 0.001449 seconds
 ======================================================================
 
 ======================================================================
@@ -3454,7 +3454,7 @@ Test Description: Roll back to a savepoint set immediately at the start of the t
 Execution Status: PASS
 Query Executed: ROLLBACK TO SAVEPOINT sp_f095c_v4;
 Database Response: Query executed successfully. Rows affected: 0
-Query Execution Time: 0.002831 seconds
+Query Execution Time: 0.001398 seconds
 ======================================================================
 
 ======================================================================
@@ -3464,7 +3464,7 @@ Test Description: Perform an INSERT, UPDATE, and DELETE on dedicated rows within
 Execution Status: PASS
 Query Executed: COMMIT;
 Database Response: Query executed successfully. Rows affected: 0
-Query Execution Time: 0.023320 seconds
+Query Execution Time: 0.006512 seconds
 ======================================================================
 
 ======================================================================
@@ -3474,7 +3474,7 @@ Test Description: Perform an INSERT, UPDATE, and DELETE on dedicated rows within
 Execution Status: PASS
 Query Executed: COMMIT;
 Database Response: Query executed successfully. Rows affected: 0
-Query Execution Time: 0.018098 seconds
+Query Execution Time: 0.006049 seconds
 ======================================================================
 
 ======================================================================
@@ -3484,7 +3484,7 @@ Test Description: Perform an INSERT, UPDATE, and DELETE on dedicated rows within
 Execution Status: PASS
 Query Executed: COMMIT;
 Database Response: Query executed successfully. Rows affected: 0
-Query Execution Time: 0.024443 seconds
+Query Execution Time: 0.006102 seconds
 ======================================================================
 
 ======================================================================
@@ -3494,7 +3494,7 @@ Test Description: Perform an INSERT, UPDATE, and DELETE on dedicated rows within
 Execution Status: PASS
 Query Executed: COMMIT;
 Database Response: Query executed successfully. Rows affected: 0
-Query Execution Time: 0.029526 seconds
+Query Execution Time: 0.006217 seconds
 ======================================================================
 
 ======================================================================
@@ -3504,7 +3504,7 @@ Test Description: Perform an INSERT, UPDATE, and DELETE on dedicated rows within
 Execution Status: PASS
 Query Executed: COMMIT;
 Database Response: Query executed successfully. Rows affected: 0
-Query Execution Time: 0.028948 seconds
+Query Execution Time: 0.006280 seconds
 ======================================================================
 
 ======================================================================
@@ -3514,7 +3514,7 @@ Test Description: Perform multiple operations where the final statement fails, l
 Execution Status: PASS
 Query Executed: INSERT INTO employees (emp_id, emp_name, email) VALUES (90963,'Dup','dup90963@test.com');
 Database Response: 1062 (23000): Duplicate entry '90963' for key 'employees.PRIMARY'
-Query Execution Time: 0.025061 seconds
+Query Execution Time: 0.007326 seconds
 ======================================================================
 
 ======================================================================
@@ -3524,7 +3524,7 @@ Test Description: Perform multiple operations where the final statement fails, l
 Execution Status: PASS
 Query Executed: INSERT INTO employees (emp_id, emp_name, email) VALUES (100963,'Dup','dup90963@test.com');
 Database Response: 1062 (23000): Duplicate entry '100963' for key 'employees.PRIMARY'
-Query Execution Time: 0.023371 seconds
+Query Execution Time: 0.004938 seconds
 ======================================================================
 
 ======================================================================
@@ -3534,7 +3534,7 @@ Test Description: Perform multiple operations where the final statement fails, l
 Execution Status: PASS
 Query Executed: INSERT INTO employees (emp_id, emp_name, email) VALUES (110963,'Dup','dup90963@test.com');
 Database Response: 1062 (23000): Duplicate entry '110963' for key 'employees.PRIMARY'
-Query Execution Time: 0.029967 seconds
+Query Execution Time: 0.006221 seconds
 ======================================================================
 
 ======================================================================
@@ -3544,7 +3544,7 @@ Test Description: Perform multiple operations where the final statement fails, l
 Execution Status: PASS
 Query Executed: INSERT INTO employees (emp_id, emp_name, email) VALUES (120963,'Dup','dup90963@test.com');
 Database Response: 1062 (23000): Duplicate entry '120963' for key 'employees.PRIMARY'
-Query Execution Time: 0.031099 seconds
+Query Execution Time: 0.005961 seconds
 ======================================================================
 
 ======================================================================
@@ -3554,7 +3554,7 @@ Test Description: Perform multiple operations where the final statement fails, l
 Execution Status: PASS
 Query Executed: INSERT INTO employees (emp_id, emp_name, email) VALUES (130963,'Dup','dup90963@test.com');
 Database Response: 1062 (23000): Duplicate entry '130963' for key 'employees.PRIMARY'
-Query Execution Time: 0.028470 seconds
+Query Execution Time: 0.006571 seconds
 ======================================================================
 
 ======================================================================
@@ -3564,7 +3564,7 @@ Test Description: Explicitly ROLLBACK after multiple successful operations to di
 Execution Status: PASS
 Query Executed: ROLLBACK;
 Database Response: Query executed successfully. Rows affected: 0
-Query Execution Time: 0.011960 seconds
+Query Execution Time: 0.004589 seconds
 ======================================================================
 
 ======================================================================
@@ -3574,7 +3574,7 @@ Test Description: Explicitly ROLLBACK after multiple successful operations to di
 Execution Status: PASS
 Query Executed: ROLLBACK;
 Database Response: Query executed successfully. Rows affected: 0
-Query Execution Time: 0.011655 seconds
+Query Execution Time: 0.003960 seconds
 ======================================================================
 
 ======================================================================
@@ -3584,7 +3584,7 @@ Test Description: Explicitly ROLLBACK after multiple successful operations to di
 Execution Status: PASS
 Query Executed: ROLLBACK;
 Database Response: Query executed successfully. Rows affected: 0
-Query Execution Time: 0.057811 seconds
+Query Execution Time: 0.003869 seconds
 ======================================================================
 
 ======================================================================
@@ -3594,7 +3594,7 @@ Test Description: Explicitly ROLLBACK after multiple successful operations to di
 Execution Status: PASS
 Query Executed: ROLLBACK;
 Database Response: Query executed successfully. Rows affected: 0
-Query Execution Time: 0.018811 seconds
+Query Execution Time: 0.003401 seconds
 ======================================================================
 
 ======================================================================
@@ -3604,7 +3604,7 @@ Test Description: Explicitly ROLLBACK after multiple successful operations to di
 Execution Status: PASS
 Query Executed: ROLLBACK;
 Database Response: Query executed successfully. Rows affected: 0
-Query Execution Time: 0.029241 seconds
+Query Execution Time: 0.004875 seconds
 ======================================================================
 
 ======================================================================
@@ -3614,7 +3614,7 @@ Test Description: Create a secondary index on a dedicated test table and confirm
 Execution Status: PASS
 Query Executed: CREATE INDEX idx_f097_lookup ON test_f097_idx (lookup_val);
 Database Response: Query executed successfully. Rows affected: 0
-Query Execution Time: 0.319548 seconds
+Query Execution Time: 0.060327 seconds
 ======================================================================
 
 ======================================================================
@@ -3624,7 +3624,7 @@ Test Description: Create a secondary index on a dedicated test table and confirm
 Execution Status: PASS
 Query Executed: CREATE INDEX idx_f097_lookup_v1 ON test_f097_idx_v1 (lookup_val);
 Database Response: Query executed successfully. Rows affected: 0
-Query Execution Time: 0.301271 seconds
+Query Execution Time: 0.037255 seconds
 ======================================================================
 
 ======================================================================
@@ -3634,7 +3634,7 @@ Test Description: Create a secondary index on a dedicated test table and confirm
 Execution Status: PASS
 Query Executed: CREATE INDEX idx_f097_lookup_v2 ON test_f097_idx_v2 (lookup_val);
 Database Response: Query executed successfully. Rows affected: 0
-Query Execution Time: 0.324012 seconds
+Query Execution Time: 0.039597 seconds
 ======================================================================
 
 ======================================================================
@@ -3644,7 +3644,7 @@ Test Description: Create a secondary index on a dedicated test table and confirm
 Execution Status: PASS
 Query Executed: CREATE INDEX idx_f097_lookup_v3 ON test_f097_idx_v3 (lookup_val);
 Database Response: Query executed successfully. Rows affected: 0
-Query Execution Time: 0.341852 seconds
+Query Execution Time: 0.040230 seconds
 ======================================================================
 
 ======================================================================
@@ -3654,7 +3654,7 @@ Test Description: Create a secondary index on a dedicated test table and confirm
 Execution Status: PASS
 Query Executed: CREATE INDEX idx_f097_lookup_v4 ON test_f097_idx_v4 (lookup_val);
 Database Response: Query executed successfully. Rows affected: 0
-Query Execution Time: 0.210454 seconds
+Query Execution Time: 0.043118 seconds
 ======================================================================
 
 ======================================================================
@@ -3664,7 +3664,7 @@ Test Description: Attempt to create an index with a name that already exists on 
 Execution Status: PASS
 Query Executed: CREATE INDEX idx_f097_dup ON test_f097_dup (b);
 Database Response: 1061 (42000): Duplicate key name 'idx_f097_dup'
-Query Execution Time: 0.259677 seconds
+Query Execution Time: 0.045631 seconds
 ======================================================================
 
 ======================================================================
@@ -3674,7 +3674,7 @@ Test Description: Attempt to create an index with a name that already exists on 
 Execution Status: PASS
 Query Executed: CREATE INDEX idx_f097_dup_v1 ON test_f097_dup_v1 (b);
 Database Response: 1061 (42000): Duplicate key name 'idx_f097_dup_v1'
-Query Execution Time: 0.241214 seconds
+Query Execution Time: 0.059400 seconds
 ======================================================================
 
 ======================================================================
@@ -3684,7 +3684,7 @@ Test Description: Attempt to create an index with a name that already exists on 
 Execution Status: PASS
 Query Executed: CREATE INDEX idx_f097_dup_v2 ON test_f097_dup_v2 (b);
 Database Response: 1061 (42000): Duplicate key name 'idx_f097_dup_v2'
-Query Execution Time: 0.321281 seconds
+Query Execution Time: 0.051064 seconds
 ======================================================================
 
 ======================================================================
@@ -3694,7 +3694,7 @@ Test Description: Attempt to create an index with a name that already exists on 
 Execution Status: PASS
 Query Executed: CREATE INDEX idx_f097_dup_v3 ON test_f097_dup_v3 (b);
 Database Response: 1061 (42000): Duplicate key name 'idx_f097_dup_v3'
-Query Execution Time: 0.744111 seconds
+Query Execution Time: 0.046257 seconds
 ======================================================================
 
 ======================================================================
@@ -3704,7 +3704,7 @@ Test Description: Attempt to create an index with a name that already exists on 
 Execution Status: PASS
 Query Executed: CREATE INDEX idx_f097_dup_v4 ON test_f097_dup_v4 (b);
 Database Response: 1061 (42000): Duplicate key name 'idx_f097_dup_v4'
-Query Execution Time: 0.400435 seconds
+Query Execution Time: 0.078943 seconds
 ======================================================================
 
 ======================================================================
@@ -3719,7 +3719,7 @@ Database Response: Rows returned: 1
 +----+-------------+----------------+------------+------+---------------+---------------+---------+-------+------+----------+-------+
 | 1  | SIMPLE      | test_f097_func | NULL       | ref  | idx_f097_year | idx_f097_year | 5       | const | 1    | 100.0    | NULL  |
 +----+-------------+----------------+------------+------+---------------+---------------+---------+-------+------+----------+-------+
-Query Execution Time: 0.267052 seconds
+Query Execution Time: 0.065688 seconds
 ======================================================================
 
 ======================================================================
@@ -3734,7 +3734,7 @@ Database Response: Rows returned: 1
 +----+-------------+-------------------+------------+------+------------------+------------------+---------+-------+------+----------+-------+
 | 1  | SIMPLE      | test_f097_func_v1 | NULL       | ref  | idx_f097_year_v1 | idx_f097_year_v1 | 5       | const | 1    | 100.0    | NULL  |
 +----+-------------+-------------------+------------+------+------------------+------------------+---------+-------+------+----------+-------+
-Query Execution Time: 0.508989 seconds
+Query Execution Time: 0.038163 seconds
 ======================================================================
 
 ======================================================================
@@ -3749,7 +3749,7 @@ Database Response: Rows returned: 1
 +----+-------------+-------------------+------------+------+------------------+------------------+---------+-------+------+----------+-------+
 | 1  | SIMPLE      | test_f097_func_v2 | NULL       | ref  | idx_f097_year_v2 | idx_f097_year_v2 | 5       | const | 1    | 100.0    | NULL  |
 +----+-------------+-------------------+------------+------+------------------+------------------+---------+-------+------+----------+-------+
-Query Execution Time: 0.365694 seconds
+Query Execution Time: 0.044958 seconds
 ======================================================================
 
 ======================================================================
@@ -3764,7 +3764,7 @@ Database Response: Rows returned: 1
 +----+-------------+-------------------+------------+------+------------------+------------------+---------+-------+------+----------+-------+
 | 1  | SIMPLE      | test_f097_func_v3 | NULL       | ref  | idx_f097_year_v3 | idx_f097_year_v3 | 5       | const | 1    | 100.0    | NULL  |
 +----+-------------+-------------------+------------+------+------------------+------------------+---------+-------+------+----------+-------+
-Query Execution Time: 0.293971 seconds
+Query Execution Time: 0.040248 seconds
 ======================================================================
 
 ======================================================================
@@ -3779,7 +3779,7 @@ Database Response: Rows returned: 1
 +----+-------------+-------------------+------------+------+------------------+------------------+---------+-------+------+----------+-------+
 | 1  | SIMPLE      | test_f097_func_v4 | NULL       | ref  | idx_f097_year_v4 | idx_f097_year_v4 | 5       | const | 1    | 100.0    | NULL  |
 +----+-------------+-------------------+------------+------+------------------+------------------+---------+-------+------+----------+-------+
-Query Execution Time: 0.418627 seconds
+Query Execution Time: 0.064682 seconds
 ======================================================================
 
 ======================================================================
@@ -3789,7 +3789,7 @@ Test Description: Create a view summarizing employee counts for a dedicated depa
 Execution Status: PASS
 Query Executed: CREATE VIEW test_vw_f098_headcount AS SELECT dept_id, COUNT(*) AS headcount FROM employees GROUP BY dept_id;
 Database Response: Query executed successfully. Rows affected: 0
-Query Execution Time: 0.074676 seconds
+Query Execution Time: 0.011467 seconds
 ======================================================================
 
 ======================================================================
@@ -3799,7 +3799,7 @@ Test Description: Create a view summarizing employee counts for a dedicated depa
 Execution Status: PASS
 Query Executed: CREATE VIEW test_vw_f098_headcount_v1 AS SELECT dept_id, COUNT(*) AS headcount FROM employees GROUP BY dept_id;
 Database Response: Query executed successfully. Rows affected: 0
-Query Execution Time: 0.081610 seconds
+Query Execution Time: 0.011723 seconds
 ======================================================================
 
 ======================================================================
@@ -3809,7 +3809,7 @@ Test Description: Create a view summarizing employee counts for a dedicated depa
 Execution Status: PASS
 Query Executed: CREATE VIEW test_vw_f098_headcount_v2 AS SELECT dept_id, COUNT(*) AS headcount FROM employees GROUP BY dept_id;
 Database Response: Query executed successfully. Rows affected: 0
-Query Execution Time: 0.085467 seconds
+Query Execution Time: 0.009601 seconds
 ======================================================================
 
 ======================================================================
@@ -3819,7 +3819,7 @@ Test Description: Create a view summarizing employee counts for a dedicated depa
 Execution Status: PASS
 Query Executed: CREATE VIEW test_vw_f098_headcount_v3 AS SELECT dept_id, COUNT(*) AS headcount FROM employees GROUP BY dept_id;
 Database Response: Query executed successfully. Rows affected: 0
-Query Execution Time: 0.075616 seconds
+Query Execution Time: 0.012765 seconds
 ======================================================================
 
 ======================================================================
@@ -3829,7 +3829,7 @@ Test Description: Create a view summarizing employee counts for a dedicated depa
 Execution Status: PASS
 Query Executed: CREATE VIEW test_vw_f098_headcount_v4 AS SELECT dept_id, COUNT(*) AS headcount FROM employees GROUP BY dept_id;
 Database Response: Query executed successfully. Rows affected: 0
-Query Execution Time: 0.094838 seconds
+Query Execution Time: 0.011779 seconds
 ======================================================================
 
 ======================================================================
@@ -3839,7 +3839,7 @@ Test Description: Query a view that does not exist
 Execution Status: PASS
 Query Executed: SELECT * FROM test_vw_f098_ghost;
 Database Response: 1146 (42S02): Table 'ai_testing_group4.test_vw_f098_ghost' doesn't exist
-Query Execution Time: 0.020420 seconds
+Query Execution Time: 0.002723 seconds
 ======================================================================
 
 ======================================================================
@@ -3849,7 +3849,7 @@ Test Description: Query a view that does not exist
 Execution Status: PASS
 Query Executed: SELECT * FROM test_vw_f098_ghost_v1;
 Database Response: 1146 (42S02): Table 'ai_testing_group4.test_vw_f098_ghost_v1' doesn't exist
-Query Execution Time: 0.027693 seconds
+Query Execution Time: 0.002559 seconds
 ======================================================================
 
 ======================================================================
@@ -3859,7 +3859,7 @@ Test Description: Query a view that does not exist
 Execution Status: PASS
 Query Executed: SELECT * FROM test_vw_f098_ghost_v2;
 Database Response: 1146 (42S02): Table 'ai_testing_group4.test_vw_f098_ghost_v2' doesn't exist
-Query Execution Time: 0.012440 seconds
+Query Execution Time: 0.002414 seconds
 ======================================================================
 
 ======================================================================
@@ -3869,7 +3869,7 @@ Test Description: Query a view that does not exist
 Execution Status: PASS
 Query Executed: SELECT * FROM test_vw_f098_ghost_v3;
 Database Response: 1146 (42S02): Table 'ai_testing_group4.test_vw_f098_ghost_v3' doesn't exist
-Query Execution Time: 0.019877 seconds
+Query Execution Time: 0.004196 seconds
 ======================================================================
 
 ======================================================================
@@ -3879,7 +3879,7 @@ Test Description: Query a view that does not exist
 Execution Status: PASS
 Query Executed: SELECT * FROM test_vw_f098_ghost_v4;
 Database Response: 1146 (42S02): Table 'ai_testing_group4.test_vw_f098_ghost_v4' doesn't exist
-Query Execution Time: 0.023661 seconds
+Query Execution Time: 0.004500 seconds
 ======================================================================
 
 ======================================================================
@@ -3889,7 +3889,7 @@ Test Description: Use CREATE OR REPLACE VIEW to redefine an existing view with a
 Execution Status: PASS
 Query Executed: CREATE OR REPLACE VIEW test_vw_f098_replace AS SELECT dept_id, AVG(salary) AS avg_salary FROM employees WHERE dept_id IS NOT NULL GROUP BY dept_id;
 Database Response: Query executed successfully. Rows affected: 0
-Query Execution Time: 0.074482 seconds
+Query Execution Time: 0.011081 seconds
 ======================================================================
 
 ======================================================================
@@ -3899,7 +3899,7 @@ Test Description: Use CREATE OR REPLACE VIEW to redefine an existing view with a
 Execution Status: PASS
 Query Executed: CREATE OR REPLACE VIEW test_vw_f098_replace_v1 AS SELECT dept_id, AVG(salary) AS avg_salary FROM employees WHERE dept_id IS NOT NULL GROUP BY dept_id;
 Database Response: Query executed successfully. Rows affected: 0
-Query Execution Time: 0.125768 seconds
+Query Execution Time: 0.010927 seconds
 ======================================================================
 
 ======================================================================
@@ -3909,7 +3909,7 @@ Test Description: Use CREATE OR REPLACE VIEW to redefine an existing view with a
 Execution Status: PASS
 Query Executed: CREATE OR REPLACE VIEW test_vw_f098_replace_v2 AS SELECT dept_id, AVG(salary) AS avg_salary FROM employees WHERE dept_id IS NOT NULL GROUP BY dept_id;
 Database Response: Query executed successfully. Rows affected: 0
-Query Execution Time: 0.092041 seconds
+Query Execution Time: 0.009747 seconds
 ======================================================================
 
 ======================================================================
@@ -3919,7 +3919,7 @@ Test Description: Use CREATE OR REPLACE VIEW to redefine an existing view with a
 Execution Status: PASS
 Query Executed: CREATE OR REPLACE VIEW test_vw_f098_replace_v3 AS SELECT dept_id, AVG(salary) AS avg_salary FROM employees WHERE dept_id IS NOT NULL GROUP BY dept_id;
 Database Response: Query executed successfully. Rows affected: 0
-Query Execution Time: 0.056457 seconds
+Query Execution Time: 0.010416 seconds
 ======================================================================
 
 ======================================================================
@@ -3929,7 +3929,7 @@ Test Description: Use CREATE OR REPLACE VIEW to redefine an existing view with a
 Execution Status: PASS
 Query Executed: CREATE OR REPLACE VIEW test_vw_f098_replace_v4 AS SELECT dept_id, AVG(salary) AS avg_salary FROM employees WHERE dept_id IS NOT NULL GROUP BY dept_id;
 Database Response: Query executed successfully. Rows affected: 0
-Query Execution Time: 0.142236 seconds
+Query Execution Time: 0.011452 seconds
 ======================================================================
 
 ======================================================================
@@ -3939,7 +3939,7 @@ Test Description: Create and call a uniquely named stored procedure that gives a
 Execution Status: PASS
 Query Executed: CREATE PROCEDURE sp_test_f099_raise(IN p_dept_id INT, IN p_pct DECIMAL(5,2)) BEGIN UPDATE employees SET salary = salary * (1 + p_pct/100) WHERE dept_id = p_dept_id; END;
 Database Response: Query executed successfully. Rows affected: 0
-Query Execution Time: 0.071897 seconds
+Query Execution Time: 0.005605 seconds
 ======================================================================
 
 ======================================================================
@@ -3949,7 +3949,7 @@ Test Description: Create and call a uniquely named stored procedure that gives a
 Execution Status: PASS
 Query Executed: CREATE PROCEDURE sp_test_f099_raise_v1(IN p_dept_id INT, IN p_pct DECIMAL(5,2)) BEGIN UPDATE employees SET salary = salary * (1 + p_pct/100) WHERE dept_id = p_dept_id; END;
 Database Response: Query executed successfully. Rows affected: 0
-Query Execution Time: 0.073105 seconds
+Query Execution Time: 0.008811 seconds
 ======================================================================
 
 ======================================================================
@@ -3959,7 +3959,7 @@ Test Description: Create and call a uniquely named stored procedure that gives a
 Execution Status: PASS
 Query Executed: CREATE PROCEDURE sp_test_f099_raise_v2(IN p_dept_id INT, IN p_pct DECIMAL(5,2)) BEGIN UPDATE employees SET salary = salary * (1 + p_pct/100) WHERE dept_id = p_dept_id; END;
 Database Response: Query executed successfully. Rows affected: 0
-Query Execution Time: 0.044769 seconds
+Query Execution Time: 0.006363 seconds
 ======================================================================
 
 ======================================================================
@@ -3969,7 +3969,7 @@ Test Description: Create and call a uniquely named stored procedure that gives a
 Execution Status: PASS
 Query Executed: CREATE PROCEDURE sp_test_f099_raise_v3(IN p_dept_id INT, IN p_pct DECIMAL(5,2)) BEGIN UPDATE employees SET salary = salary * (1 + p_pct/100) WHERE dept_id = p_dept_id; END;
 Database Response: Query executed successfully. Rows affected: 0
-Query Execution Time: 0.038451 seconds
+Query Execution Time: 0.004814 seconds
 ======================================================================
 
 ======================================================================
@@ -3979,7 +3979,7 @@ Test Description: Create and call a uniquely named stored procedure that gives a
 Execution Status: PASS
 Query Executed: CREATE PROCEDURE sp_test_f099_raise_v4(IN p_dept_id INT, IN p_pct DECIMAL(5,2)) BEGIN UPDATE employees SET salary = salary * (1 + p_pct/100) WHERE dept_id = p_dept_id; END;
 Database Response: Query executed successfully. Rows affected: 0
-Query Execution Time: 0.033749 seconds
+Query Execution Time: 0.005072 seconds
 ======================================================================
 
 ======================================================================
@@ -3989,7 +3989,7 @@ Test Description: Call a uniquely named stored procedure with the wrong number o
 Execution Status: PASS
 Query Executed: CALL sp_test_f099_wrongargs(9099);
 Database Response: 1318 (42000): Incorrect number of arguments for PROCEDURE ai_testing_group4.sp_test_f099_wrongargs; expected 2, got 1
-Query Execution Time: 0.049585 seconds
+Query Execution Time: 0.006701 seconds
 ======================================================================
 
 ======================================================================
@@ -3999,7 +3999,7 @@ Test Description: Call a uniquely named stored procedure with the wrong number o
 Execution Status: PASS
 Query Executed: CALL sp_test_f099_wrongargs_v1(10099);
 Database Response: 1318 (42000): Incorrect number of arguments for PROCEDURE ai_testing_group4.sp_test_f099_wrongargs_v1; expected 2, got 1
-Query Execution Time: 0.032565 seconds
+Query Execution Time: 0.005962 seconds
 ======================================================================
 
 ======================================================================
@@ -4009,7 +4009,7 @@ Test Description: Call a uniquely named stored procedure with the wrong number o
 Execution Status: PASS
 Query Executed: CALL sp_test_f099_wrongargs_v2(11099);
 Database Response: 1318 (42000): Incorrect number of arguments for PROCEDURE ai_testing_group4.sp_test_f099_wrongargs_v2; expected 2, got 1
-Query Execution Time: 0.024437 seconds
+Query Execution Time: 0.007966 seconds
 ======================================================================
 
 ======================================================================
@@ -4019,7 +4019,7 @@ Test Description: Call a uniquely named stored procedure with the wrong number o
 Execution Status: PASS
 Query Executed: CALL sp_test_f099_wrongargs_v3(12099);
 Database Response: 1318 (42000): Incorrect number of arguments for PROCEDURE ai_testing_group4.sp_test_f099_wrongargs_v3; expected 2, got 1
-Query Execution Time: 0.041854 seconds
+Query Execution Time: 0.006362 seconds
 ======================================================================
 
 ======================================================================
@@ -4029,7 +4029,7 @@ Test Description: Call a uniquely named stored procedure with the wrong number o
 Execution Status: PASS
 Query Executed: CALL sp_test_f099_wrongargs_v4(13099);
 Database Response: 1318 (42000): Incorrect number of arguments for PROCEDURE ai_testing_group4.sp_test_f099_wrongargs_v4; expected 2, got 1
-Query Execution Time: 0.028026 seconds
+Query Execution Time: 0.008141 seconds
 ======================================================================
 
 ======================================================================
@@ -4039,7 +4039,7 @@ Test Description: Call a uniquely named stored procedure whose logic matches zer
 Execution Status: PASS
 Query Executed: CALL sp_test_f099_nomatch(-999999);
 Database Response: Query executed successfully. Rows affected: 0
-Query Execution Time: 0.031322 seconds
+Query Execution Time: 0.007085 seconds
 ======================================================================
 
 ======================================================================
@@ -4049,7 +4049,7 @@ Test Description: Call a uniquely named stored procedure whose logic matches zer
 Execution Status: PASS
 Query Executed: CALL sp_test_f099_nomatch_v1(-999999);
 Database Response: Query executed successfully. Rows affected: 0
-Query Execution Time: 0.048012 seconds
+Query Execution Time: 0.005876 seconds
 ======================================================================
 
 ======================================================================
@@ -4059,7 +4059,7 @@ Test Description: Call a uniquely named stored procedure whose logic matches zer
 Execution Status: PASS
 Query Executed: CALL sp_test_f099_nomatch_v2(-999999);
 Database Response: Query executed successfully. Rows affected: 0
-Query Execution Time: 0.045062 seconds
+Query Execution Time: 0.006995 seconds
 ======================================================================
 
 ======================================================================
@@ -4069,7 +4069,7 @@ Test Description: Call a uniquely named stored procedure whose logic matches zer
 Execution Status: PASS
 Query Executed: CALL sp_test_f099_nomatch_v3(-999999);
 Database Response: Query executed successfully. Rows affected: 0
-Query Execution Time: 0.027917 seconds
+Query Execution Time: 0.010316 seconds
 ======================================================================
 
 ======================================================================
@@ -4079,57 +4079,57 @@ Test Description: Call a uniquely named stored procedure whose logic matches zer
 Execution Status: PASS
 Query Executed: CALL sp_test_f099_nomatch_v4(-999999);
 Database Response: Query executed successfully. Rows affected: 0
-Query Execution Time: 0.049350 seconds
+Query Execution Time: 0.008318 seconds
 ======================================================================
 
 ======================================================================
 Test Case ID: TC1486
 Test Type: Positive
 Test Description: Create an AFTER INSERT trigger on a dedicated test table that logs inserts to a dedicated audit table, then verify and clean up
-Execution Status: FAIL
+Execution Status: PASS
 Query Executed: CREATE TRIGGER trg_test_f100_insert AFTER INSERT ON test_employee_src_f100 FOR EACH ROW BEGIN INSERT INTO test_employee_audit_f100 VALUES (NEW.emp_id, 'INSERT', NOW()); END;
-Database Response: 1419 (HY000): You do not have the SUPER privilege and binary logging is enabled (you *might* want to use the less safe log_bin_trust_function_creators variable)
-Query Execution Time: 0.351420 seconds
+Database Response: Query executed successfully. Rows affected: 0
+Query Execution Time: 0.065666 seconds
 ======================================================================
 
 ======================================================================
 Test Case ID: TC1487
 Test Type: Positive
 Test Description: Create an AFTER INSERT trigger on a dedicated test table that logs inserts to a dedicated audit table, then verify and clean up
-Execution Status: FAIL
+Execution Status: PASS
 Query Executed: CREATE TRIGGER trg_test_f100_insert_v1 AFTER INSERT ON test_employee_src_f100_v1 FOR EACH ROW BEGIN INSERT INTO test_employee_audit_f100_v1 VALUES (NEW.emp_id, 'INSERT', NOW()); END;
-Database Response: 1419 (HY000): You do not have the SUPER privilege and binary logging is enabled (you *might* want to use the less safe log_bin_trust_function_creators variable)
-Query Execution Time: 0.279063 seconds
+Database Response: Query executed successfully. Rows affected: 0
+Query Execution Time: 0.052853 seconds
 ======================================================================
 
 ======================================================================
 Test Case ID: TC1488
 Test Type: Positive
 Test Description: Create an AFTER INSERT trigger on a dedicated test table that logs inserts to a dedicated audit table, then verify and clean up
-Execution Status: FAIL
+Execution Status: PASS
 Query Executed: CREATE TRIGGER trg_test_f100_insert_v2 AFTER INSERT ON test_employee_src_f100_v2 FOR EACH ROW BEGIN INSERT INTO test_employee_audit_f100_v2 VALUES (NEW.emp_id, 'INSERT', NOW()); END;
-Database Response: 1419 (HY000): You do not have the SUPER privilege and binary logging is enabled (you *might* want to use the less safe log_bin_trust_function_creators variable)
-Query Execution Time: 1.033517 seconds
+Database Response: Query executed successfully. Rows affected: 0
+Query Execution Time: 0.062932 seconds
 ======================================================================
 
 ======================================================================
 Test Case ID: TC1489
 Test Type: Positive
 Test Description: Create an AFTER INSERT trigger on a dedicated test table that logs inserts to a dedicated audit table, then verify and clean up
-Execution Status: FAIL
+Execution Status: PASS
 Query Executed: CREATE TRIGGER trg_test_f100_insert_v3 AFTER INSERT ON test_employee_src_f100_v3 FOR EACH ROW BEGIN INSERT INTO test_employee_audit_f100_v3 VALUES (NEW.emp_id, 'INSERT', NOW()); END;
-Database Response: 1419 (HY000): You do not have the SUPER privilege and binary logging is enabled (you *might* want to use the less safe log_bin_trust_function_creators variable)
-Query Execution Time: 0.346965 seconds
+Database Response: Query executed successfully. Rows affected: 0
+Query Execution Time: 0.077783 seconds
 ======================================================================
 
 ======================================================================
 Test Case ID: TC1490
 Test Type: Positive
 Test Description: Create an AFTER INSERT trigger on a dedicated test table that logs inserts to a dedicated audit table, then verify and clean up
-Execution Status: FAIL
+Execution Status: PASS
 Query Executed: CREATE TRIGGER trg_test_f100_insert_v4 AFTER INSERT ON test_employee_src_f100_v4 FOR EACH ROW BEGIN INSERT INTO test_employee_audit_f100_v4 VALUES (NEW.emp_id, 'INSERT', NOW()); END;
-Database Response: 1419 (HY000): You do not have the SUPER privilege and binary logging is enabled (you *might* want to use the less safe log_bin_trust_function_creators variable)
-Query Execution Time: 0.387538 seconds
+Database Response: Query executed successfully. Rows affected: 0
+Query Execution Time: 0.053075 seconds
 ======================================================================
 
 ======================================================================
@@ -4138,8 +4138,8 @@ Test Type: Negative
 Test Description: Attempt to create a second trigger with the same name on the same table/event
 Execution Status: PASS
 Query Executed: CREATE TRIGGER trg_test_f100_dup AFTER INSERT ON test_employee_src2_f100 FOR EACH ROW BEGIN SET @dummy_f100 = 2; END;
-Database Response: 1419 (HY000): You do not have the SUPER privilege and binary logging is enabled (you *might* want to use the less safe log_bin_trust_function_creators variable)
-Query Execution Time: 0.207231 seconds
+Database Response: 1359 (HY000): Trigger already exists
+Query Execution Time: 0.042460 seconds
 ======================================================================
 
 ======================================================================
@@ -4148,8 +4148,8 @@ Test Type: Negative
 Test Description: Attempt to create a second trigger with the same name on the same table/event
 Execution Status: PASS
 Query Executed: CREATE TRIGGER trg_test_f100_dup_v1 AFTER INSERT ON test_employee_src2_f100_v1 FOR EACH ROW BEGIN SET @dummy_f100 = 2; END;
-Database Response: 1419 (HY000): You do not have the SUPER privilege and binary logging is enabled (you *might* want to use the less safe log_bin_trust_function_creators variable)
-Query Execution Time: 0.198365 seconds
+Database Response: 1359 (HY000): Trigger already exists
+Query Execution Time: 0.040139 seconds
 ======================================================================
 
 ======================================================================
@@ -4158,8 +4158,8 @@ Test Type: Negative
 Test Description: Attempt to create a second trigger with the same name on the same table/event
 Execution Status: PASS
 Query Executed: CREATE TRIGGER trg_test_f100_dup_v2 AFTER INSERT ON test_employee_src2_f100_v2 FOR EACH ROW BEGIN SET @dummy_f100 = 2; END;
-Database Response: 1419 (HY000): You do not have the SUPER privilege and binary logging is enabled (you *might* want to use the less safe log_bin_trust_function_creators variable)
-Query Execution Time: 0.172382 seconds
+Database Response: 1359 (HY000): Trigger already exists
+Query Execution Time: 0.027581 seconds
 ======================================================================
 
 ======================================================================
@@ -4168,8 +4168,8 @@ Test Type: Negative
 Test Description: Attempt to create a second trigger with the same name on the same table/event
 Execution Status: PASS
 Query Executed: CREATE TRIGGER trg_test_f100_dup_v3 AFTER INSERT ON test_employee_src2_f100_v3 FOR EACH ROW BEGIN SET @dummy_f100 = 2; END;
-Database Response: 1419 (HY000): You do not have the SUPER privilege and binary logging is enabled (you *might* want to use the less safe log_bin_trust_function_creators variable)
-Query Execution Time: 0.245903 seconds
+Database Response: 1359 (HY000): Trigger already exists
+Query Execution Time: 0.040775 seconds
 ======================================================================
 
 ======================================================================
@@ -4178,57 +4178,57 @@ Test Type: Negative
 Test Description: Attempt to create a second trigger with the same name on the same table/event
 Execution Status: PASS
 Query Executed: CREATE TRIGGER trg_test_f100_dup_v4 AFTER INSERT ON test_employee_src2_f100_v4 FOR EACH ROW BEGIN SET @dummy_f100 = 2; END;
-Database Response: 1419 (HY000): You do not have the SUPER privilege and binary logging is enabled (you *might* want to use the less safe log_bin_trust_function_creators variable)
-Query Execution Time: 0.184428 seconds
+Database Response: 1359 (HY000): Trigger already exists
+Query Execution Time: 0.033142 seconds
 ======================================================================
 
 ======================================================================
 Test Case ID: TC1496
 Test Type: Edge
 Test Description: Perform an insert that is itself rolled back, verifying the trigger's audit insert is rolled back too, then clean up
-Execution Status: FAIL
+Execution Status: PASS
 Query Executed: ROLLBACK;
-Database Response: 1419 (HY000): You do not have the SUPER privilege and binary logging is enabled (you *might* want to use the less safe log_bin_trust_function_creators variable)
-Query Execution Time: 0.287038 seconds
+Database Response: Query executed successfully. Rows affected: 0
+Query Execution Time: 0.057405 seconds
 ======================================================================
 
 ======================================================================
 Test Case ID: TC1497
 Test Type: Edge
 Test Description: Perform an insert that is itself rolled back, verifying the trigger's audit insert is rolled back too, then clean up
-Execution Status: FAIL
+Execution Status: PASS
 Query Executed: ROLLBACK;
-Database Response: 1419 (HY000): You do not have the SUPER privilege and binary logging is enabled (you *might* want to use the less safe log_bin_trust_function_creators variable)
-Query Execution Time: 0.339125 seconds
+Database Response: Query executed successfully. Rows affected: 0
+Query Execution Time: 0.077008 seconds
 ======================================================================
 
 ======================================================================
 Test Case ID: TC1498
 Test Type: Edge
 Test Description: Perform an insert that is itself rolled back, verifying the trigger's audit insert is rolled back too, then clean up
-Execution Status: FAIL
+Execution Status: PASS
 Query Executed: ROLLBACK;
-Database Response: 1419 (HY000): You do not have the SUPER privilege and binary logging is enabled (you *might* want to use the less safe log_bin_trust_function_creators variable)
-Query Execution Time: 0.369226 seconds
+Database Response: Query executed successfully. Rows affected: 0
+Query Execution Time: 0.050671 seconds
 ======================================================================
 
 ======================================================================
 Test Case ID: TC1499
 Test Type: Edge
 Test Description: Perform an insert that is itself rolled back, verifying the trigger's audit insert is rolled back too, then clean up
-Execution Status: FAIL
+Execution Status: PASS
 Query Executed: ROLLBACK;
-Database Response: 1419 (HY000): You do not have the SUPER privilege and binary logging is enabled (you *might* want to use the less safe log_bin_trust_function_creators variable)
-Query Execution Time: 0.354585 seconds
+Database Response: Query executed successfully. Rows affected: 0
+Query Execution Time: 0.059076 seconds
 ======================================================================
 
 ======================================================================
 Test Case ID: TC1500
 Test Type: Edge
 Test Description: Perform an insert that is itself rolled back, verifying the trigger's audit insert is rolled back too, then clean up
-Execution Status: FAIL
+Execution Status: PASS
 Query Executed: ROLLBACK;
-Database Response: 1419 (HY000): You do not have the SUPER privilege and binary logging is enabled (you *might* want to use the less safe log_bin_trust_function_creators variable)
-Query Execution Time: 0.546894 seconds
+Database Response: Query executed successfully. Rows affected: 0
+Query Execution Time: 0.071818 seconds
 ======================================================================
 

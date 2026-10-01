@@ -1,14 +1,14 @@
-Benchmark run: 2026-09-30 23:44:13
+Benchmark run: 2026-10-01 17:34:12
 Test cases: 1500 (4 groups x 375) | Runs per mode: 5
 
 EXECUTION ONLY (workers, excludes DB setup and merge)
-Sequential : mean 173.87s  std 11.32s  min 154.94s  max 182.96s
-Parallel   : mean 98.62s  std 1.09s  min 97.38s  max 100.19s
-Speedup    : 1.76x
-Efficiency : 44.1%  (ideal = 100%)
-Time saved : 43.3%
+Sequential : mean 40.62s  std 0.74s  min 39.56s  max 41.52s
+Parallel   : mean 17.60s  std 0.47s  min 16.85s  max 18.06s
+Speedup    : 2.31x
+Efficiency : 57.7%  (ideal = 100%)
+Time saved : 56.7%
 
 END-TO-END (execution + merge_and_validate)
-Sequential : 174.30s
-Parallel   : 99.05s
-Speedup    : 1.76x
+Sequential : 40.95s
+Parallel   : 17.94s
+Speedup    : 2.28x

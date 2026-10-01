@@ -13,7 +13,7 @@ The 1,500-case suite is split into four independent 375-case groups. Four local 
 
 ```powershell
 $env:MYSQL_ADMIN_USER = "root"
-$env:MYSQL_ADMIN_PASSWORD = "<your-password>"
+$env:MYSQL_ADMIN_PASSWORD = "bamboozled"
 python executor\setup_group_databases.py
 python executor\orchestrator.py
 python executor\merge_and_validate.py

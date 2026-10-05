@@ -1,5 +1,5 @@
 [group4] AI MYSQL AUTOMATED TESTING
-[group4] Loaded 375 test cases from D:\project\Final-Year-Project-v1-main\test_cases\group4.csv
+[group4] Loaded 375 test cases from /media/enait/New Volume/project/Final-Year-Project-v1-main/test_cases/group4.csv
 [group4] Connected to MySQL
 [group4] Running TC1126 | F076 | Positive
 [group4] Running TC1127 | F076 | Positive
@@ -366,15 +366,5 @@
 [group4] Running TC1488 | F100 | Positive
 [group4] Running TC1489 | F100 | Positive
 [group4] Running TC1490 | F100 | Positive
-[group4] Running TC1491 | F100 | Negative
-[group4] Running TC1492 | F100 | Negative
-[group4] Running TC1493 | F100 | Negative
-[group4] Running TC1494 | F100 | Negative
-[group4] Running TC1495 | F100 | Negative
-[group4] Running TC1496 | F100 | Edge
-[group4] Running TC1497 | F100 | Edge
-[group4] Running TC1498 | F100 | Edge
-[group4] Running TC1499 | F100 | Edge
-[group4] Running TC1500 | F100 | Edge
-[group4] Summary: 375/375 passed; 0 failed; 100.00% pass rate
-[group4] Response file saved: D:\project\Final-Year-Project-v1-main\reports\response_group4.txt
+[group4] Summary: 365/375 passed; 10 failed; 97.33% pass rate
+[group4] Response file saved: /media/enait/New Volume/project/Final-Year-Project-v1-main/reports/response_group4.txt

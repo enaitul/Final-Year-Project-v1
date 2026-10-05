@@ -1,3 +1,4 @@
 __pycache__/
 *.pyc
 .agents/
+node_modules/

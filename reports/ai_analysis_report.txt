@@ -1,18 +1,18 @@
 ==========================================================================
            AI AGENT INTELLIGENT TEST LOG & DIAGNOSTIC REPORT            
 ==========================================================================
-Generated At          : 2026-10-01 19:23:59
+Generated At          : 2026-10-05 16:14:00
 Analyzed Component    : 4 Parallel Worker Logs & Merged Suite Response
 AI Reasoning Model    : Rule-Based Heuristic & Pattern Diagnostic Engine
 --------------------------------------------------------------------------
 
 1. EXECUTIVE SUMMARY & METRICS
    • Total Test Cases Evaluated : 1500
-   • Passed Test Cases          : 1500 (100.00%)
-   • Failed Test Cases          : 0
-   • Positive Test Suite        : 500/500 passed
+   • Passed Test Cases          : 1490 (99.33%)
+   • Failed Test Cases          : 10
+   • Positive Test Suite        : 495/500 passed
    • Negative Test Suite        : 500/500 passed (Error expected & caught)
-   • Edge Case Suite            : 500/500 passed
+   • Edge Case Suite            : 495/500 passed
 
 --------------------------------------------------------------------------
 
@@ -81,10 +81,66 @@ AI Reasoning Model    : Rule-Based Heuristic & Pattern Diagnostic Engine
 --------------------------------------------------------------------------
 
 4. DETAILED FAILURE DIAGNOSIS & ACTIONABLE SUGGESTIONS
-   🎉 PERFECT SCORE: All 1,500 test cases passed baseline expectations!
-   • Positive queries executed with expected data state changes.
-   • Negative queries were correctly intercepted by MySQL constraints.
-   • Edge cases handled boundary inputs cleanly.
+   Failure #1: TC1486 [Positive] - Create an AFTER INSERT trigger on a dedicated test table that logs inserts to a dedicated audit table, then verify and clean up
+      Query       : CREATE TRIGGER trg_test_f100_insert AFTER INSERT ON test_employee_src_f100 FOR EACH ROW BEGIN INSERT INTO test_employee_audit_f100 VALUES (NEW.emp_id, 'INSERT', NOW()); END;
+      DB Output   : 1419 (HY000): You do not have the SUPER privilege and binary logging is enabled (you *might* want to use the less safe log_bin_trust_function_creators variable)
+      Diagnosis   : UNKNOWN_DB_ERROR
+      AI Action   : Inspect database logs and query syntax.
+   ------------------------------------------------------------
+   Failure #2: TC1487 [Positive] - Create an AFTER INSERT trigger on a dedicated test table that logs inserts to a dedicated audit table, then verify and clean up
+      Query       : CREATE TRIGGER trg_test_f100_insert_v1 AFTER INSERT ON test_employee_src_f100_v1 FOR EACH ROW BEGIN INSERT INTO test_employee_audit_f100_v1 VALUES (NEW.emp_id, 'INSERT', NOW()); END;
+      DB Output   : 1419 (HY000): You do not have the SUPER privilege and binary logging is enabled (you *might* want to use the less safe log_bin_trust_function_creators variable)
+      Diagnosis   : UNKNOWN_DB_ERROR
+      AI Action   : Inspect database logs and query syntax.
+   ------------------------------------------------------------
+   Failure #3: TC1488 [Positive] - Create an AFTER INSERT trigger on a dedicated test table that logs inserts to a dedicated audit table, then verify and clean up
+      Query       : CREATE TRIGGER trg_test_f100_insert_v2 AFTER INSERT ON test_employee_src_f100_v2 FOR EACH ROW BEGIN INSERT INTO test_employee_audit_f100_v2 VALUES (NEW.emp_id, 'INSERT', NOW()); END;
+      DB Output   : 1419 (HY000): You do not have the SUPER privilege and binary logging is enabled (you *might* want to use the less safe log_bin_trust_function_creators variable)
+      Diagnosis   : UNKNOWN_DB_ERROR
+      AI Action   : Inspect database logs and query syntax.
+   ------------------------------------------------------------
+   Failure #4: TC1489 [Positive] - Create an AFTER INSERT trigger on a dedicated test table that logs inserts to a dedicated audit table, then verify and clean up
+      Query       : CREATE TRIGGER trg_test_f100_insert_v3 AFTER INSERT ON test_employee_src_f100_v3 FOR EACH ROW BEGIN INSERT INTO test_employee_audit_f100_v3 VALUES (NEW.emp_id, 'INSERT', NOW()); END;
+      DB Output   : 1419 (HY000): You do not have the SUPER privilege and binary logging is enabled (you *might* want to use the less safe log_bin_trust_function_creators variable)
+      Diagnosis   : UNKNOWN_DB_ERROR
+      AI Action   : Inspect database logs and query syntax.
+   ------------------------------------------------------------
+   Failure #5: TC1490 [Positive] - Create an AFTER INSERT trigger on a dedicated test table that logs inserts to a dedicated audit table, then verify and clean up
+      Query       : CREATE TRIGGER trg_test_f100_insert_v4 AFTER INSERT ON test_employee_src_f100_v4 FOR EACH ROW BEGIN INSERT INTO test_employee_audit_f100_v4 VALUES (NEW.emp_id, 'INSERT', NOW()); END;
+      DB Output   : 1419 (HY000): You do not have the SUPER privilege and binary logging is enabled (you *might* want to use the less safe log_bin_trust_function_creators variable)
+      Diagnosis   : UNKNOWN_DB_ERROR
+      AI Action   : Inspect database logs and query syntax.
+   ------------------------------------------------------------
+   Failure #6: TC1496 [Edge] - Perform an insert that is itself rolled back, verifying the trigger's audit insert is rolled back too, then clean up
+      Query       : ROLLBACK;
+      DB Output   : 1419 (HY000): You do not have the SUPER privilege and binary logging is enabled (you *might* want to use the less safe log_bin_trust_function_creators variable)
+      Diagnosis   : UNKNOWN_DB_ERROR
+      AI Action   : Inspect database logs and query syntax.
+   ------------------------------------------------------------
+   Failure #7: TC1497 [Edge] - Perform an insert that is itself rolled back, verifying the trigger's audit insert is rolled back too, then clean up
+      Query       : ROLLBACK;
+      DB Output   : 1419 (HY000): You do not have the SUPER privilege and binary logging is enabled (you *might* want to use the less safe log_bin_trust_function_creators variable)
+      Diagnosis   : UNKNOWN_DB_ERROR
+      AI Action   : Inspect database logs and query syntax.
+   ------------------------------------------------------------
+   Failure #8: TC1498 [Edge] - Perform an insert that is itself rolled back, verifying the trigger's audit insert is rolled back too, then clean up
+      Query       : ROLLBACK;
+      DB Output   : 1419 (HY000): You do not have the SUPER privilege and binary logging is enabled (you *might* want to use the less safe log_bin_trust_function_creators variable)
+      Diagnosis   : UNKNOWN_DB_ERROR
+      AI Action   : Inspect database logs and query syntax.
+   ------------------------------------------------------------
+   Failure #9: TC1499 [Edge] - Perform an insert that is itself rolled back, verifying the trigger's audit insert is rolled back too, then clean up
+      Query       : ROLLBACK;
+      DB Output   : 1419 (HY000): You do not have the SUPER privilege and binary logging is enabled (you *might* want to use the less safe log_bin_trust_function_creators variable)
+      Diagnosis   : UNKNOWN_DB_ERROR
+      AI Action   : Inspect database logs and query syntax.
+   ------------------------------------------------------------
+   Failure #10: TC1500 [Edge] - Perform an insert that is itself rolled back, verifying the trigger's audit insert is rolled back too, then clean up
+      Query       : ROLLBACK;
+      DB Output   : 1419 (HY000): You do not have the SUPER privilege and binary logging is enabled (you *might* want to use the less safe log_bin_trust_function_creators variable)
+      Diagnosis   : UNKNOWN_DB_ERROR
+      AI Action   : Inspect database logs and query syntax.
+   ------------------------------------------------------------
 
 ==========================================================================
                        END OF AI DIAGNOSTIC REPORT                        

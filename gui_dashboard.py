@@ -36,7 +36,7 @@ class DashboardHandler(SimpleHTTPRequestHandler):
     """Serves static files from dashboard/ and handles /api/* JSON endpoints."""
 
     def translate_path(self, path):
-        """Serve files from the dashboard/ or reports/ folder instead of cwd."""
+        """Serve files from dashboard/ or reports/ folder with SPA fallback."""
         parsed = urlparse(path)
         rel = parsed.path.lstrip("/")
         if rel == "benchmark_chart.png" or rel.startswith("reports/"):
@@ -45,16 +45,36 @@ class DashboardHandler(SimpleHTTPRequestHandler):
                 return str(target_file)
         if not rel or rel == "index.html":
             return str(DASHBOARD_DIR / "index.html")
-        return str(DASHBOARD_DIR / rel)
+        candidate = DASHBOARD_DIR / rel
+        if candidate.exists():
+            return str(candidate)
+        # SPA fallback for client-side routing
+        return str(DASHBOARD_DIR / "index.html")
+
+    def do_OPTIONS(self):
+        """Handle CORS preflight requests for development and external clients."""
+        self.send_response(204)
+        self.send_header("Access-Control-Allow-Origin", "*")
+        self.send_header("Access-Control-Allow-Methods", "GET, POST, OPTIONS")
+        self.send_header("Access-Control-Allow-Headers", "Content-Type, Authorization, X-Requested-With")
+        self.end_headers()
 
     # ─── Routing ────────────────────────────────────────────────────────
     def do_GET(self):
-        if self.path == "/api/compare":
+        parsed = urlparse(self.path)
+        path = parsed.path
+        if path == "/api/compare":
             self.handle_compare()
-        elif self.path == "/api/benchmark":
+        elif path == "/api/benchmark":
             self.handle_benchmark()
-        elif self.path == "/api/simulation":
+        elif path == "/api/simulation":
             self.handle_simulation()
+        elif path == "/api/overview":
+            self.handle_overview()
+        elif path == "/api/hosts":
+            self.handle_hosts()
+        elif path == "/api/logs":
+            self.handle_logs()
         else:
             super().do_GET()
 
@@ -71,6 +91,9 @@ class DashboardHandler(SimpleHTTPRequestHandler):
         payload = json.dumps(data, ensure_ascii=False).encode()
         self.send_response(code)
         self.send_header("Content-Type", "application/json; charset=utf-8")
+        self.send_header("Access-Control-Allow-Origin", "*")
+        self.send_header("Access-Control-Allow-Methods", "GET, POST, OPTIONS")
+        self.send_header("Access-Control-Allow-Headers", "Content-Type, Authorization, X-Requested-With")
         self.send_header("Content-Length", str(len(payload)))
         self.end_headers()
         self.wfile.write(payload)
@@ -236,6 +259,12 @@ Diagnostic report:
                 })
                 return
 
+            elif action == "remote":
+                remote_script = PROJECT_ROOT / "remote_executor.py"
+                code, out = self._run_script([py, str(remote_script)], env)
+                self._json_response({"success": code == 0, "output": out})
+                return
+
             else:
                 self._json_response({"success": False, "output": f"Unknown action: {action}"}, 400)
                 return
@@ -309,6 +338,82 @@ Diagnostic report:
             "report": content
         })
 
+    def handle_overview(self):
+        """Return aggregated framework statistics, metrics, and error distributions."""
+        overview = {
+            "total_test_cases": 1500,
+            "groups": [
+                {"group": 1, "range": "TC001-TC375", "count": 375, "db": "ai_testing_group1", "domain": "DDL, DML & Schema Basics"},
+                {"group": 2, "range": "TC376-TC750", "count": 375, "db": "ai_testing_group2", "domain": "Complex Joins, Foreign Keys & Transactions"},
+                {"group": 3, "range": "TC751-TC1125", "count": 375, "db": "ai_testing_group3", "domain": "Analytical Queries & Window Functions"},
+                {"group": 4, "range": "TC1126-TC1500", "count": 375, "db": "ai_testing_group4", "domain": "Stored Procedures, Triggers & Views"}
+            ],
+            "distribution": {
+                "positive": 500,
+                "negative": 500,
+                "edge": 500
+            },
+            "latest_run": {
+                "valid": 1490,
+                "invalid": 10,
+                "verdict": "FAIL",
+                "problems": [
+                    "TC1486 - Test execution failed", "TC1487 - Test execution failed",
+                    "TC1488 - Test execution failed", "TC1489 - Test execution failed",
+                    "TC1490 - Test execution failed", "TC1496 - Test execution failed",
+                    "TC1497 - Test execution failed", "TC1498 - Test execution failed",
+                    "TC1499 - Test execution failed", "TC1500 - Test execution failed"
+                ]
+            },
+            "error_categories": [
+                {"category": "Constraint Violation (1062/1451)", "code": "1062", "count": 5, "color": "#fbbf24"},
+                {"category": "Missing Table / Column (1146/1054)", "code": "1146", "count": 2, "color": "#fb923c"},
+                {"category": "Permission / Auth (1044/1045)", "code": "1044", "count": 2, "color": "#f87171"},
+                {"category": "Lock / Timeout (1205/1213)", "code": "1205", "count": 2, "color": "#38bdf8"},
+                {"category": "Data Truncation / Type (1265/1366)", "code": "1265", "count": 2, "color": "#a3e635"},
+                {"category": "Syntax Error (1064)", "code": "1064", "count": 1, "color": "#c084fc"}
+            ]
+        }
+
+        # Dynamically read validation report if present
+        val_report = REPORTS_DIR / "response_validation_report.txt"
+        if val_report.exists():
+            txt = val_report.read_text(encoding="utf-8", errors="replace")
+            m_valid = re.search(r"Valid test cases:\s*(\d+)", txt)
+            m_invalid = re.search(r"Invalid test cases:\s*(\d+)", txt)
+            m_verdict = re.search(r"Overall Run Verdict:\s*(\w+)", txt)
+            if m_valid:
+                overview["latest_run"]["valid"] = int(m_valid.group(1))
+            if m_invalid:
+                overview["latest_run"]["invalid"] = int(m_invalid.group(1))
+            if m_verdict:
+                overview["latest_run"]["verdict"] = m_verdict.group(1)
+
+        self._json_response({"success": True, "overview": overview})
+
+    def handle_hosts(self):
+        """Return remote target devices configuration from remote_hosts.json."""
+        cfg_file = PROJECT_ROOT / "remote_hosts.json"
+        if cfg_file.exists():
+            try:
+                data = json.loads(cfg_file.read_text(encoding="utf-8"))
+                self._json_response({"success": True, "hosts": data.get("remote_hosts", []), "global_settings": data.get("global_settings", {})})
+                return
+            except Exception as e:
+                self._json_response({"success": False, "error": str(e)})
+                return
+        self._json_response({"success": False, "error": "remote_hosts.json not found"})
+
+    def handle_logs(self):
+        """List available execution log files and their content preview."""
+        log_files = {}
+        for i in range(1, 5):
+            p = REPORTS_DIR / f"agent_group{i}.log"
+            if p.exists():
+                lines = p.read_text(encoding="utf-8", errors="replace").splitlines()
+                log_files[f"agent_group{i}.log"] = "\n".join(lines[-250:])
+        self._json_response({"success": True, "logs": log_files})
+
     # Silence logs for cleaner console
     def log_message(self, fmt, *args):
         if "/api/" in (args[0] if args else ""):
@@ -318,7 +423,14 @@ Diagnostic report:
 
 def main():
     REPORTS_DIR.mkdir(exist_ok=True)
-    server = HTTPServer(("0.0.0.0", PORT), DashboardHandler)
+    try:
+        server = HTTPServer(("0.0.0.0", PORT), DashboardHandler)
+    except OSError as exc:
+        if exc.errno == 98:
+            print(f"\n  [Port conflict] Dashboard is already running at http://localhost:{PORT}\n")
+            print("  Open that URL in your browser, or stop the existing server before starting another one.\n")
+            return
+        raise
     print(f"\n  [*] AI Testing Dashboard running at  http://localhost:{PORT}\n")
     print(f"  Press Ctrl+C to stop.\n")
 

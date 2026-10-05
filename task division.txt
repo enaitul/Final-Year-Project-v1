@@ -1,0 +1,229 @@
+================================================================================
+                    PROJECT WORK DIVISION & TASK ALLOCATION
+              SCALABLE AGENTIC AI MULTITASKING & TEST FRAMEWORK
+================================================================================
+Generated Date : 2026-10-05
+Project Title  : AI-Powered Automated MySQL Testing Framework (Scale Phase)
+Target Goal    : Transition to Tool-Enhanced Multitasker Agentic AI Architecture,
+                 Scale Parallel Execution (4 -> 6 -> 8 Agents), Increase Test Cases
+                 (1,500 -> 2,250 -> 3,000 Test Cases across 4 -> 6 -> 8 Groups),
+                 Maintain Zero Inter-Dependency, and Determine System Saturation.
+================================================================================
+
+--------------------------------------------------------------------------------
+1. EXECUTIVE SUMMARY & OBJECTIVES
+--------------------------------------------------------------------------------
+In the baseline system, 1,500 test cases are executed across 4 worker processes
+(375 cases per group). Rather than subdividing the existing 1,500 test cases into
+smaller slices, this phase INCREASES the total number of test cases proportionally
+as we scale the number of Agentic AIs:
+
+  • 4 Agents & 4 Groups : 1,500 Test Cases  (375 cases/group across 4 DBs)
+  • 6 Agents & 6 Groups : 2,250 Test Cases  (+750 new cases across 6 DBs)
+  • 8 Agents & 8 Groups : 3,000 Test Cases  (+1,500 new cases across 8 DBs)
+
+Key Architectural Directives:
+1. Tool-Enhanced Agentic AI Multitaskers:
+   - Each Agentic AI is an autonomous, tool-equipped worker launched directly
+     from inside the Python orchestration program.
+   - Each agent operates with specialized tools: query execution, dynamic schema
+     introspection, automated privilege/error remediation (e.g. Error 1419),
+     and diagnostic classification.
+2. Increasing Test Cases with Zero Inter-Dependency:
+   - Each group contains a dedicated 375-case suite with independent fixtures,
+     isolated tables, and a dedicated disposable database (ai_testing_group1
+     through ai_testing_group8).
+   - Absolute isolation: zero cross-group queries, zero shared state, zero lock contention.
+3. Execution Cycle Improvement & Saturation Point Analysis:
+   - Under this weak-scaling model (workload scales with agent count), an ideal
+     system completes 1,500, 2,250, and 3,000 cases in approximately the SAME
+     cycle time, achieving linear throughput growth (tests/second).
+   - Record cycle time and throughput across 4 -> 6 -> 8 agents to pinpoint the
+     hardware Saturation Point (CPU core limits, I/O saturation, MySQL connection
+     limits, and thread contention).
+
+================================================================================
+2. TEAM MEMBER TASK DIVISION & DELIVERABLES
+================================================================================
+
+--------------------------------------------------------------------------------
+MEMBER 1: ENAIT
+Role: Frontend UI, Execution Control, Visual Diff & Telemetry Dashboard
+--------------------------------------------------------------------------------
+Primary Files: `gui_dashboard.py`, `frontend/src/components/*`, `DiffTab.jsx`
+
+Assigned Tasks & Deliverables:
+1. Dynamic 4 / 6 / 8 Agentic AI Control Panel:
+   - Extend the GUI Dashboard execution view with a dynamic Agentic AI selector
+     supporting 4, 6, and 8 parallel multitaskers.
+   - Display real-time status badges for all active agents (Agent 1 to Agent 8:
+     IDLE, INITIALIZING, RUNNING, AUTO-REMEDIATING, COMPLETED, FAILED).
+   - Display dynamic total test case counters (1,500 -> 2,250 -> 3,000 cases).
+
+2. Side-by-Side Visual Diff & Regression Highlight:
+   - Upgrade `DiffTab.jsx` to render side-by-side split-screen comparisons
+     highlighting actual vs. standard baseline outputs for all failed test cases.
+   - Display clear diff annotations showing where errors occur (such as trigger
+     creation Error 1419 on TC1486-TC1490 and rollback precondition failure on TC1496).
+   - Support diff navigation across the expanded test groups (up to Group 8).
+
+3. Throughput & Saturation Telemetry Visualizer:
+   - Build interactive performance dashboard charts plotting:
+     * Cycle Execution Time vs. Agent Count (1,500 cases @ 4 agents vs. 2,250 @ 6 agents vs. 3,000 @ 8 agents).
+     * Throughput Curve (Test Cases Executed Per Second).
+     * Visual Saturation Point marker highlighting where throughput plateaus.
+
+4. Backend API Integration:
+   - Implement `/api/run-agentic?agents=4|6|8` and `/api/saturation-metrics`
+     endpoints in `gui_dashboard.py` to trigger and monitor scaled execution.
+
+--------------------------------------------------------------------------------
+MEMBER 2: KANIZ
+Role: Agentic AI Architecture, Tool Multitaskers & Saturation Modeling
+--------------------------------------------------------------------------------
+Primary Files: `ai_agent_analyzer.py`, `executor/benchmark.py`, `executor/test_runner.py`
+
+Assigned Tasks & Deliverables:
+1. Tool-Enhanced Agentic AI Multitasker Engine:
+   - Architect the core `AgenticTester` Python class. Each agent runs as an
+     autonomous multitasker equipped with tools:
+     * `ExecuteSQLTool`: Executes queries directly on the agent's assigned database.
+     * `SchemaIntrospectTool`: Checks prerequisite tables and constraints before execution.
+     * `AutoRemediateTool`: Dynamically detects transient/privilege errors (e.g. Error 1419)
+       and applies automated fixes (`SET GLOBAL log_bin_trust_function_creators=1`).
+     * `DiagnosticLogTool`: Captures real-time query timings, status, and error traces.
+
+2. Scaled Benchmark Harness (4 -> 6 -> 8 Agents):
+   - Upgrade `executor/benchmark.py` to run automated benchmark suites across:
+     * Mode A: 4 Agents executing 1,500 test cases (Groups 1–4).
+     * Mode B: 6 Agents executing 2,250 test cases (Groups 1–6).
+     * Mode C: 8 Agents executing 3,000 test cases (Groups 1–8).
+   - Perform multi-pass runs (3-5 iterations with warm-up) and record:
+     Cycle Time (seconds), Throughput (cases/sec), Speedup, and Variance.
+
+3. Mathematical Saturation Point Modeling:
+   - Model empirical throughput against theoretical scaling using Gustafson's Law
+     for weak scaling: S(N) = N - (1 - P) * (N - 1).
+   - Formulate automated analytical reports (`reports/saturation_report.md`
+     and `reports/benchmark_summary.txt`) identifying the exact agent saturation threshold.
+
+--------------------------------------------------------------------------------
+MEMBER 3: KAZI
+Role: Test Suite Expansion, Zero-Dependency Datasets & Anomaly Resilience
+--------------------------------------------------------------------------------
+Primary Files: `generate_split_suite.py`, `simulate_failures.py`, `test_cases/*`
+
+Assigned Tasks & Deliverables:
+1. Test Suite Expansion (Increasing from 1,500 to 2,250 to 3,000 Cases):
+   - Extend `generate_split_suite.py` to generate NEW, additional test cases
+     in 375-case blocks, preserving the existing 1,500 cases intact:
+     * Existing Groups 1–4: TC001  - TC1500 (1,500 cases)
+     * New Group 5       : TC1501 - TC1875 (375 cases -> Advanced JSON, Generated Columns)
+     * New Group 6       : TC1876 - TC2250 (375 cases -> Spatial Indexes, Full-Text, Partitions)
+     * New Group 7       : TC2251 - TC2625 (375 cases -> Recursive CTEs, Advanced Window Funcs)
+     * New Group 8       : TC2626 - TC3000 (375 cases -> Complex Transactions, Savepoints, Locks)
+
+2. Strict Zero-Dependency Enforcement:
+   - Guarantee 100% independence across all groups: each group must use isolated
+     table names, unique schema objects, and self-contained setup/teardown SQL.
+   - Zero foreign keys across databases and zero shared global state.
+
+3. Disposable Multi-Database Provisioning:
+   - Update `executor/setup_group_databases.py` to provision up to 8 disposable
+     databases: `ai_testing_group1` through `ai_testing_group8`.
+   - Grant full test credentials and initialize baseline schemas across all 8 databases.
+
+4. Failure & Resilience Verification:
+   - Update `simulate_failures.py` to inject synthetic schema corruptions across
+     the expanded 6 and 8 group suites, verifying that Agentic AIs handle failures
+     independently without cascading into other groups.
+
+--------------------------------------------------------------------------------
+MEMBER 4: AFRIN
+Role: Concurrent Orchestration, Remote Multi-Node Scaling & Resource Profiling
+--------------------------------------------------------------------------------
+Primary Files: `executor/orchestrator.py`, `remote_executor.py`, `remote_hosts.json`
+
+Assigned Tasks & Deliverables:
+1. Multitasker Process Orchestrator:
+   - Refactor `executor/orchestrator.py` to concurrently launch 4, 6, or 8
+     Agentic AI worker processes from within the main Python program.
+   - Implement process pool supervision, worker heartbeat health checks,
+     and timeout safeguards to prevent hanging worker threads.
+
+2. Remote Distributed Multi-Node Execution:
+   - Extend `remote_executor.py` and `remote_hosts.json` so that if the local
+     host hits hardware saturation at 6 or 8 agents, tasks can be distributed
+     to secondary nodes/IPs over SSH (e.g. Agents 1–4 local, Agents 5–8 remote).
+   - Automate remote artifact collection: retrieve `response_group1.txt` through
+     `response_group8.txt` back to the central `reports/` folder.
+
+3. Hardware & OS-Level Saturation Profiling:
+   - Profile host system metrics during 4, 6, and 8 agent execution cycles:
+     * CPU Core Utilization & Context Switch rates.
+     * MySQL Connection Pool usage (`Threads_running`, `Threads_connected`).
+     * Disk I/O wait times and table lock contention.
+   - Document the physical bottleneck causing saturation in `reports/system_profiling.txt`.
+
+================================================================================
+3. TEST SUITE SCALING MATRIX (INCREASING TEST CASES & ZERO INTER-DEPENDENCY)
+================================================================================
+
+Every group contains exactly 375 independent test cases executed by its designated
+Agentic AI against an isolated disposable database:
+
+--- 4-AGENT CONFIGURATION (1,500 Test Cases Total) ---
+• Agentic AI 1 : Group 1 (TC001  - TC375,  375 cases) -> Database: ai_testing_group1
+• Agentic AI 2 : Group 2 (TC376  - TC750,  375 cases) -> Database: ai_testing_group2
+• Agentic AI 3 : Group 3 (TC751  - TC1125, 375 cases) -> Database: ai_testing_group3
+• Agentic AI 4 : Group 4 (TC1126 - TC1500, 375 cases) -> Database: ai_testing_group4
+  ==> Total Cases Executed: 1,500 test cases across 4 parallel databases
+
+--- 6-AGENT CONFIGURATION (2,250 Test Cases Total) ---
+• Agentic AI 1 : Group 1 (TC001  - TC375,  375 cases) -> Database: ai_testing_group1
+• Agentic AI 2 : Group 2 (TC376  - TC750,  375 cases) -> Database: ai_testing_group2
+• Agentic AI 3 : Group 3 (TC751  - TC1125, 375 cases) -> Database: ai_testing_group3
+• Agentic AI 4 : Group 4 (TC1126 - TC1500, 375 cases) -> Database: ai_testing_group4
+• Agentic AI 5 : Group 5 (TC1501 - TC1875, 375 cases) -> Database: ai_testing_group5
+• Agentic AI 6 : Group 6 (TC1876 - TC2250, 375 cases) -> Database: ai_testing_group6
+  ==> Total Cases Executed: 2,250 test cases (+750 new cases) across 6 parallel databases
+
+--- 8-AGENT CONFIGURATION (3,000 Test Cases Total) ---
+• Agentic AI 1 : Group 1 (TC001  - TC375,  375 cases) -> Database: ai_testing_group1
+• Agentic AI 2 : Group 2 (TC376  - TC750,  375 cases) -> Database: ai_testing_group2
+• Agentic AI 3 : Group 3 (TC751  - TC1125, 375 cases) -> Database: ai_testing_group3
+• Agentic AI 4 : Group 4 (TC1126 - TC1500, 375 cases) -> Database: ai_testing_group4
+• Agentic AI 5 : Group 5 (TC1501 - TC1875, 375 cases) -> Database: ai_testing_group5
+• Agentic AI 6 : Group 6 (TC1876 - TC2250, 375 cases) -> Database: ai_testing_group6
+• Agentic AI 7 : Group 7 (TC2251 - TC2625, 375 cases) -> Database: ai_testing_group7
+• Agentic AI 8 : Group 8 (TC2626 - TC3000, 375 cases) -> Database: ai_testing_group8
+  ==> Total Cases Executed: 3,000 test cases (+1,500 new cases) across 8 parallel databases
+
+================================================================================
+4. SATURATION POINT DETERMINATION PROTOCOL
+================================================================================
+1. Objective: Determine at what point adding more parallel Agentic AI workers ceases
+   to provide linear throughput gains or starts increasing execution cycle latency.
+2. Performance Formulae:
+   - Cycle Time (T)        : Time from orchestrator launch to completion of all agents.
+   - Throughput (Q)        : Total Test Cases / Cycle Time (cases/second).
+   - Weak Scaling Efficiency: (Cycle Time for 4 Agents / Cycle Time for N Agents) * 100%.
+3. Detection Criteria for Saturation:
+   - Throughput Plateau    : When Q(8 agents) is approximately equal to or less than Q(6 agents).
+   - Cycle Time Inflation  : If cycle time jumps significantly due to CPU core oversubscription
+                             (e.g., more active agents than physical CPU cores) or MySQL lock waits.
+   - Remediation / Pivot   : When local saturation occurs, Afrin's remote distribution module
+                             dispatches surplus agents to remote nodes to restore linear throughput.
+
+================================================================================
+5. IMPLEMENTATION ROADMAP
+================================================================================
+Phase 1: Test Suite Expansion (3,000 Cases in 8 Groups) & DB Provisioning (Kazi)
+Phase 2: Tool-Enhanced Agentic AI Multitasker Implementation (Kaniz)
+Phase 3: Concurrent Orchestration & Remote Offload Pipeline (Afrin)
+Phase 4: GUI Dashboard Dynamic Scaling Controls & Diff Viewer (Enait)
+Phase 5: Benchmark Execution (4 -> 6 -> 8 Agents), Saturation Profiling & Report (All)
+
+================================================================================
+                           END OF TASK DIVISION
+================================================================================

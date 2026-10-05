@@ -5,7 +5,7 @@ Test Description: UPDATE using arithmetic expressions variation 1
 Execution Status: PASS
 Query Executed: UPDATE t_f026_1 SET salary=salary + 1000 WHERE id=1;
 Database Response: Query executed successfully. Rows affected: 1
-Query Execution Time: 0.036170 seconds
+Query Execution Time: 0.068863 seconds
 ======================================================================
 
 ======================================================================
@@ -15,7 +15,7 @@ Test Description: UPDATE using arithmetic expressions variation 2
 Execution Status: PASS
 Query Executed: UPDATE t_f026_2 SET salary=salary + 1000 WHERE id=1;
 Database Response: Query executed successfully. Rows affected: 1
-Query Execution Time: 0.033756 seconds
+Query Execution Time: 0.048200 seconds
 ======================================================================
 
 ======================================================================
@@ -25,7 +25,7 @@ Test Description: UPDATE using arithmetic expressions variation 3
 Execution Status: PASS
 Query Executed: UPDATE t_f026_3 SET salary=salary + 1000 WHERE id=1;
 Database Response: Query executed successfully. Rows affected: 1
-Query Execution Time: 0.034743 seconds
+Query Execution Time: 0.043581 seconds
 ======================================================================
 
 ======================================================================
@@ -35,7 +35,7 @@ Test Description: UPDATE using arithmetic expressions variation 4
 Execution Status: PASS
 Query Executed: UPDATE t_f026_4 SET salary=salary + 1000 WHERE id=1;
 Database Response: Query executed successfully. Rows affected: 1
-Query Execution Time: 0.039925 seconds
+Query Execution Time: 0.045513 seconds
 ======================================================================
 
 ======================================================================
@@ -45,7 +45,7 @@ Test Description: UPDATE using arithmetic expressions variation 5
 Execution Status: PASS
 Query Executed: UPDATE t_f026_5 SET salary=salary + 1000 WHERE id=1;
 Database Response: Query executed successfully. Rows affected: 1
-Query Execution Time: 0.031086 seconds
+Query Execution Time: 0.045847 seconds
 ======================================================================
 
 ======================================================================
@@ -55,7 +55,7 @@ Test Description: UPDATE using arithmetic expressions variation 6
 Execution Status: PASS
 Query Executed: UPDATE t_f026_6 SET salary=salary + missing_col WHERE id=1;
 Database Response: 1054 (42S22): Unknown column 'missing_col' in 'field list'
-Query Execution Time: 0.032593 seconds
+Query Execution Time: 0.040824 seconds
 ======================================================================
 
 ======================================================================
@@ -65,7 +65,7 @@ Test Description: UPDATE using arithmetic expressions variation 7
 Execution Status: PASS
 Query Executed: UPDATE t_f026_7 SET salary=salary + missing_col WHERE id=1;
 Database Response: 1054 (42S22): Unknown column 'missing_col' in 'field list'
-Query Execution Time: 0.032363 seconds
+Query Execution Time: 0.041042 seconds
 ======================================================================
 
 ======================================================================
@@ -75,7 +75,7 @@ Test Description: UPDATE using arithmetic expressions variation 8
 Execution Status: PASS
 Query Executed: UPDATE t_f026_8 SET salary=salary + missing_col WHERE id=1;
 Database Response: 1054 (42S22): Unknown column 'missing_col' in 'field list'
-Query Execution Time: 0.026588 seconds
+Query Execution Time: 0.040320 seconds
 ======================================================================
 
 ======================================================================
@@ -85,7 +85,7 @@ Test Description: UPDATE using arithmetic expressions variation 9
 Execution Status: PASS
 Query Executed: UPDATE t_f026_9 SET salary=salary + missing_col WHERE id=1;
 Database Response: 1054 (42S22): Unknown column 'missing_col' in 'field list'
-Query Execution Time: 0.026468 seconds
+Query Execution Time: 0.040042 seconds
 ======================================================================
 
 ======================================================================
@@ -95,7 +95,7 @@ Test Description: UPDATE using arithmetic expressions variation 10
 Execution Status: PASS
 Query Executed: UPDATE t_f026_10 SET salary=salary + missing_col WHERE id=1;
 Database Response: 1054 (42S22): Unknown column 'missing_col' in 'field list'
-Query Execution Time: 0.028639 seconds
+Query Execution Time: 0.041224 seconds
 ======================================================================
 
 ======================================================================
@@ -105,7 +105,7 @@ Test Description: UPDATE using arithmetic expressions variation 11
 Execution Status: PASS
 Query Executed: UPDATE t_f026_11 SET salary=salary + 1000 WHERE id=1;
 Database Response: Query executed successfully. Rows affected: 1
-Query Execution Time: 0.029490 seconds
+Query Execution Time: 0.047609 seconds
 ======================================================================
 
 ======================================================================
@@ -115,7 +115,7 @@ Test Description: UPDATE using arithmetic expressions variation 12
 Execution Status: PASS
 Query Executed: UPDATE t_f026_12 SET salary=salary + 1000 WHERE id=1;
 Database Response: Query executed successfully. Rows affected: 1
-Query Execution Time: 0.033183 seconds
+Query Execution Time: 0.043298 seconds
 ======================================================================
 
 ======================================================================
@@ -125,7 +125,7 @@ Test Description: UPDATE using arithmetic expressions variation 13
 Execution Status: PASS
 Query Executed: UPDATE t_f026_13 SET salary=salary + 1000 WHERE id=1;
 Database Response: Query executed successfully. Rows affected: 1
-Query Execution Time: 0.032121 seconds
+Query Execution Time: 0.046084 seconds
 ======================================================================
 
 ======================================================================
@@ -135,7 +135,7 @@ Test Description: UPDATE using arithmetic expressions variation 14
 Execution Status: PASS
 Query Executed: UPDATE t_f026_14 SET salary=salary + 1000 WHERE id=1;
 Database Response: Query executed successfully. Rows affected: 1
-Query Execution Time: 0.029122 seconds
+Query Execution Time: 0.047928 seconds
 ======================================================================
 
 ======================================================================
@@ -145,7 +145,7 @@ Test Description: UPDATE using arithmetic expressions variation 15
 Execution Status: PASS
 Query Executed: UPDATE t_f026_15 SET salary=salary + 1000 WHERE id=1;
 Database Response: Query executed successfully. Rows affected: 1
-Query Execution Time: 0.038855 seconds
+Query Execution Time: 0.043782 seconds
 ======================================================================
 
 ======================================================================
@@ -155,7 +155,7 @@ Test Description: UPDATE using string functions variation 1
 Execution Status: PASS
 Query Executed: UPDATE t_f027_1 SET name=UPPER(name) WHERE id=1;
 Database Response: Query executed successfully. Rows affected: 1
-Query Execution Time: 0.029351 seconds
+Query Execution Time: 0.043469 seconds
 ======================================================================
 
 ======================================================================
@@ -165,7 +165,7 @@ Test Description: UPDATE using string functions variation 2
 Execution Status: PASS
 Query Executed: UPDATE t_f027_2 SET name=UPPER(name) WHERE id=1;
 Database Response: Query executed successfully. Rows affected: 1
-Query Execution Time: 0.035721 seconds
+Query Execution Time: 0.046900 seconds
 ======================================================================
 
 ======================================================================
@@ -175,7 +175,7 @@ Test Description: UPDATE using string functions variation 3
 Execution Status: PASS
 Query Executed: UPDATE t_f027_3 SET name=UPPER(name) WHERE id=1;
 Database Response: Query executed successfully. Rows affected: 1
-Query Execution Time: 0.033530 seconds
+Query Execution Time: 0.044703 seconds
 ======================================================================
 
 ======================================================================
@@ -185,7 +185,7 @@ Test Description: UPDATE using string functions variation 4
 Execution Status: PASS
 Query Executed: UPDATE t_f027_4 SET name=UPPER(name) WHERE id=1;
 Database Response: Query executed successfully. Rows affected: 1
-Query Execution Time: 0.036778 seconds
+Query Execution Time: 0.044706 seconds
 ======================================================================
 
 ======================================================================
@@ -195,7 +195,7 @@ Test Description: UPDATE using string functions variation 5
 Execution Status: PASS
 Query Executed: UPDATE t_f027_5 SET name=UPPER(name) WHERE id=1;
 Database Response: Query executed successfully. Rows affected: 1
-Query Execution Time: 0.029003 seconds
+Query Execution Time: 0.047539 seconds
 ======================================================================
 
 ======================================================================
@@ -205,7 +205,7 @@ Test Description: UPDATE using string functions variation 6
 Execution Status: PASS
 Query Executed: UPDATE t_f027_6 SET name=NOT_A_FUNCTION(name) WHERE id=1;
 Database Response: 1305 (42000): FUNCTION ai_testing_group2.NOT_A_FUNCTION does not exist
-Query Execution Time: 0.033336 seconds
+Query Execution Time: 0.057360 seconds
 ======================================================================
 
 ======================================================================
@@ -215,7 +215,7 @@ Test Description: UPDATE using string functions variation 7
 Execution Status: PASS
 Query Executed: UPDATE t_f027_7 SET name=NOT_A_FUNCTION(name) WHERE id=1;
 Database Response: 1305 (42000): FUNCTION ai_testing_group2.NOT_A_FUNCTION does not exist
-Query Execution Time: 0.042926 seconds
+Query Execution Time: 0.065561 seconds
 ======================================================================
 
 ======================================================================
@@ -225,7 +225,7 @@ Test Description: UPDATE using string functions variation 8
 Execution Status: PASS
 Query Executed: UPDATE t_f027_8 SET name=NOT_A_FUNCTION(name) WHERE id=1;
 Database Response: 1305 (42000): FUNCTION ai_testing_group2.NOT_A_FUNCTION does not exist
-Query Execution Time: 0.030469 seconds
+Query Execution Time: 0.081585 seconds
 ======================================================================
 
 ======================================================================
@@ -235,7 +235,7 @@ Test Description: UPDATE using string functions variation 9
 Execution Status: PASS
 Query Executed: UPDATE t_f027_9 SET name=NOT_A_FUNCTION(name) WHERE id=1;
 Database Response: 1305 (42000): FUNCTION ai_testing_group2.NOT_A_FUNCTION does not exist
-Query Execution Time: 0.033190 seconds
+Query Execution Time: 0.054719 seconds
 ======================================================================
 
 ======================================================================
@@ -245,7 +245,7 @@ Test Description: UPDATE using string functions variation 10
 Execution Status: PASS
 Query Executed: UPDATE t_f027_10 SET name=NOT_A_FUNCTION(name) WHERE id=1;
 Database Response: 1305 (42000): FUNCTION ai_testing_group2.NOT_A_FUNCTION does not exist
-Query Execution Time: 0.034052 seconds
+Query Execution Time: 0.040126 seconds
 ======================================================================
 
 ======================================================================
@@ -255,7 +255,7 @@ Test Description: UPDATE using string functions variation 11
 Execution Status: PASS
 Query Executed: UPDATE t_f027_11 SET name=UPPER(name) WHERE id=1;
 Database Response: Query executed successfully. Rows affected: 1
-Query Execution Time: 0.031724 seconds
+Query Execution Time: 0.050719 seconds
 ======================================================================
 
 ======================================================================
@@ -265,7 +265,7 @@ Test Description: UPDATE using string functions variation 12
 Execution Status: PASS
 Query Executed: UPDATE t_f027_12 SET name=UPPER(name) WHERE id=1;
 Database Response: Query executed successfully. Rows affected: 1
-Query Execution Time: 0.030556 seconds
+Query Execution Time: 0.050500 seconds
 ======================================================================
 
 ======================================================================
@@ -275,7 +275,7 @@ Test Description: UPDATE using string functions variation 13
 Execution Status: PASS
 Query Executed: UPDATE t_f027_13 SET name=UPPER(name) WHERE id=1;
 Database Response: Query executed successfully. Rows affected: 1
-Query Execution Time: 0.048414 seconds
+Query Execution Time: 0.050791 seconds
 ======================================================================
 
 ======================================================================
@@ -285,7 +285,7 @@ Test Description: UPDATE using string functions variation 14
 Execution Status: PASS
 Query Executed: UPDATE t_f027_14 SET name=UPPER(name) WHERE id=1;
 Database Response: Query executed successfully. Rows affected: 1
-Query Execution Time: 0.043251 seconds
+Query Execution Time: 0.047424 seconds
 ======================================================================
 
 ======================================================================
@@ -295,7 +295,7 @@ Test Description: UPDATE using string functions variation 15
 Execution Status: PASS
 Query Executed: UPDATE t_f027_15 SET name=UPPER(name) WHERE id=1;
 Database Response: Query executed successfully. Rows affected: 1
-Query Execution Time: 0.031386 seconds
+Query Execution Time: 0.049995 seconds
 ======================================================================
 
 ======================================================================
@@ -305,7 +305,7 @@ Test Description: UPDATE NULL values variation 1
 Execution Status: PASS
 Query Executed: UPDATE t_f028_1 SET email=NULL WHERE id=1;
 Database Response: Query executed successfully. Rows affected: 1
-Query Execution Time: 0.037961 seconds
+Query Execution Time: 0.045184 seconds
 ======================================================================
 
 ======================================================================
@@ -315,7 +315,7 @@ Test Description: UPDATE NULL values variation 2
 Execution Status: PASS
 Query Executed: UPDATE t_f028_2 SET email=NULL WHERE id=1;
 Database Response: Query executed successfully. Rows affected: 1
-Query Execution Time: 0.058267 seconds
+Query Execution Time: 0.046282 seconds
 ======================================================================
 
 ======================================================================
@@ -325,7 +325,7 @@ Test Description: UPDATE NULL values variation 3
 Execution Status: PASS
 Query Executed: UPDATE t_f028_3 SET email=NULL WHERE id=1;
 Database Response: Query executed successfully. Rows affected: 1
-Query Execution Time: 0.042023 seconds
+Query Execution Time: 0.045885 seconds
 ======================================================================
 
 ======================================================================
@@ -335,7 +335,7 @@ Test Description: UPDATE NULL values variation 4
 Execution Status: PASS
 Query Executed: UPDATE t_f028_4 SET email=NULL WHERE id=1;
 Database Response: Query executed successfully. Rows affected: 1
-Query Execution Time: 0.038717 seconds
+Query Execution Time: 0.044674 seconds
 ======================================================================
 
 ======================================================================
@@ -345,7 +345,7 @@ Test Description: UPDATE NULL values variation 5
 Execution Status: PASS
 Query Executed: UPDATE t_f028_5 SET email=NULL WHERE id=1;
 Database Response: Query executed successfully. Rows affected: 1
-Query Execution Time: 0.037683 seconds
+Query Execution Time: 0.044957 seconds
 ======================================================================
 
 ======================================================================
@@ -355,7 +355,7 @@ Test Description: UPDATE NULL values variation 6
 Execution Status: PASS
 Query Executed: UPDATE t_f028_6 SET name=NULL WHERE id=1;
 Database Response: 1048 (23000): Column 'name' cannot be null
-Query Execution Time: 0.044248 seconds
+Query Execution Time: 0.044906 seconds
 ======================================================================
 
 ======================================================================
@@ -365,7 +365,7 @@ Test Description: UPDATE NULL values variation 7
 Execution Status: PASS
 Query Executed: UPDATE t_f028_7 SET name=NULL WHERE id=1;
 Database Response: 1048 (23000): Column 'name' cannot be null
-Query Execution Time: 0.036076 seconds
+Query Execution Time: 0.038488 seconds
 ======================================================================
 
 ======================================================================
@@ -375,7 +375,7 @@ Test Description: UPDATE NULL values variation 8
 Execution Status: PASS
 Query Executed: UPDATE t_f028_8 SET name=NULL WHERE id=1;
 Database Response: 1048 (23000): Column 'name' cannot be null
-Query Execution Time: 0.035423 seconds
+Query Execution Time: 0.041918 seconds
 ======================================================================
 
 ======================================================================
@@ -385,7 +385,7 @@ Test Description: UPDATE NULL values variation 9
 Execution Status: PASS
 Query Executed: UPDATE t_f028_9 SET name=NULL WHERE id=1;
 Database Response: 1048 (23000): Column 'name' cannot be null
-Query Execution Time: 0.053470 seconds
+Query Execution Time: 0.043124 seconds
 ======================================================================
 
 ======================================================================
@@ -395,7 +395,7 @@ Test Description: UPDATE NULL values variation 10
 Execution Status: PASS
 Query Executed: UPDATE t_f028_10 SET name=NULL WHERE id=1;
 Database Response: 1048 (23000): Column 'name' cannot be null
-Query Execution Time: 0.051411 seconds
+Query Execution Time: 0.038823 seconds
 ======================================================================
 
 ======================================================================
@@ -405,7 +405,7 @@ Test Description: UPDATE NULL values variation 11
 Execution Status: PASS
 Query Executed: UPDATE t_f028_11 SET email=NULL WHERE id=1;
 Database Response: Query executed successfully. Rows affected: 1
-Query Execution Time: 0.042812 seconds
+Query Execution Time: 0.070260 seconds
 ======================================================================
 
 ======================================================================
@@ -415,7 +415,7 @@ Test Description: UPDATE NULL values variation 12
 Execution Status: PASS
 Query Executed: UPDATE t_f028_12 SET email=NULL WHERE id=1;
 Database Response: Query executed successfully. Rows affected: 1
-Query Execution Time: 0.035115 seconds
+Query Execution Time: 0.065436 seconds
 ======================================================================
 
 ======================================================================
@@ -425,7 +425,7 @@ Test Description: UPDATE NULL values variation 13
 Execution Status: PASS
 Query Executed: UPDATE t_f028_13 SET email=NULL WHERE id=1;
 Database Response: Query executed successfully. Rows affected: 1
-Query Execution Time: 0.040815 seconds
+Query Execution Time: 0.068577 seconds
 ======================================================================
 
 ======================================================================
@@ -435,7 +435,7 @@ Test Description: UPDATE NULL values variation 14
 Execution Status: PASS
 Query Executed: UPDATE t_f028_14 SET email=NULL WHERE id=1;
 Database Response: Query executed successfully. Rows affected: 1
-Query Execution Time: 0.040185 seconds
+Query Execution Time: 0.055670 seconds
 ======================================================================
 
 ======================================================================
@@ -445,7 +445,7 @@ Test Description: UPDATE NULL values variation 15
 Execution Status: PASS
 Query Executed: UPDATE t_f028_15 SET email=NULL WHERE id=1;
 Database Response: Query executed successfully. Rows affected: 1
-Query Execution Time: 0.052777 seconds
+Query Execution Time: 0.043077 seconds
 ======================================================================
 
 ======================================================================
@@ -455,7 +455,7 @@ Test Description: UPDATE causing UNIQUE violation variation 1
 Execution Status: PASS
 Query Executed: UPDATE t_f029_1 SET email='new0@x.test' WHERE id=2;
 Database Response: Query executed successfully. Rows affected: 1
-Query Execution Time: 0.040104 seconds
+Query Execution Time: 0.047023 seconds
 ======================================================================
 
 ======================================================================
@@ -465,7 +465,7 @@ Test Description: UPDATE causing UNIQUE violation variation 2
 Execution Status: PASS
 Query Executed: UPDATE t_f029_2 SET email='new1@x.test' WHERE id=2;
 Database Response: Query executed successfully. Rows affected: 1
-Query Execution Time: 0.041347 seconds
+Query Execution Time: 0.046592 seconds
 ======================================================================
 
 ======================================================================
@@ -475,7 +475,7 @@ Test Description: UPDATE causing UNIQUE violation variation 3
 Execution Status: PASS
 Query Executed: UPDATE t_f029_3 SET email='new2@x.test' WHERE id=2;
 Database Response: Query executed successfully. Rows affected: 1
-Query Execution Time: 0.051065 seconds
+Query Execution Time: 0.045560 seconds
 ======================================================================
 
 ======================================================================
@@ -485,7 +485,7 @@ Test Description: UPDATE causing UNIQUE violation variation 4
 Execution Status: PASS
 Query Executed: UPDATE t_f029_4 SET email='new3@x.test' WHERE id=2;
 Database Response: Query executed successfully. Rows affected: 1
-Query Execution Time: 0.037467 seconds
+Query Execution Time: 0.046303 seconds
 ======================================================================
 
 ======================================================================
@@ -495,7 +495,7 @@ Test Description: UPDATE causing UNIQUE violation variation 5
 Execution Status: PASS
 Query Executed: UPDATE t_f029_5 SET email='new4@x.test' WHERE id=2;
 Database Response: Query executed successfully. Rows affected: 1
-Query Execution Time: 0.044114 seconds
+Query Execution Time: 0.046038 seconds
 ======================================================================
 
 ======================================================================
@@ -505,7 +505,7 @@ Test Description: UPDATE causing UNIQUE violation variation 6
 Execution Status: PASS
 Query Executed: UPDATE t_f029_6 SET email='dupuniq5@x.test' WHERE id=2;
 Database Response: 1062 (23000): Duplicate entry 'dupuniq5@x.test' for key 't_f029_6.email'
-Query Execution Time: 0.050210 seconds
+Query Execution Time: 0.044649 seconds
 ======================================================================
 
 ======================================================================
@@ -515,7 +515,7 @@ Test Description: UPDATE causing UNIQUE violation variation 7
 Execution Status: PASS
 Query Executed: UPDATE t_f029_7 SET email='dupuniq6@x.test' WHERE id=2;
 Database Response: 1062 (23000): Duplicate entry 'dupuniq6@x.test' for key 't_f029_7.email'
-Query Execution Time: 0.047536 seconds
+Query Execution Time: 0.043366 seconds
 ======================================================================
 
 ======================================================================
@@ -525,7 +525,7 @@ Test Description: UPDATE causing UNIQUE violation variation 8
 Execution Status: PASS
 Query Executed: UPDATE t_f029_8 SET email='dupuniq7@x.test' WHERE id=2;
 Database Response: 1062 (23000): Duplicate entry 'dupuniq7@x.test' for key 't_f029_8.email'
-Query Execution Time: 0.052694 seconds
+Query Execution Time: 0.040081 seconds
 ======================================================================
 
 ======================================================================
@@ -535,7 +535,7 @@ Test Description: UPDATE causing UNIQUE violation variation 9
 Execution Status: PASS
 Query Executed: UPDATE t_f029_9 SET email='dupuniq8@x.test' WHERE id=2;
 Database Response: 1062 (23000): Duplicate entry 'dupuniq8@x.test' for key 't_f029_9.email'
-Query Execution Time: 0.038618 seconds
+Query Execution Time: 0.044138 seconds
 ======================================================================
 
 ======================================================================
@@ -545,7 +545,7 @@ Test Description: UPDATE causing UNIQUE violation variation 10
 Execution Status: PASS
 Query Executed: UPDATE t_f029_10 SET email='dupuniq9@x.test' WHERE id=2;
 Database Response: 1062 (23000): Duplicate entry 'dupuniq9@x.test' for key 't_f029_10.email'
-Query Execution Time: 0.036348 seconds
+Query Execution Time: 0.039821 seconds
 ======================================================================
 
 ======================================================================
@@ -555,7 +555,7 @@ Test Description: UPDATE causing UNIQUE violation variation 11
 Execution Status: PASS
 Query Executed: UPDATE t_f029_11 SET email='new10@x.test' WHERE id=2;
 Database Response: Query executed successfully. Rows affected: 1
-Query Execution Time: 0.038358 seconds
+Query Execution Time: 0.041277 seconds
 ======================================================================
 
 ======================================================================
@@ -565,7 +565,7 @@ Test Description: UPDATE causing UNIQUE violation variation 12
 Execution Status: PASS
 Query Executed: UPDATE t_f029_12 SET email='new11@x.test' WHERE id=2;
 Database Response: Query executed successfully. Rows affected: 1
-Query Execution Time: 0.051811 seconds
+Query Execution Time: 0.047462 seconds
 ======================================================================
 
 ======================================================================
@@ -575,7 +575,7 @@ Test Description: UPDATE causing UNIQUE violation variation 13
 Execution Status: PASS
 Query Executed: UPDATE t_f029_13 SET email='new12@x.test' WHERE id=2;
 Database Response: Query executed successfully. Rows affected: 1
-Query Execution Time: 0.053051 seconds
+Query Execution Time: 0.043705 seconds
 ======================================================================
 
 ======================================================================
@@ -585,7 +585,7 @@ Test Description: UPDATE causing UNIQUE violation variation 14
 Execution Status: PASS
 Query Executed: UPDATE t_f029_14 SET email='new13@x.test' WHERE id=2;
 Database Response: Query executed successfully. Rows affected: 1
-Query Execution Time: 0.047831 seconds
+Query Execution Time: 0.046288 seconds
 ======================================================================
 
 ======================================================================
@@ -595,7 +595,7 @@ Test Description: UPDATE causing UNIQUE violation variation 15
 Execution Status: PASS
 Query Executed: UPDATE t_f029_15 SET email='new14@x.test' WHERE id=2;
 Database Response: Query executed successfully. Rows affected: 1
-Query Execution Time: 0.037832 seconds
+Query Execution Time: 0.048518 seconds
 ======================================================================
 
 ======================================================================
@@ -605,7 +605,7 @@ Test Description: UPDATE causing FOREIGN KEY violation variation 1
 Execution Status: PASS
 Query Executed: UPDATE t_f030_1_child SET parent_id=1 WHERE id=10;
 Database Response: Query executed successfully. Rows affected: 0
-Query Execution Time: 0.063763 seconds
+Query Execution Time: 0.082798 seconds
 ======================================================================
 
 ======================================================================
@@ -615,7 +615,7 @@ Test Description: UPDATE causing FOREIGN KEY violation variation 2
 Execution Status: PASS
 Query Executed: UPDATE t_f030_2_child SET parent_id=1 WHERE id=10;
 Database Response: Query executed successfully. Rows affected: 0
-Query Execution Time: 0.058904 seconds
+Query Execution Time: 0.103793 seconds
 ======================================================================
 
 ======================================================================
@@ -625,7 +625,7 @@ Test Description: UPDATE causing FOREIGN KEY violation variation 3
 Execution Status: PASS
 Query Executed: UPDATE t_f030_3_child SET parent_id=1 WHERE id=10;
 Database Response: Query executed successfully. Rows affected: 0
-Query Execution Time: 0.079788 seconds
+Query Execution Time: 0.089917 seconds
 ======================================================================
 
 ======================================================================
@@ -635,7 +635,7 @@ Test Description: UPDATE causing FOREIGN KEY violation variation 4
 Execution Status: PASS
 Query Executed: UPDATE t_f030_4_child SET parent_id=1 WHERE id=10;
 Database Response: Query executed successfully. Rows affected: 0
-Query Execution Time: 0.067447 seconds
+Query Execution Time: 0.063069 seconds
 ======================================================================
 
 ======================================================================
@@ -645,7 +645,7 @@ Test Description: UPDATE causing FOREIGN KEY violation variation 5
 Execution Status: PASS
 Query Executed: UPDATE t_f030_5_child SET parent_id=1 WHERE id=10;
 Database Response: Query executed successfully. Rows affected: 0
-Query Execution Time: 0.050787 seconds
+Query Execution Time: 0.067648 seconds
 ======================================================================
 
 ======================================================================
@@ -655,7 +655,7 @@ Test Description: UPDATE causing FOREIGN KEY violation variation 6
 Execution Status: PASS
 Query Executed: UPDATE t_f030_6_child SET parent_id=999999 WHERE id=10;
 Database Response: 1452 (23000): Cannot add or update a child row: a foreign key constraint fails (`ai_testing_group2`.`t_f030_6_child`, CONSTRAINT `t_f030_6_child_ibfk_1` FOREIGN KEY (`parent_id`) REFERENCES `t_f030_6_parent` (`id`))
-Query Execution Time: 0.058718 seconds
+Query Execution Time: 0.066158 seconds
 ======================================================================
 
 ======================================================================
@@ -665,7 +665,7 @@ Test Description: UPDATE causing FOREIGN KEY violation variation 7
 Execution Status: PASS
 Query Executed: UPDATE t_f030_7_child SET parent_id=999999 WHERE id=10;
 Database Response: 1452 (23000): Cannot add or update a child row: a foreign key constraint fails (`ai_testing_group2`.`t_f030_7_child`, CONSTRAINT `t_f030_7_child_ibfk_1` FOREIGN KEY (`parent_id`) REFERENCES `t_f030_7_parent` (`id`))
-Query Execution Time: 0.067103 seconds
+Query Execution Time: 0.064392 seconds
 ======================================================================
 
 ======================================================================
@@ -675,7 +675,7 @@ Test Description: UPDATE causing FOREIGN KEY violation variation 8
 Execution Status: PASS
 Query Executed: UPDATE t_f030_8_child SET parent_id=999999 WHERE id=10;
 Database Response: 1452 (23000): Cannot add or update a child row: a foreign key constraint fails (`ai_testing_group2`.`t_f030_8_child`, CONSTRAINT `t_f030_8_child_ibfk_1` FOREIGN KEY (`parent_id`) REFERENCES `t_f030_8_parent` (`id`))
-Query Execution Time: 0.057528 seconds
+Query Execution Time: 0.068523 seconds
 ======================================================================
 
 ======================================================================
@@ -685,7 +685,7 @@ Test Description: UPDATE causing FOREIGN KEY violation variation 9
 Execution Status: PASS
 Query Executed: UPDATE t_f030_9_child SET parent_id=999999 WHERE id=10;
 Database Response: 1452 (23000): Cannot add or update a child row: a foreign key constraint fails (`ai_testing_group2`.`t_f030_9_child`, CONSTRAINT `t_f030_9_child_ibfk_1` FOREIGN KEY (`parent_id`) REFERENCES `t_f030_9_parent` (`id`))
-Query Execution Time: 0.049255 seconds
+Query Execution Time: 0.064330 seconds
 ======================================================================
 
 ======================================================================
@@ -695,7 +695,7 @@ Test Description: UPDATE causing FOREIGN KEY violation variation 10
 Execution Status: PASS
 Query Executed: UPDATE t_f030_10_child SET parent_id=999999 WHERE id=10;
 Database Response: 1452 (23000): Cannot add or update a child row: a foreign key constraint fails (`ai_testing_group2`.`t_f030_10_child`, CONSTRAINT `t_f030_10_child_ibfk_1` FOREIGN KEY (`parent_id`) REFERENCES `t_f030_10_parent` (`id`))
-Query Execution Time: 0.061652 seconds
+Query Execution Time: 0.063377 seconds
 ======================================================================
 
 ======================================================================
@@ -705,7 +705,7 @@ Test Description: UPDATE causing FOREIGN KEY violation variation 11
 Execution Status: PASS
 Query Executed: UPDATE t_f030_11_child SET parent_id=99999 WHERE id=10;
 Database Response: 1452 (23000): Cannot add or update a child row: a foreign key constraint fails (`ai_testing_group2`.`t_f030_11_child`, CONSTRAINT `t_f030_11_child_ibfk_1` FOREIGN KEY (`parent_id`) REFERENCES `t_f030_11_parent` (`id`))
-Query Execution Time: 0.064349 seconds
+Query Execution Time: 0.064970 seconds
 ======================================================================
 
 ======================================================================
@@ -715,7 +715,7 @@ Test Description: UPDATE causing FOREIGN KEY violation variation 12
 Execution Status: PASS
 Query Executed: UPDATE t_f030_12_child SET parent_id=99999 WHERE id=10;
 Database Response: 1452 (23000): Cannot add or update a child row: a foreign key constraint fails (`ai_testing_group2`.`t_f030_12_child`, CONSTRAINT `t_f030_12_child_ibfk_1` FOREIGN KEY (`parent_id`) REFERENCES `t_f030_12_parent` (`id`))
-Query Execution Time: 0.059203 seconds
+Query Execution Time: 0.063641 seconds
 ======================================================================
 
 ======================================================================
@@ -725,7 +725,7 @@ Test Description: UPDATE causing FOREIGN KEY violation variation 13
 Execution Status: PASS
 Query Executed: UPDATE t_f030_13_child SET parent_id=99999 WHERE id=10;
 Database Response: 1452 (23000): Cannot add or update a child row: a foreign key constraint fails (`ai_testing_group2`.`t_f030_13_child`, CONSTRAINT `t_f030_13_child_ibfk_1` FOREIGN KEY (`parent_id`) REFERENCES `t_f030_13_parent` (`id`))
-Query Execution Time: 0.062520 seconds
+Query Execution Time: 0.062602 seconds
 ======================================================================
 
 ======================================================================
@@ -735,7 +735,7 @@ Test Description: UPDATE causing FOREIGN KEY violation variation 14
 Execution Status: PASS
 Query Executed: UPDATE t_f030_14_child SET parent_id=99999 WHERE id=10;
 Database Response: 1452 (23000): Cannot add or update a child row: a foreign key constraint fails (`ai_testing_group2`.`t_f030_14_child`, CONSTRAINT `t_f030_14_child_ibfk_1` FOREIGN KEY (`parent_id`) REFERENCES `t_f030_14_parent` (`id`))
-Query Execution Time: 0.056381 seconds
+Query Execution Time: 0.062935 seconds
 ======================================================================
 
 ======================================================================
@@ -745,7 +745,7 @@ Test Description: UPDATE causing FOREIGN KEY violation variation 15
 Execution Status: PASS
 Query Executed: UPDATE t_f030_15_child SET parent_id=99999 WHERE id=10;
 Database Response: 1452 (23000): Cannot add or update a child row: a foreign key constraint fails (`ai_testing_group2`.`t_f030_15_child`, CONSTRAINT `t_f030_15_child_ibfk_1` FOREIGN KEY (`parent_id`) REFERENCES `t_f030_15_parent` (`id`))
-Query Execution Time: 0.079646 seconds
+Query Execution Time: 0.074921 seconds
 ======================================================================
 
 ======================================================================
@@ -755,7 +755,7 @@ Test Description: DELETE single row variation 1
 Execution Status: PASS
 Query Executed: DELETE FROM t_f031_1 WHERE id=1;
 Database Response: Query executed successfully. Rows affected: 1
-Query Execution Time: 0.039181 seconds
+Query Execution Time: 0.057569 seconds
 ======================================================================
 
 ======================================================================
@@ -765,7 +765,7 @@ Test Description: DELETE single row variation 2
 Execution Status: PASS
 Query Executed: DELETE FROM t_f031_2 WHERE id=1;
 Database Response: Query executed successfully. Rows affected: 1
-Query Execution Time: 0.032658 seconds
+Query Execution Time: 0.062440 seconds
 ======================================================================
 
 ======================================================================
@@ -775,7 +775,7 @@ Test Description: DELETE single row variation 3
 Execution Status: PASS
 Query Executed: DELETE FROM t_f031_3 WHERE id=1;
 Database Response: Query executed successfully. Rows affected: 1
-Query Execution Time: 0.036517 seconds
+Query Execution Time: 0.057579 seconds
 ======================================================================
 
 ======================================================================
@@ -785,7 +785,7 @@ Test Description: DELETE single row variation 4
 Execution Status: PASS
 Query Executed: DELETE FROM t_f031_4 WHERE id=1;
 Database Response: Query executed successfully. Rows affected: 1
-Query Execution Time: 0.051542 seconds
+Query Execution Time: 0.046368 seconds
 ======================================================================
 
 ======================================================================
@@ -795,7 +795,7 @@ Test Description: DELETE single row variation 5
 Execution Status: PASS
 Query Executed: DELETE FROM t_f031_5 WHERE id=1;
 Database Response: Query executed successfully. Rows affected: 1
-Query Execution Time: 0.047511 seconds
+Query Execution Time: 0.043256 seconds
 ======================================================================
 
 ======================================================================
@@ -805,7 +805,7 @@ Test Description: DELETE single row variation 6
 Execution Status: PASS
 Query Executed: DELETE FROM t_f031_6 WHERE id=999999;
 Database Response: Query executed successfully. Rows affected: 0
-Query Execution Time: 0.045039 seconds
+Query Execution Time: 0.041143 seconds
 ======================================================================
 
 ======================================================================
@@ -815,7 +815,7 @@ Test Description: DELETE single row variation 7
 Execution Status: PASS
 Query Executed: DELETE FROM t_f031_7 WHERE id=999999;
 Database Response: Query executed successfully. Rows affected: 0
-Query Execution Time: 0.037223 seconds
+Query Execution Time: 0.044895 seconds
 ======================================================================
 
 ======================================================================
@@ -825,7 +825,7 @@ Test Description: DELETE single row variation 8
 Execution Status: PASS
 Query Executed: DELETE FROM t_f031_8 WHERE id=999999;
 Database Response: Query executed successfully. Rows affected: 0
-Query Execution Time: 0.042450 seconds
+Query Execution Time: 0.040735 seconds
 ======================================================================
 
 ======================================================================
@@ -835,7 +835,7 @@ Test Description: DELETE single row variation 9
 Execution Status: PASS
 Query Executed: DELETE FROM t_f031_9 WHERE id=999999;
 Database Response: Query executed successfully. Rows affected: 0
-Query Execution Time: 0.043743 seconds
+Query Execution Time: 0.040588 seconds
 ======================================================================
 
 ======================================================================
@@ -845,7 +845,7 @@ Test Description: DELETE single row variation 10
 Execution Status: PASS
 Query Executed: DELETE FROM t_f031_10 WHERE id=999999;
 Database Response: Query executed successfully. Rows affected: 0
-Query Execution Time: 0.035271 seconds
+Query Execution Time: 0.040981 seconds
 ======================================================================
 
 ======================================================================
@@ -855,7 +855,7 @@ Test Description: DELETE single row variation 11
 Execution Status: PASS
 Query Executed: DELETE FROM t_f031_11 WHERE id = 999999;
 Database Response: Query executed successfully. Rows affected: 0
-Query Execution Time: 0.044818 seconds
+Query Execution Time: 0.041083 seconds
 ======================================================================
 
 ======================================================================
@@ -865,7 +865,7 @@ Test Description: DELETE single row variation 12
 Execution Status: PASS
 Query Executed: DELETE FROM t_f031_12 WHERE id = 999999;
 Database Response: Query executed successfully. Rows affected: 0
-Query Execution Time: 0.055262 seconds
+Query Execution Time: 0.040238 seconds
 ======================================================================
 
 ======================================================================
@@ -875,7 +875,7 @@ Test Description: DELETE single row variation 13
 Execution Status: PASS
 Query Executed: DELETE FROM t_f031_13 WHERE id = 999999;
 Database Response: Query executed successfully. Rows affected: 0
-Query Execution Time: 0.044289 seconds
+Query Execution Time: 0.039732 seconds
 ======================================================================
 
 ======================================================================
@@ -885,7 +885,7 @@ Test Description: DELETE single row variation 14
 Execution Status: PASS
 Query Executed: DELETE FROM t_f031_14 WHERE id = 999999;
 Database Response: Query executed successfully. Rows affected: 0
-Query Execution Time: 0.036886 seconds
+Query Execution Time: 0.039211 seconds
 ======================================================================
 
 ======================================================================
@@ -895,7 +895,7 @@ Test Description: DELETE single row variation 15
 Execution Status: PASS
 Query Executed: DELETE FROM t_f031_15 WHERE id = 999999;
 Database Response: Query executed successfully. Rows affected: 0
-Query Execution Time: 0.049651 seconds
+Query Execution Time: 0.037757 seconds
 ======================================================================
 
 ======================================================================
@@ -905,7 +905,7 @@ Test Description: DELETE multiple rows variation 1
 Execution Status: PASS
 Query Executed: DELETE FROM t_f032_1 WHERE id IN (1,2);
 Database Response: Query executed successfully. Rows affected: 2
-Query Execution Time: 0.055377 seconds
+Query Execution Time: 0.044837 seconds
 ======================================================================
 
 ======================================================================
@@ -915,7 +915,7 @@ Test Description: DELETE multiple rows variation 2
 Execution Status: PASS
 Query Executed: DELETE FROM t_f032_2 WHERE id IN (1,2);
 Database Response: Query executed successfully. Rows affected: 2
-Query Execution Time: 0.047123 seconds
+Query Execution Time: 0.043522 seconds
 ======================================================================
 
 ======================================================================
@@ -925,7 +925,7 @@ Test Description: DELETE multiple rows variation 3
 Execution Status: PASS
 Query Executed: DELETE FROM t_f032_3 WHERE id IN (1,2);
 Database Response: Query executed successfully. Rows affected: 2
-Query Execution Time: 0.042731 seconds
+Query Execution Time: 0.046383 seconds
 ======================================================================
 
 ======================================================================
@@ -935,7 +935,7 @@ Test Description: DELETE multiple rows variation 4
 Execution Status: PASS
 Query Executed: DELETE FROM t_f032_4 WHERE id IN (1,2);
 Database Response: Query executed successfully. Rows affected: 2
-Query Execution Time: 0.064218 seconds
+Query Execution Time: 0.045053 seconds
 ======================================================================
 
 ======================================================================
@@ -945,7 +945,7 @@ Test Description: DELETE multiple rows variation 5
 Execution Status: PASS
 Query Executed: DELETE FROM t_f032_5 WHERE id IN (1,2);
 Database Response: Query executed successfully. Rows affected: 2
-Query Execution Time: 0.049735 seconds
+Query Execution Time: 0.043419 seconds
 ======================================================================
 
 ======================================================================
@@ -955,7 +955,7 @@ Test Description: DELETE multiple rows variation 6
 Execution Status: PASS
 Query Executed: DELETE FROM t_f032_6 WHERE missing_col IN (1,2);
 Database Response: 1054 (42S22): Unknown column 'missing_col' in 'where clause'
-Query Execution Time: 0.057601 seconds
+Query Execution Time: 0.041116 seconds
 ======================================================================
 
 ======================================================================
@@ -965,7 +965,7 @@ Test Description: DELETE multiple rows variation 7
 Execution Status: PASS
 Query Executed: DELETE FROM t_f032_7 WHERE missing_col IN (1,2);
 Database Response: 1054 (42S22): Unknown column 'missing_col' in 'where clause'
-Query Execution Time: 0.046742 seconds
+Query Execution Time: 0.047156 seconds
 ======================================================================
 
 ======================================================================
@@ -975,7 +975,7 @@ Test Description: DELETE multiple rows variation 8
 Execution Status: PASS
 Query Executed: DELETE FROM t_f032_8 WHERE missing_col IN (1,2);
 Database Response: 1054 (42S22): Unknown column 'missing_col' in 'where clause'
-Query Execution Time: 0.048023 seconds
+Query Execution Time: 0.056323 seconds
 ======================================================================
 
 ======================================================================
@@ -985,7 +985,7 @@ Test Description: DELETE multiple rows variation 9
 Execution Status: PASS
 Query Executed: DELETE FROM t_f032_9 WHERE missing_col IN (1,2);
 Database Response: 1054 (42S22): Unknown column 'missing_col' in 'where clause'
-Query Execution Time: 0.039833 seconds
+Query Execution Time: 0.062398 seconds
 ======================================================================
 
 ======================================================================
@@ -995,7 +995,7 @@ Test Description: DELETE multiple rows variation 10
 Execution Status: PASS
 Query Executed: DELETE FROM t_f032_10 WHERE missing_col IN (1,2);
 Database Response: 1054 (42S22): Unknown column 'missing_col' in 'where clause'
-Query Execution Time: 0.041454 seconds
+Query Execution Time: 0.065874 seconds
 ======================================================================
 
 ======================================================================
@@ -1005,7 +1005,7 @@ Test Description: DELETE multiple rows variation 11
 Execution Status: PASS
 Query Executed: DELETE FROM t_f032_11 WHERE id = 999999;
 Database Response: Query executed successfully. Rows affected: 0
-Query Execution Time: 0.049592 seconds
+Query Execution Time: 0.051338 seconds
 ======================================================================
 
 ======================================================================
@@ -1015,7 +1015,7 @@ Test Description: DELETE multiple rows variation 12
 Execution Status: PASS
 Query Executed: DELETE FROM t_f032_12 WHERE id = 999999;
 Database Response: Query executed successfully. Rows affected: 0
-Query Execution Time: 0.034540 seconds
+Query Execution Time: 0.040655 seconds
 ======================================================================
 
 ======================================================================
@@ -1025,7 +1025,7 @@ Test Description: DELETE multiple rows variation 13
 Execution Status: PASS
 Query Executed: DELETE FROM t_f032_13 WHERE id = 999999;
 Database Response: Query executed successfully. Rows affected: 0
-Query Execution Time: 0.036438 seconds
+Query Execution Time: 0.039767 seconds
 ======================================================================
 
 ======================================================================
@@ -1035,7 +1035,7 @@ Test Description: DELETE multiple rows variation 14
 Execution Status: PASS
 Query Executed: DELETE FROM t_f032_14 WHERE id = 999999;
 Database Response: Query executed successfully. Rows affected: 0
-Query Execution Time: 0.048097 seconds
+Query Execution Time: 0.040854 seconds
 ======================================================================
 
 ======================================================================
@@ -1045,7 +1045,7 @@ Test Description: DELETE multiple rows variation 15
 Execution Status: PASS
 Query Executed: DELETE FROM t_f032_15 WHERE id = 999999;
 Database Response: Query executed successfully. Rows affected: 0
-Query Execution Time: 0.038694 seconds
+Query Execution Time: 0.039083 seconds
 ======================================================================
 
 ======================================================================
@@ -1055,7 +1055,7 @@ Test Description: DELETE using WHERE variation 1
 Execution Status: PASS
 Query Executed: DELETE FROM t_f033_1 WHERE age >= 30;
 Database Response: Query executed successfully. Rows affected: 2
-Query Execution Time: 0.047669 seconds
+Query Execution Time: 0.042638 seconds
 ======================================================================
 
 ======================================================================
@@ -1065,7 +1065,7 @@ Test Description: DELETE using WHERE variation 2
 Execution Status: PASS
 Query Executed: DELETE FROM t_f033_2 WHERE age >= 30;
 Database Response: Query executed successfully. Rows affected: 2
-Query Execution Time: 0.044613 seconds
+Query Execution Time: 0.044744 seconds
 ======================================================================
 
 ======================================================================
@@ -1075,7 +1075,7 @@ Test Description: DELETE using WHERE variation 3
 Execution Status: PASS
 Query Executed: DELETE FROM t_f033_3 WHERE age >= 30;
 Database Response: Query executed successfully. Rows affected: 2
-Query Execution Time: 0.041420 seconds
+Query Execution Time: 0.045439 seconds
 ======================================================================
 
 ======================================================================
@@ -1085,7 +1085,7 @@ Test Description: DELETE using WHERE variation 4
 Execution Status: PASS
 Query Executed: DELETE FROM t_f033_4 WHERE age >= 30;
 Database Response: Query executed successfully. Rows affected: 2
-Query Execution Time: 0.039999 seconds
+Query Execution Time: 0.044083 seconds
 ======================================================================
 
 ======================================================================
@@ -1095,7 +1095,7 @@ Test Description: DELETE using WHERE variation 5
 Execution Status: PASS
 Query Executed: DELETE FROM t_f033_5 WHERE age >= 30;
 Database Response: Query executed successfully. Rows affected: 2
-Query Execution Time: 0.045068 seconds
+Query Execution Time: 0.047109 seconds
 ======================================================================
 
 ======================================================================
@@ -1105,7 +1105,7 @@ Test Description: DELETE using WHERE variation 6
 Execution Status: PASS
 Query Executed: DELETE FROM t_f033_6 WHERE unknown_col=1;
 Database Response: 1054 (42S22): Unknown column 'unknown_col' in 'where clause'
-Query Execution Time: 0.033576 seconds
+Query Execution Time: 0.039352 seconds
 ======================================================================
 
 ======================================================================
@@ -1115,7 +1115,7 @@ Test Description: DELETE using WHERE variation 7
 Execution Status: PASS
 Query Executed: DELETE FROM t_f033_7 WHERE unknown_col=1;
 Database Response: 1054 (42S22): Unknown column 'unknown_col' in 'where clause'
-Query Execution Time: 0.031974 seconds
+Query Execution Time: 0.038962 seconds
 ======================================================================
 
 ======================================================================
@@ -1125,7 +1125,7 @@ Test Description: DELETE using WHERE variation 8
 Execution Status: PASS
 Query Executed: DELETE FROM t_f033_8 WHERE unknown_col=1;
 Database Response: 1054 (42S22): Unknown column 'unknown_col' in 'where clause'
-Query Execution Time: 0.046408 seconds
+Query Execution Time: 0.042200 seconds
 ======================================================================
 
 ======================================================================
@@ -1135,7 +1135,7 @@ Test Description: DELETE using WHERE variation 9
 Execution Status: PASS
 Query Executed: DELETE FROM t_f033_9 WHERE unknown_col=1;
 Database Response: 1054 (42S22): Unknown column 'unknown_col' in 'where clause'
-Query Execution Time: 0.034383 seconds
+Query Execution Time: 0.041908 seconds
 ======================================================================
 
 ======================================================================
@@ -1145,7 +1145,7 @@ Test Description: DELETE using WHERE variation 10
 Execution Status: PASS
 Query Executed: DELETE FROM t_f033_10 WHERE unknown_col=1;
 Database Response: 1054 (42S22): Unknown column 'unknown_col' in 'where clause'
-Query Execution Time: 0.052420 seconds
+Query Execution Time: 0.040931 seconds
 ======================================================================
 
 ======================================================================
@@ -1155,7 +1155,7 @@ Test Description: DELETE using WHERE variation 11
 Execution Status: PASS
 Query Executed: DELETE FROM t_f033_11 WHERE id = 999999;
 Database Response: Query executed successfully. Rows affected: 0
-Query Execution Time: 0.040657 seconds
+Query Execution Time: 0.040055 seconds
 ======================================================================
 
 ======================================================================
@@ -1165,7 +1165,7 @@ Test Description: DELETE using WHERE variation 12
 Execution Status: PASS
 Query Executed: DELETE FROM t_f033_12 WHERE id = 999999;
 Database Response: Query executed successfully. Rows affected: 0
-Query Execution Time: 0.033749 seconds
+Query Execution Time: 0.039096 seconds
 ======================================================================
 
 ======================================================================
@@ -1175,7 +1175,7 @@ Test Description: DELETE using WHERE variation 13
 Execution Status: PASS
 Query Executed: DELETE FROM t_f033_13 WHERE id = 999999;
 Database Response: Query executed successfully. Rows affected: 0
-Query Execution Time: 0.040485 seconds
+Query Execution Time: 0.041178 seconds
 ======================================================================
 
 ======================================================================
@@ -1185,7 +1185,7 @@ Test Description: DELETE using WHERE variation 14
 Execution Status: PASS
 Query Executed: DELETE FROM t_f033_14 WHERE id = 999999;
 Database Response: Query executed successfully. Rows affected: 0
-Query Execution Time: 0.039116 seconds
+Query Execution Time: 0.043388 seconds
 ======================================================================
 
 ======================================================================
@@ -1195,7 +1195,7 @@ Test Description: DELETE using WHERE variation 15
 Execution Status: PASS
 Query Executed: DELETE FROM t_f033_15 WHERE id = 999999;
 Database Response: Query executed successfully. Rows affected: 0
-Query Execution Time: 0.053567 seconds
+Query Execution Time: 0.063883 seconds
 ======================================================================
 
 ======================================================================
@@ -1205,7 +1205,7 @@ Test Description: DELETE without WHERE variation 1
 Execution Status: PASS
 Query Executed: DELETE FROM t_f034_1;
 Database Response: Query executed successfully. Rows affected: 3
-Query Execution Time: 0.056975 seconds
+Query Execution Time: 0.065329 seconds
 ======================================================================
 
 ======================================================================
@@ -1215,7 +1215,7 @@ Test Description: DELETE without WHERE variation 2
 Execution Status: PASS
 Query Executed: DELETE FROM t_f034_2;
 Database Response: Query executed successfully. Rows affected: 3
-Query Execution Time: 0.045425 seconds
+Query Execution Time: 0.066994 seconds
 ======================================================================
 
 ======================================================================
@@ -1225,7 +1225,7 @@ Test Description: DELETE without WHERE variation 3
 Execution Status: PASS
 Query Executed: DELETE FROM t_f034_3;
 Database Response: Query executed successfully. Rows affected: 3
-Query Execution Time: 0.042156 seconds
+Query Execution Time: 0.049217 seconds
 ======================================================================
 
 ======================================================================
@@ -1235,7 +1235,7 @@ Test Description: DELETE without WHERE variation 4
 Execution Status: PASS
 Query Executed: DELETE FROM t_f034_4;
 Database Response: Query executed successfully. Rows affected: 3
-Query Execution Time: 0.037429 seconds
+Query Execution Time: 0.049581 seconds
 ======================================================================
 
 ======================================================================
@@ -1245,7 +1245,7 @@ Test Description: DELETE without WHERE variation 5
 Execution Status: PASS
 Query Executed: DELETE FROM t_f034_5;
 Database Response: Query executed successfully. Rows affected: 3
-Query Execution Time: 0.037873 seconds
+Query Execution Time: 0.048953 seconds
 ======================================================================
 
 ======================================================================
@@ -1255,7 +1255,7 @@ Test Description: DELETE without WHERE variation 6
 Execution Status: PASS
 Query Executed: DELETE FROM t_f034_6 WHERE missing_col=1;
 Database Response: 1054 (42S22): Unknown column 'missing_col' in 'where clause'
-Query Execution Time: 0.034476 seconds
+Query Execution Time: 0.042989 seconds
 ======================================================================
 
 ======================================================================
@@ -1265,7 +1265,7 @@ Test Description: DELETE without WHERE variation 7
 Execution Status: PASS
 Query Executed: DELETE FROM t_f034_7 WHERE missing_col=1;
 Database Response: 1054 (42S22): Unknown column 'missing_col' in 'where clause'
-Query Execution Time: 0.038509 seconds
+Query Execution Time: 0.039478 seconds
 ======================================================================
 
 ======================================================================
@@ -1275,7 +1275,7 @@ Test Description: DELETE without WHERE variation 8
 Execution Status: PASS
 Query Executed: DELETE FROM t_f034_8 WHERE missing_col=1;
 Database Response: 1054 (42S22): Unknown column 'missing_col' in 'where clause'
-Query Execution Time: 0.033186 seconds
+Query Execution Time: 0.039331 seconds
 ======================================================================
 
 ======================================================================
@@ -1285,7 +1285,7 @@ Test Description: DELETE without WHERE variation 9
 Execution Status: PASS
 Query Executed: DELETE FROM t_f034_9 WHERE missing_col=1;
 Database Response: 1054 (42S22): Unknown column 'missing_col' in 'where clause'
-Query Execution Time: 0.036216 seconds
+Query Execution Time: 0.040168 seconds
 ======================================================================
 
 ======================================================================
@@ -1295,7 +1295,7 @@ Test Description: DELETE without WHERE variation 10
 Execution Status: PASS
 Query Executed: DELETE FROM t_f034_10 WHERE missing_col=1;
 Database Response: 1054 (42S22): Unknown column 'missing_col' in 'where clause'
-Query Execution Time: 0.035366 seconds
+Query Execution Time: 0.042087 seconds
 ======================================================================
 
 ======================================================================
@@ -1305,7 +1305,7 @@ Test Description: DELETE without WHERE variation 11
 Execution Status: PASS
 Query Executed: DELETE FROM t_f034_11 WHERE id = 999999;
 Database Response: Query executed successfully. Rows affected: 0
-Query Execution Time: 0.038227 seconds
+Query Execution Time: 0.040855 seconds
 ======================================================================
 
 ======================================================================
@@ -1315,7 +1315,7 @@ Test Description: DELETE without WHERE variation 12
 Execution Status: PASS
 Query Executed: DELETE FROM t_f034_12 WHERE id = 999999;
 Database Response: Query executed successfully. Rows affected: 0
-Query Execution Time: 0.040362 seconds
+Query Execution Time: 0.040341 seconds
 ======================================================================
 
 ======================================================================
@@ -1325,7 +1325,7 @@ Test Description: DELETE without WHERE variation 13
 Execution Status: PASS
 Query Executed: DELETE FROM t_f034_13 WHERE id = 999999;
 Database Response: Query executed successfully. Rows affected: 0
-Query Execution Time: 0.034259 seconds
+Query Execution Time: 0.040134 seconds
 ======================================================================
 
 ======================================================================
@@ -1335,7 +1335,7 @@ Test Description: DELETE without WHERE variation 14
 Execution Status: PASS
 Query Executed: DELETE FROM t_f034_14 WHERE id = 999999;
 Database Response: Query executed successfully. Rows affected: 0
-Query Execution Time: 0.045513 seconds
+Query Execution Time: 0.043217 seconds
 ======================================================================
 
 ======================================================================
@@ -1345,7 +1345,7 @@ Test Description: DELETE without WHERE variation 15
 Execution Status: PASS
 Query Executed: DELETE FROM t_f034_15 WHERE id = 999999;
 Database Response: Query executed successfully. Rows affected: 0
-Query Execution Time: 0.030928 seconds
+Query Execution Time: 0.041610 seconds
 ======================================================================
 
 ======================================================================
@@ -1355,7 +1355,7 @@ Test Description: DELETE using multiple conditions variation 1
 Execution Status: PASS
 Query Executed: DELETE FROM t_f035_1 WHERE age >= 30 AND salary >= 40000;
 Database Response: Query executed successfully. Rows affected: 2
-Query Execution Time: 0.034909 seconds
+Query Execution Time: 0.049717 seconds
 ======================================================================
 
 ======================================================================
@@ -1365,7 +1365,7 @@ Test Description: DELETE using multiple conditions variation 2
 Execution Status: PASS
 Query Executed: DELETE FROM t_f035_2 WHERE age >= 30 AND salary >= 40000;
 Database Response: Query executed successfully. Rows affected: 2
-Query Execution Time: 0.036927 seconds
+Query Execution Time: 0.046163 seconds
 ======================================================================
 
 ======================================================================
@@ -1375,7 +1375,7 @@ Test Description: DELETE using multiple conditions variation 3
 Execution Status: PASS
 Query Executed: DELETE FROM t_f035_3 WHERE age >= 30 AND salary >= 40000;
 Database Response: Query executed successfully. Rows affected: 2
-Query Execution Time: 0.044897 seconds
+Query Execution Time: 0.045167 seconds
 ======================================================================
 
 ======================================================================
@@ -1385,7 +1385,7 @@ Test Description: DELETE using multiple conditions variation 4
 Execution Status: PASS
 Query Executed: DELETE FROM t_f035_4 WHERE age >= 30 AND salary >= 40000;
 Database Response: Query executed successfully. Rows affected: 2
-Query Execution Time: 0.037412 seconds
+Query Execution Time: 0.046229 seconds
 ======================================================================
 
 ======================================================================
@@ -1395,7 +1395,7 @@ Test Description: DELETE using multiple conditions variation 5
 Execution Status: PASS
 Query Executed: DELETE FROM t_f035_5 WHERE age >= 30 AND salary >= 40000;
 Database Response: Query executed successfully. Rows affected: 2
-Query Execution Time: 0.039920 seconds
+Query Execution Time: 0.048711 seconds
 ======================================================================
 
 ======================================================================
@@ -1405,7 +1405,7 @@ Test Description: DELETE using multiple conditions variation 6
 Execution Status: PASS
 Query Executed: DELETE FROM t_f035_6 WHERE age >= 30 AND missing_col=1;
 Database Response: 1054 (42S22): Unknown column 'missing_col' in 'where clause'
-Query Execution Time: 0.045539 seconds
+Query Execution Time: 0.060748 seconds
 ======================================================================
 
 ======================================================================
@@ -1415,7 +1415,7 @@ Test Description: DELETE using multiple conditions variation 7
 Execution Status: PASS
 Query Executed: DELETE FROM t_f035_7 WHERE age >= 30 AND missing_col=1;
 Database Response: 1054 (42S22): Unknown column 'missing_col' in 'where clause'
-Query Execution Time: 0.034813 seconds
+Query Execution Time: 0.056986 seconds
 ======================================================================
 
 ======================================================================
@@ -1425,7 +1425,7 @@ Test Description: DELETE using multiple conditions variation 8
 Execution Status: PASS
 Query Executed: DELETE FROM t_f035_8 WHERE age >= 30 AND missing_col=1;
 Database Response: 1054 (42S22): Unknown column 'missing_col' in 'where clause'
-Query Execution Time: 0.047234 seconds
+Query Execution Time: 0.061731 seconds
 ======================================================================
 
 ======================================================================
@@ -1435,7 +1435,7 @@ Test Description: DELETE using multiple conditions variation 9
 Execution Status: PASS
 Query Executed: DELETE FROM t_f035_9 WHERE age >= 30 AND missing_col=1;
 Database Response: 1054 (42S22): Unknown column 'missing_col' in 'where clause'
-Query Execution Time: 0.036279 seconds
+Query Execution Time: 0.043535 seconds
 ======================================================================
 
 ======================================================================
@@ -1445,7 +1445,7 @@ Test Description: DELETE using multiple conditions variation 10
 Execution Status: PASS
 Query Executed: DELETE FROM t_f035_10 WHERE age >= 30 AND missing_col=1;
 Database Response: 1054 (42S22): Unknown column 'missing_col' in 'where clause'
-Query Execution Time: 0.040952 seconds
+Query Execution Time: 0.042880 seconds
 ======================================================================
 
 ======================================================================
@@ -1455,7 +1455,7 @@ Test Description: DELETE using multiple conditions variation 11
 Execution Status: PASS
 Query Executed: DELETE FROM t_f035_11 WHERE id = 999999;
 Database Response: Query executed successfully. Rows affected: 0
-Query Execution Time: 0.061656 seconds
+Query Execution Time: 0.043512 seconds
 ======================================================================
 
 ======================================================================
@@ -1465,7 +1465,7 @@ Test Description: DELETE using multiple conditions variation 12
 Execution Status: PASS
 Query Executed: DELETE FROM t_f035_12 WHERE id = 999999;
 Database Response: Query executed successfully. Rows affected: 0
-Query Execution Time: 0.049840 seconds
+Query Execution Time: 0.044316 seconds
 ======================================================================
 
 ======================================================================
@@ -1475,7 +1475,7 @@ Test Description: DELETE using multiple conditions variation 13
 Execution Status: PASS
 Query Executed: DELETE FROM t_f035_13 WHERE id = 999999;
 Database Response: Query executed successfully. Rows affected: 0
-Query Execution Time: 0.066682 seconds
+Query Execution Time: 0.041098 seconds
 ======================================================================
 
 ======================================================================
@@ -1485,7 +1485,7 @@ Test Description: DELETE using multiple conditions variation 14
 Execution Status: PASS
 Query Executed: DELETE FROM t_f035_14 WHERE id = 999999;
 Database Response: Query executed successfully. Rows affected: 0
-Query Execution Time: 0.051468 seconds
+Query Execution Time: 0.039870 seconds
 ======================================================================
 
 ======================================================================
@@ -1495,7 +1495,7 @@ Test Description: DELETE using multiple conditions variation 15
 Execution Status: PASS
 Query Executed: DELETE FROM t_f035_15 WHERE id = 999999;
 Database Response: Query executed successfully. Rows affected: 0
-Query Execution Time: 0.056412 seconds
+Query Execution Time: 0.038825 seconds
 ======================================================================
 
 ======================================================================
@@ -1505,7 +1505,7 @@ Test Description: DELETE using IN variation 1
 Execution Status: PASS
 Query Executed: DELETE FROM t_f036_1 WHERE id IN (1,3);
 Database Response: Query executed successfully. Rows affected: 2
-Query Execution Time: 0.035548 seconds
+Query Execution Time: 0.042006 seconds
 ======================================================================
 
 ======================================================================
@@ -1515,7 +1515,7 @@ Test Description: DELETE using IN variation 2
 Execution Status: PASS
 Query Executed: DELETE FROM t_f036_2 WHERE id IN (1,3);
 Database Response: Query executed successfully. Rows affected: 2
-Query Execution Time: 0.052044 seconds
+Query Execution Time: 0.043735 seconds
 ======================================================================
 
 ======================================================================
@@ -1525,7 +1525,7 @@ Test Description: DELETE using IN variation 3
 Execution Status: PASS
 Query Executed: DELETE FROM t_f036_3 WHERE id IN (1,3);
 Database Response: Query executed successfully. Rows affected: 2
-Query Execution Time: 0.037263 seconds
+Query Execution Time: 0.044535 seconds
 ======================================================================
 
 ======================================================================
@@ -1535,7 +1535,7 @@ Test Description: DELETE using IN variation 4
 Execution Status: PASS
 Query Executed: DELETE FROM t_f036_4 WHERE id IN (1,3);
 Database Response: Query executed successfully. Rows affected: 2
-Query Execution Time: 0.066032 seconds
+Query Execution Time: 0.048879 seconds
 ======================================================================
 
 ======================================================================
@@ -1545,7 +1545,7 @@ Test Description: DELETE using IN variation 5
 Execution Status: PASS
 Query Executed: DELETE FROM t_f036_5 WHERE id IN (1,3);
 Database Response: Query executed successfully. Rows affected: 2
-Query Execution Time: 0.043830 seconds
+Query Execution Time: 0.043538 seconds
 ======================================================================
 
 ======================================================================
@@ -1555,7 +1555,7 @@ Test Description: DELETE using IN variation 6
 Execution Status: PASS
 Query Executed: DELETE FROM t_f036_6 WHERE id IN (SELECT missing_col FROM t_f036_6);
 Database Response: 1054 (42S22): Unknown column 'missing_col' in 'field list'
-Query Execution Time: 0.054356 seconds
+Query Execution Time: 0.043840 seconds
 ======================================================================
 
 ======================================================================
@@ -1565,7 +1565,7 @@ Test Description: DELETE using IN variation 7
 Execution Status: PASS
 Query Executed: DELETE FROM t_f036_7 WHERE id IN (SELECT missing_col FROM t_f036_7);
 Database Response: 1054 (42S22): Unknown column 'missing_col' in 'field list'
-Query Execution Time: 0.056216 seconds
+Query Execution Time: 0.041650 seconds
 ======================================================================
 
 ======================================================================
@@ -1575,7 +1575,7 @@ Test Description: DELETE using IN variation 8
 Execution Status: PASS
 Query Executed: DELETE FROM t_f036_8 WHERE id IN (SELECT missing_col FROM t_f036_8);
 Database Response: 1054 (42S22): Unknown column 'missing_col' in 'field list'
-Query Execution Time: 0.036430 seconds
+Query Execution Time: 0.041619 seconds
 ======================================================================
 
 ======================================================================
@@ -1585,7 +1585,7 @@ Test Description: DELETE using IN variation 9
 Execution Status: PASS
 Query Executed: DELETE FROM t_f036_9 WHERE id IN (SELECT missing_col FROM t_f036_9);
 Database Response: 1054 (42S22): Unknown column 'missing_col' in 'field list'
-Query Execution Time: 0.037741 seconds
+Query Execution Time: 0.042305 seconds
 ======================================================================
 
 ======================================================================
@@ -1595,7 +1595,7 @@ Test Description: DELETE using IN variation 10
 Execution Status: PASS
 Query Executed: DELETE FROM t_f036_10 WHERE id IN (SELECT missing_col FROM t_f036_10);
 Database Response: 1054 (42S22): Unknown column 'missing_col' in 'field list'
-Query Execution Time: 0.046095 seconds
+Query Execution Time: 0.041109 seconds
 ======================================================================
 
 ======================================================================
@@ -1605,7 +1605,7 @@ Test Description: DELETE using IN variation 11
 Execution Status: PASS
 Query Executed: DELETE FROM t_f036_11 WHERE id = 999999;
 Database Response: Query executed successfully. Rows affected: 0
-Query Execution Time: 0.043801 seconds
+Query Execution Time: 0.039304 seconds
 ======================================================================
 
 ======================================================================
@@ -1615,7 +1615,7 @@ Test Description: DELETE using IN variation 12
 Execution Status: PASS
 Query Executed: DELETE FROM t_f036_12 WHERE id = 999999;
 Database Response: Query executed successfully. Rows affected: 0
-Query Execution Time: 0.037513 seconds
+Query Execution Time: 0.039864 seconds
 ======================================================================
 
 ======================================================================
@@ -1625,7 +1625,7 @@ Test Description: DELETE using IN variation 13
 Execution Status: PASS
 Query Executed: DELETE FROM t_f036_13 WHERE id = 999999;
 Database Response: Query executed successfully. Rows affected: 0
-Query Execution Time: 0.031817 seconds
+Query Execution Time: 0.056801 seconds
 ======================================================================
 
 ======================================================================
@@ -1635,7 +1635,7 @@ Test Description: DELETE using IN variation 14
 Execution Status: PASS
 Query Executed: DELETE FROM t_f036_14 WHERE id = 999999;
 Database Response: Query executed successfully. Rows affected: 0
-Query Execution Time: 0.070099 seconds
+Query Execution Time: 0.059228 seconds
 ======================================================================
 
 ======================================================================
@@ -1645,7 +1645,7 @@ Test Description: DELETE using IN variation 15
 Execution Status: PASS
 Query Executed: DELETE FROM t_f036_15 WHERE id = 999999;
 Database Response: Query executed successfully. Rows affected: 0
-Query Execution Time: 0.037164 seconds
+Query Execution Time: 0.062186 seconds
 ======================================================================
 
 ======================================================================
@@ -1655,7 +1655,7 @@ Test Description: DELETE using BETWEEN variation 1
 Execution Status: PASS
 Query Executed: DELETE FROM t_f037_1 WHERE age BETWEEN 25 AND 30;
 Database Response: Query executed successfully. Rows affected: 2
-Query Execution Time: 0.037279 seconds
+Query Execution Time: 0.059196 seconds
 ======================================================================
 
 ======================================================================
@@ -1665,7 +1665,7 @@ Test Description: DELETE using BETWEEN variation 2
 Execution Status: PASS
 Query Executed: DELETE FROM t_f037_2 WHERE age BETWEEN 25 AND 30;
 Database Response: Query executed successfully. Rows affected: 2
-Query Execution Time: 0.035571 seconds
+Query Execution Time: 0.048393 seconds
 ======================================================================
 
 ======================================================================
@@ -1675,7 +1675,7 @@ Test Description: DELETE using BETWEEN variation 3
 Execution Status: PASS
 Query Executed: DELETE FROM t_f037_3 WHERE age BETWEEN 25 AND 30;
 Database Response: Query executed successfully. Rows affected: 2
-Query Execution Time: 0.036432 seconds
+Query Execution Time: 0.044968 seconds
 ======================================================================
 
 ======================================================================
@@ -1685,7 +1685,7 @@ Test Description: DELETE using BETWEEN variation 4
 Execution Status: PASS
 Query Executed: DELETE FROM t_f037_4 WHERE age BETWEEN 25 AND 30;
 Database Response: Query executed successfully. Rows affected: 2
-Query Execution Time: 0.036428 seconds
+Query Execution Time: 0.044305 seconds
 ======================================================================
 
 ======================================================================
@@ -1695,7 +1695,7 @@ Test Description: DELETE using BETWEEN variation 5
 Execution Status: PASS
 Query Executed: DELETE FROM t_f037_5 WHERE age BETWEEN 25 AND 30;
 Database Response: Query executed successfully. Rows affected: 2
-Query Execution Time: 0.034184 seconds
+Query Execution Time: 0.046699 seconds
 ======================================================================
 
 ======================================================================
@@ -1705,7 +1705,7 @@ Test Description: DELETE using BETWEEN variation 6
 Execution Status: PASS
 Query Executed: DELETE FROM t_f037_6 WHERE age BETWEEN missing_col AND 30;
 Database Response: 1054 (42S22): Unknown column 'missing_col' in 'where clause'
-Query Execution Time: 0.057821 seconds
+Query Execution Time: 0.042002 seconds
 ======================================================================
 
 ======================================================================
@@ -1715,7 +1715,7 @@ Test Description: DELETE using BETWEEN variation 7
 Execution Status: PASS
 Query Executed: DELETE FROM t_f037_7 WHERE age BETWEEN missing_col AND 30;
 Database Response: 1054 (42S22): Unknown column 'missing_col' in 'where clause'
-Query Execution Time: 0.040892 seconds
+Query Execution Time: 0.041136 seconds
 ======================================================================
 
 ======================================================================
@@ -1725,7 +1725,7 @@ Test Description: DELETE using BETWEEN variation 8
 Execution Status: PASS
 Query Executed: DELETE FROM t_f037_8 WHERE age BETWEEN missing_col AND 30;
 Database Response: 1054 (42S22): Unknown column 'missing_col' in 'where clause'
-Query Execution Time: 0.043113 seconds
+Query Execution Time: 0.041617 seconds
 ======================================================================
 
 ======================================================================
@@ -1735,7 +1735,7 @@ Test Description: DELETE using BETWEEN variation 9
 Execution Status: PASS
 Query Executed: DELETE FROM t_f037_9 WHERE age BETWEEN missing_col AND 30;
 Database Response: 1054 (42S22): Unknown column 'missing_col' in 'where clause'
-Query Execution Time: 0.035517 seconds
+Query Execution Time: 0.039829 seconds
 ======================================================================
 
 ======================================================================
@@ -1745,7 +1745,7 @@ Test Description: DELETE using BETWEEN variation 10
 Execution Status: PASS
 Query Executed: DELETE FROM t_f037_10 WHERE age BETWEEN missing_col AND 30;
 Database Response: 1054 (42S22): Unknown column 'missing_col' in 'where clause'
-Query Execution Time: 0.044525 seconds
+Query Execution Time: 0.044443 seconds
 ======================================================================
 
 ======================================================================
@@ -1755,7 +1755,7 @@ Test Description: DELETE using BETWEEN variation 11
 Execution Status: PASS
 Query Executed: DELETE FROM t_f037_11 WHERE id = 999999;
 Database Response: Query executed successfully. Rows affected: 0
-Query Execution Time: 0.052331 seconds
+Query Execution Time: 0.039579 seconds
 ======================================================================
 
 ======================================================================
@@ -1765,7 +1765,7 @@ Test Description: DELETE using BETWEEN variation 12
 Execution Status: PASS
 Query Executed: DELETE FROM t_f037_12 WHERE id = 999999;
 Database Response: Query executed successfully. Rows affected: 0
-Query Execution Time: 0.060739 seconds
+Query Execution Time: 0.042685 seconds
 ======================================================================
 
 ======================================================================
@@ -1775,7 +1775,7 @@ Test Description: DELETE using BETWEEN variation 13
 Execution Status: PASS
 Query Executed: DELETE FROM t_f037_13 WHERE id = 999999;
 Database Response: Query executed successfully. Rows affected: 0
-Query Execution Time: 0.052911 seconds
+Query Execution Time: 0.040835 seconds
 ======================================================================
 
 ======================================================================
@@ -1785,7 +1785,7 @@ Test Description: DELETE using BETWEEN variation 14
 Execution Status: PASS
 Query Executed: DELETE FROM t_f037_14 WHERE id = 999999;
 Database Response: Query executed successfully. Rows affected: 0
-Query Execution Time: 0.050129 seconds
+Query Execution Time: 0.041996 seconds
 ======================================================================
 
 ======================================================================
@@ -1795,7 +1795,7 @@ Test Description: DELETE using BETWEEN variation 15
 Execution Status: PASS
 Query Executed: DELETE FROM t_f037_15 WHERE id = 999999;
 Database Response: Query executed successfully. Rows affected: 0
-Query Execution Time: 0.072883 seconds
+Query Execution Time: 0.044069 seconds
 ======================================================================
 
 ======================================================================
@@ -1805,7 +1805,7 @@ Test Description: DELETE parent row with dependent child variation 1
 Execution Status: PASS
 Query Executed: DELETE FROM t_f038_1_child WHERE id=10;
 Database Response: Query executed successfully. Rows affected: 1
-Query Execution Time: 0.059670 seconds
+Query Execution Time: 0.070108 seconds
 ======================================================================
 
 ======================================================================
@@ -1815,7 +1815,7 @@ Test Description: DELETE parent row with dependent child variation 2
 Execution Status: PASS
 Query Executed: DELETE FROM t_f038_2_child WHERE id=10;
 Database Response: Query executed successfully. Rows affected: 1
-Query Execution Time: 0.083354 seconds
+Query Execution Time: 0.071876 seconds
 ======================================================================
 
 ======================================================================
@@ -1825,7 +1825,7 @@ Test Description: DELETE parent row with dependent child variation 3
 Execution Status: PASS
 Query Executed: DELETE FROM t_f038_3_child WHERE id=10;
 Database Response: Query executed successfully. Rows affected: 1
-Query Execution Time: 0.081515 seconds
+Query Execution Time: 0.096948 seconds
 ======================================================================
 
 ======================================================================
@@ -1835,7 +1835,7 @@ Test Description: DELETE parent row with dependent child variation 4
 Execution Status: PASS
 Query Executed: DELETE FROM t_f038_4_child WHERE id=10;
 Database Response: Query executed successfully. Rows affected: 1
-Query Execution Time: 0.061073 seconds
+Query Execution Time: 0.111709 seconds
 ======================================================================
 
 ======================================================================
@@ -1845,7 +1845,7 @@ Test Description: DELETE parent row with dependent child variation 5
 Execution Status: PASS
 Query Executed: DELETE FROM t_f038_5_child WHERE id=10;
 Database Response: Query executed successfully. Rows affected: 1
-Query Execution Time: 0.045568 seconds
+Query Execution Time: 0.075688 seconds
 ======================================================================
 
 ======================================================================
@@ -1855,7 +1855,7 @@ Test Description: DELETE parent row with dependent child variation 6
 Execution Status: PASS
 Query Executed: DELETE FROM t_f038_6_parent WHERE id=1;
 Database Response: 1451 (23000): Cannot delete or update a parent row: a foreign key constraint fails (`ai_testing_group2`.`t_f038_6_child`, CONSTRAINT `t_f038_6_child_ibfk_1` FOREIGN KEY (`parent_id`) REFERENCES `t_f038_6_parent` (`id`))
-Query Execution Time: 0.065389 seconds
+Query Execution Time: 0.069116 seconds
 ======================================================================
 
 ======================================================================
@@ -1865,7 +1865,7 @@ Test Description: DELETE parent row with dependent child variation 7
 Execution Status: PASS
 Query Executed: DELETE FROM t_f038_7_parent WHERE id=1;
 Database Response: 1451 (23000): Cannot delete or update a parent row: a foreign key constraint fails (`ai_testing_group2`.`t_f038_7_child`, CONSTRAINT `t_f038_7_child_ibfk_1` FOREIGN KEY (`parent_id`) REFERENCES `t_f038_7_parent` (`id`))
-Query Execution Time: 0.046440 seconds
+Query Execution Time: 0.065769 seconds
 ======================================================================
 
 ======================================================================
@@ -1875,7 +1875,7 @@ Test Description: DELETE parent row with dependent child variation 8
 Execution Status: PASS
 Query Executed: DELETE FROM t_f038_8_parent WHERE id=1;
 Database Response: 1451 (23000): Cannot delete or update a parent row: a foreign key constraint fails (`ai_testing_group2`.`t_f038_8_child`, CONSTRAINT `t_f038_8_child_ibfk_1` FOREIGN KEY (`parent_id`) REFERENCES `t_f038_8_parent` (`id`))
-Query Execution Time: 0.089929 seconds
+Query Execution Time: 0.066781 seconds
 ======================================================================
 
 ======================================================================
@@ -1885,7 +1885,7 @@ Test Description: DELETE parent row with dependent child variation 9
 Execution Status: PASS
 Query Executed: DELETE FROM t_f038_9_parent WHERE id=1;
 Database Response: 1451 (23000): Cannot delete or update a parent row: a foreign key constraint fails (`ai_testing_group2`.`t_f038_9_child`, CONSTRAINT `t_f038_9_child_ibfk_1` FOREIGN KEY (`parent_id`) REFERENCES `t_f038_9_parent` (`id`))
-Query Execution Time: 0.053635 seconds
+Query Execution Time: 0.066790 seconds
 ======================================================================
 
 ======================================================================
@@ -1895,7 +1895,7 @@ Test Description: DELETE parent row with dependent child variation 10
 Execution Status: PASS
 Query Executed: DELETE FROM t_f038_10_parent WHERE id=1;
 Database Response: 1451 (23000): Cannot delete or update a parent row: a foreign key constraint fails (`ai_testing_group2`.`t_f038_10_child`, CONSTRAINT `t_f038_10_child_ibfk_1` FOREIGN KEY (`parent_id`) REFERENCES `t_f038_10_parent` (`id`))
-Query Execution Time: 0.050515 seconds
+Query Execution Time: 0.067024 seconds
 ======================================================================
 
 ======================================================================
@@ -1905,7 +1905,7 @@ Test Description: DELETE parent row with dependent child variation 11
 Execution Status: PASS
 Query Executed: DELETE FROM t_f038_11_parent WHERE id=1;
 Database Response: 1451 (23000): Cannot delete or update a parent row: a foreign key constraint fails (`ai_testing_group2`.`t_f038_11_child`, CONSTRAINT `t_f038_11_child_ibfk_1` FOREIGN KEY (`parent_id`) REFERENCES `t_f038_11_parent` (`id`))
-Query Execution Time: 0.066344 seconds
+Query Execution Time: 0.067918 seconds
 ======================================================================
 
 ======================================================================
@@ -1915,7 +1915,7 @@ Test Description: DELETE parent row with dependent child variation 12
 Execution Status: PASS
 Query Executed: DELETE FROM t_f038_12_parent WHERE id=1;
 Database Response: 1451 (23000): Cannot delete or update a parent row: a foreign key constraint fails (`ai_testing_group2`.`t_f038_12_child`, CONSTRAINT `t_f038_12_child_ibfk_1` FOREIGN KEY (`parent_id`) REFERENCES `t_f038_12_parent` (`id`))
-Query Execution Time: 0.050069 seconds
+Query Execution Time: 0.067907 seconds
 ======================================================================
 
 ======================================================================
@@ -1925,7 +1925,7 @@ Test Description: DELETE parent row with dependent child variation 13
 Execution Status: PASS
 Query Executed: DELETE FROM t_f038_13_parent WHERE id=1;
 Database Response: 1451 (23000): Cannot delete or update a parent row: a foreign key constraint fails (`ai_testing_group2`.`t_f038_13_child`, CONSTRAINT `t_f038_13_child_ibfk_1` FOREIGN KEY (`parent_id`) REFERENCES `t_f038_13_parent` (`id`))
-Query Execution Time: 0.077240 seconds
+Query Execution Time: 0.068540 seconds
 ======================================================================
 
 ======================================================================
@@ -1935,7 +1935,7 @@ Test Description: DELETE parent row with dependent child variation 14
 Execution Status: PASS
 Query Executed: DELETE FROM t_f038_14_parent WHERE id=1;
 Database Response: 1451 (23000): Cannot delete or update a parent row: a foreign key constraint fails (`ai_testing_group2`.`t_f038_14_child`, CONSTRAINT `t_f038_14_child_ibfk_1` FOREIGN KEY (`parent_id`) REFERENCES `t_f038_14_parent` (`id`))
-Query Execution Time: 0.067031 seconds
+Query Execution Time: 0.065770 seconds
 ======================================================================
 
 ======================================================================
@@ -1945,7 +1945,7 @@ Test Description: DELETE parent row with dependent child variation 15
 Execution Status: PASS
 Query Executed: DELETE FROM t_f038_15_parent WHERE id=1;
 Database Response: 1451 (23000): Cannot delete or update a parent row: a foreign key constraint fails (`ai_testing_group2`.`t_f038_15_child`, CONSTRAINT `t_f038_15_child_ibfk_1` FOREIGN KEY (`parent_id`) REFERENCES `t_f038_15_parent` (`id`))
-Query Execution Time: 0.062068 seconds
+Query Execution Time: 0.066355 seconds
 ======================================================================
 
 ======================================================================
@@ -1955,7 +1955,7 @@ Test Description: DELETE non-existing row variation 1
 Execution Status: PASS
 Query Executed: DELETE FROM t_f039_1 WHERE id=999999;
 Database Response: Query executed successfully. Rows affected: 0
-Query Execution Time: 0.051031 seconds
+Query Execution Time: 0.039120 seconds
 ======================================================================
 
 ======================================================================
@@ -1965,7 +1965,7 @@ Test Description: DELETE non-existing row variation 2
 Execution Status: PASS
 Query Executed: DELETE FROM t_f039_2 WHERE id=999999;
 Database Response: Query executed successfully. Rows affected: 0
-Query Execution Time: 0.047159 seconds
+Query Execution Time: 0.043118 seconds
 ======================================================================
 
 ======================================================================
@@ -1975,7 +1975,7 @@ Test Description: DELETE non-existing row variation 3
 Execution Status: PASS
 Query Executed: DELETE FROM t_f039_3 WHERE id=999999;
 Database Response: Query executed successfully. Rows affected: 0
-Query Execution Time: 0.046248 seconds
+Query Execution Time: 0.056192 seconds
 ======================================================================
 
 ======================================================================
@@ -1985,7 +1985,7 @@ Test Description: DELETE non-existing row variation 4
 Execution Status: PASS
 Query Executed: DELETE FROM t_f039_4 WHERE id=999999;
 Database Response: Query executed successfully. Rows affected: 0
-Query Execution Time: 0.036154 seconds
+Query Execution Time: 0.058360 seconds
 ======================================================================
 
 ======================================================================
@@ -1995,7 +1995,7 @@ Test Description: DELETE non-existing row variation 5
 Execution Status: PASS
 Query Executed: DELETE FROM t_f039_5 WHERE id=999999;
 Database Response: Query executed successfully. Rows affected: 0
-Query Execution Time: 0.034505 seconds
+Query Execution Time: 0.058267 seconds
 ======================================================================
 
 ======================================================================
@@ -2005,7 +2005,7 @@ Test Description: DELETE non-existing row variation 6
 Execution Status: PASS
 Query Executed: DELETE FROM t_f039_6 WHERE missing_col=999999;
 Database Response: 1054 (42S22): Unknown column 'missing_col' in 'where clause'
-Query Execution Time: 0.037202 seconds
+Query Execution Time: 0.039905 seconds
 ======================================================================
 
 ======================================================================
@@ -2015,7 +2015,7 @@ Test Description: DELETE non-existing row variation 7
 Execution Status: PASS
 Query Executed: DELETE FROM t_f039_7 WHERE missing_col=999999;
 Database Response: 1054 (42S22): Unknown column 'missing_col' in 'where clause'
-Query Execution Time: 0.037545 seconds
+Query Execution Time: 0.042696 seconds
 ======================================================================
 
 ======================================================================
@@ -2025,7 +2025,7 @@ Test Description: DELETE non-existing row variation 8
 Execution Status: PASS
 Query Executed: DELETE FROM t_f039_8 WHERE missing_col=999999;
 Database Response: 1054 (42S22): Unknown column 'missing_col' in 'where clause'
-Query Execution Time: 0.034177 seconds
+Query Execution Time: 0.041235 seconds
 ======================================================================
 
 ======================================================================
@@ -2035,7 +2035,7 @@ Test Description: DELETE non-existing row variation 9
 Execution Status: PASS
 Query Executed: DELETE FROM t_f039_9 WHERE missing_col=999999;
 Database Response: 1054 (42S22): Unknown column 'missing_col' in 'where clause'
-Query Execution Time: 0.050520 seconds
+Query Execution Time: 0.040676 seconds
 ======================================================================
 
 ======================================================================
@@ -2045,7 +2045,7 @@ Test Description: DELETE non-existing row variation 10
 Execution Status: PASS
 Query Executed: DELETE FROM t_f039_10 WHERE missing_col=999999;
 Database Response: 1054 (42S22): Unknown column 'missing_col' in 'where clause'
-Query Execution Time: 0.029095 seconds
+Query Execution Time: 0.039012 seconds
 ======================================================================
 
 ======================================================================
@@ -2055,7 +2055,7 @@ Test Description: DELETE non-existing row variation 11
 Execution Status: PASS
 Query Executed: DELETE FROM t_f039_11 WHERE id = 999999;
 Database Response: Query executed successfully. Rows affected: 0
-Query Execution Time: 0.024561 seconds
+Query Execution Time: 0.042059 seconds
 ======================================================================
 
 ======================================================================
@@ -2065,7 +2065,7 @@ Test Description: DELETE non-existing row variation 12
 Execution Status: PASS
 Query Executed: DELETE FROM t_f039_12 WHERE id = 999999;
 Database Response: Query executed successfully. Rows affected: 0
-Query Execution Time: 0.029540 seconds
+Query Execution Time: 0.038824 seconds
 ======================================================================
 
 ======================================================================
@@ -2075,7 +2075,7 @@ Test Description: DELETE non-existing row variation 13
 Execution Status: PASS
 Query Executed: DELETE FROM t_f039_13 WHERE id = 999999;
 Database Response: Query executed successfully. Rows affected: 0
-Query Execution Time: 0.028644 seconds
+Query Execution Time: 0.040492 seconds
 ======================================================================
 
 ======================================================================
@@ -2085,7 +2085,7 @@ Test Description: DELETE non-existing row variation 14
 Execution Status: PASS
 Query Executed: DELETE FROM t_f039_14 WHERE id = 999999;
 Database Response: Query executed successfully. Rows affected: 0
-Query Execution Time: 0.028279 seconds
+Query Execution Time: 0.039031 seconds
 ======================================================================
 
 ======================================================================
@@ -2095,7 +2095,7 @@ Test Description: DELETE non-existing row variation 15
 Execution Status: PASS
 Query Executed: DELETE FROM t_f039_15 WHERE id = 999999;
 Database Response: Query executed successfully. Rows affected: 0
-Query Execution Time: 0.027200 seconds
+Query Execution Time: 0.040619 seconds
 ======================================================================
 
 ======================================================================
@@ -2105,7 +2105,7 @@ Test Description: DELETE all rows variation 1
 Execution Status: PASS
 Query Executed: DELETE FROM t_f040_1;
 Database Response: Query executed successfully. Rows affected: 3
-Query Execution Time: 0.028929 seconds
+Query Execution Time: 0.045278 seconds
 ======================================================================
 
 ======================================================================
@@ -2115,7 +2115,7 @@ Test Description: DELETE all rows variation 2
 Execution Status: PASS
 Query Executed: DELETE FROM t_f040_2;
 Database Response: Query executed successfully. Rows affected: 3
-Query Execution Time: 0.045071 seconds
+Query Execution Time: 0.043957 seconds
 ======================================================================
 
 ======================================================================
@@ -2125,7 +2125,7 @@ Test Description: DELETE all rows variation 3
 Execution Status: PASS
 Query Executed: DELETE FROM t_f040_3;
 Database Response: Query executed successfully. Rows affected: 3
-Query Execution Time: 0.031122 seconds
+Query Execution Time: 0.046597 seconds
 ======================================================================
 
 ======================================================================
@@ -2135,7 +2135,7 @@ Test Description: DELETE all rows variation 4
 Execution Status: PASS
 Query Executed: DELETE FROM t_f040_4;
 Database Response: Query executed successfully. Rows affected: 3
-Query Execution Time: 0.037972 seconds
+Query Execution Time: 0.044178 seconds
 ======================================================================
 
 ======================================================================
@@ -2145,7 +2145,7 @@ Test Description: DELETE all rows variation 5
 Execution Status: PASS
 Query Executed: DELETE FROM t_f040_5;
 Database Response: Query executed successfully. Rows affected: 3
-Query Execution Time: 0.034719 seconds
+Query Execution Time: 0.046845 seconds
 ======================================================================
 
 ======================================================================
@@ -2155,7 +2155,7 @@ Test Description: DELETE all rows variation 6
 Execution Status: PASS
 Query Executed: DELETE FROM t_f040_6 WHERE missing_col IS NULL;
 Database Response: 1054 (42S22): Unknown column 'missing_col' in 'where clause'
-Query Execution Time: 0.028664 seconds
+Query Execution Time: 0.041378 seconds
 ======================================================================
 
 ======================================================================
@@ -2165,7 +2165,7 @@ Test Description: DELETE all rows variation 7
 Execution Status: PASS
 Query Executed: DELETE FROM t_f040_7 WHERE missing_col IS NULL;
 Database Response: 1054 (42S22): Unknown column 'missing_col' in 'where clause'
-Query Execution Time: 0.041851 seconds
+Query Execution Time: 0.041386 seconds
 ======================================================================
 
 ======================================================================
@@ -2175,7 +2175,7 @@ Test Description: DELETE all rows variation 8
 Execution Status: PASS
 Query Executed: DELETE FROM t_f040_8 WHERE missing_col IS NULL;
 Database Response: 1054 (42S22): Unknown column 'missing_col' in 'where clause'
-Query Execution Time: 0.027343 seconds
+Query Execution Time: 0.043318 seconds
 ======================================================================
 
 ======================================================================
@@ -2185,7 +2185,7 @@ Test Description: DELETE all rows variation 9
 Execution Status: PASS
 Query Executed: DELETE FROM t_f040_9 WHERE missing_col IS NULL;
 Database Response: 1054 (42S22): Unknown column 'missing_col' in 'where clause'
-Query Execution Time: 0.043164 seconds
+Query Execution Time: 0.041900 seconds
 ======================================================================
 
 ======================================================================
@@ -2195,7 +2195,7 @@ Test Description: DELETE all rows variation 10
 Execution Status: PASS
 Query Executed: DELETE FROM t_f040_10 WHERE missing_col IS NULL;
 Database Response: 1054 (42S22): Unknown column 'missing_col' in 'where clause'
-Query Execution Time: 0.043629 seconds
+Query Execution Time: 0.057717 seconds
 ======================================================================
 
 ======================================================================
@@ -2205,7 +2205,7 @@ Test Description: DELETE all rows variation 11
 Execution Status: PASS
 Query Executed: DELETE FROM t_f040_11 WHERE id = 999999;
 Database Response: Query executed successfully. Rows affected: 0
-Query Execution Time: 0.034412 seconds
+Query Execution Time: 0.063133 seconds
 ======================================================================
 
 ======================================================================
@@ -2215,7 +2215,7 @@ Test Description: DELETE all rows variation 12
 Execution Status: PASS
 Query Executed: DELETE FROM t_f040_12 WHERE id = 999999;
 Database Response: Query executed successfully. Rows affected: 0
-Query Execution Time: 0.032989 seconds
+Query Execution Time: 0.060688 seconds
 ======================================================================
 
 ======================================================================
@@ -2225,7 +2225,7 @@ Test Description: DELETE all rows variation 13
 Execution Status: PASS
 Query Executed: DELETE FROM t_f040_13 WHERE id = 999999;
 Database Response: Query executed successfully. Rows affected: 0
-Query Execution Time: 0.032117 seconds
+Query Execution Time: 0.053991 seconds
 ======================================================================
 
 ======================================================================
@@ -2235,7 +2235,7 @@ Test Description: DELETE all rows variation 14
 Execution Status: PASS
 Query Executed: DELETE FROM t_f040_14 WHERE id = 999999;
 Database Response: Query executed successfully. Rows affected: 0
-Query Execution Time: 0.030631 seconds
+Query Execution Time: 0.041482 seconds
 ======================================================================
 
 ======================================================================
@@ -2245,7 +2245,7 @@ Test Description: DELETE all rows variation 15
 Execution Status: PASS
 Query Executed: DELETE FROM t_f040_15 WHERE id = 999999;
 Database Response: Query executed successfully. Rows affected: 0
-Query Execution Time: 0.028605 seconds
+Query Execution Time: 0.043325 seconds
 ======================================================================
 
 ======================================================================
@@ -2262,7 +2262,7 @@ Database Response: Rows returned: 3
 | 2  | Bob   | bob@x.test   | 30  | 45000.00 | 1       | 2023-01-10   |
 | 3  | Cara  | cara@x.test  | 35  | 60000.00 | 2       | 2022-01-10   |
 +----+-------+--------------+-----+----------+---------+--------------+
-Query Execution Time: 0.029277 seconds
+Query Execution Time: 0.040324 seconds
 ======================================================================
 
 ======================================================================
@@ -2279,7 +2279,7 @@ Database Response: Rows returned: 3
 | 2  | Bob   | bob@x.test   | 30  | 45000.00 | 1       | 2023-01-10   |
 | 3  | Cara  | cara@x.test  | 35  | 60000.00 | 2       | 2022-01-10   |
 +----+-------+--------------+-----+----------+---------+--------------+
-Query Execution Time: 0.032689 seconds
+Query Execution Time: 0.045005 seconds
 ======================================================================
 
 ======================================================================
@@ -2296,7 +2296,7 @@ Database Response: Rows returned: 3
 | 2  | Bob   | bob@x.test   | 30  | 45000.00 | 1       | 2023-01-10   |
 | 3  | Cara  | cara@x.test  | 35  | 60000.00 | 2       | 2022-01-10   |
 +----+-------+--------------+-----+----------+---------+--------------+
-Query Execution Time: 0.027676 seconds
+Query Execution Time: 0.041984 seconds
 ======================================================================
 
 ======================================================================
@@ -2313,7 +2313,7 @@ Database Response: Rows returned: 3
 | 2  | Bob   | bob@x.test   | 30  | 45000.00 | 1       | 2023-01-10   |
 | 3  | Cara  | cara@x.test  | 35  | 60000.00 | 2       | 2022-01-10   |
 +----+-------+--------------+-----+----------+---------+--------------+
-Query Execution Time: 0.029250 seconds
+Query Execution Time: 0.038427 seconds
 ======================================================================
 
 ======================================================================
@@ -2330,7 +2330,7 @@ Database Response: Rows returned: 3
 | 2  | Bob   | bob@x.test   | 30  | 45000.00 | 1       | 2023-01-10   |
 | 3  | Cara  | cara@x.test  | 35  | 60000.00 | 2       | 2022-01-10   |
 +----+-------+--------------+-----+----------+---------+--------------+
-Query Execution Time: 0.027385 seconds
+Query Execution Time: 0.041256 seconds
 ======================================================================
 
 ======================================================================
@@ -2340,7 +2340,7 @@ Test Description: SELECT all columns variation 6
 Execution Status: PASS
 Query Executed: SELECT * FROM missing_t_f041_6;
 Database Response: 1146 (42S02): Table 'ai_testing_group2.missing_t_f041_6' doesn't exist
-Query Execution Time: 0.027849 seconds
+Query Execution Time: 0.040117 seconds
 ======================================================================
 
 ======================================================================
@@ -2350,7 +2350,7 @@ Test Description: SELECT all columns variation 7
 Execution Status: PASS
 Query Executed: SELECT * FROM missing_t_f041_7;
 Database Response: 1146 (42S02): Table 'ai_testing_group2.missing_t_f041_7' doesn't exist
-Query Execution Time: 0.030584 seconds
+Query Execution Time: 0.041106 seconds
 ======================================================================
 
 ======================================================================
@@ -2360,7 +2360,7 @@ Test Description: SELECT all columns variation 8
 Execution Status: PASS
 Query Executed: SELECT * FROM missing_t_f041_8;
 Database Response: 1146 (42S02): Table 'ai_testing_group2.missing_t_f041_8' doesn't exist
-Query Execution Time: 0.042378 seconds
+Query Execution Time: 0.039276 seconds
 ======================================================================
 
 ======================================================================
@@ -2370,7 +2370,7 @@ Test Description: SELECT all columns variation 9
 Execution Status: PASS
 Query Executed: SELECT * FROM missing_t_f041_9;
 Database Response: 1146 (42S02): Table 'ai_testing_group2.missing_t_f041_9' doesn't exist
-Query Execution Time: 0.040179 seconds
+Query Execution Time: 0.042381 seconds
 ======================================================================
 
 ======================================================================
@@ -2380,7 +2380,7 @@ Test Description: SELECT all columns variation 10
 Execution Status: PASS
 Query Executed: SELECT * FROM missing_t_f041_10;
 Database Response: 1146 (42S02): Table 'ai_testing_group2.missing_t_f041_10' doesn't exist
-Query Execution Time: 0.037268 seconds
+Query Execution Time: 0.041625 seconds
 ======================================================================
 
 ======================================================================
@@ -2397,7 +2397,7 @@ Database Response: Rows returned: 3
 | 2  | Bob   | bob@x.test   | 30  | 45000.00 | 1       | 2023-01-10   |
 | 3  | Cara  | cara@x.test  | 35  | 60000.00 | 2       | 2022-01-10   |
 +----+-------+--------------+-----+----------+---------+--------------+
-Query Execution Time: 0.029934 seconds
+Query Execution Time: 0.040033 seconds
 ======================================================================
 
 ======================================================================
@@ -2414,7 +2414,7 @@ Database Response: Rows returned: 3
 | 2  | Bob   | bob@x.test   | 30  | 45000.00 | 1       | 2023-01-10   |
 | 3  | Cara  | cara@x.test  | 35  | 60000.00 | 2       | 2022-01-10   |
 +----+-------+--------------+-----+----------+---------+--------------+
-Query Execution Time: 0.035752 seconds
+Query Execution Time: 0.039749 seconds
 ======================================================================
 
 ======================================================================
@@ -2431,7 +2431,7 @@ Database Response: Rows returned: 3
 | 2  | Bob   | bob@x.test   | 30  | 45000.00 | 1       | 2023-01-10   |
 | 3  | Cara  | cara@x.test  | 35  | 60000.00 | 2       | 2022-01-10   |
 +----+-------+--------------+-----+----------+---------+--------------+
-Query Execution Time: 0.033296 seconds
+Query Execution Time: 0.040556 seconds
 ======================================================================
 
 ======================================================================
@@ -2448,7 +2448,7 @@ Database Response: Rows returned: 3
 | 2  | Bob   | bob@x.test   | 30  | 45000.00 | 1       | 2023-01-10   |
 | 3  | Cara  | cara@x.test  | 35  | 60000.00 | 2       | 2022-01-10   |
 +----+-------+--------------+-----+----------+---------+--------------+
-Query Execution Time: 0.032066 seconds
+Query Execution Time: 0.040678 seconds
 ======================================================================
 
 ======================================================================
@@ -2465,7 +2465,7 @@ Database Response: Rows returned: 3
 | 2  | Bob   | bob@x.test   | 30  | 45000.00 | 1       | 2023-01-10   |
 | 3  | Cara  | cara@x.test  | 35  | 60000.00 | 2       | 2022-01-10   |
 +----+-------+--------------+-----+----------+---------+--------------+
-Query Execution Time: 0.034793 seconds
+Query Execution Time: 0.039950 seconds
 ======================================================================
 
 ======================================================================
@@ -2482,7 +2482,7 @@ Database Response: Rows returned: 3
 | 2  | Bob   | 45000.00 |
 | 3  | Cara  | 60000.00 |
 +----+-------+----------+
-Query Execution Time: 0.036554 seconds
+Query Execution Time: 0.042022 seconds
 ======================================================================
 
 ======================================================================
@@ -2499,7 +2499,7 @@ Database Response: Rows returned: 3
 | 2  | Bob   | 45000.00 |
 | 3  | Cara  | 60000.00 |
 +----+-------+----------+
-Query Execution Time: 0.030639 seconds
+Query Execution Time: 0.043294 seconds
 ======================================================================
 
 ======================================================================
@@ -2516,7 +2516,7 @@ Database Response: Rows returned: 3
 | 2  | Bob   | 45000.00 |
 | 3  | Cara  | 60000.00 |
 +----+-------+----------+
-Query Execution Time: 0.028855 seconds
+Query Execution Time: 0.064100 seconds
 ======================================================================
 
 ======================================================================
@@ -2533,7 +2533,7 @@ Database Response: Rows returned: 3
 | 2  | Bob   | 45000.00 |
 | 3  | Cara  | 60000.00 |
 +----+-------+----------+
-Query Execution Time: 0.030488 seconds
+Query Execution Time: 0.060063 seconds
 ======================================================================
 
 ======================================================================
@@ -2550,7 +2550,7 @@ Database Response: Rows returned: 3
 | 2  | Bob   | 45000.00 |
 | 3  | Cara  | 60000.00 |
 +----+-------+----------+
-Query Execution Time: 0.036716 seconds
+Query Execution Time: 0.064112 seconds
 ======================================================================
 
 ======================================================================
@@ -2560,7 +2560,7 @@ Test Description: SELECT specific columns variation 6
 Execution Status: PASS
 Query Executed: SELECT id,missing_col FROM t_f042_6;
 Database Response: 1054 (42S22): Unknown column 'missing_col' in 'field list'
-Query Execution Time: 0.028337 seconds
+Query Execution Time: 0.051853 seconds
 ======================================================================
 
 ======================================================================
@@ -2570,7 +2570,7 @@ Test Description: SELECT specific columns variation 7
 Execution Status: PASS
 Query Executed: SELECT id,missing_col FROM t_f042_7;
 Database Response: 1054 (42S22): Unknown column 'missing_col' in 'field list'
-Query Execution Time: 0.027263 seconds
+Query Execution Time: 0.040071 seconds
 ======================================================================
 
 ======================================================================
@@ -2580,7 +2580,7 @@ Test Description: SELECT specific columns variation 8
 Execution Status: PASS
 Query Executed: SELECT id,missing_col FROM t_f042_8;
 Database Response: 1054 (42S22): Unknown column 'missing_col' in 'field list'
-Query Execution Time: 0.034042 seconds
+Query Execution Time: 0.040490 seconds
 ======================================================================
 
 ======================================================================
@@ -2590,7 +2590,7 @@ Test Description: SELECT specific columns variation 9
 Execution Status: PASS
 Query Executed: SELECT id,missing_col FROM t_f042_9;
 Database Response: 1054 (42S22): Unknown column 'missing_col' in 'field list'
-Query Execution Time: 0.028895 seconds
+Query Execution Time: 0.040936 seconds
 ======================================================================
 
 ======================================================================
@@ -2600,7 +2600,7 @@ Test Description: SELECT specific columns variation 10
 Execution Status: PASS
 Query Executed: SELECT id,missing_col FROM t_f042_10;
 Database Response: 1054 (42S22): Unknown column 'missing_col' in 'field list'
-Query Execution Time: 0.038806 seconds
+Query Execution Time: 0.042418 seconds
 ======================================================================
 
 ======================================================================
@@ -2617,7 +2617,7 @@ Database Response: Rows returned: 3
 | 2  | Bob   | 45000.00 |
 | 3  | Cara  | 60000.00 |
 +----+-------+----------+
-Query Execution Time: 0.055470 seconds
+Query Execution Time: 0.042797 seconds
 ======================================================================
 
 ======================================================================
@@ -2634,7 +2634,7 @@ Database Response: Rows returned: 3
 | 2  | Bob   | 45000.00 |
 | 3  | Cara  | 60000.00 |
 +----+-------+----------+
-Query Execution Time: 0.038395 seconds
+Query Execution Time: 0.038581 seconds
 ======================================================================
 
 ======================================================================
@@ -2651,7 +2651,7 @@ Database Response: Rows returned: 3
 | 2  | Bob   | 45000.00 |
 | 3  | Cara  | 60000.00 |
 +----+-------+----------+
-Query Execution Time: 0.032757 seconds
+Query Execution Time: 0.047778 seconds
 ======================================================================
 
 ======================================================================
@@ -2668,7 +2668,7 @@ Database Response: Rows returned: 3
 | 2  | Bob   | 45000.00 |
 | 3  | Cara  | 60000.00 |
 +----+-------+----------+
-Query Execution Time: 0.031576 seconds
+Query Execution Time: 0.041284 seconds
 ======================================================================
 
 ======================================================================
@@ -2685,7 +2685,7 @@ Database Response: Rows returned: 3
 | 2  | Bob   | 45000.00 |
 | 3  | Cara  | 60000.00 |
 +----+-------+----------+
-Query Execution Time: 0.029949 seconds
+Query Execution Time: 0.041001 seconds
 ======================================================================
 
 ======================================================================
@@ -2701,7 +2701,7 @@ Database Response: Rows returned: 2
 | 2  | Bob  | bob@x.test  | 30  | 45000.00 | 1       | 2023-01-10   |
 | 3  | Cara | cara@x.test | 35  | 60000.00 | 2       | 2022-01-10   |
 +----+------+-------------+-----+----------+---------+--------------+
-Query Execution Time: 0.030121 seconds
+Query Execution Time: 0.042770 seconds
 ======================================================================
 
 ======================================================================
@@ -2717,7 +2717,7 @@ Database Response: Rows returned: 2
 | 2  | Bob  | bob@x.test  | 30  | 45000.00 | 1       | 2023-01-10   |
 | 3  | Cara | cara@x.test | 35  | 60000.00 | 2       | 2022-01-10   |
 +----+------+-------------+-----+----------+---------+--------------+
-Query Execution Time: 0.029673 seconds
+Query Execution Time: 0.045052 seconds
 ======================================================================
 
 ======================================================================
@@ -2733,7 +2733,7 @@ Database Response: Rows returned: 2
 | 2  | Bob  | bob@x.test  | 30  | 45000.00 | 1       | 2023-01-10   |
 | 3  | Cara | cara@x.test | 35  | 60000.00 | 2       | 2022-01-10   |
 +----+------+-------------+-----+----------+---------+--------------+
-Query Execution Time: 0.027796 seconds
+Query Execution Time: 0.042607 seconds
 ======================================================================
 
 ======================================================================
@@ -2749,7 +2749,7 @@ Database Response: Rows returned: 2
 | 2  | Bob  | bob@x.test  | 30  | 45000.00 | 1       | 2023-01-10   |
 | 3  | Cara | cara@x.test | 35  | 60000.00 | 2       | 2022-01-10   |
 +----+------+-------------+-----+----------+---------+--------------+
-Query Execution Time: 0.029708 seconds
+Query Execution Time: 0.039373 seconds
 ======================================================================
 
 ======================================================================
@@ -2765,7 +2765,7 @@ Database Response: Rows returned: 2
 | 2  | Bob  | bob@x.test  | 30  | 45000.00 | 1       | 2023-01-10   |
 | 3  | Cara | cara@x.test | 35  | 60000.00 | 2       | 2022-01-10   |
 +----+------+-------------+-----+----------+---------+--------------+
-Query Execution Time: 0.031525 seconds
+Query Execution Time: 0.042970 seconds
 ======================================================================
 
 ======================================================================
@@ -2775,7 +2775,7 @@ Test Description: WHERE clause variation 6
 Execution Status: PASS
 Query Executed: SELECT * FROM t_f043_6 WHERE missing_col=1;
 Database Response: 1054 (42S22): Unknown column 'missing_col' in 'where clause'
-Query Execution Time: 0.028587 seconds
+Query Execution Time: 0.042700 seconds
 ======================================================================
 
 ======================================================================
@@ -2785,7 +2785,7 @@ Test Description: WHERE clause variation 7
 Execution Status: PASS
 Query Executed: SELECT * FROM t_f043_7 WHERE missing_col=1;
 Database Response: 1054 (42S22): Unknown column 'missing_col' in 'where clause'
-Query Execution Time: 0.029369 seconds
+Query Execution Time: 0.042348 seconds
 ======================================================================
 
 ======================================================================
@@ -2795,7 +2795,7 @@ Test Description: WHERE clause variation 8
 Execution Status: PASS
 Query Executed: SELECT * FROM t_f043_8 WHERE missing_col=1;
 Database Response: 1054 (42S22): Unknown column 'missing_col' in 'where clause'
-Query Execution Time: 0.039746 seconds
+Query Execution Time: 0.040521 seconds
 ======================================================================
 
 ======================================================================
@@ -2805,7 +2805,7 @@ Test Description: WHERE clause variation 9
 Execution Status: PASS
 Query Executed: SELECT * FROM t_f043_9 WHERE missing_col=1;
 Database Response: 1054 (42S22): Unknown column 'missing_col' in 'where clause'
-Query Execution Time: 0.033593 seconds
+Query Execution Time: 0.041431 seconds
 ======================================================================
 
 ======================================================================
@@ -2815,7 +2815,7 @@ Test Description: WHERE clause variation 10
 Execution Status: PASS
 Query Executed: SELECT * FROM t_f043_10 WHERE missing_col=1;
 Database Response: 1054 (42S22): Unknown column 'missing_col' in 'where clause'
-Query Execution Time: 0.026905 seconds
+Query Execution Time: 0.062770 seconds
 ======================================================================
 
 ======================================================================
@@ -2831,7 +2831,7 @@ Database Response: Rows returned: 2
 | 2  | Bob  | bob@x.test  | 30  | 45000.00 | 1       | 2023-01-10   |
 | 3  | Cara | cara@x.test | 35  | 60000.00 | 2       | 2022-01-10   |
 +----+------+-------------+-----+----------+---------+--------------+
-Query Execution Time: 0.029623 seconds
+Query Execution Time: 0.061827 seconds
 ======================================================================
 
 ======================================================================
@@ -2847,7 +2847,7 @@ Database Response: Rows returned: 2
 | 2  | Bob  | bob@x.test  | 30  | 45000.00 | 1       | 2023-01-10   |
 | 3  | Cara | cara@x.test | 35  | 60000.00 | 2       | 2022-01-10   |
 +----+------+-------------+-----+----------+---------+--------------+
-Query Execution Time: 0.027147 seconds
+Query Execution Time: 0.063208 seconds
 ======================================================================
 
 ======================================================================
@@ -2863,7 +2863,7 @@ Database Response: Rows returned: 2
 | 2  | Bob  | bob@x.test  | 30  | 45000.00 | 1       | 2023-01-10   |
 | 3  | Cara | cara@x.test | 35  | 60000.00 | 2       | 2022-01-10   |
 +----+------+-------------+-----+----------+---------+--------------+
-Query Execution Time: 0.027956 seconds
+Query Execution Time: 0.049138 seconds
 ======================================================================
 
 ======================================================================
@@ -2879,7 +2879,7 @@ Database Response: Rows returned: 2
 | 2  | Bob  | bob@x.test  | 30  | 45000.00 | 1       | 2023-01-10   |
 | 3  | Cara | cara@x.test | 35  | 60000.00 | 2       | 2022-01-10   |
 +----+------+-------------+-----+----------+---------+--------------+
-Query Execution Time: 0.028631 seconds
+Query Execution Time: 0.041211 seconds
 ======================================================================
 
 ======================================================================
@@ -2895,7 +2895,7 @@ Database Response: Rows returned: 2
 | 2  | Bob  | bob@x.test  | 30  | 45000.00 | 1       | 2023-01-10   |
 | 3  | Cara | cara@x.test | 35  | 60000.00 | 2       | 2022-01-10   |
 +----+------+-------------+-----+----------+---------+--------------+
-Query Execution Time: 0.027273 seconds
+Query Execution Time: 0.040080 seconds
 ======================================================================
 
 ======================================================================
@@ -2911,7 +2911,7 @@ Database Response: Rows returned: 2
 | 2  | Bob  | bob@x.test  | 30  | 45000.00 | 1       | 2023-01-10   |
 | 3  | Cara | cara@x.test | 35  | 60000.00 | 2       | 2022-01-10   |
 +----+------+-------------+-----+----------+---------+--------------+
-Query Execution Time: 0.040894 seconds
+Query Execution Time: 0.044945 seconds
 ======================================================================
 
 ======================================================================
@@ -2927,7 +2927,7 @@ Database Response: Rows returned: 2
 | 2  | Bob  | bob@x.test  | 30  | 45000.00 | 1       | 2023-01-10   |
 | 3  | Cara | cara@x.test | 35  | 60000.00 | 2       | 2022-01-10   |
 +----+------+-------------+-----+----------+---------+--------------+
-Query Execution Time: 0.028478 seconds
+Query Execution Time: 0.040721 seconds
 ======================================================================
 
 ======================================================================
@@ -2943,7 +2943,7 @@ Database Response: Rows returned: 2
 | 2  | Bob  | bob@x.test  | 30  | 45000.00 | 1       | 2023-01-10   |
 | 3  | Cara | cara@x.test | 35  | 60000.00 | 2       | 2022-01-10   |
 +----+------+-------------+-----+----------+---------+--------------+
-Query Execution Time: 0.030062 seconds
+Query Execution Time: 0.039828 seconds
 ======================================================================
 
 ======================================================================
@@ -2959,7 +2959,7 @@ Database Response: Rows returned: 2
 | 2  | Bob  | bob@x.test  | 30  | 45000.00 | 1       | 2023-01-10   |
 | 3  | Cara | cara@x.test | 35  | 60000.00 | 2       | 2022-01-10   |
 +----+------+-------------+-----+----------+---------+--------------+
-Query Execution Time: 0.028113 seconds
+Query Execution Time: 0.041535 seconds
 ======================================================================
 
 ======================================================================
@@ -2975,7 +2975,7 @@ Database Response: Rows returned: 2
 | 2  | Bob  | bob@x.test  | 30  | 45000.00 | 1       | 2023-01-10   |
 | 3  | Cara | cara@x.test | 35  | 60000.00 | 2       | 2022-01-10   |
 +----+------+-------------+-----+----------+---------+--------------+
-Query Execution Time: 0.029804 seconds
+Query Execution Time: 0.038940 seconds
 ======================================================================
 
 ======================================================================
@@ -2985,7 +2985,7 @@ Test Description: AND operator variation 6
 Execution Status: PASS
 Query Executed: SELECT * FROM t_f044_6 WHERE age >= 30 AND missing_col=1;
 Database Response: 1054 (42S22): Unknown column 'missing_col' in 'where clause'
-Query Execution Time: 0.028628 seconds
+Query Execution Time: 0.042173 seconds
 ======================================================================
 
 ======================================================================
@@ -2995,7 +2995,7 @@ Test Description: AND operator variation 7
 Execution Status: PASS
 Query Executed: SELECT * FROM t_f044_7 WHERE age >= 30 AND missing_col=1;
 Database Response: 1054 (42S22): Unknown column 'missing_col' in 'where clause'
-Query Execution Time: 0.026084 seconds
+Query Execution Time: 0.040771 seconds
 ======================================================================
 
 ======================================================================
@@ -3005,7 +3005,7 @@ Test Description: AND operator variation 8
 Execution Status: PASS
 Query Executed: SELECT * FROM t_f044_8 WHERE age >= 30 AND missing_col=1;
 Database Response: 1054 (42S22): Unknown column 'missing_col' in 'where clause'
-Query Execution Time: 0.031710 seconds
+Query Execution Time: 0.040152 seconds
 ======================================================================
 
 ======================================================================
@@ -3015,7 +3015,7 @@ Test Description: AND operator variation 9
 Execution Status: PASS
 Query Executed: SELECT * FROM t_f044_9 WHERE age >= 30 AND missing_col=1;
 Database Response: 1054 (42S22): Unknown column 'missing_col' in 'where clause'
-Query Execution Time: 0.034270 seconds
+Query Execution Time: 0.040393 seconds
 ======================================================================
 
 ======================================================================
@@ -3025,7 +3025,7 @@ Test Description: AND operator variation 10
 Execution Status: PASS
 Query Executed: SELECT * FROM t_f044_10 WHERE age >= 30 AND missing_col=1;
 Database Response: 1054 (42S22): Unknown column 'missing_col' in 'where clause'
-Query Execution Time: 0.037920 seconds
+Query Execution Time: 0.038980 seconds
 ======================================================================
 
 ======================================================================
@@ -3041,7 +3041,7 @@ Database Response: Rows returned: 2
 | 2  | Bob  | bob@x.test  | 30  | 45000.00 | 1       | 2023-01-10   |
 | 3  | Cara | cara@x.test | 35  | 60000.00 | 2       | 2022-01-10   |
 +----+------+-------------+-----+----------+---------+--------------+
-Query Execution Time: 0.039615 seconds
+Query Execution Time: 0.040151 seconds
 ======================================================================
 
 ======================================================================
@@ -3057,7 +3057,7 @@ Database Response: Rows returned: 2
 | 2  | Bob  | bob@x.test  | 30  | 45000.00 | 1       | 2023-01-10   |
 | 3  | Cara | cara@x.test | 35  | 60000.00 | 2       | 2022-01-10   |
 +----+------+-------------+-----+----------+---------+--------------+
-Query Execution Time: 0.048578 seconds
+Query Execution Time: 0.041049 seconds
 ======================================================================
 
 ======================================================================
@@ -3073,7 +3073,7 @@ Database Response: Rows returned: 2
 | 2  | Bob  | bob@x.test  | 30  | 45000.00 | 1       | 2023-01-10   |
 | 3  | Cara | cara@x.test | 35  | 60000.00 | 2       | 2022-01-10   |
 +----+------+-------------+-----+----------+---------+--------------+
-Query Execution Time: 0.048475 seconds
+Query Execution Time: 0.041588 seconds
 ======================================================================
 
 ======================================================================
@@ -3089,7 +3089,7 @@ Database Response: Rows returned: 2
 | 2  | Bob  | bob@x.test  | 30  | 45000.00 | 1       | 2023-01-10   |
 | 3  | Cara | cara@x.test | 35  | 60000.00 | 2       | 2022-01-10   |
 +----+------+-------------+-----+----------+---------+--------------+
-Query Execution Time: 0.044085 seconds
+Query Execution Time: 0.040915 seconds
 ======================================================================
 
 ======================================================================
@@ -3105,7 +3105,7 @@ Database Response: Rows returned: 2
 | 2  | Bob  | bob@x.test  | 30  | 45000.00 | 1       | 2023-01-10   |
 | 3  | Cara | cara@x.test | 35  | 60000.00 | 2       | 2022-01-10   |
 +----+------+-------------+-----+----------+---------+--------------+
-Query Execution Time: 0.032843 seconds
+Query Execution Time: 0.040124 seconds
 ======================================================================
 
 ======================================================================
@@ -3121,7 +3121,7 @@ Database Response: Rows returned: 2
 | 1  | Alice | alice@x.test | 25  | 30000.00 | 1       | 2024-01-10   |
 | 3  | Cara  | cara@x.test  | 35  | 60000.00 | 2       | 2022-01-10   |
 +----+-------+--------------+-----+----------+---------+--------------+
-Query Execution Time: 0.036087 seconds
+Query Execution Time: 0.038960 seconds
 ======================================================================
 
 ======================================================================
@@ -3137,7 +3137,7 @@ Database Response: Rows returned: 2
 | 1  | Alice | alice@x.test | 25  | 30000.00 | 1       | 2024-01-10   |
 | 3  | Cara  | cara@x.test  | 35  | 60000.00 | 2       | 2022-01-10   |
 +----+-------+--------------+-----+----------+---------+--------------+
-Query Execution Time: 0.038709 seconds
+Query Execution Time: 0.045250 seconds
 ======================================================================
 
 ======================================================================
@@ -3153,7 +3153,7 @@ Database Response: Rows returned: 2
 | 1  | Alice | alice@x.test | 25  | 30000.00 | 1       | 2024-01-10   |
 | 3  | Cara  | cara@x.test  | 35  | 60000.00 | 2       | 2022-01-10   |
 +----+-------+--------------+-----+----------+---------+--------------+
-Query Execution Time: 0.043136 seconds
+Query Execution Time: 0.061226 seconds
 ======================================================================
 
 ======================================================================
@@ -3169,7 +3169,7 @@ Database Response: Rows returned: 2
 | 1  | Alice | alice@x.test | 25  | 30000.00 | 1       | 2024-01-10   |
 | 3  | Cara  | cara@x.test  | 35  | 60000.00 | 2       | 2022-01-10   |
 +----+-------+--------------+-----+----------+---------+--------------+
-Query Execution Time: 0.029984 seconds
+Query Execution Time: 0.062782 seconds
 ======================================================================
 
 ======================================================================
@@ -3185,7 +3185,7 @@ Database Response: Rows returned: 2
 | 1  | Alice | alice@x.test | 25  | 30000.00 | 1       | 2024-01-10   |
 | 3  | Cara  | cara@x.test  | 35  | 60000.00 | 2       | 2022-01-10   |
 +----+-------+--------------+-----+----------+---------+--------------+
-Query Execution Time: 0.041759 seconds
+Query Execution Time: 0.065198 seconds
 ======================================================================
 
 ======================================================================
@@ -3195,7 +3195,7 @@ Test Description: OR operator variation 6
 Execution Status: PASS
 Query Executed: SELECT * FROM t_f045_6 WHERE age < 30 OR missing_col > 1;
 Database Response: 1054 (42S22): Unknown column 'missing_col' in 'where clause'
-Query Execution Time: 0.050587 seconds
+Query Execution Time: 0.043808 seconds
 ======================================================================
 
 ======================================================================
@@ -3205,7 +3205,7 @@ Test Description: OR operator variation 7
 Execution Status: PASS
 Query Executed: SELECT * FROM t_f045_7 WHERE age < 30 OR missing_col > 1;
 Database Response: 1054 (42S22): Unknown column 'missing_col' in 'where clause'
-Query Execution Time: 0.033628 seconds
+Query Execution Time: 0.040994 seconds
 ======================================================================
 
 ======================================================================
@@ -3215,7 +3215,7 @@ Test Description: OR operator variation 8
 Execution Status: PASS
 Query Executed: SELECT * FROM t_f045_8 WHERE age < 30 OR missing_col > 1;
 Database Response: 1054 (42S22): Unknown column 'missing_col' in 'where clause'
-Query Execution Time: 0.035298 seconds
+Query Execution Time: 0.039809 seconds
 ======================================================================
 
 ======================================================================
@@ -3225,7 +3225,7 @@ Test Description: OR operator variation 9
 Execution Status: PASS
 Query Executed: SELECT * FROM t_f045_9 WHERE age < 30 OR missing_col > 1;
 Database Response: 1054 (42S22): Unknown column 'missing_col' in 'where clause'
-Query Execution Time: 0.037408 seconds
+Query Execution Time: 0.044904 seconds
 ======================================================================
 
 ======================================================================
@@ -3235,7 +3235,7 @@ Test Description: OR operator variation 10
 Execution Status: PASS
 Query Executed: SELECT * FROM t_f045_10 WHERE age < 30 OR missing_col > 1;
 Database Response: 1054 (42S22): Unknown column 'missing_col' in 'where clause'
-Query Execution Time: 0.040530 seconds
+Query Execution Time: 0.040366 seconds
 ======================================================================
 
 ======================================================================
@@ -3251,7 +3251,7 @@ Database Response: Rows returned: 2
 | 1  | Alice | alice@x.test | 25  | 30000.00 | 1       | 2024-01-10   |
 | 3  | Cara  | cara@x.test  | 35  | 60000.00 | 2       | 2022-01-10   |
 +----+-------+--------------+-----+----------+---------+--------------+
-Query Execution Time: 0.027627 seconds
+Query Execution Time: 0.040725 seconds
 ======================================================================
 
 ======================================================================
@@ -3267,7 +3267,7 @@ Database Response: Rows returned: 2
 | 1  | Alice | alice@x.test | 25  | 30000.00 | 1       | 2024-01-10   |
 | 3  | Cara  | cara@x.test  | 35  | 60000.00 | 2       | 2022-01-10   |
 +----+-------+--------------+-----+----------+---------+--------------+
-Query Execution Time: 0.039281 seconds
+Query Execution Time: 0.043015 seconds
 ======================================================================
 
 ======================================================================
@@ -3283,7 +3283,7 @@ Database Response: Rows returned: 2
 | 1  | Alice | alice@x.test | 25  | 30000.00 | 1       | 2024-01-10   |
 | 3  | Cara  | cara@x.test  | 35  | 60000.00 | 2       | 2022-01-10   |
 +----+-------+--------------+-----+----------+---------+--------------+
-Query Execution Time: 0.044877 seconds
+Query Execution Time: 0.043373 seconds
 ======================================================================
 
 ======================================================================
@@ -3299,7 +3299,7 @@ Database Response: Rows returned: 2
 | 1  | Alice | alice@x.test | 25  | 30000.00 | 1       | 2024-01-10   |
 | 3  | Cara  | cara@x.test  | 35  | 60000.00 | 2       | 2022-01-10   |
 +----+-------+--------------+-----+----------+---------+--------------+
-Query Execution Time: 0.035570 seconds
+Query Execution Time: 0.043380 seconds
 ======================================================================
 
 ======================================================================
@@ -3315,7 +3315,7 @@ Database Response: Rows returned: 2
 | 1  | Alice | alice@x.test | 25  | 30000.00 | 1       | 2024-01-10   |
 | 3  | Cara  | cara@x.test  | 35  | 60000.00 | 2       | 2022-01-10   |
 +----+-------+--------------+-----+----------+---------+--------------+
-Query Execution Time: 0.056502 seconds
+Query Execution Time: 0.041451 seconds
 ======================================================================
 
 ======================================================================
@@ -3331,7 +3331,7 @@ Database Response: Rows returned: 2
 | 2  | Bob  | bob@x.test  | 30  | 45000.00 | 1       | 2023-01-10   |
 | 3  | Cara | cara@x.test | 35  | 60000.00 | 2       | 2022-01-10   |
 +----+------+-------------+-----+----------+---------+--------------+
-Query Execution Time: 0.036746 seconds
+Query Execution Time: 0.042215 seconds
 ======================================================================
 
 ======================================================================
@@ -3347,7 +3347,7 @@ Database Response: Rows returned: 2
 | 2  | Bob  | bob@x.test  | 30  | 45000.00 | 1       | 2023-01-10   |
 | 3  | Cara | cara@x.test | 35  | 60000.00 | 2       | 2022-01-10   |
 +----+------+-------------+-----+----------+---------+--------------+
-Query Execution Time: 0.041784 seconds
+Query Execution Time: 0.041934 seconds
 ======================================================================
 
 ======================================================================
@@ -3363,7 +3363,7 @@ Database Response: Rows returned: 2
 | 2  | Bob  | bob@x.test  | 30  | 45000.00 | 1       | 2023-01-10   |
 | 3  | Cara | cara@x.test | 35  | 60000.00 | 2       | 2022-01-10   |
 +----+------+-------------+-----+----------+---------+--------------+
-Query Execution Time: 0.036447 seconds
+Query Execution Time: 0.042925 seconds
 ======================================================================
 
 ======================================================================
@@ -3379,7 +3379,7 @@ Database Response: Rows returned: 2
 | 2  | Bob  | bob@x.test  | 30  | 45000.00 | 1       | 2023-01-10   |
 | 3  | Cara | cara@x.test | 35  | 60000.00 | 2       | 2022-01-10   |
 +----+------+-------------+-----+----------+---------+--------------+
-Query Execution Time: 0.029218 seconds
+Query Execution Time: 0.040916 seconds
 ======================================================================
 
 ======================================================================
@@ -3395,7 +3395,7 @@ Database Response: Rows returned: 2
 | 2  | Bob  | bob@x.test  | 30  | 45000.00 | 1       | 2023-01-10   |
 | 3  | Cara | cara@x.test | 35  | 60000.00 | 2       | 2022-01-10   |
 +----+------+-------------+-----+----------+---------+--------------+
-Query Execution Time: 0.044633 seconds
+Query Execution Time: 0.043947 seconds
 ======================================================================
 
 ======================================================================
@@ -3405,7 +3405,7 @@ Test Description: NOT operator variation 6
 Execution Status: PASS
 Query Executed: SELECT * FROM t_f046_6 WHERE NOT missing_col;
 Database Response: 1054 (42S22): Unknown column 'missing_col' in 'where clause'
-Query Execution Time: 0.039152 seconds
+Query Execution Time: 0.046010 seconds
 ======================================================================
 
 ======================================================================
@@ -3415,7 +3415,7 @@ Test Description: NOT operator variation 7
 Execution Status: PASS
 Query Executed: SELECT * FROM t_f046_7 WHERE NOT missing_col;
 Database Response: 1054 (42S22): Unknown column 'missing_col' in 'where clause'
-Query Execution Time: 0.048460 seconds
+Query Execution Time: 0.044325 seconds
 ======================================================================
 
 ======================================================================
@@ -3425,7 +3425,7 @@ Test Description: NOT operator variation 8
 Execution Status: PASS
 Query Executed: SELECT * FROM t_f046_8 WHERE NOT missing_col;
 Database Response: 1054 (42S22): Unknown column 'missing_col' in 'where clause'
-Query Execution Time: 0.050786 seconds
+Query Execution Time: 0.045123 seconds
 ======================================================================
 
 ======================================================================
@@ -3435,7 +3435,7 @@ Test Description: NOT operator variation 9
 Execution Status: PASS
 Query Executed: SELECT * FROM t_f046_9 WHERE NOT missing_col;
 Database Response: 1054 (42S22): Unknown column 'missing_col' in 'where clause'
-Query Execution Time: 0.034996 seconds
+Query Execution Time: 0.055455 seconds
 ======================================================================
 
 ======================================================================
@@ -3445,7 +3445,7 @@ Test Description: NOT operator variation 10
 Execution Status: PASS
 Query Executed: SELECT * FROM t_f046_10 WHERE NOT missing_col;
 Database Response: 1054 (42S22): Unknown column 'missing_col' in 'where clause'
-Query Execution Time: 0.033071 seconds
+Query Execution Time: 0.062572 seconds
 ======================================================================
 
 ======================================================================
@@ -3461,7 +3461,7 @@ Database Response: Rows returned: 2
 | 2  | Bob  | bob@x.test  | 30  | 45000.00 | 1       | 2023-01-10   |
 | 3  | Cara | cara@x.test | 35  | 60000.00 | 2       | 2022-01-10   |
 +----+------+-------------+-----+----------+---------+--------------+
-Query Execution Time: 0.039108 seconds
+Query Execution Time: 0.058352 seconds
 ======================================================================
 
 ======================================================================
@@ -3477,7 +3477,7 @@ Database Response: Rows returned: 2
 | 2  | Bob  | bob@x.test  | 30  | 45000.00 | 1       | 2023-01-10   |
 | 3  | Cara | cara@x.test | 35  | 60000.00 | 2       | 2022-01-10   |
 +----+------+-------------+-----+----------+---------+--------------+
-Query Execution Time: 0.029162 seconds
+Query Execution Time: 0.060411 seconds
 ======================================================================
 
 ======================================================================
@@ -3493,7 +3493,7 @@ Database Response: Rows returned: 2
 | 2  | Bob  | bob@x.test  | 30  | 45000.00 | 1       | 2023-01-10   |
 | 3  | Cara | cara@x.test | 35  | 60000.00 | 2       | 2022-01-10   |
 +----+------+-------------+-----+----------+---------+--------------+
-Query Execution Time: 0.034686 seconds
+Query Execution Time: 0.042624 seconds
 ======================================================================
 
 ======================================================================
@@ -3509,7 +3509,7 @@ Database Response: Rows returned: 2
 | 2  | Bob  | bob@x.test  | 30  | 45000.00 | 1       | 2023-01-10   |
 | 3  | Cara | cara@x.test | 35  | 60000.00 | 2       | 2022-01-10   |
 +----+------+-------------+-----+----------+---------+--------------+
-Query Execution Time: 0.036530 seconds
+Query Execution Time: 0.038826 seconds
 ======================================================================
 
 ======================================================================
@@ -3525,7 +3525,7 @@ Database Response: Rows returned: 2
 | 2  | Bob  | bob@x.test  | 30  | 45000.00 | 1       | 2023-01-10   |
 | 3  | Cara | cara@x.test | 35  | 60000.00 | 2       | 2022-01-10   |
 +----+------+-------------+-----+----------+---------+--------------+
-Query Execution Time: 0.036638 seconds
+Query Execution Time: 0.039907 seconds
 ======================================================================
 
 ======================================================================
@@ -3541,7 +3541,7 @@ Database Response: Rows returned: 2
 | 1       |
 | 2       |
 +---------+
-Query Execution Time: 0.026446 seconds
+Query Execution Time: 0.042982 seconds
 ======================================================================
 
 ======================================================================
@@ -3557,7 +3557,7 @@ Database Response: Rows returned: 2
 | 1       |
 | 2       |
 +---------+
-Query Execution Time: 0.033337 seconds
+Query Execution Time: 0.039375 seconds
 ======================================================================
 
 ======================================================================
@@ -3573,7 +3573,7 @@ Database Response: Rows returned: 2
 | 1       |
 | 2       |
 +---------+
-Query Execution Time: 0.034547 seconds
+Query Execution Time: 0.039676 seconds
 ======================================================================
 
 ======================================================================
@@ -3589,7 +3589,7 @@ Database Response: Rows returned: 2
 | 1       |
 | 2       |
 +---------+
-Query Execution Time: 0.031811 seconds
+Query Execution Time: 0.038831 seconds
 ======================================================================
 
 ======================================================================
@@ -3605,7 +3605,7 @@ Database Response: Rows returned: 2
 | 1       |
 | 2       |
 +---------+
-Query Execution Time: 0.036274 seconds
+Query Execution Time: 0.038688 seconds
 ======================================================================
 
 ======================================================================
@@ -3615,7 +3615,7 @@ Test Description: DISTINCT variation 6
 Execution Status: PASS
 Query Executed: SELECT DISTINCT missing_col FROM t_f047_6;
 Database Response: 1054 (42S22): Unknown column 'missing_col' in 'field list'
-Query Execution Time: 0.035275 seconds
+Query Execution Time: 0.039666 seconds
 ======================================================================
 
 ======================================================================
@@ -3625,7 +3625,7 @@ Test Description: DISTINCT variation 7
 Execution Status: PASS
 Query Executed: SELECT DISTINCT missing_col FROM t_f047_7;
 Database Response: 1054 (42S22): Unknown column 'missing_col' in 'field list'
-Query Execution Time: 0.031895 seconds
+Query Execution Time: 0.041034 seconds
 ======================================================================
 
 ======================================================================
@@ -3635,7 +3635,7 @@ Test Description: DISTINCT variation 8
 Execution Status: PASS
 Query Executed: SELECT DISTINCT missing_col FROM t_f047_8;
 Database Response: 1054 (42S22): Unknown column 'missing_col' in 'field list'
-Query Execution Time: 0.033693 seconds
+Query Execution Time: 0.042019 seconds
 ======================================================================
 
 ======================================================================
@@ -3645,7 +3645,7 @@ Test Description: DISTINCT variation 9
 Execution Status: PASS
 Query Executed: SELECT DISTINCT missing_col FROM t_f047_9;
 Database Response: 1054 (42S22): Unknown column 'missing_col' in 'field list'
-Query Execution Time: 0.028424 seconds
+Query Execution Time: 0.038680 seconds
 ======================================================================
 
 ======================================================================
@@ -3655,7 +3655,7 @@ Test Description: DISTINCT variation 10
 Execution Status: PASS
 Query Executed: SELECT DISTINCT missing_col FROM t_f047_10;
 Database Response: 1054 (42S22): Unknown column 'missing_col' in 'field list'
-Query Execution Time: 0.042745 seconds
+Query Execution Time: 0.040606 seconds
 ======================================================================
 
 ======================================================================
@@ -3671,7 +3671,7 @@ Database Response: Rows returned: 2
 | 1       |
 | 2       |
 +---------+
-Query Execution Time: 0.026506 seconds
+Query Execution Time: 0.039761 seconds
 ======================================================================
 
 ======================================================================
@@ -3687,7 +3687,7 @@ Database Response: Rows returned: 2
 | 1       |
 | 2       |
 +---------+
-Query Execution Time: 0.041575 seconds
+Query Execution Time: 0.039002 seconds
 ======================================================================
 
 ======================================================================
@@ -3703,7 +3703,7 @@ Database Response: Rows returned: 2
 | 1       |
 | 2       |
 +---------+
-Query Execution Time: 0.031600 seconds
+Query Execution Time: 0.041378 seconds
 ======================================================================
 
 ======================================================================
@@ -3719,7 +3719,7 @@ Database Response: Rows returned: 2
 | 1       |
 | 2       |
 +---------+
-Query Execution Time: 0.034461 seconds
+Query Execution Time: 0.039275 seconds
 ======================================================================
 
 ======================================================================
@@ -3735,7 +3735,7 @@ Database Response: Rows returned: 2
 | 1       |
 | 2       |
 +---------+
-Query Execution Time: 0.035069 seconds
+Query Execution Time: 0.038854 seconds
 ======================================================================
 
 ======================================================================
@@ -3751,7 +3751,7 @@ Database Response: Rows returned: 2
 | 1  | Alice | alice@x.test | 25  | 30000.00 | 1       | 2024-01-10   |
 | 2  | Bob   | bob@x.test   | 30  | 45000.00 | 1       | 2023-01-10   |
 +----+-------+--------------+-----+----------+---------+--------------+
-Query Execution Time: 0.027827 seconds
+Query Execution Time: 0.041422 seconds
 ======================================================================
 
 ======================================================================
@@ -3767,7 +3767,7 @@ Database Response: Rows returned: 2
 | 1  | Alice | alice@x.test | 25  | 30000.00 | 1       | 2024-01-10   |
 | 2  | Bob   | bob@x.test   | 30  | 45000.00 | 1       | 2023-01-10   |
 +----+-------+--------------+-----+----------+---------+--------------+
-Query Execution Time: 0.038035 seconds
+Query Execution Time: 0.050430 seconds
 ======================================================================
 
 ======================================================================
@@ -3783,7 +3783,7 @@ Database Response: Rows returned: 2
 | 1  | Alice | alice@x.test | 25  | 30000.00 | 1       | 2024-01-10   |
 | 2  | Bob   | bob@x.test   | 30  | 45000.00 | 1       | 2023-01-10   |
 +----+-------+--------------+-----+----------+---------+--------------+
-Query Execution Time: 0.026542 seconds
+Query Execution Time: 0.054472 seconds
 ======================================================================
 
 ======================================================================
@@ -3799,7 +3799,7 @@ Database Response: Rows returned: 2
 | 1  | Alice | alice@x.test | 25  | 30000.00 | 1       | 2024-01-10   |
 | 2  | Bob   | bob@x.test   | 30  | 45000.00 | 1       | 2023-01-10   |
 +----+-------+--------------+-----+----------+---------+--------------+
-Query Execution Time: 0.041450 seconds
+Query Execution Time: 0.065479 seconds
 ======================================================================
 
 ======================================================================
@@ -3815,7 +3815,7 @@ Database Response: Rows returned: 2
 | 1  | Alice | alice@x.test | 25  | 30000.00 | 1       | 2024-01-10   |
 | 2  | Bob   | bob@x.test   | 30  | 45000.00 | 1       | 2023-01-10   |
 +----+-------+--------------+-----+----------+---------+--------------+
-Query Execution Time: 0.043899 seconds
+Query Execution Time: 0.058218 seconds
 ======================================================================
 
 ======================================================================
@@ -3825,7 +3825,7 @@ Test Description: BETWEEN variation 6
 Execution Status: PASS
 Query Executed: SELECT * FROM t_f048_6 WHERE age BETWEEN missing_col AND 30;
 Database Response: 1054 (42S22): Unknown column 'missing_col' in 'where clause'
-Query Execution Time: 0.049531 seconds
+Query Execution Time: 0.038176 seconds
 ======================================================================
 
 ======================================================================
@@ -3835,7 +3835,7 @@ Test Description: BETWEEN variation 7
 Execution Status: PASS
 Query Executed: SELECT * FROM t_f048_7 WHERE age BETWEEN missing_col AND 30;
 Database Response: 1054 (42S22): Unknown column 'missing_col' in 'where clause'
-Query Execution Time: 0.038142 seconds
+Query Execution Time: 0.041051 seconds
 ======================================================================
 
 ======================================================================
@@ -3845,7 +3845,7 @@ Test Description: BETWEEN variation 8
 Execution Status: PASS
 Query Executed: SELECT * FROM t_f048_8 WHERE age BETWEEN missing_col AND 30;
 Database Response: 1054 (42S22): Unknown column 'missing_col' in 'where clause'
-Query Execution Time: 0.035201 seconds
+Query Execution Time: 0.039341 seconds
 ======================================================================
 
 ======================================================================
@@ -3855,7 +3855,7 @@ Test Description: BETWEEN variation 9
 Execution Status: PASS
 Query Executed: SELECT * FROM t_f048_9 WHERE age BETWEEN missing_col AND 30;
 Database Response: 1054 (42S22): Unknown column 'missing_col' in 'where clause'
-Query Execution Time: 0.035714 seconds
+Query Execution Time: 0.042366 seconds
 ======================================================================
 
 ======================================================================
@@ -3865,7 +3865,7 @@ Test Description: BETWEEN variation 10
 Execution Status: PASS
 Query Executed: SELECT * FROM t_f048_10 WHERE age BETWEEN missing_col AND 30;
 Database Response: 1054 (42S22): Unknown column 'missing_col' in 'where clause'
-Query Execution Time: 0.036125 seconds
+Query Execution Time: 0.040869 seconds
 ======================================================================
 
 ======================================================================
@@ -3881,7 +3881,7 @@ Database Response: Rows returned: 2
 | 1  | Alice | alice@x.test | 25  | 30000.00 | 1       | 2024-01-10   |
 | 2  | Bob   | bob@x.test   | 30  | 45000.00 | 1       | 2023-01-10   |
 +----+-------+--------------+-----+----------+---------+--------------+
-Query Execution Time: 0.029945 seconds
+Query Execution Time: 0.042325 seconds
 ======================================================================
 
 ======================================================================
@@ -3897,7 +3897,7 @@ Database Response: Rows returned: 2
 | 1  | Alice | alice@x.test | 25  | 30000.00 | 1       | 2024-01-10   |
 | 2  | Bob   | bob@x.test   | 30  | 45000.00 | 1       | 2023-01-10   |
 +----+-------+--------------+-----+----------+---------+--------------+
-Query Execution Time: 0.033147 seconds
+Query Execution Time: 0.042186 seconds
 ======================================================================
 
 ======================================================================
@@ -3913,7 +3913,7 @@ Database Response: Rows returned: 2
 | 1  | Alice | alice@x.test | 25  | 30000.00 | 1       | 2024-01-10   |
 | 2  | Bob   | bob@x.test   | 30  | 45000.00 | 1       | 2023-01-10   |
 +----+-------+--------------+-----+----------+---------+--------------+
-Query Execution Time: 0.034782 seconds
+Query Execution Time: 0.039698 seconds
 ======================================================================
 
 ======================================================================
@@ -3929,7 +3929,7 @@ Database Response: Rows returned: 2
 | 1  | Alice | alice@x.test | 25  | 30000.00 | 1       | 2024-01-10   |
 | 2  | Bob   | bob@x.test   | 30  | 45000.00 | 1       | 2023-01-10   |
 +----+-------+--------------+-----+----------+---------+--------------+
-Query Execution Time: 0.035790 seconds
+Query Execution Time: 0.043115 seconds
 ======================================================================
 
 ======================================================================
@@ -3945,7 +3945,7 @@ Database Response: Rows returned: 2
 | 1  | Alice | alice@x.test | 25  | 30000.00 | 1       | 2024-01-10   |
 | 2  | Bob   | bob@x.test   | 30  | 45000.00 | 1       | 2023-01-10   |
 +----+-------+--------------+-----+----------+---------+--------------+
-Query Execution Time: 0.034942 seconds
+Query Execution Time: 0.039093 seconds
 ======================================================================
 
 ======================================================================
@@ -3961,7 +3961,7 @@ Database Response: Rows returned: 2
 | 1  | Alice | alice@x.test | 25  | 30000.00 | 1       | 2024-01-10   |
 | 3  | Cara  | cara@x.test  | 35  | 60000.00 | 2       | 2022-01-10   |
 +----+-------+--------------+-----+----------+---------+--------------+
-Query Execution Time: 0.035552 seconds
+Query Execution Time: 0.038410 seconds
 ======================================================================
 
 ======================================================================
@@ -3977,7 +3977,7 @@ Database Response: Rows returned: 2
 | 1  | Alice | alice@x.test | 25  | 30000.00 | 1       | 2024-01-10   |
 | 3  | Cara  | cara@x.test  | 35  | 60000.00 | 2       | 2022-01-10   |
 +----+-------+--------------+-----+----------+---------+--------------+
-Query Execution Time: 0.038794 seconds
+Query Execution Time: 0.038665 seconds
 ======================================================================
 
 ======================================================================
@@ -3993,7 +3993,7 @@ Database Response: Rows returned: 2
 | 1  | Alice | alice@x.test | 25  | 30000.00 | 1       | 2024-01-10   |
 | 3  | Cara  | cara@x.test  | 35  | 60000.00 | 2       | 2022-01-10   |
 +----+-------+--------------+-----+----------+---------+--------------+
-Query Execution Time: 0.036761 seconds
+Query Execution Time: 0.044581 seconds
 ======================================================================
 
 ======================================================================
@@ -4009,7 +4009,7 @@ Database Response: Rows returned: 2
 | 1  | Alice | alice@x.test | 25  | 30000.00 | 1       | 2024-01-10   |
 | 3  | Cara  | cara@x.test  | 35  | 60000.00 | 2       | 2022-01-10   |
 +----+-------+--------------+-----+----------+---------+--------------+
-Query Execution Time: 0.037508 seconds
+Query Execution Time: 0.038650 seconds
 ======================================================================
 
 ======================================================================
@@ -4025,7 +4025,7 @@ Database Response: Rows returned: 2
 | 1  | Alice | alice@x.test | 25  | 30000.00 | 1       | 2024-01-10   |
 | 3  | Cara  | cara@x.test  | 35  | 60000.00 | 2       | 2022-01-10   |
 +----+-------+--------------+-----+----------+---------+--------------+
-Query Execution Time: 0.030744 seconds
+Query Execution Time: 0.038739 seconds
 ======================================================================
 
 ======================================================================
@@ -4035,7 +4035,7 @@ Test Description: IN / NOT IN variation 6
 Execution Status: PASS
 Query Executed: SELECT * FROM t_f049_6 WHERE id IN (SELECT missing_col FROM t_f049_6);
 Database Response: 1054 (42S22): Unknown column 'missing_col' in 'field list'
-Query Execution Time: 0.030291 seconds
+Query Execution Time: 0.038768 seconds
 ======================================================================
 
 ======================================================================
@@ -4045,7 +4045,7 @@ Test Description: IN / NOT IN variation 7
 Execution Status: PASS
 Query Executed: SELECT * FROM t_f049_7 WHERE id IN (SELECT missing_col FROM t_f049_7);
 Database Response: 1054 (42S22): Unknown column 'missing_col' in 'field list'
-Query Execution Time: 0.035999 seconds
+Query Execution Time: 0.041360 seconds
 ======================================================================
 
 ======================================================================
@@ -4055,7 +4055,7 @@ Test Description: IN / NOT IN variation 8
 Execution Status: PASS
 Query Executed: SELECT * FROM t_f049_8 WHERE id IN (SELECT missing_col FROM t_f049_8);
 Database Response: 1054 (42S22): Unknown column 'missing_col' in 'field list'
-Query Execution Time: 0.040575 seconds
+Query Execution Time: 0.039498 seconds
 ======================================================================
 
 ======================================================================
@@ -4065,7 +4065,7 @@ Test Description: IN / NOT IN variation 9
 Execution Status: PASS
 Query Executed: SELECT * FROM t_f049_9 WHERE id IN (SELECT missing_col FROM t_f049_9);
 Database Response: 1054 (42S22): Unknown column 'missing_col' in 'field list'
-Query Execution Time: 0.034872 seconds
+Query Execution Time: 0.041517 seconds
 ======================================================================
 
 ======================================================================
@@ -4075,7 +4075,7 @@ Test Description: IN / NOT IN variation 10
 Execution Status: PASS
 Query Executed: SELECT * FROM t_f049_10 WHERE id IN (SELECT missing_col FROM t_f049_10);
 Database Response: 1054 (42S22): Unknown column 'missing_col' in 'field list'
-Query Execution Time: 0.038826 seconds
+Query Execution Time: 0.050789 seconds
 ======================================================================
 
 ======================================================================
@@ -4091,7 +4091,7 @@ Database Response: Rows returned: 2
 | 1  | Alice | alice@x.test | 25  | 30000.00 | 1       | 2024-01-10   |
 | 3  | Cara  | cara@x.test  | 35  | 60000.00 | 2       | 2022-01-10   |
 +----+-------+--------------+-----+----------+---------+--------------+
-Query Execution Time: 0.034633 seconds
+Query Execution Time: 0.063310 seconds
 ======================================================================
 
 ======================================================================
@@ -4107,7 +4107,7 @@ Database Response: Rows returned: 2
 | 1  | Alice | alice@x.test | 25  | 30000.00 | 1       | 2024-01-10   |
 | 3  | Cara  | cara@x.test  | 35  | 60000.00 | 2       | 2022-01-10   |
 +----+-------+--------------+-----+----------+---------+--------------+
-Query Execution Time: 0.035743 seconds
+Query Execution Time: 0.065278 seconds
 ======================================================================
 
 ======================================================================
@@ -4123,7 +4123,7 @@ Database Response: Rows returned: 2
 | 1  | Alice | alice@x.test | 25  | 30000.00 | 1       | 2024-01-10   |
 | 3  | Cara  | cara@x.test  | 35  | 60000.00 | 2       | 2022-01-10   |
 +----+-------+--------------+-----+----------+---------+--------------+
-Query Execution Time: 0.035404 seconds
+Query Execution Time: 0.050953 seconds
 ======================================================================
 
 ======================================================================
@@ -4139,7 +4139,7 @@ Database Response: Rows returned: 2
 | 1  | Alice | alice@x.test | 25  | 30000.00 | 1       | 2024-01-10   |
 | 3  | Cara  | cara@x.test  | 35  | 60000.00 | 2       | 2022-01-10   |
 +----+-------+--------------+-----+----------+---------+--------------+
-Query Execution Time: 0.039373 seconds
+Query Execution Time: 0.039239 seconds
 ======================================================================
 
 ======================================================================
@@ -4155,7 +4155,7 @@ Database Response: Rows returned: 2
 | 1  | Alice | alice@x.test | 25  | 30000.00 | 1       | 2024-01-10   |
 | 3  | Cara  | cara@x.test  | 35  | 60000.00 | 2       | 2022-01-10   |
 +----+-------+--------------+-----+----------+---------+--------------+
-Query Execution Time: 0.029055 seconds
+Query Execution Time: 0.039700 seconds
 ======================================================================
 
 ======================================================================
@@ -4170,7 +4170,7 @@ Database Response: Rows returned: 1
 +----+-------+--------------+-----+----------+---------+--------------+
 | 1  | Alice | alice@x.test | 25  | 30000.00 | 1       | 2024-01-10   |
 +----+-------+--------------+-----+----------+---------+--------------+
-Query Execution Time: 0.039982 seconds
+Query Execution Time: 0.041388 seconds
 ======================================================================
 
 ======================================================================
@@ -4185,7 +4185,7 @@ Database Response: Rows returned: 1
 +----+-------+--------------+-----+----------+---------+--------------+
 | 1  | Alice | alice@x.test | 25  | 30000.00 | 1       | 2024-01-10   |
 +----+-------+--------------+-----+----------+---------+--------------+
-Query Execution Time: 0.036456 seconds
+Query Execution Time: 0.039437 seconds
 ======================================================================
 
 ======================================================================
@@ -4200,7 +4200,7 @@ Database Response: Rows returned: 1
 +----+-------+--------------+-----+----------+---------+--------------+
 | 1  | Alice | alice@x.test | 25  | 30000.00 | 1       | 2024-01-10   |
 +----+-------+--------------+-----+----------+---------+--------------+
-Query Execution Time: 0.039063 seconds
+Query Execution Time: 0.039978 seconds
 ======================================================================
 
 ======================================================================
@@ -4215,7 +4215,7 @@ Database Response: Rows returned: 1
 +----+-------+--------------+-----+----------+---------+--------------+
 | 1  | Alice | alice@x.test | 25  | 30000.00 | 1       | 2024-01-10   |
 +----+-------+--------------+-----+----------+---------+--------------+
-Query Execution Time: 0.040555 seconds
+Query Execution Time: 0.039905 seconds
 ======================================================================
 
 ======================================================================
@@ -4230,7 +4230,7 @@ Database Response: Rows returned: 1
 +----+-------+--------------+-----+----------+---------+--------------+
 | 1  | Alice | alice@x.test | 25  | 30000.00 | 1       | 2024-01-10   |
 +----+-------+--------------+-----+----------+---------+--------------+
-Query Execution Time: 0.035563 seconds
+Query Execution Time: 0.039449 seconds
 ======================================================================
 
 ======================================================================
@@ -4240,7 +4240,7 @@ Test Description: LIKE / NOT LIKE variation 6
 Execution Status: PASS
 Query Executed: SELECT * FROM t_f050_6 WHERE name LIKE missing_col;
 Database Response: 1054 (42S22): Unknown column 'missing_col' in 'where clause'
-Query Execution Time: 0.047781 seconds
+Query Execution Time: 0.038621 seconds
 ======================================================================
 
 ======================================================================
@@ -4250,7 +4250,7 @@ Test Description: LIKE / NOT LIKE variation 7
 Execution Status: PASS
 Query Executed: SELECT * FROM t_f050_7 WHERE name LIKE missing_col;
 Database Response: 1054 (42S22): Unknown column 'missing_col' in 'where clause'
-Query Execution Time: 0.036530 seconds
+Query Execution Time: 0.040295 seconds
 ======================================================================
 
 ======================================================================
@@ -4260,7 +4260,7 @@ Test Description: LIKE / NOT LIKE variation 8
 Execution Status: PASS
 Query Executed: SELECT * FROM t_f050_8 WHERE name LIKE missing_col;
 Database Response: 1054 (42S22): Unknown column 'missing_col' in 'where clause'
-Query Execution Time: 0.036767 seconds
+Query Execution Time: 0.039925 seconds
 ======================================================================
 
 ======================================================================
@@ -4270,7 +4270,7 @@ Test Description: LIKE / NOT LIKE variation 9
 Execution Status: PASS
 Query Executed: SELECT * FROM t_f050_9 WHERE name LIKE missing_col;
 Database Response: 1054 (42S22): Unknown column 'missing_col' in 'where clause'
-Query Execution Time: 0.031361 seconds
+Query Execution Time: 0.039923 seconds
 ======================================================================
 
 ======================================================================
@@ -4280,7 +4280,7 @@ Test Description: LIKE / NOT LIKE variation 10
 Execution Status: PASS
 Query Executed: SELECT * FROM t_f050_10 WHERE name LIKE missing_col;
 Database Response: 1054 (42S22): Unknown column 'missing_col' in 'where clause'
-Query Execution Time: 0.037269 seconds
+Query Execution Time: 0.041428 seconds
 ======================================================================
 
 ======================================================================
@@ -4295,7 +4295,7 @@ Database Response: Rows returned: 1
 +----+-------+--------------+-----+----------+---------+--------------+
 | 1  | Alice | alice@x.test | 25  | 30000.00 | 1       | 2024-01-10   |
 +----+-------+--------------+-----+----------+---------+--------------+
-Query Execution Time: 0.027202 seconds
+Query Execution Time: 0.040466 seconds
 ======================================================================
 
 ======================================================================
@@ -4310,7 +4310,7 @@ Database Response: Rows returned: 1
 +----+-------+--------------+-----+----------+---------+--------------+
 | 1  | Alice | alice@x.test | 25  | 30000.00 | 1       | 2024-01-10   |
 +----+-------+--------------+-----+----------+---------+--------------+
-Query Execution Time: 0.042008 seconds
+Query Execution Time: 0.038092 seconds
 ======================================================================
 
 ======================================================================
@@ -4325,7 +4325,7 @@ Database Response: Rows returned: 1
 +----+-------+--------------+-----+----------+---------+--------------+
 | 1  | Alice | alice@x.test | 25  | 30000.00 | 1       | 2024-01-10   |
 +----+-------+--------------+-----+----------+---------+--------------+
-Query Execution Time: 0.034089 seconds
+Query Execution Time: 0.039689 seconds
 ======================================================================
 
 ======================================================================
@@ -4340,7 +4340,7 @@ Database Response: Rows returned: 1
 +----+-------+--------------+-----+----------+---------+--------------+
 | 1  | Alice | alice@x.test | 25  | 30000.00 | 1       | 2024-01-10   |
 +----+-------+--------------+-----+----------+---------+--------------+
-Query Execution Time: 0.039570 seconds
+Query Execution Time: 0.041205 seconds
 ======================================================================
 
 ======================================================================
@@ -4355,6 +4355,6 @@ Database Response: Rows returned: 1
 +----+-------+--------------+-----+----------+---------+--------------+
 | 1  | Alice | alice@x.test | 25  | 30000.00 | 1       | 2024-01-10   |
 +----+-------+--------------+-----+----------+---------+--------------+
-Query Execution Time: 0.037585 seconds
+Query Execution Time: 0.041441 seconds
 ======================================================================
 

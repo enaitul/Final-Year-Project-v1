@@ -1,5 +1,5 @@
 [group3] AI MYSQL AUTOMATED TESTING
-[group3] Loaded 375 test cases from D:\project\Final-Year-Project-v1-main\test_cases\group3.csv
+[group3] Loaded 375 test cases from /media/enait/New Volume/project/Final-Year-Project-v1-main/test_cases/group3.csv
 [group3] Connected to MySQL
 [group3] Running TC751 | F051 | Positive
 [group3] Running TC752 | F051 | Positive
@@ -377,4 +377,4 @@
 [group3] Running TC1124 | F075 | Edge
 [group3] Running TC1125 | F075 | Edge
 [group3] Summary: 375/375 passed; 0 failed; 100.00% pass rate
-[group3] Response file saved: D:\project\Final-Year-Project-v1-main\reports\response_group3.txt
+[group3] Response file saved: /media/enait/New Volume/project/Final-Year-Project-v1-main/reports/response_group3.txt

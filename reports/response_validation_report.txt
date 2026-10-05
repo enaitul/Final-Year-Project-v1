@@ -2,7 +2,7 @@
 RESPONSE FILE VALIDATION & REGRESSION REPORT
 ========================================
 
-Response file checked: C:\Users\SHN\OneDrive\Desktop\4th year projecttt\updatedOne\Final-Year-Project-v1\reports\response_merged.txt
+Response file checked: /media/enait/New Volume/project/Final-Year-Project-v1-main/reports/response_merged.txt
 Total test cases found: 1500
 Valid test cases: 1490
 Invalid test cases: 10
